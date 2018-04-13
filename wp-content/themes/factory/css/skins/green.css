@@ -1,0 +1,74 @@
+.cg-primary-menu .menu > li:before {
+	background-color: #7bc659;
+}
+
+body .cg-primary-menu-below-wrapper .menu > li.arrow a span:before,
+body .cg-primary-menu-below-wrapper .menu > li.download a span:before {
+	color: #7bc659;
+}
+
+body .cg-primary-menu .menu > li > a:before {
+	background-color: #7bc659;
+}
+
+body .cg-announcements,
+body .wpcf7 input.wpcf7-submit,
+body .first-footer ul.list li:before,
+body.woocommerce button.button.alt,
+body .cg-primary-menu-below-wrapper .menu > li.current-menu-ancestor > a, 
+body .cg-primary-menu-below-wrapper .menu > li.current_page_parent > a,
+body .cg-primary-menu-below-wrapper .menu > li.current_page_item > a {
+	background-color: #7bc659;
+}
+
+body .vc_custom_1451746825740,
+body .vc_custom_1451760849278,
+body .vc_custom_1448385635444,
+body .vc_custom_1448385577270,
+body .vc_custom_1448385968962 {
+	background-color: #7bc659 !important;
+}
+
+body .vc_custom_1448384414672,
+body .vc_custom_1448386070994,
+body .vc_custom_1448386061617 {
+	background-color: #69b746 !important;
+}
+
+p.ls-main-heading {
+	color: #7bc659 !important;
+}
+
+body .widget.button a,
+body .cg-primary-menu .menu > li .cg-submenu-ddown .container > ul > li:hover a {
+	background-color: #7bc659;
+	border-color: #7bc659;
+}
+
+body .widget.button a:hover {
+	color: inherit;
+}
+
+body .widget.invert a,
+body.woocommerce.woocommerce-page ul.products li.product a:hover img {
+	border-color: #7bc659;
+}
+
+body .widget.invert a {
+	background-color: transparent;
+}
+
+body .woocommerce div.product p.price,
+body .widget.woocommerce .amount,
+body.woocommerce-page.woocommerce ul.products li.product .price,
+body .cg-primary-menu-below-wrapper .menu > li.download a:before,
+body .cg-primary-menu-below-wrapper .menu > li.arrow a:before {
+	color: #7bc659;
+}
+
+body .cg-folding-cube .cg-cube:before,
+body .widget_categories ul li:before,
+body .container .mc4wp-form input[type="submit"],
+body .widget_pages ul li:before {
+	background-color: #7bc659;
+}

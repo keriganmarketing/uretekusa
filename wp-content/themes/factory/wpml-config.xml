@@ -1,0 +1,29 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">show_page_title</custom-field>
+        <custom-field action="copy">_cg_logo_url</custom-field>
+        <custom-field action="copy">_cg_logo_image_id</custom-field>
+        <custom-field action="copy">_cg_logo_image</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">logos</custom-type>
+    </custom-types>    
+    <admin-texts>
+        <key name="cg_reduxopt">
+            <key name="factorycommercegurus_blog_page_title" />            
+        </key>
+    </admin-texts>    
+    <language-switcher-settings> 
+        <key name="icl_language_switcher_sidebar">0</key>  
+        <key name="icl_widget_title_show">0</key>
+        <key name="icl_lang_sel_type">horizontal</key>
+        <key name="icl_lso_link_empty">1</key>
+        <key name="icl_lso_flags">1</key>
+        <key name="icl_lso_native_lang">0</key>
+        <key name="icl_lso_display_lang">0</key>
+        <key name="icl_lang_sel_footer">0</key>
+        <key name="icl_post_availability">0</key>
+        <key name="icl_post_availability_position">below</key>
+        <key name="icl_post_availability_text">This post is also available in: %s</key>    
+    </language-switcher-settings>    
+</wpml-config>

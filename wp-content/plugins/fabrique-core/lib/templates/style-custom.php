@@ -1,0 +1,1 @@
+<?php /* Style Custom template placeholder */ ?>

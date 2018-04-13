@@ -1,0 +1,26 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_fabrique-child">
+            <key name="post_settings" />
+            <key name="related_title" />
+            <key name="cookies_notice_message" />
+            <key name="action_button_text" />
+            <key name="page_title_blog_label" />
+            <key name="page_title_shop_label" />
+            <key name="page_title_archive_label" />
+            <key name="page_title_category_label" />
+            <key name="page_title_tag_label" />
+            <key name="page_title_search_label" />
+            <key name="page_title_author_label" />
+            <key name="page_title_day_label" />
+            <key name="page_title_month_label" />
+            <key name="page_title_year_label" />
+            <key name="blog_subtitle" />
+            <key name="blog_more_message" />
+            <key name="project_slug" />
+            <key name="project_subtitle" />
+            <key name="project_more_message" />
+            <key name="shop_subtitle" />
+        </key>
+    </admin-texts>
+</wpml-config>

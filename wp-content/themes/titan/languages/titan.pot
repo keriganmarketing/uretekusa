@@ -1,0 +1,687 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Titan Builder version 1.0\n"
+"POT-Creation-Date: 2017-09-09 12:56+0500\n"
+"PO-Revision-Date: 2017-09-09 12:56+0500\n"
+"Last-Translator: amir <amirkhan0617@gmail.com>\n"
+"Language-Team: Template Path <muhibbur@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;_n;_x\n"
+"X-Poedit-SearchPath-0: D:\\xampp\\htdocs\\test_work\\titan\\wp-content"
+"\\themes\\titan\n"
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/404.php:16
+msgid "404"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/404.php:17
+msgid "OOPPS! THE PAGE YOU WERE LOOKING FOR, COULDN'T BE FOUND."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/404.php:18
+msgid "Try the search below to find matching pages:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/blog.php:17
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single.php:72
+msgid "By"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/comments.php:36
+msgid "Comment navigation"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/comments.php:37
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/comments.php:38
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:34
+msgid "Main Menu"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:35
+msgid "Footer Menu"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:66
+msgid "Default Sidebar"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:68
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:87
+msgid "Widgets in this area will be shown on the right-hand side."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:75
+msgid "Footer Sidebar"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:77
+msgid "Widgets in this area will be shown in Footer Area."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:85
+msgid "Blog Listing"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:195
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:196
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/functions.php:197
+msgid "on"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:25
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:70
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:165
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:244
+msgid "All Categories"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:49
+msgid "No Sidebar"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:114
+msgid "Home"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:162
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:163
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:164
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:165
+msgid "Archive for "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:166
+msgid "Search Results for "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:167
+msgid "404 - Not Found"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:185
+msgid "Search results for &ldquo;"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:212
+msgid "You must agreed the policy"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:222
+msgid "Registration Successful - An email is sent"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:226
+msgid "Username or email already exists.  Password inherited."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:240
+msgid "commenter"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:254
+msgid "Reply"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:285
+msgid "Your Name*"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:286
+msgid "Your Email*"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:287
+msgid "Subject"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:289
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:301
+msgid "Your Comments"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:304
+msgid "Your email address will not be published."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:309
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:310
+msgid "Cancel reply"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:311
+msgid "Post Comments"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:335
+msgid "Leave Your Reply"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:594
+msgid "Poor"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:594
+msgid "Satisfactory"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:594
+msgid "Good"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:594
+msgid "Better"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:594
+msgid "Awesome"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:616
+#, php-format
+msgid "Average Rating %s"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:656
+msgid "Loading..."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/functions.php:705
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:356
+msgid "logo"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:10
+msgid "Titan Builder Recent News"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:10
+msgid "Show the recent news"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:55
+msgid "Recent News"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:60
+msgid "Title: "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:64
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:159
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:239
+msgid "No. of Posts:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:69
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:164
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:243
+msgid "Category"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:114
+msgid "Titan Builder Services Menu"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:114
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:187
+msgid "Show services menu in sidebar."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:187
+msgid "Titan Builder Services Footer"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:235
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:318
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:497
+msgid "Title:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:236
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:498
+msgid "Title"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:267
+msgid "Titan Builder Our Brochures"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:267
+msgid "Show the info Our Brochures"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:283
+msgid "PDF"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:283
+msgid "Our Brouchure.pdf"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:286
+msgid "TXT"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:286
+msgid "Our Brouchure.txt"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:312
+msgid "Our Brochures"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:322
+msgid "PDF Link:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:323
+msgid "PDF link here"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:326
+msgid "Work Doc Link:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:327
+msgid "Word link here"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:343
+msgid "Titan Builder About Us"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:343
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:423
+msgid "Show the information about company"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:398
+msgid "Logo Image:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:399
+msgid "logo link here"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:402
+msgid "Content:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:406
+msgid "Show Social Icons:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:423
+msgid "Titan Builder Get in Touch"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:501
+msgid "Address:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:502
+msgid "Address"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:505
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:509
+msgid "Phone:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:506
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:510
+msgid "Phone"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:513
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:517
+msgid "Email:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:514
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/library/widgets.php:518
+msgid "Email"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/loader.php:152
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/loader.php:153
+msgid "Theme Options"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v1.php:11
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v1.php:13
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v2.php:11
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v2.php:13
+msgid "Arctica"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v1.php:35
+msgid "Call Us On"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v1.php:45
+msgid "Mail Us @"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/header_v1.php:101
+msgid "GET A Quote"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/about_us.php:6
+msgid "about titan builders photo"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/blog.php:29
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/latest_news.php:36
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/our_services2.php:35
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/our_services3.php:28
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/sidebar.php:35
+msgid "Read More"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/blog.php:30
+msgid "posted on"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/our_latest_projects.php:42
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/projects_2_col.php:44
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/projects_3_col.php:44
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/projects_4_col.php:44
+msgid "Huge Construction"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/our_services.php:35
+msgid "service image"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/price_plan.php:15
+msgid "/"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/projects.php:38
+msgid "Architecture"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/modules/shortcodes/projects.php:63
+msgid "All"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:610
+msgid "Update Required"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:914
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2620
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3667
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1021
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1021
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1024
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1024
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2429
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2479
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2483
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2487
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2569
+msgid "unknown"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2620
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2771
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2995
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3021
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3039
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3604
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/plugins.php:63
+msgid "Theme Support (Required)"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/plugins.php:74
+msgid "Revolution Slider"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/plugins.php:85
+msgid "KingComposer"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/plugins.php:90
+msgid "Contact Form 7"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/thirdparty/tgm-plugin-activation/plugins.php:96
+msgid "Woocommerce"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/vc_map.php:6
+msgid "bbPress Forums"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/vc_map.php:9
+msgid "Jollyall"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/vc_map.php:16
+msgid "Forum"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/vc_map.php:177
+msgid "Container"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/includes/vc_map.php:180
+msgid "Choose whether you want to add a container before row or not."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/index.php:28
+msgid "Blog"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/search.php:67
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/searchform.php:2
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/searchform2.php:2
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/searchform3.php:2
+msgid "Search..."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/sidebar.php:15
+msgid "by : "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/sidebar.php:17
+msgid "in : "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/sidebar.php:19
+msgid " 123 Likes "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/sidebar.php:21
+msgid " Print "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single-bunch_projects.php:42
+msgid "PROJECT INFO"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single-bunch_projects.php:45
+msgid "CLIENTS"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single-bunch_projects.php:47
+msgid "CATEGORIES"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single-bunch_projects.php:49
+msgid "COMPLETED"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single-bunch_projects.php:51
+msgid "PROJECT BUDGETS"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/single.php:67
+msgid "Pages: "
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart-totals.php:19
+msgid "Cart Totals"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart-totals.php:24
+msgid "Subtotal"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart-totals.php:61
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:26
+msgid "Preview"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:71
+msgid "Available on backorder"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:110
+msgid "Remove this item"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/cart/cart.php:165
+msgid "Shipping"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/checkout/form-checkout.php:45
+msgid "Your order"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/checkout/payment.php:34
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/checkout/payment.php:34
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/checkout/payment.php:41
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/content-product.php:93
+msgid "Add to Cart"
+msgstr ""
+
+#: D:\xampp\htdocs\test_work\titan\wp-content\themes\titan/woocommerce/single-product/related.php:28
+msgid "Related Products"
+msgstr ""

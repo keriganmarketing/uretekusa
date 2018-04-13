@@ -1,0 +1,1121 @@
+# Copyright (C) 2016 CommerceGurus
+# This file is distributed under the same license as the CommerceGurus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: CommerceGurus\n"
+"Report-Msgid-Bugs-To: http://www.commercegurus.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Colm Troy <colm@commercegurus.com>\n"
+"Language-Team: CommerceGurus Team <support@commercegurus.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: 404.php:18
+msgid "404"
+msgstr ""
+
+#: 404.php:21
+msgid "Sorry but the page you are looking for cannot be found. Please make sure you have typed the current url."
+msgstr ""
+
+#: 404.php:22
+msgid "Back to Homepage"
+msgstr ""
+
+#: admin/cmb-options.php:23
+msgid "Page Settings"
+msgstr ""
+
+#: admin/cmb-options.php:30
+msgid "Header Transparency Style"
+msgstr ""
+
+#: admin/cmb-options.php:31
+msgid "Default value is set via Theme Options -> Header Settings -> Header Transparency"
+msgstr ""
+
+#: admin/cmb-options.php:36
+msgid "Set in theme options"
+msgstr ""
+
+#: admin/cmb-options.php:37
+msgid "No transparency"
+msgstr ""
+
+#: admin/cmb-options.php:38
+msgid "Transparent - Light text"
+msgstr ""
+
+#: admin/cmb-options.php:39
+msgid "Transparent - Dark text"
+msgstr ""
+
+#: admin/options-init.php:115
+msgid "Global Settings"
+msgstr ""
+
+#: admin/options-init.php:116
+msgid "Changes to major global elements."
+msgstr ""
+
+#: admin/options-init.php:120
+msgid "Select a container layout style"
+msgstr ""
+
+#: admin/options-init.php:124
+msgid "Full Width Layout"
+msgstr ""
+
+#: admin/options-init.php:125
+msgid "Boxed Layout"
+msgstr ""
+
+#: admin/options-init.php:127
+msgid "Container layout style"
+msgstr ""
+
+#: admin/options-init.php:131
+msgid "Enable or disable responsiveness on smartphones"
+msgstr ""
+
+#: admin/options-init.php:135, admin/options-init.php:146
+msgid "Enabled"
+msgstr ""
+
+#: admin/options-init.php:136, admin/options-init.php:147
+msgid "Disabled"
+msgstr ""
+
+#: admin/options-init.php:138
+msgid "Responsive"
+msgstr ""
+
+#: admin/options-init.php:142
+msgid "Enable or disable the Page preloader"
+msgstr ""
+
+#: admin/options-init.php:149
+msgid "Page Preloader"
+msgstr ""
+
+#: admin/options-init.php:155
+msgid "Body Background - Color and image"
+msgstr ""
+
+#: admin/options-init.php:156
+msgid "Configure your theme background."
+msgstr ""
+
+#: admin/options-init.php:167
+msgid "Body Background - Pattern"
+msgstr ""
+
+#: admin/options-init.php:168
+msgid "Use this option if you want to use a repeating pattern for your background. Note: Do not try to use both a pattern background and a full size image background! "
+msgstr ""
+
+#: admin/options-init.php:179
+msgid "Main body wrapper color"
+msgstr ""
+
+#: admin/options-init.php:180
+msgid "Configure your theme wrapper."
+msgstr ""
+
+#: admin/options-init.php:187
+msgid "Colors"
+msgstr ""
+
+#: admin/options-init.php:188
+msgid "Customize your theme color palette."
+msgstr ""
+
+#: admin/options-init.php:192
+msgid "Select from one of the predefined color skins, or have your own colors by selecting \"No Skin\" and choosing colors below."
+msgstr ""
+
+#: admin/options-init.php:196
+msgid "No skin - use custom"
+msgstr ""
+
+#: admin/options-init.php:197
+msgid "Red"
+msgstr ""
+
+#: admin/options-init.php:198
+msgid "Blue"
+msgstr ""
+
+#: admin/options-init.php:199
+msgid "Green"
+msgstr ""
+
+#: admin/options-init.php:200
+msgid "Purple"
+msgstr ""
+
+#: admin/options-init.php:202
+msgid "Color Skin"
+msgstr ""
+
+#: admin/options-init.php:208
+msgid "Primary theme color"
+msgstr ""
+
+#: admin/options-init.php:209
+msgid "This should be something unique about your site."
+msgstr ""
+
+#: admin/options-init.php:215
+msgid "Link Colors"
+msgstr ""
+
+#: admin/options-init.php:216
+msgid "Define your link colors."
+msgstr ""
+
+#: admin/options-init.php:222
+msgid "Active link color"
+msgstr ""
+
+#: admin/options-init.php:223
+msgid "The color of active links."
+msgstr ""
+
+#: admin/options-init.php:229
+msgid "Link hover color"
+msgstr ""
+
+#: admin/options-init.php:230
+msgid "The color of your links in the hover state."
+msgstr ""
+
+#: admin/options-init.php:241
+msgid "Header Colors"
+msgstr ""
+
+#: admin/options-init.php:242
+msgid "Define your header colors. Note: not all color options apply to all header styles."
+msgstr ""
+
+#: admin/options-init.php:248
+msgid "Header Background Color"
+msgstr ""
+
+#: admin/options-init.php:250
+msgid "The Color of the Header Background."
+msgstr ""
+
+#: admin/options-init.php:257
+msgid "Header Text Color"
+msgstr ""
+
+#: admin/options-init.php:258
+msgid "The color of the Header Text."
+msgstr ""
+
+#: admin/options-init.php:264
+msgid "Navigation Background Color"
+msgstr ""
+
+#: admin/options-init.php:266
+msgid "The Color of the Navigation Background."
+msgstr ""
+
+#: admin/options-init.php:273
+msgid "Navigation Text Color"
+msgstr ""
+
+#: admin/options-init.php:274
+msgid "The color of the Navigation"
+msgstr ""
+
+#: admin/options-init.php:280
+msgid "Sticky Header Background Color"
+msgstr ""
+
+#: admin/options-init.php:281
+msgid "The Color of the Sticky Header Background."
+msgstr ""
+
+#: admin/options-init.php:288
+msgid "Sticky Header Text Color"
+msgstr ""
+
+#: admin/options-init.php:289
+msgid "The color of the Sticky Header Text."
+msgstr ""
+
+#: admin/options-init.php:295
+msgid "Mobile Header Background Color"
+msgstr ""
+
+#: admin/options-init.php:296
+msgid "The color of the Mobile Header Background."
+msgstr ""
+
+#: admin/options-init.php:308
+msgid "Footer Colors"
+msgstr ""
+
+#: admin/options-init.php:309
+msgid "Define your footer colors."
+msgstr ""
+
+#: admin/options-init.php:315
+msgid "First footer background color"
+msgstr ""
+
+#: admin/options-init.php:316
+msgid "The background color of the first (top) footer."
+msgstr ""
+
+#: admin/options-init.php:322
+msgid "First footer text color"
+msgstr ""
+
+#: admin/options-init.php:323
+msgid "The text color of the first (top) footer."
+msgstr ""
+
+#: admin/options-init.php:329
+msgid "First footer link color"
+msgstr ""
+
+#: admin/options-init.php:330
+msgid "The link color of the first (top) footer."
+msgstr ""
+
+#: admin/options-init.php:336
+msgid "Second footer background color"
+msgstr ""
+
+#: admin/options-init.php:337
+msgid "The background color of the second (bottom) footer."
+msgstr ""
+
+#: admin/options-init.php:343
+msgid "Second footer text color"
+msgstr ""
+
+#: admin/options-init.php:344
+msgid "The text color of the second (bottom) footer."
+msgstr ""
+
+#: admin/options-init.php:356, admin/options-init.php:363
+msgid "Logos"
+msgstr ""
+
+#: admin/options-init.php:357
+msgid "Update your Logos."
+msgstr ""
+
+#: admin/options-init.php:364
+msgid "Set your Logo"
+msgstr ""
+
+#: admin/options-init.php:368
+msgid "Upload your Logo."
+msgstr ""
+
+#: admin/options-init.php:371
+msgid "Logo"
+msgstr ""
+
+#: admin/options-init.php:375
+msgid "Logo Height"
+msgstr ""
+
+#: admin/options-init.php:376
+msgid "Set your Logo Height in pixels"
+msgstr ""
+
+#: admin/options-init.php:386
+msgid "Padding around Logo"
+msgstr ""
+
+#: admin/options-init.php:387
+msgid "Set some padding around your logo"
+msgstr ""
+
+#: admin/options-init.php:404
+msgid "Sticky Logo"
+msgstr ""
+
+#: admin/options-init.php:405
+msgid "Set your Sticky Logo"
+msgstr ""
+
+#: admin/options-init.php:409
+msgid "Upload a Logo which appears within a Sticky Header."
+msgstr ""
+
+#: admin/options-init.php:412
+msgid "Sticky Logo (optional)"
+msgstr ""
+
+#: admin/options-init.php:423, admin/options-init.php:428
+msgid "Logo Container Width"
+msgstr ""
+
+#: admin/options-init.php:424
+msgid "Set the Container width of the Logo - the default is 20%. Unless you have a very wide logo you should not need to adjust this."
+msgstr ""
+
+#: admin/options-init.php:429
+msgid "Set in %"
+msgstr ""
+
+#: admin/options-init.php:430
+msgid "You may need to remove or adjust your Header Details Widgets if you increase this."
+msgstr ""
+
+#: admin/options-init.php:448
+msgid "Header Settings"
+msgstr ""
+
+#: admin/options-init.php:449
+msgid "Manage your header."
+msgstr ""
+
+#: admin/options-init.php:456
+msgid "Header Layout"
+msgstr ""
+
+#: admin/options-init.php:457
+msgid "<em>Select the Header Layout.</em>"
+msgstr ""
+
+#: admin/options-init.php:475
+msgid "Top Bar"
+msgstr ""
+
+#: admin/options-init.php:476
+msgid "<em>Enable the Top Bar?</em>"
+msgstr ""
+
+#: admin/options-init.php:477, admin/options-init.php:487, admin/options-init.php:497
+msgid "Enable"
+msgstr ""
+
+#: admin/options-init.php:478, admin/options-init.php:488, admin/options-init.php:498
+msgid "Disable"
+msgstr ""
+
+#: admin/options-init.php:482
+msgid "Sticky Menu"
+msgstr ""
+
+#: admin/options-init.php:483
+msgid "A sticky menu is a menu which fixes itself to the top as you scroll."
+msgstr ""
+
+#: admin/options-init.php:486
+msgid "<em>Enable Sticky Menu?</em>"
+msgstr ""
+
+#: admin/options-init.php:495
+msgid "Search"
+msgstr ""
+
+#: admin/options-init.php:496
+msgid "<em>Show Search?</em>"
+msgstr ""
+
+#: admin/options-init.php:504
+msgid "Top Bar Background Color"
+msgstr ""
+
+#: admin/options-init.php:505
+msgid "<em>The color of the Top Bar background.</em>"
+msgstr ""
+
+#: admin/options-init.php:511
+msgid "Top Bar Text Color"
+msgstr ""
+
+#: admin/options-init.php:512
+msgid "<em>The color of the Top Bar text.</em>"
+msgstr ""
+
+#: admin/options-init.php:519
+msgid "Main Menu Settings"
+msgstr ""
+
+#: admin/options-init.php:520
+msgid "Manage your main menu."
+msgstr ""
+
+#: admin/options-init.php:526
+msgid "Level 1 Typeface"
+msgstr ""
+
+#: admin/options-init.php:535, admin/options-init.php:756, admin/options-init.php:782, admin/options-init.php:843, admin/options-init.php:864, admin/options-init.php:885, admin/options-init.php:906, admin/options-init.php:927, admin/options-init.php:948
+msgid "Each property can be called individually."
+msgstr ""
+
+#: admin/options-init.php:547
+msgid "Level 2 Heading Typeface"
+msgstr ""
+
+#: admin/options-init.php:557, admin/options-init.php:585, admin/options-init.php:801, admin/options-init.php:822
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: admin/options-init.php:569
+msgid "Level 2 Typeface"
+msgstr ""
+
+#: admin/options-init.php:599
+msgid "Dropdown menu background hover color"
+msgstr ""
+
+#: admin/options-init.php:608
+msgid "Page Options"
+msgstr ""
+
+#: admin/options-init.php:609
+msgid "Extra Page Options"
+msgstr ""
+
+#: admin/options-init.php:616
+msgid "Page Heading"
+msgstr ""
+
+#: admin/options-init.php:617, admin/options-init.php:673
+msgid ""
+msgstr ""
+
+#: admin/options-init.php:624
+msgid "Heading Alignment"
+msgstr ""
+
+#: admin/options-init.php:626
+msgid "Center"
+msgstr ""
+
+#: admin/options-init.php:627
+msgid "Left"
+msgstr ""
+
+#: admin/options-init.php:633
+msgid "Heading Top Margin"
+msgstr ""
+
+#: admin/options-init.php:634, admin/options-init.php:645
+msgid "Set in px"
+msgstr ""
+
+#: admin/options-init.php:644
+msgid "Heading Bottom Margin"
+msgstr ""
+
+#: admin/options-init.php:658
+msgid "Default Background Image"
+msgstr ""
+
+#: admin/options-init.php:672, inc/extras.php:315
+msgid "Share"
+msgstr ""
+
+#: admin/options-init.php:677
+msgid "Display share buttons below page heading?"
+msgstr ""
+
+#: admin/options-init.php:680
+msgid "Show Share Buttons"
+msgstr ""
+
+#: admin/options-init.php:682, admin/options-init.php:711, admin/options-init.php:722, admin/options-init.php:733
+msgid "Yes"
+msgstr ""
+
+#: admin/options-init.php:683, admin/options-init.php:712, admin/options-init.php:723, admin/options-init.php:734
+msgid "No"
+msgstr ""
+
+#: admin/options-init.php:699
+msgid "Footer Settings"
+msgstr ""
+
+#: admin/options-init.php:700
+msgid "Manage your footer."
+msgstr ""
+
+#: admin/options-init.php:706
+msgid "Show Top Footer?"
+msgstr ""
+
+#: admin/options-init.php:709
+msgid "Show top footer"
+msgstr ""
+
+#: admin/options-init.php:717
+msgid "Show Bottom Footer?"
+msgstr ""
+
+#: admin/options-init.php:720
+msgid "Show bottom footer"
+msgstr ""
+
+#: admin/options-init.php:728
+msgid "Show Back to Top?"
+msgstr ""
+
+#: admin/options-init.php:731
+msgid "Show back to top?"
+msgstr ""
+
+#: admin/options-init.php:742
+msgid "Typography"
+msgstr ""
+
+#: admin/options-init.php:743
+msgid "Manage your fonts and typefaces."
+msgstr ""
+
+#: admin/options-init.php:749
+msgid "Body/Main text font"
+msgstr ""
+
+#: admin/options-init.php:769
+msgid "Secondary font"
+msgstr ""
+
+#: admin/options-init.php:793
+msgid "Paragraph Style"
+msgstr ""
+
+#: admin/options-init.php:814
+msgid "Heading 1 Style"
+msgstr ""
+
+#: admin/options-init.php:835
+msgid "Heading 2 Style"
+msgstr ""
+
+#: admin/options-init.php:856
+msgid "Heading 3 Style"
+msgstr ""
+
+#: admin/options-init.php:877
+msgid "Heading 4 Style"
+msgstr ""
+
+#: admin/options-init.php:898
+msgid "Heading 5 Style"
+msgstr ""
+
+#: admin/options-init.php:919
+msgid "Heading 6 Style"
+msgstr ""
+
+#: admin/options-init.php:940
+msgid "Widget Title Typeface"
+msgstr ""
+
+#: admin/options-init.php:963
+msgid "News Settings"
+msgstr ""
+
+#: admin/options-init.php:964
+msgid "Manage your news settings."
+msgstr ""
+
+#: admin/options-init.php:970
+msgid "News Page Title"
+msgstr ""
+
+#: admin/options-init.php:971
+msgid "News"
+msgstr ""
+
+#: admin/options-init.php:978
+msgid "News Archive Title Background Image"
+msgstr ""
+
+#: admin/options-init.php:983
+msgid "News sidebar"
+msgstr ""
+
+#: admin/options-init.php:987
+msgid "Left sidebar"
+msgstr ""
+
+#: admin/options-init.php:988
+msgid "Right sidebar"
+msgstr ""
+
+#: admin/options-init.php:989
+msgid "No sidebar"
+msgstr ""
+
+#: admin/options-init.php:991
+msgid "Where would you like your news sidebar to appear?"
+msgstr ""
+
+#: admin/options-init.php:999
+msgid "Custom Code"
+msgstr ""
+
+#: admin/options-init.php:1000
+msgid "Add some custom code."
+msgstr ""
+
+#: admin/options-init.php:1003
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/options-init.php:1004
+msgid "Add some custom css to your site?"
+msgstr ""
+
+#: admin/options-init.php:1048, admin/options-init.php:1049
+msgid "Theme Options"
+msgstr ""
+
+#: admin/options-init.php:1126
+msgid "http://twitter.com/commercegurus"
+msgstr ""
+
+#: admin/options-init.php:1127
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: archive.php:46
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:54
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:57
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:60
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:63
+msgid "Asides"
+msgstr ""
+
+#: archive.php:66
+msgid "Images"
+msgstr ""
+
+#: archive.php:69
+msgid "Videos"
+msgstr ""
+
+#: archive.php:72
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:75
+msgid "Links"
+msgstr ""
+
+#: archive.php:78
+msgid "Archives"
+msgstr ""
+
+#: comments.php:25
+msgctxt "comments title"
+msgid "&mdash; One Comment &mdash;"
+msgid_plural "&mdash; %1$s Comments &mdash;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:30, comments.php:48
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:31, comments.php:49
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:32, comments.php:50
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: content-fullwidthpage.php:14, content-page.php:13, content-single.php:25, content-wcfullwidthpage.php:13, content.php:140, content.php:196, image.php:47
+msgid "Pages:"
+msgstr ""
+
+#: content-single.php:33, content-single.php:36, content.php:152, content.php:162, content.php:208, content.php:218
+msgid ", "
+msgstr ""
+
+#: content-single.php:41, content-single.php:43
+msgid "<span class=\"tags\">%2$s</span>"
+msgstr ""
+
+#: content-single.php:48, content-single.php:50
+msgid "<span class=\"categories\">%1$s</span> <span class=\"tags\">%2$s</span>"
+msgstr ""
+
+#: content-wcfullwidthpage.php:19, image.php:25, image.php:52, inc/template-tags.php:88, inc/template-tags.php:108
+msgid "Edit"
+msgstr ""
+
+#: content.php:71, content.php:98, content.php:138, content.php:194
+msgid "Read more"
+msgstr ""
+
+#: content.php:156, content.php:166, content.php:212, content.php:222
+msgid "%1$s"
+msgstr ""
+
+#: customvc/vc_extend.php:29
+msgid "<strong>%s</strong> requires <strong><a href=\"http://bit.ly/vcomposer\" target=\"_blank\">Visual Composer</a></strong> plugin to be installed and activated on your site."
+msgstr ""
+
+#: customvc/vc_extend.php:55, customvc/vc_extend.php:75
+msgid "Type"
+msgstr ""
+
+#: customvc/vc_extend.php:59
+msgid "Fixed Page Width"
+msgstr ""
+
+#: customvc/vc_extend.php:61
+msgid "Full Page Width - Inner Container"
+msgstr ""
+
+#: customvc/vc_extend.php:90
+msgid "Position"
+msgstr ""
+
+#: customvc/vc_extend.php:105
+msgid "Color"
+msgstr ""
+
+#: customvc/vc_extend.php:115
+msgid "Thickness"
+msgstr ""
+
+#: customvc/vc_extend.php:124
+msgid "Top Margin"
+msgstr ""
+
+#: customvc/vc_extend.php:133
+msgid "Bottom Margin"
+msgstr ""
+
+#: customvc/vc_extend.php:146
+msgid "CommerceGurus Logos"
+msgstr ""
+
+#: customvc/vc_extend.php:151
+msgid "CommerceGurus Shortcodes"
+msgstr ""
+
+#: customvc/vc_extend.php:157
+msgid "Number of Logos"
+msgstr ""
+
+#: customvc/vc_extend.php:161
+msgid "Enter the total number of logos you wish to display in the carousel."
+msgstr ""
+
+#: functions.php:147
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:148
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:149
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:150
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:151
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:152
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:153
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:154
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:155
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:156
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:157
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:158
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:159
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:160
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:161
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:162
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:163
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:337
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:338
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:440
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:442
+msgid "The main sidebar used in most places by default"
+msgstr ""
+
+#: functions.php:450
+msgid "Pages Sidebar"
+msgstr ""
+
+#: functions.php:452
+msgid "Sidebar for pages"
+msgstr ""
+
+#: functions.php:462
+msgid "Sidebar for shop pages"
+msgstr ""
+
+#: functions.php:470
+msgid "Top Toolbar - Left"
+msgstr ""
+
+#: functions.php:472
+msgid "Widgets in the top left toolbar in the header"
+msgstr ""
+
+#: functions.php:480
+msgid "Top Toolbar - Right"
+msgstr ""
+
+#: functions.php:482
+msgid "Widgets in the top right toolbar in the header"
+msgstr ""
+
+#: functions.php:490
+msgid "Mobile Search"
+msgstr ""
+
+#: functions.php:492
+msgid "Mobile/smartphone search widget area"
+msgstr ""
+
+#: functions.php:500
+msgid "Header Details"
+msgstr ""
+
+#: functions.php:502
+msgid "Widget area that appears in the header next to the logo"
+msgstr ""
+
+#: functions.php:510
+msgid "First Footer"
+msgstr ""
+
+#: functions.php:512
+msgid "First row of footer widgets"
+msgstr ""
+
+#: functions.php:520
+msgid "Second Footer"
+msgstr ""
+
+#: functions.php:522
+msgid "Second row of footer widgets"
+msgstr ""
+
+#: header.php:106, header.php:106
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:22
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: image.php:30
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/extras.php:95
+msgid "Page %s"
+msgstr ""
+
+#: inc/extras.php:318
+msgid "Facebook"
+msgstr ""
+
+#: inc/extras.php:319
+msgid "Twitter"
+msgstr ""
+
+#: inc/extras.php:320
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/extras.php:321
+msgid "Google+"
+msgstr ""
+
+#: inc/extras.php:322
+msgid "Email"
+msgstr ""
+
+#: inc/template-tags.php:41
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:45
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: inc/template-tags.php:46
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: inc/template-tags.php:51
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Newer posts <span class=\"meta-nav\">&larr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:88
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:105
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:112
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:357
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/template-tags.php:358
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: no-results.php:15
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:19
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: no-results.php:24
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: partials/header-left.php:182
+msgid "You can set your main menu in Appearance &rarr; Menus"
+msgstr ""
+
+#: partials/header-left.php:255
+msgid "You can set your main menu in Appearance -> Menus"
+msgstr ""
+
+#: search.php:22, search.php:41
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:10
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr ""

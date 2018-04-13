@@ -1,0 +1,54 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">bp_data</custom-field>
+        <custom-field action="translate">bp_post_settings</custom-field>
+        <custom-field action="translate">bp_post_format_settings</custom-field>
+        <custom-field action="translate">fbq_contact_name</custom-field>
+        <custom-field action="translate">fbq_contact_address</custom-field>
+        <custom-field action="translate">fbq_contact_hours</custom-field>
+        <custom-field action="translate">fbq_contact_phone</custom-field>
+        <custom-field action="translate">fbq_contact_email</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">twcbp_block</custom-type>
+        <custom-type translate="1">fbq_project</custom-type>
+        <custom-type translate="1">fbq_contact</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">fbq_page_category</taxonomy>
+        <taxonomy translate="1">fbq_page_tag</taxonomy>
+        <taxonomy translate="1">fbq_project_category</taxonomy>
+        <taxonomy translate="1">fbq_project_tag</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="booking-settings">
+            <key name="reply-to-name" />
+            <key name="subject-pending-admin" />
+            <key name="subject-pending-user" />
+            <key name="subject-confirm-user" />
+            <key name="subject-close-user" />
+        </key>
+        <key name="theme_mods_fabrique">
+            <key name="post_settings" />
+            <key name="related_title" />
+            <key name="cookies_notice_message" />
+            <key name="action_button_text" />
+            <key name="page_title_blog_label" />
+            <key name="page_title_shop_label" />
+            <key name="page_title_archive_label" />
+            <key name="page_title_category_label" />
+            <key name="page_title_tag_label" />
+            <key name="page_title_search_label" />
+            <key name="page_title_author_label" />
+            <key name="page_title_day_label" />
+            <key name="page_title_month_label" />
+            <key name="page_title_year_label" />
+            <key name="blog_subtitle" />
+            <key name="blog_more_message" />
+            <key name="project_more_message" />
+            <key name="project_slug" />
+            <key name="project_subtitle" />
+            <key name="shop_subtitle" />
+        </key>
+    </admin-texts>
+</wpml-config>

@@ -1,0 +1,7011 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Fabrique Core\n"
+"POT-Creation-Date: 2018-02-12 14:44+0700\n"
+"PO-Revision-Date: 2017-08-21 16:17+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: init.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/modules/contact-module.php:30
+msgctxt "label for contact post type"
+msgid "Contact Info"
+msgstr ""
+
+#: classes/modules/contact-module.php:36 classes/modules/project-module.php:69
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: classes/modules/contact-module.php:37 classes/modules/project-module.php:70
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: classes/modules/contact-module.php:38 classes/modules/project-module.php:71
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: classes/modules/contact-module.php:39 classes/modules/project-module.php:72
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: classes/modules/contact-module.php:40 classes/modules/project-module.php:73
+#, php-format
+msgid "All %ss"
+msgstr ""
+
+#: classes/modules/contact-module.php:41
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#: classes/modules/contact-module.php:68
+msgid "Contact Fields"
+msgstr ""
+
+#: classes/modules/contact-module.php:85 classes/modules/contact-module.php:153
+#: lib/includes/translation.php:521 lib/templates/admin-system.php:176
+msgid "Name"
+msgstr ""
+
+#: classes/modules/contact-module.php:90 classes/modules/contact-module.php:154
+msgid "Address"
+msgstr ""
+
+#: classes/modules/contact-module.php:95 classes/modules/contact-module.php:155
+msgid "Opening Hours"
+msgstr ""
+
+#: classes/modules/contact-module.php:100
+#: classes/modules/contact-module.php:156
+#: lib/classes/modules/customize-module.php:4508
+#: lib/classes/modules/customize-module.php:7240
+msgid "Phone"
+msgstr ""
+
+#: classes/modules/contact-module.php:105
+#: classes/modules/contact-module.php:157
+#: lib/classes/modules/customize-module.php:4507
+#: lib/classes/modules/customize-module.php:7226
+#: lib/classes/modules/customize-module.php:7288
+msgid "Email"
+msgstr ""
+
+#: classes/modules/contact-module.php:110
+msgid "Website"
+msgstr ""
+
+#: classes/modules/delivery-module.php:49
+#: classes/modules/delivery-module.php:352
+#: classes/modules/delivery-module.php:363
+#: classes/modules/delivery-module.php:377
+msgid "Delivery"
+msgstr ""
+
+#: classes/modules/delivery-module.php:60 lib/includes/translation.php:333
+msgid "General"
+msgstr ""
+
+#: classes/modules/delivery-module.php:71
+msgid "Enable Delivery"
+msgstr ""
+
+#: classes/modules/delivery-module.php:72
+msgid "Check this option to enable delivery."
+msgstr ""
+
+#: classes/modules/delivery-module.php:73
+msgid ""
+"This will allow customer to select delivery date and time in WooCommerce "
+"checkout page."
+msgstr ""
+
+#: classes/modules/delivery-module.php:83
+msgid "Date Format"
+msgstr ""
+
+#: classes/modules/delivery-module.php:85
+#, php-format
+msgid ""
+"Define how the date is formatted on the delivery form. %sFormatting rules%s."
+msgstr ""
+
+#: classes/modules/delivery-module.php:99
+msgid "Time Format"
+msgstr ""
+
+#: classes/modules/delivery-module.php:102
+msgid "12h"
+msgstr ""
+
+#: classes/modules/delivery-module.php:103
+msgid "24h"
+msgstr ""
+
+#: classes/modules/delivery-module.php:114
+msgid "Early Delivery"
+msgstr ""
+
+#: classes/modules/delivery-module.php:117
+msgid "Any time"
+msgstr ""
+
+#: classes/modules/delivery-module.php:118
+msgid "1 day"
+msgstr ""
+
+#: classes/modules/delivery-module.php:119
+msgid "3 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:120
+msgid "5 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:121
+msgid "1 week"
+msgstr ""
+
+#: classes/modules/delivery-module.php:122
+msgid "10 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:123
+msgid "2 weeks"
+msgstr ""
+
+#: classes/modules/delivery-module.php:124
+msgid "3 weeks"
+msgstr ""
+
+#: classes/modules/delivery-module.php:125
+msgid "30 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:126
+msgid "60 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:127
+msgid "90 days"
+msgstr ""
+
+#: classes/modules/delivery-module.php:138
+msgid "Late Delivery"
+msgstr ""
+
+#: classes/modules/delivery-module.php:139
+msgid "Select how late customers can order delivery."
+msgstr ""
+
+#: classes/modules/delivery-module.php:142
+msgid "No limit"
+msgstr ""
+
+#: classes/modules/delivery-module.php:143
+#: classes/modules/delivery-module.php:252
+msgid "30 minutes in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:144
+#: classes/modules/delivery-module.php:253
+msgid "1 hour in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:145
+#: classes/modules/delivery-module.php:254
+msgid "2 hours in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:146
+#: classes/modules/delivery-module.php:255
+msgid "4 hours in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:147
+msgid "6 hours in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:148
+#: classes/modules/delivery-module.php:256
+msgid "12 hours in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:149
+msgid "1 week in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:150
+msgid "Block same-day delivery"
+msgstr ""
+
+#: classes/modules/delivery-module.php:161
+msgid "Time Interval"
+msgstr ""
+
+#: classes/modules/delivery-module.php:164
+msgid "60 minutes"
+msgstr ""
+
+#: classes/modules/delivery-module.php:165
+msgid "30 minutes"
+msgstr ""
+
+#: classes/modules/delivery-module.php:166
+msgid "15 minutes"
+msgstr ""
+
+#: classes/modules/delivery-module.php:175
+msgid "Schedule"
+msgstr ""
+
+#: classes/modules/delivery-module.php:186
+msgid "Delivery Hours"
+msgstr ""
+
+#: classes/modules/delivery-module.php:187
+#, php-format
+msgid ""
+"Add schedule during which time you deliver. %s**This require at least one "
+"rule.%s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:190
+msgid "deliver all day"
+msgstr ""
+
+#: classes/modules/delivery-module.php:200
+msgid "Delivery Off Hours"
+msgstr ""
+
+#: classes/modules/delivery-module.php:201
+msgid ""
+"Define special delivery hours or leave time empty for disable delivery all "
+"day."
+msgstr ""
+
+#: classes/modules/delivery-module.php:204
+msgid "close all day"
+msgstr ""
+
+#: classes/modules/delivery-module.php:212
+msgid "Notifications"
+msgstr ""
+
+#: classes/modules/delivery-module.php:223
+msgid "Admin Notification"
+msgstr ""
+
+#: classes/modules/delivery-module.php:224
+msgid "Send notification email to admin before delivery."
+msgstr ""
+
+#: classes/modules/delivery-module.php:234
+msgid "Admin Email Address"
+msgstr ""
+
+#: classes/modules/delivery-module.php:235
+msgid "The email address where delivery notifications should be sent."
+msgstr ""
+
+#: classes/modules/delivery-module.php:247
+msgid "Notify Time"
+msgstr ""
+
+#: classes/modules/delivery-module.php:248
+msgid "Select time to send notify email prior to delivery time."
+msgstr ""
+
+#: classes/modules/delivery-module.php:251
+msgid "On Time"
+msgstr ""
+
+#: classes/modules/delivery-module.php:257
+msgid "1 day in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:258
+msgid "2 days in advance"
+msgstr ""
+
+#: classes/modules/delivery-module.php:308
+msgid "Delivery Schedule"
+msgstr ""
+
+#: classes/modules/delivery-module.php:314
+msgid "Delivery Date"
+msgstr ""
+
+#: classes/modules/delivery-module.php:315
+msgid "Enter delivery date."
+msgstr ""
+
+#: classes/modules/delivery-module.php:321
+msgid "Delivery Time"
+msgstr ""
+
+#: classes/modules/delivery-module.php:322
+msgid "Enter delivery time."
+msgstr ""
+
+#: classes/modules/delivery-module.php:355
+msgid "Delivery Status"
+msgstr ""
+
+#: classes/modules/delivery-module.php:396
+#, php-format
+msgid "%sStatus: %s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:573
+#, php-format
+msgid "%s Delivery order %s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:606
+msgid "Delivery Alert"
+msgstr ""
+
+#: classes/modules/delivery-module.php:617
+#, php-format
+msgid "Order Detail %s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:672
+msgid "Total :"
+msgstr ""
+
+#: classes/modules/delivery-module.php:676
+#, php-format
+msgid "%sOrder Date:%s %s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:679
+#, php-format
+msgid "%sDelivery Date:%s %s"
+msgstr ""
+
+#: classes/modules/delivery-module.php:687
+msgid "Billing Address"
+msgstr ""
+
+#: classes/modules/delivery-module.php:688
+msgid "Shipping Address"
+msgstr ""
+
+#: classes/modules/delivery-module.php:703
+#, php-format
+msgid "© 2017 %s All Rights Reserved"
+msgstr ""
+
+#: classes/modules/project-module.php:60
+msgctxt "project post type name"
+msgid "Project"
+msgstr ""
+
+#: classes/modules/project-module.php:74 lib/fabrique-core.php:88
+msgid "% Archives"
+msgstr ""
+
+#: classes/modules/project-module.php:95 classes/modules/project-module.php:96
+#, php-format
+msgid "%s Categories"
+msgstr ""
+
+#: classes/modules/project-module.php:107
+#: classes/modules/project-module.php:108
+#, php-format
+msgid "%s Tags"
+msgstr ""
+
+#: classes/widgets/banner.php:9 classes/widgets/banner.php:11
+msgid "Fabrique Banner"
+msgstr ""
+
+#: classes/widgets/banner.php:107 classes/widgets/contact.php:97
+#: classes/widgets/contact.php:133 classes/widgets/feature.php:82
+#: classes/widgets/flickr.php:61 classes/widgets/highlight-post.php:108
+#: classes/widgets/html.php:30 classes/widgets/instagram.php:94
+#: classes/widgets/post.php:114 classes/widgets/post.php:168
+#: classes/widgets/project.php:122 classes/widgets/project.php:176
+#: classes/widgets/social.php:39 classes/widgets/twitter.php:76
+#: lib/classes/modules/customize-module.php:5690
+#: lib/classes/modules/customize-module.php:6396
+#: lib/classes/modules/customize-module.php:6693
+#: lib/includes/translation.php:788
+msgid "Title"
+msgstr ""
+
+#: classes/widgets/banner.php:115
+msgid "Banner Image 1"
+msgstr ""
+
+#: classes/widgets/banner.php:123
+msgid "Banner Label 1"
+msgstr ""
+
+#: classes/widgets/banner.php:131
+msgid "Banner Link 1"
+msgstr ""
+
+#: classes/widgets/banner.php:139
+msgid "Banner Image 2"
+msgstr ""
+
+#: classes/widgets/banner.php:147
+msgid "Banner Label 2"
+msgstr ""
+
+#: classes/widgets/banner.php:155
+msgid "Banner Link 2"
+msgstr ""
+
+#: classes/widgets/banner.php:163
+msgid "No. of Display Items"
+msgstr ""
+
+#: classes/widgets/banner.php:175 classes/widgets/flickr.php:82
+#: classes/widgets/instagram.php:130
+#: lib/classes/modules/customize-module.php:6481
+#: lib/includes/translation.php:540
+msgid "No. of Columns"
+msgstr ""
+
+#: classes/widgets/banner.php:187 classes/widgets/feature.php:96
+#: classes/widgets/instagram.php:167
+#: lib/classes/modules/customize-module.php:5254
+#: lib/classes/modules/customize-module.php:5898
+#: lib/classes/modules/customize-module.php:6519
+#: lib/includes/translation.php:395
+msgid "Image Size"
+msgstr ""
+
+#: classes/widgets/banner.php:189 classes/widgets/feature.php:98
+#: classes/widgets/highlight-post.php:154 classes/widgets/post.php:201
+#: classes/widgets/project.php:209
+#: lib/classes/modules/customize-module.php:7326
+#: lib/classes/modules/woocommerce-module.php:93
+#: lib/classes/modules/woocommerce-module.php:112
+#: lib/classes/modules/woocommerce-module.php:165
+#: lib/includes/translation.php:785
+msgid "Thumbnail"
+msgstr ""
+
+#: classes/widgets/banner.php:190 classes/widgets/feature.php:99
+#: classes/widgets/highlight-post.php:155 classes/widgets/post.php:202
+#: classes/widgets/project.php:210 classes/widgets/social.php:49
+#: lib/classes/modules/customize-module.php:1474
+#: lib/classes/modules/customize-module.php:5183
+#: lib/classes/modules/customize-module.php:5844
+#: lib/classes/modules/customize-module.php:7327
+#: lib/includes/translation.php:497
+msgid "Medium"
+msgstr ""
+
+#: classes/widgets/banner.php:191 classes/widgets/feature.php:100
+#: classes/widgets/highlight-post.php:156 classes/widgets/post.php:203
+#: classes/widgets/project.php:211
+#: lib/classes/modules/customize-module.php:7328
+#: lib/includes/translation.php:811
+msgid "Twist Medium"
+msgstr ""
+
+#: classes/widgets/banner.php:192 classes/widgets/feature.php:101
+#: classes/widgets/highlight-post.php:157 classes/widgets/post.php:204
+#: classes/widgets/project.php:212
+#: lib/classes/modules/customize-module.php:7329
+#: lib/includes/translation.php:498
+msgid "Medium Large"
+msgstr ""
+
+#: classes/widgets/banner.php:193 classes/widgets/feature.php:102
+#: classes/widgets/highlight-post.php:158 classes/widgets/post.php:205
+#: classes/widgets/project.php:213 classes/widgets/social.php:50
+#: lib/classes/modules/customize-module.php:1475
+#: lib/classes/modules/customize-module.php:2070
+#: lib/classes/modules/customize-module.php:5184
+#: lib/classes/modules/customize-module.php:5845
+#: lib/classes/modules/customize-module.php:7330
+#: lib/includes/translation.php:447
+msgid "Large"
+msgstr ""
+
+#: classes/widgets/banner.php:194 classes/widgets/feature.php:103
+#: classes/widgets/highlight-post.php:159 classes/widgets/post.php:206
+#: classes/widgets/project.php:214
+#: lib/classes/modules/customize-module.php:7331
+#: lib/includes/translation.php:810
+msgid "Twist Large"
+msgstr ""
+
+#: classes/widgets/banner.php:195 classes/widgets/feature.php:104
+#: classes/widgets/highlight-post.php:160 classes/widgets/post.php:207
+#: classes/widgets/project.php:215
+#: lib/classes/modules/customize-module.php:1975
+#: lib/classes/modules/customize-module.php:3261
+#: lib/classes/modules/customize-module.php:7332
+#: lib/includes/translation.php:322
+msgid "Full"
+msgstr ""
+
+#: classes/widgets/base.php:50 lib/includes/translation.php:143
+msgid "Choose"
+msgstr ""
+
+#: classes/widgets/contact.php:9 classes/widgets/contact.php:11
+msgid "Fabrique Contact"
+msgstr ""
+
+#: classes/widgets/contact.php:85
+msgid "Contact is now empty"
+msgstr ""
+
+#: classes/widgets/contact.php:104
+msgid "--select default--"
+msgstr ""
+
+#: classes/widgets/contact.php:113
+#: lib/classes/modules/customize-module.php:5119
+#: lib/classes/modules/customize-module.php:5780
+#: lib/classes/modules/customize-module.php:6444
+#: lib/includes/translation.php:757
+msgid "Style"
+msgstr ""
+
+#: classes/widgets/contact.php:115
+#: lib/classes/modules/customize-module.php:1898
+#: lib/includes/translation.php:753
+msgid "Stacked"
+msgstr ""
+
+#: classes/widgets/contact.php:116
+#: lib/classes/modules/customize-module.php:1897
+#: lib/classes/modules/customize-module.php:4717
+#: lib/includes/translation.php:410
+msgid "Inline"
+msgstr ""
+
+#: classes/widgets/contact.php:122 lib/classes/modules/customize-module.php:409
+#: lib/classes/modules/customize-module.php:427
+#: lib/classes/modules/customize-module.php:2680
+#: lib/classes/modules/customize-module.php:3547
+#: lib/classes/modules/customize-module.php:5345
+#: lib/classes/modules/customize-module.php:6051
+#: lib/includes/translation.php:216
+msgid "Default"
+msgstr ""
+
+#: classes/widgets/contact.php:128 lib/includes/translation.php:744
+msgid "Sort By"
+msgstr ""
+
+#: classes/widgets/contact.php:130 classes/widgets/post.php:163
+#: classes/widgets/project.php:171 lib/includes/translation.php:655
+msgid "Recent Publish"
+msgstr ""
+
+#: classes/widgets/contact.php:131 classes/widgets/post.php:164
+#: classes/widgets/project.php:172 lib/includes/translation.php:656
+msgid "Recent Update"
+msgstr ""
+
+#: classes/widgets/contact.php:132 classes/widgets/post.php:166
+#: classes/widgets/project.php:174 lib/includes/translation.php:502
+msgid "Menu Order"
+msgstr ""
+
+#: classes/widgets/contact.php:134 classes/widgets/flickr.php:122
+#: classes/widgets/post.php:165 classes/widgets/project.php:173
+#: lib/includes/translation.php:650
+msgid "Random"
+msgstr ""
+
+#: classes/widgets/contact.php:140 classes/widgets/post.php:161
+#: classes/widgets/project.php:169 lib/includes/translation.php:581
+msgid "Order By"
+msgstr ""
+
+#: classes/widgets/contact.php:142 lib/includes/translation.php:224
+msgid "Descending"
+msgstr ""
+
+#: classes/widgets/contact.php:143 lib/includes/translation.php:42
+msgid "Ascending"
+msgstr ""
+
+#: classes/widgets/feature.php:9 classes/widgets/feature.php:11
+msgid "Fabrique Feature"
+msgstr ""
+
+#: classes/widgets/feature.php:89
+msgid "Image Url"
+msgstr ""
+
+#: classes/widgets/feature.php:112 lib/includes/translation.php:370
+msgid "Icon"
+msgstr ""
+
+#: classes/widgets/feature.php:118 lib/includes/translation.php:371
+msgid "Icon Color"
+msgstr ""
+
+#: classes/widgets/feature.php:125
+msgid "Feature Title"
+msgstr ""
+
+#: classes/widgets/feature.php:132
+msgid "Feature Description"
+msgstr ""
+
+#: classes/widgets/feature.php:139 lib/includes/translation.php:470
+msgid "Link Label"
+msgstr ""
+
+#: classes/widgets/feature.php:146
+msgid "Link URL"
+msgstr ""
+
+#: classes/widgets/feature.php:153 classes/widgets/highlight-post.php:128
+#: classes/widgets/post.php:176 classes/widgets/project.php:184
+#: lib/classes/modules/customize-module.php:4748
+#: lib/includes/translation.php:29
+msgid "Alignment"
+msgstr ""
+
+#: classes/widgets/feature.php:155 classes/widgets/highlight-post.php:130
+#: classes/widgets/post.php:178 classes/widgets/project.php:186
+#: lib/classes/modules/customize-module.php:868
+#: lib/classes/modules/customize-module.php:1846
+#: lib/classes/modules/customize-module.php:1997
+#: lib/classes/modules/customize-module.php:2015
+#: lib/classes/modules/customize-module.php:4275
+#: lib/classes/modules/customize-module.php:4733
+#: lib/classes/modules/customize-module.php:4751
+#: lib/classes/modules/customize-module.php:5222
+#: lib/classes/modules/customize-module.php:5553
+#: lib/classes/modules/customize-module.php:5883
+#: lib/classes/modules/customize-module.php:5994
+#: lib/classes/modules/customize-module.php:6259
+#: lib/classes/modules/customize-module.php:6579
+#: lib/classes/modules/customize-module.php:6752
+#: lib/classes/modules/customize-module.php:6791
+#: lib/classes/modules/customize-module.php:6905
+#: lib/includes/translation.php:454
+msgid "Left"
+msgstr ""
+
+#: classes/widgets/feature.php:156 classes/widgets/highlight-post.php:131
+#: classes/widgets/post.php:179 classes/widgets/project.php:187
+#: lib/classes/modules/customize-module.php:1998
+#: lib/classes/modules/customize-module.php:2016
+#: lib/classes/modules/customize-module.php:4276
+#: lib/classes/modules/customize-module.php:4734
+#: lib/classes/modules/customize-module.php:4752
+#: lib/classes/modules/customize-module.php:5223
+#: lib/classes/modules/customize-module.php:5554
+#: lib/classes/modules/customize-module.php:5884
+#: lib/classes/modules/customize-module.php:6260
+#: lib/includes/translation.php:134
+msgid "Center"
+msgstr ""
+
+#: classes/widgets/feature.php:157 classes/widgets/highlight-post.php:132
+#: classes/widgets/post.php:180 classes/widgets/project.php:188
+#: lib/classes/modules/customize-module.php:869
+#: lib/classes/modules/customize-module.php:1847
+#: lib/classes/modules/customize-module.php:1999
+#: lib/classes/modules/customize-module.php:2017
+#: lib/classes/modules/customize-module.php:4277
+#: lib/classes/modules/customize-module.php:4735
+#: lib/classes/modules/customize-module.php:4753
+#: lib/classes/modules/customize-module.php:5224
+#: lib/classes/modules/customize-module.php:5555
+#: lib/classes/modules/customize-module.php:5885
+#: lib/classes/modules/customize-module.php:5995
+#: lib/classes/modules/customize-module.php:6261
+#: lib/classes/modules/customize-module.php:6580
+#: lib/classes/modules/customize-module.php:6753
+#: lib/classes/modules/customize-module.php:6792
+#: lib/classes/modules/customize-module.php:6906
+#: lib/includes/translation.php:667
+msgid "Right"
+msgstr ""
+
+#: classes/widgets/flickr.php:9 classes/widgets/flickr.php:11
+msgid "Fabrique Flickr"
+msgstr ""
+
+#: classes/widgets/flickr.php:68
+msgid "Flickr ID"
+msgstr ""
+
+#: classes/widgets/flickr.php:75 classes/widgets/instagram.php:123
+msgid "No Spacing"
+msgstr ""
+
+#: classes/widgets/flickr.php:97 classes/widgets/flickr.php:119
+#: classes/widgets/instagram.php:145 classes/widgets/post.php:143
+#: classes/widgets/project.php:151 lib/includes/translation.php:541
+msgid "No. of Items"
+msgstr ""
+
+#: classes/widgets/flickr.php:121
+msgid "Latest"
+msgstr ""
+
+#: classes/widgets/flickr.php:131 classes/widgets/instagram.php:179
+msgid "Hover Animation"
+msgstr ""
+
+#: classes/widgets/flickr.php:133 classes/widgets/highlight-post.php:140
+#: classes/widgets/post.php:188 classes/widgets/project.php:196
+#: lib/classes/menu/nav-menu-edit.php:304
+#: lib/classes/modules/customize-module.php:1454
+#: lib/classes/modules/customize-module.php:1684
+#: lib/classes/modules/customize-module.php:2578
+#: lib/classes/modules/customize-module.php:4166
+#: lib/classes/modules/customize-module.php:5297
+#: lib/classes/modules/customize-module.php:5941
+#: lib/includes/translation.php:538
+msgid "None"
+msgstr ""
+
+#: classes/widgets/flickr.php:134 lib/classes/modules/customize-module.php:5298
+#: lib/classes/modules/customize-module.php:5942
+#: lib/classes/modules/customize-module.php:6716
+#: lib/includes/translation.php:868
+msgid "Zoom"
+msgstr ""
+
+#: classes/widgets/flickr.php:135 lib/classes/modules/customize-module.php:5299
+#: lib/classes/modules/customize-module.php:5943
+#: lib/includes/translation.php:737
+msgid "Slow Zoom"
+msgstr ""
+
+#: classes/widgets/flickr.php:136 lib/classes/modules/customize-module.php:5301
+#: lib/classes/modules/customize-module.php:5945
+#: lib/includes/translation.php:678
+msgid "Rotate"
+msgstr ""
+
+#: classes/widgets/flickr.php:137 lib/classes/modules/customize-module.php:5302
+#: lib/classes/modules/customize-module.php:5946
+#: lib/includes/translation.php:159
+msgid "Colorize"
+msgstr ""
+
+#: classes/widgets/flickr.php:138 lib/classes/modules/customize-module.php:5303
+#: lib/classes/modules/customize-module.php:5947
+#: lib/includes/translation.php:336
+msgid "Greyscale"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:9 classes/widgets/highlight-post.php:11
+msgid "Fabrique Highlight Post"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:113
+msgid "Post ID (Ex: ID1 ID2 ID3)"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:118 classes/widgets/post.php:133
+#: classes/widgets/project.php:141 lib/includes/translation.php:238
+msgid "Display Category"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:123 classes/widgets/post.php:138
+#: classes/widgets/project.php:146
+msgid "Display Separator"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:138 classes/widgets/post.php:186
+#: classes/widgets/project.php:194
+msgid "Thumbnail Style"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:141 classes/widgets/post.php:189
+#: classes/widgets/project.php:197
+#: lib/classes/modules/customize-module.php:1551
+#: lib/classes/modules/customize-module.php:1767
+#: lib/includes/translation.php:752
+msgid "Square"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:142 classes/widgets/post.php:190
+#: classes/widgets/project.php:198
+#: lib/classes/modules/customize-module.php:1768
+#: lib/classes/modules/customize-module.php:6966
+#: lib/classes/modules/customize-module.php:6994
+#: lib/includes/translation.php:149
+msgid "Circle"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:143 classes/widgets/post.php:191
+#: classes/widgets/project.php:199 lib/includes/translation.php:560
+msgid "Number"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:144 classes/widgets/post.php:192
+#: classes/widgets/project.php:200 lib/classes/modules/customize-module.php:740
+msgid "Wide"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:145 classes/widgets/post.php:193
+#: classes/widgets/project.php:201 lib/includes/translation.php:365
+msgid "Hover"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:152 classes/widgets/post.php:199
+#: classes/widgets/project.php:207
+msgid "Thumbnail Size"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:166 classes/widgets/post.php:213
+#: classes/widgets/project.php:221
+#: lib/classes/modules/customize-module.php:5653
+#: lib/classes/modules/customize-module.php:6359
+#: lib/includes/translation.php:271
+msgid "Entry Link To"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:168 classes/widgets/post.php:215
+#: classes/widgets/project.php:223 lib/includes/translation.php:625
+msgid "Post URL"
+msgstr ""
+
+#: classes/widgets/highlight-post.php:169 classes/widgets/post.php:216
+#: classes/widgets/project.php:224 lib/includes/translation.php:34
+msgid "Alternate URL"
+msgstr ""
+
+#: classes/widgets/html.php:9 classes/widgets/html.php:11
+msgid "Fabrique HTML"
+msgstr ""
+
+#: classes/widgets/html.php:37
+msgid "HTML"
+msgstr ""
+
+#: classes/widgets/instagram.php:9
+msgid "Fabrique Instagram"
+msgstr ""
+
+#: classes/widgets/instagram.php:47
+msgid "There is an error occur"
+msgstr ""
+
+#: classes/widgets/instagram.php:101 classes/widgets/twitter.php:84
+msgid "Username"
+msgstr ""
+
+#: classes/widgets/instagram.php:108 classes/widgets/twitter.php:116
+#: lib/includes/translation.php:8
+msgid "Access Token"
+msgstr ""
+
+#: classes/widgets/instagram.php:115 lib/includes/translation.php:321
+msgid "Force Square"
+msgstr ""
+
+#: classes/widgets/post.php:9 classes/widgets/post.php:11
+msgid "Fabrique Post"
+msgstr ""
+
+#: classes/widgets/post.php:125 classes/widgets/project.php:133
+msgid "Categories Filter"
+msgstr ""
+
+#: classes/widgets/post.php:145 classes/widgets/project.php:153
+msgid "all"
+msgstr ""
+
+#: classes/widgets/post.php:167 classes/widgets/project.php:175
+#: lib/classes/modules/customize-module.php:5687
+#: lib/classes/modules/customize-module.php:6393
+#: lib/includes/translation.php:45
+msgid "Author"
+msgstr ""
+
+#: classes/widgets/post.php:169 classes/widgets/project.php:177
+#: lib/includes/translation.php:523
+msgid "Name (Post Slug)"
+msgstr ""
+
+#: classes/widgets/post.php:170 classes/widgets/project.php:178
+#: lib/includes/translation.php:166
+msgid "Comment Count"
+msgstr ""
+
+#: classes/widgets/project.php:9 classes/widgets/project.php:11
+msgid "Fabrique Project"
+msgstr ""
+
+#: classes/widgets/social.php:9 classes/widgets/social.php:11
+msgid "Fabrique Social"
+msgstr ""
+
+#: classes/widgets/social.php:46 lib/includes/translation.php:377
+msgid "Icon Size"
+msgstr ""
+
+#: classes/widgets/social.php:48 lib/classes/modules/customize-module.php:1473
+#: lib/classes/modules/customize-module.php:2069
+#: lib/classes/modules/customize-module.php:5182
+#: lib/classes/modules/customize-module.php:5843
+#: lib/includes/translation.php:739
+msgid "Small"
+msgstr ""
+
+#: classes/widgets/social.php:51
+msgid "X-Large"
+msgstr ""
+
+#: classes/widgets/twitter.php:9
+msgid "Fabrique Twitter"
+msgstr ""
+
+#: classes/widgets/twitter.php:92
+msgid "No. of Tweets to display"
+msgstr ""
+
+#: classes/widgets/twitter.php:100
+msgid "Consumer Key"
+msgstr ""
+
+#: classes/widgets/twitter.php:108
+msgid "Consumer Secret"
+msgstr ""
+
+#: classes/widgets/twitter.php:124
+msgid "Access Token Secret"
+msgstr ""
+
+#: classes/widgets/twitter.php:132
+msgid "Cache Time (hour)"
+msgstr ""
+
+#: includes/blueprint.php:107
+msgid "Choose an image"
+msgstr ""
+
+#: includes/blueprint.php:108
+msgid "Use image"
+msgstr ""
+
+#: lib/classes/customizes/select-control.php:32
+msgid ""
+"You have not created any blueprint block yet. Go to Blueprint Block in "
+"dashboard to create one."
+msgstr ""
+
+#: lib/classes/customizes/select-control.php:60
+msgid "You have not created any menu yet. Go to Appearance > Menu to create."
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:43
+#: lib/classes/modules/customize-module.php:1456
+#: lib/classes/modules/customize-module.php:4168
+#: lib/includes/translation.php:106
+msgid "Brand Color"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:48
+msgid "Light Scheme"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:53
+msgid "Dark Scheme"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:58
+#: lib/includes/translation.php:193
+msgid "Custom Color"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:85
+#: lib/includes/translation.php:636
+msgid "Primary Brand"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:86
+#: lib/includes/translation.php:690
+msgid "Secondary Brand"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:87
+#: lib/classes/customizes/theme-color-control.php:92
+#: lib/includes/translation.php:638
+msgid "Primary Text"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:88
+#: lib/classes/customizes/theme-color-control.php:93
+#: lib/includes/translation.php:692
+msgid "Secondary Text"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:89
+#: lib/classes/customizes/theme-color-control.php:94
+#: lib/includes/translation.php:635
+msgid "Primary Background"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:90
+#: lib/classes/customizes/theme-color-control.php:95
+#: lib/includes/translation.php:689
+msgid "Secondary Background"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:91
+#: lib/classes/customizes/theme-color-control.php:96
+#: lib/classes/modules/customize-module.php:1433
+#: lib/classes/modules/customize-module.php:4145
+#: lib/classes/modules/customize-module.php:6965
+#: lib/classes/modules/customize-module.php:6993
+#: lib/includes/translation.php:92
+msgid "Border"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:97
+msgid "Custom 1 Color"
+msgstr ""
+
+#: lib/classes/customizes/theme-color-control.php:98
+msgid "Custom 2 Color"
+msgstr ""
+
+#: lib/classes/fabrique-importer.php:295
+msgid "Import timeout"
+msgstr ""
+
+#: lib/classes/fabrique-importer.php:320
+#, php-format
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: lib/classes/fabrique-importer.php:329
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: lib/classes/fabrique-importer.php:334
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: lib/classes/fabrique-importer.php:341
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:37
+msgid "Mo"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:38
+msgid "Tu"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:39
+msgid "We"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:40
+msgid "Th"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:41
+msgid "Fr"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:42
+msgid "Sa"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:43
+msgid "Su"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:62
+msgid "Add rule"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:95
+msgid "Every day"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:106
+#, php-format
+msgid "End at %s"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:108
+#, php-format
+msgid "Start at %s"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:110
+#, php-format
+msgid "Open at %s &rsaquo; %s"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:116
+#, php-format
+msgid "Select date and time below, and don't forget to click %s**SAVE**%s"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:138
+msgid "Select Date"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:144
+msgid "*Leave time blank for "
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:151
+msgid "Start Time"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:160
+msgid "End Time"
+msgstr ""
+
+#: lib/classes/menu-pages/settings/timetable.php:168
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:76
+msgid "(Invalid)"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:79
+msgid "(Pending)"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:99
+msgid "sub item"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:116
+msgid "Move up"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:129
+msgid "Move down"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:134
+msgid "Edit Menu Item"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:147 lib/includes/translation.php:261
+msgid "Edit"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:157
+msgid "URL"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:164
+msgid "Navigation Label"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:170
+msgid "Title Attribute"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:180
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:185
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:191
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:197 lib/includes/translation.php:225
+msgid "Description"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:202
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:209
+msgid "Move"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:210
+msgid "Up one"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:211
+msgid "Down one"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:214
+msgid "To the top"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:221
+msgid "Original:"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:236
+#: lib/classes/modules/woocommerce-module.php:98
+#: lib/classes/modules/woocommerce-module.php:119
+#: lib/includes/translation.php:659
+msgid "Remove"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:239 lib/includes/translation.php:126
+msgid "Cancel"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:260
+msgid "Menu Icon"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:267
+msgid "Menu Icon Position"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:269
+#: lib/classes/modules/customize-module.php:4125
+#: lib/classes/modules/customize-module.php:5624
+#: lib/classes/modules/customize-module.php:6330
+#: lib/includes/translation.php:81
+msgid "Before"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:270
+#: lib/classes/modules/customize-module.php:4126
+#: lib/classes/modules/customize-module.php:5625
+#: lib/classes/modules/customize-module.php:6331
+#: lib/includes/translation.php:27
+msgid "After"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:283
+msgid "Mega Menu Blueprint block"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:284
+msgid "(mega menu column will no longer work when blueprint is selected)"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:286
+msgid "--select blueprint--"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:302
+msgid "Mega Menu Columns"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:317
+msgid "Mega Menu/Sub Menu Background Image"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:330
+msgid "Mega Menu/Sub Menu Widgets"
+msgstr ""
+
+#: lib/classes/menu/nav-menu-edit.php:332
+msgid "--select sidebar--"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:88
+msgid "Your Rating"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:121
+msgid ""
+"You did not add your rating. Please go back to resubmit your comment with "
+"rating."
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:141
+#: lib/classes/modules/customize-module.php:6695
+msgid "Rating"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:154
+msgid "Very Poor"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:155
+msgid "Not too bad"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:156
+msgid "Average"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:157
+msgid "Good"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:158
+msgid "Perfect"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:223
+msgid "Rating :"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:255
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:258
+msgid " out of 5"
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:276
+msgid " out of "
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:278
+msgid " based on "
+msgstr ""
+
+#: lib/classes/modules/comment-module.php:400
+msgid "Error, please check if the script has been enququed."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: lib/classes/modules/core-module.php:53 lib/templates/admin-home.php:22
+msgid "Fabrique Core"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:54
+msgid "Fabrique"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:64
+#: lib/classes/modules/core-module.php:65
+msgid "Demos"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:73
+#: lib/classes/modules/core-module.php:74
+msgid "Customizer Manager"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:82
+#: lib/classes/modules/core-module.php:83 lib/includes/translation.php:316
+msgid "Font Manager"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:91
+#: lib/classes/modules/core-module.php:92 lib/templates/admin-demos.php:33
+msgid "System Status"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:102
+msgid "invalid admin nonce"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:126
+msgid "Settings Updated"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:145 lib/includes/translation.php:357
+msgid "Home"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:150
+msgid "Demo"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:155 lib/templates/admin-customizer.php:7
+msgid "Customizer"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:160
+msgid "Fonts"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:164
+msgid "System"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:169
+msgid "Plugins"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:291
+msgid "Masonry Width"
+msgstr ""
+
+#: lib/classes/modules/core-module.php:304
+msgid "Masonry Height"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:31
+msgid "Customizer settings reset"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:37
+msgid "Unable to upload selected file"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:47
+msgid "Import customizer settings completed"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:154
+msgid "Theme Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:158
+msgid "Design"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:162
+#: lib/includes/translation.php:342
+msgid "Header"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:166
+msgid "WooCommerce"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:170
+#: lib/classes/modules/customize-module.php:4018
+#: lib/includes/translation.php:740
+msgid "Social"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:181
+#: lib/includes/translation.php:161
+msgid "Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:182
+msgid "Set the main components' color scheme."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:187
+#: lib/classes/modules/customize-module.php:5329
+#: lib/classes/modules/customize-module.php:6035
+#: lib/classes/modules/woocommerce-module.php:176
+#: lib/classes/modules/woocommerce-module.php:190
+#: lib/classes/modules/woocommerce-module.php:220
+#: lib/includes/translation.php:158
+msgid "Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:188
+msgid "These colors will be used as sync color in color pickers."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:192
+#: lib/classes/modules/customize-module.php:1691
+#: lib/includes/translation.php:478
+msgid "Logo"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:196
+#: lib/classes/modules/customize-module.php:5144
+#: lib/classes/modules/customize-module.php:5805
+#: lib/includes/translation.php:448
+msgid "Layout"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:200
+#: lib/classes/modules/customize-module.php:1223
+#: lib/includes/translation.php:665
+msgid "Responsive"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:205
+msgid "Navigation Bar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:210
+msgid "Mobile Navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:215
+#: lib/includes/translation.php:309
+msgid "Fixed Navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:220
+#: lib/classes/modules/customize-module.php:3767
+#: lib/includes/translation.php:798
+msgid "Topbar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:225
+msgid "Action / Header Widget"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:226
+msgid "Action and header widget will not be applied with side navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:231
+#: lib/classes/modules/customize-module.php:561
+#: lib/classes/modules/customize-module.php:1327
+#: lib/classes/modules/customize-module.php:1488
+#: lib/classes/modules/customize-module.php:2518
+#: lib/classes/modules/customize-module.php:2940
+#: lib/classes/modules/customize-module.php:3209
+#: lib/classes/modules/customize-module.php:5432
+#: lib/classes/modules/customize-module.php:6138
+#: lib/classes/modules/customize-module.php:6207
+#: lib/classes/modules/customize-module.php:6620
+msgid "Typography"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:236
+#: lib/includes/translation.php:346
+msgid "Heading"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:241
+#: lib/includes/translation.php:117
+msgid "Button"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:246
+#: lib/includes/translation.php:128
+msgid "Carousel"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:251
+msgid "Cookies"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:256
+msgid "Page Preloading"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:261
+msgid "Back to top button"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:265
+#: lib/classes/modules/customize-module.php:4524
+#: lib/includes/translation.php:319
+msgid "Footer"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:269
+#: lib/includes/translation.php:595
+msgid "Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:270
+msgid ""
+"Tip: this will apply to archives, search results, tags, categories, and "
+"authors page."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:274 lib/includes/translation.php:84
+msgid "Blog"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:275
+msgid ""
+"Tip: this will apply to index, archives, search results, tags, categories, "
+"and authors page."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:279
+#: lib/includes/translation.php:642
+msgid "Project"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:284
+msgid "Shop"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:289
+#: lib/includes/translation.php:639
+msgid "Product"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:294
+msgid "Site Social"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:295
+msgid "Tip: this will apply with social widgets."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:300
+#: lib/includes/translation.php:741
+msgid "Social Share"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:301
+msgid ""
+"This will apply with anywhere that has social share buttons. (Ex. Single "
+"post, Single product.)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:338
+msgid "Site Default Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:339
+msgid "Select your main scheme of the site."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:342
+#: lib/classes/modules/customize-module.php:358
+#: lib/classes/modules/customize-module.php:375
+#: lib/classes/modules/customize-module.php:392
+#: lib/classes/modules/customize-module.php:410
+#: lib/classes/modules/customize-module.php:428
+#: lib/classes/modules/customize-module.php:1623
+#: lib/classes/modules/customize-module.php:2681
+#: lib/classes/modules/customize-module.php:5346
+#: lib/classes/modules/customize-module.php:6052
+#: lib/includes/translation.php:464
+msgid "Light"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:343
+#: lib/classes/modules/customize-module.php:359
+#: lib/classes/modules/customize-module.php:376
+#: lib/classes/modules/customize-module.php:393
+#: lib/classes/modules/customize-module.php:411
+#: lib/classes/modules/customize-module.php:429
+#: lib/classes/modules/customize-module.php:1624
+#: lib/classes/modules/customize-module.php:2682
+#: lib/classes/modules/customize-module.php:5347
+#: lib/classes/modules/customize-module.php:6053
+#: lib/includes/translation.php:206
+msgid "Dark"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:355
+msgid "Topbar Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:372
+msgid "Navigation Bar Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:389
+msgid "Header Widget Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:406
+msgid "Page Title Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:424
+msgid "Sidebar Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:443
+msgid "Preset Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:444
+msgid "Preset Color will automatically apply all sync colors."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:459
+msgid "Navigation Offcanvas Cursor"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:460
+msgid ""
+"Image of cursor display when offcanvas menu open ,Suggested size 80x80px"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:473
+msgid "Logo on Navigation Bar (Default)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:486
+msgid "Navigation Bar Logo Type"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:489
+#: lib/classes/modules/customize-module.php:5241
+#: lib/classes/modules/woocommerce-module.php:146
+#: lib/includes/translation.php:380
+msgid "Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:490
+#: lib/includes/translation.php:777
+msgid "Text"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:516
+msgid "Logo Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:530
+msgid "Logo on Navigation Bar Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:531
+#: lib/classes/modules/customize-module.php:648
+msgid "Suggested width: Half size of logo image width."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:547
+msgid "Logo Text Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:576
+msgid "Font Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:590
+msgid "Font Size (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:606
+msgid "Letter Spacing (em)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:619
+#: lib/classes/modules/customize-module.php:632
+msgid "Logo on Mobile Navigation Bar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:633
+msgid "Leave blank to use default navigation bar logo"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:647
+msgid "Logo on Mobile Navigation Bar Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:663
+msgid "Logo on Fixed Navigation Bar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:676
+msgid "Logo on Fixed Navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:677
+msgid ""
+"This will apply with logo on \"custom mode\" top fixed navigation bar and "
+"also \"full\" style side navigation bar, leave blank to use the default "
+"navigation bar logo image."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:690
+msgid "Light Scheme Logo Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:691
+msgid ""
+"This will apply only when \"Dark Scheme Logo Image\" has also been uploaded "
+"and apply with only fixed navbar transparent."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:704
+msgid "Dark Scheme Logo Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:705
+msgid ""
+"This will apply only when \"Light Scheme Logo Image\" has also been uploaded "
+"and apply with only fixed navbar transparent."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:719
+msgid "Logo on Fixed Navigation Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:720
+msgid ""
+"Suggested width: Half size of image file width. Note: this will not take "
+"effect with width of logo on \"full\" style side navigation bar which has "
+"constant width 60px."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:735
+msgid "Site Layout"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:739
+msgid "Boxed"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:741
+msgid "Frame"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:770
+msgid "Frame Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:783
+msgid "Frame Width"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:798
+msgid "Site Area Max Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:814
+msgid "Side Padding (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:830
+msgid "Header Cover on Frame"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:831
+msgid "Header will cover on top frame"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:844
+#: lib/classes/modules/customize-module.php:5973
+#: lib/classes/modules/customize-module.php:6558
+#: lib/classes/modules/customize-module.php:6884
+#: lib/includes/translation.php:717
+msgid "Sidebar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:865
+#: lib/classes/modules/customize-module.php:5991
+#: lib/classes/modules/customize-module.php:6576
+#: lib/classes/modules/customize-module.php:6902
+#: lib/includes/translation.php:720
+msgid "Sidebar Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:883
+#: lib/classes/modules/customize-module.php:6009
+#: lib/classes/modules/customize-module.php:6594
+#: lib/classes/modules/customize-module.php:6920
+msgid "Select A Sidebar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:896
+#: lib/classes/modules/customize-module.php:6022
+#: lib/classes/modules/customize-module.php:6607
+#: lib/classes/modules/customize-module.php:6933
+#: lib/includes/translation.php:310
+msgid "Fixed Sidebar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:909
+msgid "Sidebar Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:923
+msgid "Sidebar Width (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:938
+msgid "Sidebar Top Padding (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:939
+msgid "This won't effect with sidebar in single post."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:955
+msgid "Content Background"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:977
+#: lib/classes/modules/customize-module.php:1104
+#: lib/classes/modules/customize-module.php:2424
+#: lib/classes/modules/customize-module.php:2695
+#: lib/classes/modules/customize-module.php:2773
+#: lib/classes/modules/customize-module.php:3021
+#: lib/classes/modules/customize-module.php:3368
+#: lib/classes/modules/customize-module.php:3684
+#: lib/classes/modules/customize-module.php:3916
+#: lib/classes/modules/customize-module.php:4344
+#: lib/classes/modules/customize-module.php:5360
+#: lib/classes/modules/customize-module.php:6066
+#: lib/includes/translation.php:59
+msgid "Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:990
+#: lib/classes/modules/customize-module.php:1117
+#: lib/classes/modules/customize-module.php:2786
+#: lib/classes/modules/customize-module.php:3050
+#: lib/classes/modules/customize-module.php:3397
+#: lib/classes/modules/customize-module.php:4373
+#: lib/classes/modules/customize-module.php:4831
+msgid "Background Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1003
+#: lib/classes/modules/customize-module.php:1130
+#: lib/classes/modules/customize-module.php:2799
+#: lib/classes/modules/customize-module.php:3063
+#: lib/classes/modules/customize-module.php:3410
+#: lib/classes/modules/customize-module.php:4386
+#: lib/classes/modules/customize-module.php:4844
+#: lib/includes/translation.php:64
+msgid "Background Repeat"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1007
+#: lib/classes/modules/customize-module.php:1134
+#: lib/classes/modules/customize-module.php:2803
+#: lib/classes/modules/customize-module.php:3067
+#: lib/classes/modules/customize-module.php:3414
+#: lib/classes/modules/customize-module.php:4390
+#: lib/classes/modules/customize-module.php:4848
+#: lib/includes/translation.php:660
+msgid "Repeat"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1008
+#: lib/classes/modules/customize-module.php:1135
+#: lib/classes/modules/customize-module.php:2804
+#: lib/classes/modules/customize-module.php:3068
+#: lib/classes/modules/customize-module.php:3415
+#: lib/classes/modules/customize-module.php:4391
+#: lib/classes/modules/customize-module.php:4849
+msgid "Repeat-x"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1009
+#: lib/classes/modules/customize-module.php:1136
+#: lib/classes/modules/customize-module.php:2805
+#: lib/classes/modules/customize-module.php:3069
+#: lib/classes/modules/customize-module.php:3416
+#: lib/classes/modules/customize-module.php:4392
+#: lib/classes/modules/customize-module.php:4850
+msgid "Repeat-y"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1010
+#: lib/classes/modules/customize-module.php:1137
+#: lib/classes/modules/customize-module.php:2806
+#: lib/classes/modules/customize-module.php:3070
+#: lib/classes/modules/customize-module.php:3417
+#: lib/classes/modules/customize-module.php:4393
+#: lib/classes/modules/customize-module.php:4851
+#: lib/includes/translation.php:558
+msgid "No Repeat"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1023
+#: lib/classes/modules/customize-module.php:1150
+#: lib/classes/modules/customize-module.php:2819
+#: lib/classes/modules/customize-module.php:3083
+#: lib/classes/modules/customize-module.php:3430
+#: lib/classes/modules/customize-module.php:4406
+#: lib/classes/modules/customize-module.php:4864
+#: lib/includes/translation.php:65
+msgid "Background Size"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1027
+#: lib/classes/modules/customize-module.php:1154
+#: lib/classes/modules/customize-module.php:2823
+#: lib/classes/modules/customize-module.php:3087
+#: lib/classes/modules/customize-module.php:3434
+#: lib/classes/modules/customize-module.php:4410
+#: lib/classes/modules/customize-module.php:4868
+#: lib/classes/modules/customize-module.php:5240
+#: lib/includes/translation.php:48
+msgid "Auto"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1028
+#: lib/classes/modules/customize-module.php:1155
+#: lib/classes/modules/customize-module.php:2824
+#: lib/classes/modules/customize-module.php:3088
+#: lib/classes/modules/customize-module.php:3435
+#: lib/classes/modules/customize-module.php:4411
+#: lib/classes/modules/customize-module.php:4869
+#: lib/includes/translation.php:183
+msgid "Cover"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1029
+#: lib/classes/modules/customize-module.php:1156
+#: lib/classes/modules/customize-module.php:2825
+#: lib/classes/modules/customize-module.php:3089
+#: lib/classes/modules/customize-module.php:3436
+#: lib/classes/modules/customize-module.php:4412
+#: lib/classes/modules/customize-module.php:4870
+#: lib/includes/translation.php:176
+msgid "Contain"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1042
+#: lib/classes/modules/customize-module.php:1169
+#: lib/classes/modules/customize-module.php:2838
+#: lib/classes/modules/customize-module.php:3102
+#: lib/classes/modules/customize-module.php:3449
+#: lib/classes/modules/customize-module.php:4425
+#: lib/classes/modules/customize-module.php:4883
+#: lib/includes/translation.php:63
+msgid "Background Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1046
+#: lib/classes/modules/customize-module.php:1173
+#: lib/classes/modules/customize-module.php:2842
+#: lib/classes/modules/customize-module.php:3106
+#: lib/classes/modules/customize-module.php:3453
+#: lib/classes/modules/customize-module.php:4429
+#: lib/classes/modules/customize-module.php:4887
+#: lib/includes/translation.php:462
+msgid "Left Top"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1047
+#: lib/classes/modules/customize-module.php:1174
+#: lib/classes/modules/customize-module.php:2843
+#: lib/classes/modules/customize-module.php:3107
+#: lib/classes/modules/customize-module.php:3454
+#: lib/classes/modules/customize-module.php:4430
+#: lib/classes/modules/customize-module.php:4888
+#: lib/includes/translation.php:457
+msgid "Left Center"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1048
+#: lib/classes/modules/customize-module.php:1175
+#: lib/classes/modules/customize-module.php:2844
+#: lib/classes/modules/customize-module.php:3108
+#: lib/classes/modules/customize-module.php:3455
+#: lib/classes/modules/customize-module.php:4431
+#: lib/classes/modules/customize-module.php:4889
+#: lib/includes/translation.php:456
+msgid "Left Bottom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1049
+#: lib/classes/modules/customize-module.php:1176
+#: lib/classes/modules/customize-module.php:2845
+#: lib/classes/modules/customize-module.php:3109
+#: lib/classes/modules/customize-module.php:3456
+#: lib/classes/modules/customize-module.php:4432
+#: lib/classes/modules/customize-module.php:4890
+#: lib/includes/translation.php:675
+msgid "Right Top"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1050
+#: lib/classes/modules/customize-module.php:1177
+#: lib/classes/modules/customize-module.php:2846
+#: lib/classes/modules/customize-module.php:3110
+#: lib/classes/modules/customize-module.php:3457
+#: lib/classes/modules/customize-module.php:4433
+#: lib/classes/modules/customize-module.php:4891
+#: lib/includes/translation.php:670
+msgid "Right Center"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1051
+#: lib/classes/modules/customize-module.php:1178
+#: lib/classes/modules/customize-module.php:2847
+#: lib/classes/modules/customize-module.php:3111
+#: lib/classes/modules/customize-module.php:3458
+#: lib/classes/modules/customize-module.php:4434
+#: lib/classes/modules/customize-module.php:4892
+#: lib/includes/translation.php:669
+msgid "Right Bottom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1052
+#: lib/classes/modules/customize-module.php:1179
+#: lib/classes/modules/customize-module.php:2848
+#: lib/classes/modules/customize-module.php:3112
+#: lib/classes/modules/customize-module.php:3459
+#: lib/classes/modules/customize-module.php:4435
+#: lib/classes/modules/customize-module.php:4893
+#: lib/includes/translation.php:139
+msgid "Center Top"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1053
+#: lib/classes/modules/customize-module.php:1180
+#: lib/classes/modules/customize-module.php:2849
+#: lib/classes/modules/customize-module.php:3113
+#: lib/classes/modules/customize-module.php:3460
+#: lib/classes/modules/customize-module.php:4436
+#: lib/classes/modules/customize-module.php:4894
+#: lib/includes/translation.php:136
+msgid "Center Center"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1054
+#: lib/classes/modules/customize-module.php:1181
+#: lib/classes/modules/customize-module.php:2850
+#: lib/classes/modules/customize-module.php:3114
+#: lib/classes/modules/customize-module.php:3461
+#: lib/classes/modules/customize-module.php:4437
+#: lib/classes/modules/customize-module.php:4895
+#: lib/includes/translation.php:135
+msgid "Center Bottom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1067
+#: lib/classes/modules/customize-module.php:1194
+#: lib/classes/modules/customize-module.php:2863
+msgid "Background Attachment Fixed"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1081
+#: lib/includes/translation.php:88
+msgid "Body Background"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1208
+msgid "Boxed Shadow"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1236
+msgid "Parallax Background in mobile"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1237
+msgid "Enable Parallax Background in mobile/tablet device"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1251
+msgid "Global Typography"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1266
+msgid "Global Font Size (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1281
+msgid "Global Line Height"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1282
+#: lib/classes/modules/customize-module.php:5474
+#: lib/classes/modules/customize-module.php:5488
+#: lib/classes/modules/customize-module.php:6180
+#: lib/classes/modules/customize-module.php:6194
+#: lib/classes/modules/customize-module.php:6647
+msgid "Leave blank for default."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1296
+msgid "Heading Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1297
+msgid "Apply to: Sidebar, Footer, Comment, Related Post Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1300
+#: lib/classes/modules/customize-module.php:5122
+#: lib/classes/modules/customize-module.php:5783
+#: lib/classes/modules/customize-module.php:6447
+#: lib/classes/modules/customize-module.php:6964
+#: lib/classes/modules/customize-module.php:6992
+#: lib/includes/translation.php:610
+msgid "Plain"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1301
+#: lib/classes/modules/customize-module.php:2112
+msgid "Underline"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1302
+msgid "Breakline"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1303
+msgid "Shade"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1304
+#: lib/classes/modules/customize-module.php:1432
+#: lib/classes/modules/customize-module.php:2113
+#: lib/classes/modules/customize-module.php:4144
+#: lib/includes/translation.php:299
+msgid "Fill"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1305
+msgid "Leadline"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1344
+msgid "Apply to: Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1427
+#: lib/classes/modules/customize-module.php:4141
+#: lib/includes/translation.php:123
+msgid "Button Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1450
+#: lib/classes/modules/customize-module.php:4162
+msgid "Button Hover Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1455
+#: lib/classes/modules/customize-module.php:4167
+#: lib/includes/translation.php:433
+msgid "Inverse"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1469
+#: lib/includes/translation.php:122
+msgid "Button Size"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1503
+#: lib/includes/translation.php:821
+msgid "Uppercase"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1516
+msgid "Button Border Thickness (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1531
+#: lib/classes/modules/customize-module.php:4196
+#: lib/includes/translation.php:121
+msgid "Button Radius (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1548
+msgid "Carousel Arrow Background"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1552
+msgid "Transparent"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1571
+msgid "Carousel Arrow Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1574
+#: lib/classes/modules/customize-module.php:1803
+#: lib/classes/modules/customize-module.php:4614
+msgid "Thin Arrow"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1575
+#: lib/classes/modules/customize-module.php:1804
+#: lib/classes/modules/customize-module.php:4615
+#: lib/includes/translation.php:41
+msgid "Arrow"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1576
+#: lib/classes/modules/customize-module.php:1805
+#: lib/classes/modules/customize-module.php:4617
+msgid "Thin Chevron"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1577
+#: lib/classes/modules/customize-module.php:1806
+#: lib/classes/modules/customize-module.php:4618
+msgid "Chevron"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1578
+#: lib/classes/modules/customize-module.php:1807
+#: lib/classes/modules/customize-module.php:4619
+msgid "Angle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1579
+#: lib/classes/modules/customize-module.php:1808
+#: lib/classes/modules/customize-module.php:4620
+msgid "Double Angle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1600
+#: lib/classes/modules/customize-module.php:1666
+msgid "Cookies Notice Message"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1601
+msgid ""
+"This cookies will expire in 30 days. To change expiration time, use "
+"add_filter \"cookies_notice_expiration\""
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1620
+msgid "Cookies Notice Box Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1637
+msgid "Cookies Notice Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1650
+#: lib/classes/modules/customize-module.php:3697
+#: lib/classes/modules/customize-module.php:3929
+#: lib/includes/translation.php:62
+msgid "Background Opacity"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1651
+#: lib/classes/modules/customize-module.php:2181
+#: lib/classes/modules/customize-module.php:2438
+#: lib/classes/modules/customize-module.php:2709
+#: lib/classes/modules/customize-module.php:3035
+#: lib/classes/modules/customize-module.php:3382
+#: lib/classes/modules/customize-module.php:3930
+#: lib/classes/modules/customize-module.php:4358
+#: lib/classes/modules/customize-module.php:4663
+#: lib/classes/modules/customize-module.php:4816
+msgid "This option will not take effect on 'default' background color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1680
+msgid "Preload Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1685
+#: lib/includes/translation.php:290
+msgid "Fading Circle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1686
+#: lib/includes/translation.php:251
+msgid "Double Bounce"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1687
+#: lib/includes/translation.php:784
+msgid "Three Bounce"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1688
+#: lib/includes/translation.php:850
+msgid "Wave"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1689
+#: lib/includes/translation.php:676
+msgid "Ring"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1690
+#: lib/includes/translation.php:677
+msgid "Ripple"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1692
+#: lib/includes/translation.php:288
+msgid "Fading Logo"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1705
+msgid "Preload Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1718
+msgid "Preload Logo"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1732
+msgid "Preload Logo Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1733
+msgid "Suggested width: Half size of above uploaded logo image width."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1748
+#: lib/includes/translation.php:67
+msgid "Back To Top Button"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1749
+msgid ""
+"This will apply site wide, you can enable/disable this button of individual "
+"page in blueprint \"page-setting\""
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1764
+msgid "Back To Top Button Background Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1785
+msgid "Back To Top Button Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1800
+msgid "Back To Top Button Arrow Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1829
+msgid "Back To Top Button Arrow Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1842
+msgid "Navigation Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1845
+#: lib/classes/modules/customize-module.php:4715
+#: lib/includes/translation.php:797
+msgid "Top"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1893
+#: lib/includes/translation.php:532
+msgid "Navigation Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1896
+#: lib/includes/translation.php:755
+msgid "Standard"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1899
+#: lib/classes/modules/customize-module.php:1976
+msgid "Minimal"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1900
+msgid "Split"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1956
+msgid "Fullwidth Navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1969
+msgid "Side Navigation Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1974
+msgid "Fixed"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:1994
+msgid "Navigation Menu Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2012
+msgid "Sidenav Menu Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2030
+msgid "Inline Navigation Menu Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2033
+#: lib/includes/translation.php:412
+msgid "Inner"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2034
+#: lib/includes/translation.php:583
+msgid "Outer"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2047
+msgid "Minimal Navigation Menu Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2051
+#: lib/includes/translation.php:324
+msgid "Full Screen"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2052
+msgid "Slide From Right"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2053
+msgid "Off Canvas"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2066
+msgid "Navigation Size"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2071
+#: lib/classes/modules/customize-module.php:3548
+#: lib/classes/modules/customize-module.php:4623
+#: lib/includes/translation.php:188
+msgid "Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2089
+msgid "Navigation Height (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2104
+msgid "Navigation Hover Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2105
+msgid "\"Underline\" will only work with \"top\" menu position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2109
+msgid "Highlight"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2110
+#: lib/includes/translation.php:283
+msgid "Fade"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2111
+#: lib/classes/modules/customize-module.php:2196
+#: lib/classes/modules/customize-module.php:3620
+#: lib/classes/modules/customize-module.php:3852
+#: lib/includes/translation.php:101
+msgid "Bottom Border"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2126
+msgid "Navbar Stacked Extra Options"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2139
+msgid "Stacked Overlap"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2152
+msgid "Stacked Navigation Menu Height (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2167
+msgid "Stacked Navbar Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2180
+msgid "Stacked Navbar Background Opacity (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2209
+#: lib/classes/modules/customize-module.php:3633
+#: lib/classes/modules/customize-module.php:3866
+#: lib/classes/modules/customize-module.php:4181
+msgid "Border Thickness (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2224
+msgid "Navigation Border Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2237
+msgid "Offset"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2238
+msgid ""
+"For top-navigation non-stacked style: leave blank to vertical align middle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2251
+msgid "Logo Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2264
+msgid "Menu Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2277
+msgid "Stacked Logo Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2290
+msgid "Stacked Menu Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2303
+msgid "Side Logo Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2316
+msgid "Side Menu Offset Top (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2329
+msgid "Component"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2342
+msgid "Mega Menu Separator"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2355
+msgid "Search"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2368
+msgid "Cart"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2384
+msgid "Cart Icon"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2388
+msgid "Basket"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2389
+msgid "Cart 1"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2390
+msgid "Cart 2"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2391
+msgid "Shopping Bag 1"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2392
+msgid "Shopping Bag 2"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2406
+msgid "Top Menu Background Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2437
+#: lib/classes/modules/customize-module.php:2708
+#: lib/classes/modules/customize-module.php:3034
+#: lib/classes/modules/customize-module.php:3381
+#: lib/classes/modules/customize-module.php:4357
+#: lib/classes/modules/customize-module.php:5373
+#: lib/classes/modules/customize-module.php:6079
+msgid "Background Opacity (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2454
+msgid "Top Menu Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2478
+#: lib/classes/modules/customize-module.php:2724
+#: lib/classes/modules/customize-module.php:2900
+#: lib/classes/modules/customize-module.php:3169
+#: lib/classes/modules/customize-module.php:3474
+#: lib/classes/modules/customize-module.php:3728
+msgid "Menu Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2491
+#: lib/classes/modules/customize-module.php:2913
+#: lib/classes/modules/customize-module.php:3182
+#: lib/classes/modules/customize-module.php:3487
+#: lib/classes/modules/customize-module.php:3741
+msgid "Menu Active Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2504
+#: lib/classes/modules/customize-module.php:2737
+#: lib/classes/modules/customize-module.php:2926
+#: lib/classes/modules/customize-module.php:3195
+#: lib/classes/modules/customize-module.php:3500
+#: lib/classes/modules/customize-module.php:3754
+msgid "Menu Hover Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2533
+#: lib/classes/modules/customize-module.php:2621
+#: lib/classes/modules/customize-module.php:2955
+#: lib/classes/modules/customize-module.php:3299
+msgid "Menu Uppercase"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2546
+#: lib/classes/modules/customize-module.php:2634
+#: lib/classes/modules/customize-module.php:2969
+#: lib/classes/modules/customize-module.php:3225
+#: lib/classes/modules/customize-module.php:3313
+#: lib/classes/modules/customize-module.php:3713
+msgid "Menu Font Size (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2561
+#: lib/classes/modules/customize-module.php:2649
+#: lib/classes/modules/customize-module.php:2985
+#: lib/classes/modules/customize-module.php:3241
+#: lib/classes/modules/customize-module.php:3329
+msgid "Menu Letter Spacing (em)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2574
+#: lib/includes/translation.php:702
+msgid "Separator"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2596
+msgid "Dropdown Menu"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2662
+msgid "Sub Menu Min Width (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2677
+msgid "Dropdown Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2751
+msgid "Side Menu Background Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2877
+msgid "Side Menu Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:2999
+msgid "Full Menu Background"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3128
+msgid "Full Menu Custom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3151
+msgid "Full Screen Minimal Navigation Axis"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3152
+msgid "Only work with full screen minimal navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3155
+#: lib/includes/translation.php:359
+msgid "Horizontal"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3156
+#: lib/includes/translation.php:835
+msgid "Vertical"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3254
+msgid "Mobile Navigation Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3255
+msgid ""
+"\"Full\" style will use the styling from settings in \"Navigation Bar\" "
+"section."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3260
+msgid "Classic"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3284
+msgid "Menu Typography"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3343
+msgid "Classic Navbar Advance"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3513
+msgid "Fixed Navigation Bar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3530
+msgid "Auto Hide"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3531
+msgid "Hide when scroll down, show when scroll up"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3544
+msgid "Fixed Navigation Bar Mode"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3573
+#: lib/includes/translation.php:348
+msgid "Height"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3588
+msgid "Fixed Navigation Bar Transition Mode"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3592
+msgid "Show at point"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3593
+msgid "Change style at point"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3606
+msgid "Transition Point (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3607
+msgid ""
+"Fixed Navigation will show/change at this position. Leave this blank for "
+"auto transition point."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3648
+msgid "Bottom Border Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3662
+msgid "Fixed Navigation Bar Advance"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3790
+msgid "Topbar in mobile"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3791
+msgid "Enable Topbar in mobile/tablet device"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3804
+msgid "Topbar Column"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3824
+#: lib/includes/translation.php:349
+msgid "Height (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3839
+msgid "Topbar Separator"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3881
+#: lib/includes/translation.php:94
+msgid "Border Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3895
+msgid "Topbar Advance"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3945
+#: lib/classes/modules/customize-module.php:4450
+#: lib/includes/translation.php:781
+msgid "Text Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3958
+#: lib/classes/modules/customize-module.php:4463
+msgid "Link Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3971
+#: lib/classes/modules/customize-module.php:4476
+msgid "Link Hover Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:3984
+msgid "Header Action"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4002
+msgid "Show On Fixed Navigation"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4015
+#: lib/includes/translation.php:14
+msgid "Action Type"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4019
+#: lib/classes/modules/customize-module.php:4224
+#: lib/classes/modules/customize-module.php:5694
+#: lib/classes/modules/customize-module.php:6400
+#: lib/includes/translation.php:468
+msgid "Link"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4020
+#: lib/includes/translation.php:854
+msgid "Widgets"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4068
+msgid "Display on mobile"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4081
+msgid "Action Button Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4094
+msgid "Action Button Label"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4108
+msgid "Action Button Icon"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4122
+msgid "Action Button Icon Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4211
+msgid "Action Setting"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4238
+#: lib/includes/translation.php:577
+msgid "Open link in same tab"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4239
+msgid "to disable opening link in new tab"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4252
+msgid "Header Widget Column"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4272
+#: lib/includes/translation.php:171
+msgid "Content Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4291
+msgid "Header Widget Max Height (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4292
+msgid "Leave this blank for auto."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4305
+msgid "Header Widget Separator"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4319
+msgid "Header Widgets Advanced"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4489
+msgid "Social Component"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4490
+msgid "This will use the link from social section"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4492
+#: lib/classes/modules/customize-module.php:7016
+#: lib/classes/modules/customize-module.php:7284
+msgid "Facebook"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4493
+#: lib/classes/modules/customize-module.php:7030
+#: lib/classes/modules/customize-module.php:7285
+msgid "Twitter"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4494
+#: lib/classes/modules/customize-module.php:7044
+msgid "Instagram"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4495
+#: lib/classes/modules/customize-module.php:7058
+msgid "Youtube"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4496
+#: lib/classes/modules/customize-module.php:7072
+msgid "Vimeo"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4497
+#: lib/classes/modules/customize-module.php:7086
+#: lib/classes/modules/customize-module.php:7290
+msgid "Linkedin"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4498
+#: lib/classes/modules/customize-module.php:7100
+#: lib/classes/modules/customize-module.php:7287
+msgid "Google+"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4499
+#: lib/classes/modules/customize-module.php:7114
+msgid "Skype"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4500
+#: lib/classes/modules/customize-module.php:7128
+#: lib/classes/modules/customize-module.php:7286
+msgid "Pinterest"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4501
+#: lib/classes/modules/customize-module.php:7142
+msgid "Tripadvisor"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4502
+#: lib/classes/modules/customize-module.php:7156
+msgid "Flickr"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4503
+#: lib/classes/modules/customize-module.php:7170
+#: lib/classes/modules/customize-module.php:7289
+msgid "Tumblr"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4504
+msgid "Dribbble"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4505
+#: lib/classes/modules/customize-module.php:7198
+msgid "Behance"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4506
+#: lib/classes/modules/customize-module.php:7212
+#: lib/classes/modules/customize-module.php:7291
+msgid "StumbleUpon"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4509
+#: lib/classes/modules/customize-module.php:7254
+#: lib/includes/translation.php:465
+msgid "Line"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4510
+#: lib/classes/modules/customize-module.php:7268
+msgid "Xing"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4525
+msgid "Enable Footer to apply with pages that are not created from blueprint"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4538
+msgid "Enable Parallax Footer"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4552
+msgid "Select Footer"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4565
+#: lib/classes/modules/customize-module.php:5104
+#: lib/classes/modules/customize-module.php:5765
+#: lib/classes/modules/customize-module.php:6429
+#: lib/includes/translation.php:325
+msgid "Full Width"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4578
+msgid "Breadcrumb Setting"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4591
+msgid "Show Breadcrumb"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4610
+msgid "Separator Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4616
+msgid "Bold Arrow"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4621
+msgid "Caret"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4622
+msgid "Finger"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4636
+msgid "Breadcrumb Text Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4649
+msgid "Breadcrumb Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4662
+msgid "Breadcrumb Background Opacity (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4678
+msgid "Page Title Setting"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4691
+msgid "Show Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4712
+#: lib/includes/translation.php:112
+msgid "Breadcrumb Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4716
+#: lib/classes/modules/customize-module.php:6751
+#: lib/includes/translation.php:100
+msgid "Bottom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4730
+#: lib/includes/translation.php:108
+msgid "Breadcrumb Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4766
+msgid "Page Title Text Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4780
+msgid "Page Title Background"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4802
+msgid "Page Title Background Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4815
+msgid "Page Title Background Opacity (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4909
+msgid "Page Title Label"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4935
+msgid "Blog Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4949
+msgid "Shop Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4963
+msgid "Archive/Taxonomy Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4977
+msgid "Category Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:4991
+msgid "Tag Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5005
+msgid "Search Result Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5019
+msgid "Author Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5033
+msgid "Day Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5047
+msgid "Month Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5061
+msgid "Year Page Title"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5075
+#: lib/classes/modules/customize-module.php:5737
+msgid "Page title's subtitle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5076
+#: lib/classes/modules/customize-module.php:5738
+#: lib/classes/modules/customize-module.php:6415
+msgid "Tip: Leave this blank to disable"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5090
+msgid "Custom Blog Page ID"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5091
+msgid "Leave blank to use default blog index page with below settings."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5123
+#: lib/classes/modules/customize-module.php:5784
+#: lib/classes/modules/customize-module.php:6448
+msgid "Shadow"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5124
+#: lib/classes/modules/customize-module.php:5785
+#: lib/classes/modules/customize-module.php:6449
+#: lib/includes/translation.php:335
+msgid "Gradient"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5147
+#: lib/classes/modules/customize-module.php:5808
+msgid "Grid"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5148
+#: lib/classes/modules/customize-module.php:5809
+msgid "Masonry"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5149
+#: lib/classes/modules/customize-module.php:5810
+msgid "List"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5178
+#: lib/classes/modules/customize-module.php:5839
+msgid "List thumbnail size"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5197
+#: lib/classes/modules/customize-module.php:5858
+msgid "No. Of Columns"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5219
+#: lib/classes/modules/customize-module.php:5880
+msgid "Entry Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5237
+#: lib/includes/translation.php:294
+msgid "Featured Media"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5255
+#: lib/classes/modules/customize-module.php:5899
+#: lib/classes/modules/customize-module.php:6520
+msgid "see the size's detail in admin panel settings > media"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5270
+#: lib/classes/modules/customize-module.php:5914
+#: lib/classes/modules/customize-module.php:6535
+msgid "Image Ratio"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5274
+#: lib/classes/modules/customize-module.php:5918
+#: lib/classes/modules/customize-module.php:6539
+#: lib/includes/translation.php:582
+msgid "Original"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5293
+#: lib/classes/modules/customize-module.php:5937
+msgid "Image Hover Effect"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5300
+#: lib/classes/modules/customize-module.php:5944
+#: lib/includes/translation.php:87
+msgid "Blur"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5316
+#: lib/classes/modules/customize-module.php:5960
+msgid "Entry Border"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5342
+#: lib/classes/modules/customize-module.php:6048
+#: lib/includes/translation.php:270
+msgid "Entry Color Scheme"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5387
+#: lib/classes/modules/customize-module.php:6093
+msgid "Spacing"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5400
+#: lib/classes/modules/customize-module.php:6106
+msgid "Entry Gutter Spacing (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5401
+#: lib/classes/modules/customize-module.php:6107
+#: lib/classes/modules/customize-module.php:6504
+msgid "Spacing between each entry."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5416
+#: lib/classes/modules/customize-module.php:6122
+msgid "Entry Inner Spacing (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5417
+#: lib/classes/modules/customize-module.php:6123
+msgid "Spacing inside each entry content."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5445
+#: lib/classes/modules/customize-module.php:6151
+#: lib/classes/modules/customize-module.php:6633
+#: lib/includes/translation.php:796
+msgid "Title Uppercase"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5458
+#: lib/classes/modules/customize-module.php:6164
+#: lib/classes/modules/customize-module.php:6660
+msgid "Entry Title Font Size (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5473
+#: lib/classes/modules/customize-module.php:6179
+#: lib/classes/modules/customize-module.php:6646
+msgid "Title Letter Spacing (em)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5487
+#: lib/classes/modules/customize-module.php:6193
+#: lib/includes/translation.php:793
+msgid "Title Line Height"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5501
+msgid "Blog Advance"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5514
+#: lib/classes/modules/customize-module.php:6220
+msgid "Pagination Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5518
+#: lib/classes/modules/customize-module.php:6224
+#: lib/includes/translation.php:598
+msgid "Pagination"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5519
+#: lib/classes/modules/customize-module.php:6225
+#: lib/includes/translation.php:155
+msgid "Click To Load"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5520
+#: lib/classes/modules/customize-module.php:6226
+#: lib/includes/translation.php:687
+msgid "Scroll To Load"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5533
+#: lib/classes/modules/customize-module.php:6239
+msgid "Show Filter Bar"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5550
+msgid "Blog Filter Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5568
+#: lib/classes/modules/customize-module.php:6274
+#: lib/includes/translation.php:303
+msgid "Filter Sorting"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5572
+#: lib/classes/modules/customize-module.php:6278
+#: lib/includes/translation.php:621
+msgid "Post Order"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5573
+#: lib/classes/modules/customize-module.php:6279
+msgid "A - Z"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5574
+#: lib/classes/modules/customize-module.php:6280
+msgid "Z - A"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5575
+#: lib/classes/modules/customize-module.php:6281
+#: lib/includes/translation.php:201
+msgid "Custom Order"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5588
+#: lib/classes/modules/customize-module.php:6294
+msgid "Excerpt Message"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5589
+#: lib/classes/modules/customize-module.php:6295
+msgid ""
+"Use post excerpt or post content as an entry's excerpt. Don't forget to put "
+"<!--more--> in the post when use the content."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5593
+#: lib/classes/modules/customize-module.php:6299
+#: lib/includes/translation.php:823
+msgid "Use Excerpt"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5594
+#: lib/classes/modules/customize-module.php:6300
+#: lib/includes/translation.php:822
+msgid "Use Content"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5607
+#: lib/classes/modules/customize-module.php:6313
+#: lib/includes/translation.php:277
+msgid "Excerpt Length"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5608
+#: lib/classes/modules/customize-module.php:6314
+msgid "Input no. of characters to limit excerpt length"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5621
+#: lib/classes/modules/customize-module.php:6327
+#: lib/includes/translation.php:653
+msgid "Read More Icon Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5638
+#: lib/classes/modules/customize-module.php:6344
+#: lib/includes/translation.php:654
+msgid "Read More Message"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5639
+#: lib/classes/modules/customize-module.php:6345
+msgid "change to your own 'Read More' link message"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5657
+#: lib/classes/modules/customize-module.php:6363
+#: lib/includes/translation.php:722
+msgid "Single Post"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5658
+#: lib/classes/modules/customize-module.php:6364
+#: lib/includes/translation.php:33
+msgid "Alternate Link"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5671
+#: lib/classes/modules/customize-module.php:6377
+msgid "Open link in new tab"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5684
+#: lib/classes/modules/customize-module.php:6390
+#: lib/classes/modules/customize-module.php:6690
+msgid "Entry Component"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5686
+#: lib/classes/modules/customize-module.php:6392
+#: lib/classes/modules/customize-module.php:6692
+#: lib/includes/translation.php:494
+msgid "Media"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5688
+#: lib/classes/modules/customize-module.php:6394
+#: lib/includes/translation.php:132
+msgid "Category"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5689
+#: lib/classes/modules/customize-module.php:6395
+#: lib/includes/translation.php:773
+msgid "Tag"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5691
+#: lib/classes/modules/customize-module.php:6397
+#: lib/classes/modules/customize-module.php:6694
+msgid "Excerpt"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5692
+#: lib/classes/modules/customize-module.php:6398
+#: lib/includes/translation.php:164
+msgid "Comment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5693
+#: lib/classes/modules/customize-module.php:6399
+msgid "Date"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5708
+msgid "Custom Slug"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5709
+msgid ""
+"After update this option, go to Setting -> Permalinks and \"save\" to update"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5723
+msgid "Custom Project Page ID"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5724
+msgid "Leave blank to use default archive page with below settings."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:5752
+msgid "No. of Project per page"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6256
+#: lib/includes/translation.php:302
+msgid "Filter Alignment"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6414
+msgid "Shop title's subtitle"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6467
+msgid "No. of Products per Page"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6468
+msgid "No. of Products show in shop, archive page."
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6503
+#: lib/includes/translation.php:338
+msgid "Gutter Spacing (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6675
+msgid "Entry Price Font Size (px)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6696
+msgid "Add To Cart"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6697
+#: lib/includes/translation.php:632
+msgid "Price"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6711
+msgid "Action On Image"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6712
+msgid "Gallery image action, click to open light box or hover to zoom"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6715
+msgid "Light Box"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6717
+msgid "Both"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6730
+msgid "Variation Mode"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6731
+msgid ""
+"Variable product select style, \"radio\" mode can upload thumbnail image in "
+"\"product attribute\" edit page"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6734
+msgid "Select"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6735
+msgid "Radio"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6748
+msgid "Thumbnail Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6766
+msgid "No. of Thumbnail Display"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6788
+msgid "Product Detail Section Position"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6805
+msgid "Product Detail Section Width (%)"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6820
+#: lib/includes/translation.php:169
+msgid "Components"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6833
+msgid "Show Related Product"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6849
+msgid "Related Product Columns"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6871
+msgid "Show Social Share"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6946
+msgid "Social Auto Color"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6947
+msgid "Auto color will apply each social brand color to icon"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6961
+#: lib/includes/translation.php:378
+msgid "Icon Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6967
+#: lib/classes/modules/customize-module.php:6995
+#: lib/includes/translation.php:97
+msgid "Border Square"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6968
+#: lib/classes/modules/customize-module.php:6996
+#: lib/includes/translation.php:300
+msgid "Fill Square"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:6989
+#: lib/includes/translation.php:373
+msgid "Icon Hover Style"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:7184
+msgid "dribbble"
+msgstr ""
+
+#: lib/classes/modules/customize-module.php:7282
+msgid "Social Share Component"
+msgstr ""
+
+#: lib/classes/modules/font-module.php:211
+msgid "Font settings has been updated"
+msgstr ""
+
+#: lib/classes/modules/font-module.php:217
+msgid "Upload Failed, Please input font family name and upload again."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:232
+msgid "Custom font with same family name exists."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:269
+msgid "Custom fonts updated."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:276
+msgid "Please enter both API key and Kit ID."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:290
+msgid "Fetch Typekit fonts error."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:306
+msgid "Unauthorized. Please check your typekit credentials"
+msgstr ""
+
+#: lib/classes/modules/font-module.php:309
+msgid "Typekit fonts have been fetched."
+msgstr ""
+
+#: lib/classes/modules/font-module.php:317
+msgid "Google font reloaded."
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:38
+msgid "Custom Widget"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:104
+msgid "bad_request"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:105
+msgid "Bad Request"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:152
+#: lib/classes/modules/widget-module.php:188
+msgid "update_option_failed"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:153
+#: lib/classes/modules/widget-module.php:189
+msgid "Failed to update sidebar"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:160
+#: lib/classes/modules/widget-module.php:177
+msgid "invalid_sidebar_name"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:161
+#: lib/classes/modules/widget-module.php:178
+msgid "Please try a different sidebar name"
+msgstr ""
+
+#: lib/classes/modules/widget-module.php:292
+msgid "Menu Style: "
+msgstr ""
+
+#: lib/classes/modules/woocommerce-module.php:97
+#: lib/classes/modules/woocommerce-module.php:118
+#: lib/includes/translation.php:818
+msgid "Upload"
+msgstr ""
+
+#: lib/classes/modules/woocommerce-module.php:100
+#: lib/classes/modules/woocommerce-module.php:121
+msgid "Upload thumbnail to use as a variation. Recommended size 80x80."
+msgstr ""
+
+#: lib/classes/modules/woocommerce-module.php:178
+#: lib/classes/modules/woocommerce-module.php:195
+msgid "Input color code or color name to display as a variation."
+msgstr ""
+
+#: lib/classes/modules/woocommerce-module.php:233
+msgid "Empty"
+msgstr ""
+
+#: lib/classes/modules/woocommerce-module.php:289
+msgid "Biggest Saving"
+msgstr ""
+
+#: lib/fabrique-core.php:82
+msgctxt "fabrique-core"
+msgid "Blueprint Block"
+msgstr ""
+
+#: lib/fabrique-core.php:83
+msgid "Add New Blueprint Block"
+msgstr ""
+
+#: lib/fabrique-core.php:84
+msgid "Edit Blueprint Block"
+msgstr ""
+
+#: lib/fabrique-core.php:85
+msgid "New Blueprint Block"
+msgstr ""
+
+#: lib/fabrique-core.php:86
+msgid "View Blueprint Block"
+msgstr ""
+
+#: lib/fabrique-core.php:87
+msgid "All Blueprint Block"
+msgstr ""
+
+#: lib/includes/helpers.php:274 lib/includes/helpers.php:289
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: lib/includes/helpers.php:277 lib/includes/helpers.php:292
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: lib/includes/helpers.php:282
+msgid "Could not get instagram access token."
+msgstr ""
+
+#: lib/includes/translation.php:7
+msgid "Accept"
+msgstr ""
+
+#: lib/includes/translation.php:9
+msgid "Accordion"
+msgstr ""
+
+#: lib/includes/translation.php:10
+msgid "Accordion will be closed at initial state"
+msgstr ""
+
+#: lib/includes/translation.php:11
+msgid ""
+"You can use link to trigger accordion by using link \"#accordion-{{name}}-"
+"{{index}}\""
+msgstr ""
+
+#: lib/includes/translation.php:12
+msgid "Leave blank for default or input number start with 1"
+msgstr ""
+
+#: lib/includes/translation.php:13
+msgid "Action"
+msgstr ""
+
+#: lib/includes/translation.php:15
+msgid "Action when image is clicked"
+msgstr ""
+
+#: lib/includes/translation.php:16
+msgid "Adaptive Height"
+msgstr ""
+
+#: lib/includes/translation.php:17
+msgid "Add"
+msgstr ""
+
+#: lib/includes/translation.php:18
+msgid "Add Button"
+msgstr ""
+
+#: lib/includes/translation.php:19
+msgid "Add Gallery"
+msgstr ""
+
+#: lib/includes/translation.php:20
+msgid "Add Image"
+msgstr ""
+
+#: lib/includes/translation.php:21
+msgid "Add Media"
+msgstr ""
+
+#: lib/includes/translation.php:22
+msgid "Add New Section"
+msgstr ""
+
+#: lib/includes/translation.php:23
+msgid "Add New Sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:24
+msgid "Add Quote"
+msgstr ""
+
+#: lib/includes/translation.php:25
+msgid "Add to cart"
+msgstr ""
+
+#: lib/includes/translation.php:26
+msgid "Add Video"
+msgstr ""
+
+#: lib/includes/translation.php:28
+msgid "Align center on mobile"
+msgstr ""
+
+#: lib/includes/translation.php:30
+msgid "All"
+msgstr ""
+
+#: lib/includes/translation.php:31
+msgid "All Categories"
+msgstr ""
+
+#: lib/includes/translation.php:32
+msgid "Alternate Background"
+msgstr ""
+
+#: lib/includes/translation.php:35
+msgid "Alternate Color"
+msgstr ""
+
+#: lib/includes/translation.php:36
+msgid "Animation"
+msgstr ""
+
+#: lib/includes/translation.php:37
+msgid "API Key"
+msgstr ""
+
+#: lib/includes/translation.php:38
+msgid "Apply with meta and category font style"
+msgstr ""
+
+#: lib/includes/translation.php:39
+msgid "Will apply with only single slide display"
+msgstr ""
+
+#: lib/includes/translation.php:40
+msgid "April"
+msgstr ""
+
+#: lib/includes/translation.php:43
+msgid "Audio"
+msgstr ""
+
+#: lib/includes/translation.php:44
+msgid "August"
+msgstr ""
+
+#: lib/includes/translation.php:46
+msgid "Author Color"
+msgstr ""
+
+#: lib/includes/translation.php:47
+msgid "Author Style"
+msgstr ""
+
+#: lib/includes/translation.php:49
+msgid "Auto Color"
+msgstr ""
+
+#: lib/includes/translation.php:50
+msgid "\"auto\" will use each post-format featured media"
+msgstr ""
+
+#: lib/includes/translation.php:51
+msgid "Autoplay"
+msgstr ""
+
+#: lib/includes/translation.php:52
+msgid "Autoplay On Hover"
+msgstr ""
+
+#: lib/includes/translation.php:53
+msgid "run autoplay even when mouse hover on slide"
+msgstr ""
+
+#: lib/includes/translation.php:54
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+#: lib/includes/translation.php:55
+msgid "Avatar Position"
+msgstr ""
+
+#: lib/includes/translation.php:57
+msgid "Background"
+msgstr ""
+
+#: lib/includes/translation.php:58
+msgid "Background Animation"
+msgstr ""
+
+#: lib/includes/translation.php:60
+msgid "Background Extend"
+msgstr ""
+
+#: lib/includes/translation.php:61
+msgid "Background Fixed"
+msgstr ""
+
+#: lib/includes/translation.php:66
+msgid "Background Type"
+msgstr ""
+
+#: lib/includes/translation.php:68
+msgid "Banner"
+msgstr ""
+
+#: lib/includes/translation.php:69
+msgid "Banner Font Family"
+msgstr ""
+
+#: lib/includes/translation.php:70
+msgid "Banner Letter Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:71
+msgid "Banner Line Height"
+msgstr ""
+
+#: lib/includes/translation.php:72
+msgid "Banner Link"
+msgstr ""
+
+#: lib/includes/translation.php:73
+msgid "Banner Text"
+msgstr ""
+
+#: lib/includes/translation.php:74
+msgid "Banner Uppercase"
+msgstr ""
+
+#: lib/includes/translation.php:75
+msgid "Bar Axis"
+msgstr ""
+
+#: lib/includes/translation.php:76
+msgid "Bar Height (px)"
+msgstr ""
+
+#: lib/includes/translation.php:77
+msgid "Bar Width (px or %)"
+msgstr ""
+
+#: lib/includes/translation.php:78
+msgid "Base Background"
+msgstr ""
+
+#: lib/includes/translation.php:79
+msgid "Basic"
+msgstr ""
+
+#: lib/includes/translation.php:80
+msgid "\"Basic\" varies on parent color scheme"
+msgstr ""
+
+#: lib/includes/translation.php:82
+msgid "Beginner"
+msgstr ""
+
+#: lib/includes/translation.php:83
+msgid ""
+"To display background from featured image, please input \"featured-image\" "
+"string."
+msgstr ""
+
+#: lib/includes/translation.php:85
+msgid "Blueprint"
+msgstr ""
+
+#: lib/includes/translation.php:86
+msgid "Blueprint Block"
+msgstr ""
+
+#: lib/includes/translation.php:89
+msgid "Body Bg Color"
+msgstr ""
+
+#: lib/includes/translation.php:90
+msgid "Body Min Height"
+msgstr ""
+
+#: lib/includes/translation.php:91
+msgid "Body Side Space (px)"
+msgstr ""
+
+#: lib/includes/translation.php:93
+msgid "Border Bottom"
+msgstr ""
+
+#: lib/includes/translation.php:95
+msgid "Border Radius (px)"
+msgstr ""
+
+#: lib/includes/translation.php:96
+msgid "Border Radius (%)"
+msgstr ""
+
+#: lib/includes/translation.php:98
+msgid "Border Thickness"
+msgstr ""
+
+#: lib/includes/translation.php:99
+msgid "Border Top"
+msgstr ""
+
+#: lib/includes/translation.php:102
+msgid "Box"
+msgstr ""
+
+#: lib/includes/translation.php:103
+msgid "Box Shadow"
+msgstr ""
+
+#: lib/includes/translation.php:104
+msgid "Box Style"
+msgstr ""
+
+#: lib/includes/translation.php:105
+msgid "Brand"
+msgstr ""
+
+#: lib/includes/translation.php:107
+msgid "Breadcrumb"
+msgstr ""
+
+#: lib/includes/translation.php:109
+msgid "Breadcrumb Color"
+msgstr ""
+
+#: lib/includes/translation.php:110
+msgid "Breadcrumb Bg Color"
+msgstr ""
+
+#: lib/includes/translation.php:111
+msgid "Breadcrumb Opacity"
+msgstr ""
+
+#: lib/includes/translation.php:113
+msgid "Breadcrumb Scheme"
+msgstr ""
+
+#: lib/includes/translation.php:114
+msgid "Breadcrumb Text"
+msgstr ""
+
+#: lib/includes/translation.php:115
+msgid "Bullet"
+msgstr ""
+
+#: lib/includes/translation.php:116
+msgid "Bullet Style"
+msgstr ""
+
+#: lib/includes/translation.php:118
+msgid "Button Color"
+msgstr ""
+
+#: lib/includes/translation.php:119
+msgid "Button Label"
+msgstr ""
+
+#: lib/includes/translation.php:120
+msgid "Button Link"
+msgstr ""
+
+#: lib/includes/translation.php:124
+msgid "By "
+msgstr ""
+
+#: lib/includes/translation.php:127
+msgid "Caption"
+msgstr ""
+
+#: lib/includes/translation.php:129
+msgid "Carousel Height (px)"
+msgstr ""
+
+#: lib/includes/translation.php:130
+msgid "Will force single slide display, cannot use with variable width"
+msgstr ""
+
+#: lib/includes/translation.php:131
+msgid "Categories here"
+msgstr ""
+
+#: lib/includes/translation.php:133
+msgid "Category Style"
+msgstr ""
+
+#: lib/includes/translation.php:137
+msgid "Center Mode"
+msgstr ""
+
+#: lib/includes/translation.php:138
+msgid "Center Padding"
+msgstr ""
+
+#: lib/includes/translation.php:140
+msgid "change to your own \"Read More\" link message"
+msgstr ""
+
+#: lib/includes/translation.php:141
+msgid "Change section to Section Blueprint"
+msgstr ""
+
+#: lib/includes/translation.php:142
+msgid "Change section to Section Default"
+msgstr ""
+
+#: lib/includes/translation.php:144
+msgid "Choose Blueprint"
+msgstr ""
+
+#: lib/includes/translation.php:145
+msgid "Choose default to use the global setting"
+msgstr ""
+
+#: lib/includes/translation.php:146
+msgid "Choose Sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:147
+msgid "Choose A Template"
+msgstr ""
+
+#: lib/includes/translation.php:148
+msgid "Choose \"transparent\" to disable alternate row"
+msgstr ""
+
+#: lib/includes/translation.php:150
+msgid "Circle Diameter (px)"
+msgstr ""
+
+#: lib/includes/translation.php:151
+msgid "Cleaning Up"
+msgstr ""
+
+#: lib/includes/translation.php:152
+msgid "Click"
+msgstr ""
+
+#: lib/includes/translation.php:153
+msgid "click to edit blueprint block"
+msgstr ""
+
+#: lib/includes/translation.php:154
+msgid "Click To Export"
+msgstr ""
+
+#: lib/includes/translation.php:156
+msgid "Client"
+msgstr ""
+
+#: lib/includes/translation.php:157
+msgid "Close By Default"
+msgstr ""
+
+#: lib/includes/translation.php:160
+msgid "Color Bar"
+msgstr ""
+
+#: lib/includes/translation.php:162
+msgid "Column"
+msgstr ""
+
+#: lib/includes/translation.php:163
+msgid "Column Border Color"
+msgstr ""
+
+#: lib/includes/translation.php:165
+msgid "Comment Bg Color"
+msgstr ""
+
+#: lib/includes/translation.php:167
+msgid "Comment list and comment box."
+msgstr ""
+
+#: lib/includes/translation.php:168
+msgid "Comment Scheme"
+msgstr ""
+
+#: lib/includes/translation.php:170
+msgid "Content"
+msgstr ""
+
+#: lib/includes/translation.php:172
+msgid "Content Fade"
+msgstr ""
+
+#: lib/includes/translation.php:173
+msgid "Content Fade Option will apply only when parallax speed is not 0."
+msgstr ""
+
+#: lib/includes/translation.php:174
+msgid "Content from classic editor of WordPress."
+msgstr ""
+
+#: lib/includes/translation.php:175
+msgid "Contact Form"
+msgstr ""
+
+#: lib/includes/translation.php:177
+msgid "Content Max Width"
+msgstr ""
+
+#: lib/includes/translation.php:178
+msgid "Content Popup"
+msgstr ""
+
+#: lib/includes/translation.php:179
+msgid "Copied"
+msgstr ""
+
+#: lib/includes/translation.php:180
+msgid "Copy"
+msgstr ""
+
+#: lib/includes/translation.php:181
+msgid "Countdown"
+msgstr ""
+
+#: lib/includes/translation.php:182
+msgid "Counter"
+msgstr ""
+
+#: lib/includes/translation.php:184
+msgid "Currency"
+msgstr ""
+
+#: lib/includes/translation.php:185
+msgid "Currency Position"
+msgstr ""
+
+#: lib/includes/translation.php:186
+msgid "Current Page Name"
+msgstr ""
+
+#: lib/includes/translation.php:187
+msgid "Cursor"
+msgstr ""
+
+#: lib/includes/translation.php:189
+msgid "Custom A Font"
+msgstr ""
+
+#: lib/includes/translation.php:190
+msgid "Custom B Font"
+msgstr ""
+
+#: lib/includes/translation.php:191
+msgid "Custom Background"
+msgstr ""
+
+#: lib/includes/translation.php:192
+msgid "Custom C Font"
+msgstr ""
+
+#: lib/includes/translation.php:194
+msgid "Custom D Font"
+msgstr ""
+
+#: lib/includes/translation.php:195
+msgid "Custom E Font"
+msgstr ""
+
+#: lib/includes/translation.php:196
+msgid "Custom F Font"
+msgstr ""
+
+#: lib/includes/translation.php:197
+msgid "Custom Font"
+msgstr ""
+
+#: lib/includes/translation.php:198
+msgid "Custom G Font"
+msgstr ""
+
+#: lib/includes/translation.php:199
+msgid "Custom H Font"
+msgstr ""
+
+#: lib/includes/translation.php:200
+msgid "Custom Hover Color"
+msgstr ""
+
+#: lib/includes/translation.php:202
+msgid "Custom Post Type"
+msgstr ""
+
+#: lib/includes/translation.php:203
+msgid "Custom 1"
+msgstr ""
+
+#: lib/includes/translation.php:204
+msgid "Custom 2"
+msgstr ""
+
+#: lib/includes/translation.php:207
+msgid "Dark Border"
+msgstr ""
+
+#: lib/includes/translation.php:208
+msgid "Dark Primary Background"
+msgstr ""
+
+#: lib/includes/translation.php:209
+msgid "Dark Primary Text"
+msgstr ""
+
+#: lib/includes/translation.php:210
+msgid "Dark Secondary Background"
+msgstr ""
+
+#: lib/includes/translation.php:211
+msgid "Dark Secondary Text"
+msgstr ""
+
+#: lib/includes/translation.php:212
+msgid "Day"
+msgstr ""
+
+#: lib/includes/translation.php:213
+msgid "days"
+msgstr ""
+
+#: lib/includes/translation.php:214
+msgid "Day (DD)"
+msgstr ""
+
+#: lib/includes/translation.php:215
+msgid "December"
+msgstr ""
+
+#: lib/includes/translation.php:217
+msgid "Default Active Index"
+msgstr ""
+
+#: lib/includes/translation.php:218
+msgid "\"Default\" will use value from customizer setting"
+msgstr ""
+
+#: lib/includes/translation.php:219
+msgid "Delay Time (ms)"
+msgstr ""
+
+#: lib/includes/translation.php:220
+msgid "Delete"
+msgstr ""
+
+#: lib/includes/translation.php:221
+msgid "Are you sure to delete this row ?"
+msgstr ""
+
+#: lib/includes/translation.php:222
+msgid "Are you sure to delete this section ?"
+msgstr ""
+
+#: lib/includes/translation.php:223
+msgid "Are you sure to delete this template ?"
+msgstr ""
+
+#: lib/includes/translation.php:226
+msgid "Detail"
+msgstr ""
+
+#: lib/includes/translation.php:227
+msgid "Detail Color"
+msgstr ""
+
+#: lib/includes/translation.php:228
+msgid "Detail Letter Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:229
+msgid "Detail Uppercase"
+msgstr ""
+
+#: lib/includes/translation.php:230
+msgid "Difficulty"
+msgstr ""
+
+#: lib/includes/translation.php:231
+msgid "Disable"
+msgstr ""
+
+#: lib/includes/translation.php:232
+msgid "Disable \"All\""
+msgstr ""
+
+#: lib/includes/translation.php:233
+msgid "Disable Hover Action"
+msgstr ""
+
+#: lib/includes/translation.php:234
+msgid "Disc"
+msgstr ""
+
+#: lib/includes/translation.php:235
+msgid "Display Author"
+msgstr ""
+
+#: lib/includes/translation.php:236
+msgid "Display Author Box"
+msgstr ""
+
+#: lib/includes/translation.php:237
+msgid "Display Breadcrumb"
+msgstr ""
+
+#: lib/includes/translation.php:239
+msgid "Display No. of comment"
+msgstr ""
+
+#: lib/includes/translation.php:240
+msgid "Display Date"
+msgstr ""
+
+#: lib/includes/translation.php:241
+msgid "Display Inline"
+msgstr ""
+
+#: lib/includes/translation.php:242
+msgid ""
+"This part will display content of each single menu excerpt. Please fill in "
+"the excerpt field of single menu to make it visible."
+msgstr ""
+
+#: lib/includes/translation.php:243
+msgid "Display Print Button"
+msgstr ""
+
+#: lib/includes/translation.php:244
+msgid "Display Tag"
+msgstr ""
+
+#: lib/includes/translation.php:245
+msgid "Display Thumbnail"
+msgstr ""
+
+#: lib/includes/translation.php:246
+msgid ""
+"Enter multiple hashtags with \",\" between each other, for eg. tag1,tag2,tag3"
+msgstr ""
+
+#: lib/includes/translation.php:247
+msgid "Divider"
+msgstr ""
+
+#: lib/includes/translation.php:248
+msgid "Divider Width"
+msgstr ""
+
+#: lib/includes/translation.php:249
+msgid "Done"
+msgstr ""
+
+#: lib/includes/translation.php:250
+msgid "Double Border"
+msgstr ""
+
+#: lib/includes/translation.php:252
+msgid "Double click to add images"
+msgstr ""
+
+#: lib/includes/translation.php:253
+msgid "Double click to edit"
+msgstr ""
+
+#: lib/includes/translation.php:254
+msgid "Dot"
+msgstr ""
+
+#: lib/includes/translation.php:255
+msgid "Down"
+msgstr ""
+
+#: lib/includes/translation.php:256
+msgid " then drag 'n drop an element in here"
+msgstr ""
+
+#: lib/includes/translation.php:257
+msgid "Drag and drop item here."
+msgstr ""
+
+#: lib/includes/translation.php:258
+msgid "Duplicate"
+msgstr ""
+
+#: lib/includes/translation.php:259
+msgid "Duration (ms)"
+msgstr ""
+
+#: lib/includes/translation.php:262
+msgid "Edit Background"
+msgstr ""
+
+#: lib/includes/translation.php:263
+msgid "Edit Row Layout"
+msgstr ""
+
+#: lib/includes/translation.php:264
+msgid "Electronic"
+msgstr ""
+
+#: lib/includes/translation.php:265
+msgid "Element"
+msgstr ""
+
+#: lib/includes/translation.php:266
+msgid "Enable"
+msgstr ""
+
+#: lib/includes/translation.php:267
+msgid ""
+"You can use link to trigger it by using link \"#entries-{{name}}-{{taxonomy-"
+"slug}}\""
+msgstr ""
+
+#: lib/includes/translation.php:268
+msgid "Entry Background"
+msgstr ""
+
+#: lib/includes/translation.php:269
+msgid "Entry Bg Opacity"
+msgstr ""
+
+#: lib/includes/translation.php:272
+msgid ""
+"URL to link from this post entry, **this will override the setting \"Entry "
+"Link To\" of an item"
+msgstr ""
+
+#: lib/includes/translation.php:273
+msgid "Equal Height Group"
+msgstr ""
+
+#: lib/includes/translation.php:274
+msgid "Group Name of items to be equal height"
+msgstr ""
+
+#: lib/includes/translation.php:275
+msgid "Excerpt Content"
+msgstr ""
+
+#: lib/includes/translation.php:276
+msgid "use Content or Excerpt as an entry's excerpt"
+msgstr ""
+
+#: lib/includes/translation.php:278
+msgid "input no. of characters to limit excerpt length"
+msgstr ""
+
+#: lib/includes/translation.php:279
+msgid "Expire (day)"
+msgstr ""
+
+#: lib/includes/translation.php:280
+msgid "External"
+msgstr ""
+
+#: lib/includes/translation.php:281
+msgid "External Video"
+msgstr ""
+
+#: lib/includes/translation.php:284
+msgid "Fade In"
+msgstr ""
+
+#: lib/includes/translation.php:285
+msgid "Fade In Left"
+msgstr ""
+
+#: lib/includes/translation.php:286
+msgid "Fade In Right"
+msgstr ""
+
+#: lib/includes/translation.php:287
+msgid "Fade In Up"
+msgstr ""
+
+#: lib/includes/translation.php:289
+msgid "Fade Out"
+msgstr ""
+
+#: lib/includes/translation.php:291
+msgid "failed"
+msgstr ""
+
+#: lib/includes/translation.php:292
+msgid "Feature"
+msgstr ""
+
+#: lib/includes/translation.php:293
+msgid "Featured"
+msgstr ""
+
+#: lib/includes/translation.php:295
+msgid "Featured Media Layout"
+msgstr ""
+
+#: lib/includes/translation.php:296
+msgid "Featured Media Scheme"
+msgstr ""
+
+#: lib/includes/translation.php:297
+msgid "Featured Post"
+msgstr ""
+
+#: lib/includes/translation.php:298
+msgid "Feburary"
+msgstr ""
+
+#: lib/includes/translation.php:301
+msgid "Filter"
+msgstr ""
+
+#: lib/includes/translation.php:304
+msgid "Fit Screen Height"
+msgstr ""
+
+#: lib/includes/translation.php:305
+msgid "Fit Screen Offset"
+msgstr ""
+
+#: lib/includes/translation.php:306
+msgid ""
+"input string \"header\" to offset equal to navbar height, or input number to "
+"offset in pixel"
+msgstr ""
+
+#: lib/includes/translation.php:307
+msgid "% Of Screen Height"
+msgstr ""
+
+#: lib/includes/translation.php:308
+msgid "% in releative to screen height"
+msgstr ""
+
+#: lib/includes/translation.php:311
+msgid "Fixed Stop ID"
+msgstr ""
+
+#: lib/includes/translation.php:312
+msgid "input ID of an element to be fixed stop position"
+msgstr ""
+
+#: lib/includes/translation.php:313
+msgid "Flip"
+msgstr ""
+
+#: lib/includes/translation.php:314
+msgid "Font Family"
+msgstr ""
+
+#: lib/includes/translation.php:315
+msgid "Font File"
+msgstr ""
+
+#: lib/includes/translation.php:317
+msgid ""
+"Set the following fonts as your theme default fonts. You may change it later "
+"as the fonts are automatically synced site wide."
+msgstr ""
+
+#: lib/includes/translation.php:318
+msgid "Font Weight"
+msgstr ""
+
+#: lib/includes/translation.php:320
+msgid "Force One Column"
+msgstr ""
+
+#: lib/includes/translation.php:323
+msgid "Full Slide Page"
+msgstr ""
+
+#: lib/includes/translation.php:326
+msgid "Fullwidth Button"
+msgstr ""
+
+#: lib/includes/translation.php:327
+msgid "Fullwidth Content"
+msgstr ""
+
+#: lib/includes/translation.php:328
+msgid "Full Width Media Parallax"
+msgstr ""
+
+#: lib/includes/translation.php:330
+msgid "Gallery"
+msgstr ""
+
+#: lib/includes/translation.php:331
+msgid "Apply only with \"Carousel Variable Width\""
+msgstr ""
+
+#: lib/includes/translation.php:332
+msgid ""
+"Can be applied with only single slide display, cannot use with variable width"
+msgstr ""
+
+#: lib/includes/translation.php:334
+msgid "Global"
+msgstr ""
+
+#: lib/includes/translation.php:337
+msgid "Gutter Space"
+msgstr ""
+
+#: lib/includes/translation.php:340
+msgid "Half Slide Page"
+msgstr ""
+
+#: lib/includes/translation.php:341
+msgid "Hashtag To Query"
+msgstr ""
+
+#: lib/includes/translation.php:343
+msgid "Header Alignment"
+msgstr ""
+
+#: lib/includes/translation.php:344
+msgid "Header Row"
+msgstr ""
+
+#: lib/includes/translation.php:345
+msgid "Header Widgets"
+msgstr ""
+
+#: lib/includes/translation.php:347
+msgid "H1-H6 size can be customized in customizer"
+msgstr ""
+
+#: lib/includes/translation.php:350
+msgid "Hero"
+msgstr ""
+
+#: lib/includes/translation.php:351
+msgid "Hidden"
+msgstr ""
+
+#: lib/includes/translation.php:352
+msgid "Hide On Desktop"
+msgstr ""
+
+#: lib/includes/translation.php:353
+msgid "Hide on mobile"
+msgstr ""
+
+#: lib/includes/translation.php:354
+msgid "Hide on tablet (Landscape)"
+msgstr ""
+
+#: lib/includes/translation.php:355
+msgid "Hide on tablet (Portrait)"
+msgstr ""
+
+#: lib/includes/translation.php:356
+msgid "Highlighted Column"
+msgstr ""
+
+#: lib/includes/translation.php:358
+msgid "Homepage"
+msgstr ""
+
+#: lib/includes/translation.php:360
+msgid "Horizontal Move"
+msgstr ""
+
+#: lib/includes/translation.php:361
+msgid "Horizontal Position"
+msgstr ""
+
+#: lib/includes/translation.php:362
+msgid "Horizontal Scroll"
+msgstr ""
+
+#: lib/includes/translation.php:363
+msgid "hours"
+msgstr ""
+
+#: lib/includes/translation.php:364
+msgid "Hour (24 hrs)"
+msgstr ""
+
+#: lib/includes/translation.php:366
+msgid "Hover Color"
+msgstr ""
+
+#: lib/includes/translation.php:367
+msgid "Hover Style"
+msgstr ""
+
+#: lib/includes/translation.php:368
+msgid "Html"
+msgstr ""
+
+#: lib/includes/translation.php:372
+msgid "Apply with only hover state of icon style"
+msgstr ""
+
+#: lib/includes/translation.php:374
+msgid "Icon ID"
+msgstr ""
+
+#: lib/includes/translation.php:375
+msgid "Icon Link"
+msgstr ""
+
+#: lib/includes/translation.php:376
+msgid "Icon Position"
+msgstr ""
+
+#: lib/includes/translation.php:379
+msgid "ID"
+msgstr ""
+
+#: lib/includes/translation.php:381
+msgid "Images"
+msgstr ""
+
+#: lib/includes/translation.php:382
+msgid "Image Caption"
+msgstr ""
+
+#: lib/includes/translation.php:383
+msgid "Image Circle"
+msgstr ""
+
+#: lib/includes/translation.php:384
+msgid "Image Hover"
+msgstr ""
+
+#: lib/includes/translation.php:385
+msgid "Image Layout"
+msgstr ""
+
+#: lib/includes/translation.php:386
+msgid "Image Lazy Load"
+msgstr ""
+
+#: lib/includes/translation.php:387
+msgid ""
+"Speed up your site by display small image first while loading actual image"
+msgstr ""
+
+#: lib/includes/translation.php:388
+msgid "Image Link"
+msgstr ""
+
+#: lib/includes/translation.php:389
+msgid "Image Max Width"
+msgstr ""
+
+#: lib/includes/translation.php:390
+msgid "Image max-width can be in pixel or %, leave blank for default."
+msgstr ""
+
+#: lib/includes/translation.php:391
+msgid "Image Max Width (%)"
+msgstr ""
+
+#: lib/includes/translation.php:392
+msgid "Image Popup"
+msgstr ""
+
+#: lib/includes/translation.php:393
+msgid "Image Position"
+msgstr ""
+
+#: lib/includes/translation.php:394
+msgid "Image Ratio (W:H)"
+msgstr ""
+
+#: lib/includes/translation.php:396
+msgid "size detail in dashboard > settings > media"
+msgstr ""
+
+#: lib/includes/translation.php:397
+msgid "Image URL"
+msgstr ""
+
+#: lib/includes/translation.php:398
+msgid "Input string \"featured-image\" to display featured image of post"
+msgstr ""
+
+#: lib/includes/translation.php:399
+msgid "Import"
+msgstr ""
+
+#: lib/includes/translation.php:400
+msgid "This process will take a few minutes. Please do not close the window."
+msgstr ""
+
+#: lib/includes/translation.php:401
+msgid "Importing Attachments"
+msgstr ""
+
+#: lib/includes/translation.php:402
+msgid "Importing Menus"
+msgstr ""
+
+#: lib/includes/translation.php:403
+msgid ""
+"All data have been imported except for some images. You may start "
+"customizing your site now or click retry to continue importing images."
+msgstr ""
+
+#: lib/includes/translation.php:404
+msgid "Import Success"
+msgstr ""
+
+#: lib/includes/translation.php:405
+msgid ""
+"All data have been completely imported. You can start customizing your site "
+"now or visit the homepage to see how it looks like."
+msgstr ""
+
+#: lib/includes/translation.php:406
+msgid "Indicator"
+msgstr ""
+
+#: lib/includes/translation.php:407
+msgid "enable to set individual entry image hover effect"
+msgstr ""
+
+#: lib/includes/translation.php:408
+msgid "enable to set individual entry background"
+msgstr ""
+
+#: lib/includes/translation.php:409
+msgid "Initial Filter"
+msgstr ""
+
+#: lib/includes/translation.php:411
+msgid "Inline Style Position"
+msgstr ""
+
+#: lib/includes/translation.php:413
+msgid "Inner Spacing (px)"
+msgstr ""
+
+#: lib/includes/translation.php:414
+msgid "X axis Inner Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:415
+msgid "Y axis Inner Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:416
+msgid "Input and choose font family"
+msgstr ""
+
+#: lib/includes/translation.php:417
+msgid "Input another registered custom post type taxonomy"
+msgstr ""
+
+#: lib/includes/translation.php:418
+msgid "Input box shadow css property"
+msgstr ""
+
+#: lib/includes/translation.php:419
+msgid "Input Contact Form shortcode"
+msgstr ""
+
+#: lib/includes/translation.php:420
+msgid "Input taxonomy name to be initial active filter"
+msgstr ""
+
+#: lib/includes/translation.php:421
+msgid "Input your created Map ID here"
+msgstr ""
+
+#: lib/includes/translation.php:422
+msgid "To show all posts, input \"-1\""
+msgstr ""
+
+#: lib/includes/translation.php:423
+msgid "Input your Open Table ID here"
+msgstr ""
+
+#: lib/includes/translation.php:424
+msgid "Input registered custom post type taxonomy name"
+msgstr ""
+
+#: lib/includes/translation.php:425
+msgid "Input registered custom post type name"
+msgstr ""
+
+#: lib/includes/translation.php:426
+msgid "Input Slider Shortcode"
+msgstr ""
+
+#: lib/includes/translation.php:427
+msgid "Insert row"
+msgstr ""
+
+#: lib/includes/translation.php:428
+msgid "Inspector"
+msgstr ""
+
+#: lib/includes/translation.php:429
+msgid "Interactive"
+msgstr ""
+
+#: lib/includes/translation.php:430
+msgid "Besides \"Flip\" style, can leave this blank for auto"
+msgstr ""
+
+#: lib/includes/translation.php:431
+msgid ""
+"Disable hover in case user want to use only \"click\" action to trigger "
+"hover state."
+msgstr ""
+
+#: lib/includes/translation.php:432
+msgid ""
+"You can use link to trigger inateractive hover state by using link "
+"\"#interactive-{{name}}\""
+msgstr ""
+
+#: lib/includes/translation.php:434
+msgid "Item"
+msgstr ""
+
+#: lib/includes/translation.php:435
+msgid "Items To Offset"
+msgstr ""
+
+#: lib/includes/translation.php:436
+msgid "number of items to displace or pass over"
+msgstr ""
+
+#: lib/includes/translation.php:437
+msgid "No. of query items"
+msgstr ""
+
+#: lib/includes/translation.php:438
+msgid "Items To Show"
+msgstr ""
+
+#: lib/includes/translation.php:440
+msgid "January"
+msgstr ""
+
+#: lib/includes/translation.php:441
+msgid "July"
+msgstr ""
+
+#: lib/includes/translation.php:442
+msgid "June"
+msgstr ""
+
+#: lib/includes/translation.php:444
+msgid "Label"
+msgstr ""
+
+#: lib/includes/translation.php:445
+msgid "Label Color"
+msgstr ""
+
+#: lib/includes/translation.php:446
+msgid "Label Font"
+msgstr ""
+
+#: lib/includes/translation.php:449
+msgid "Lazy Load"
+msgstr ""
+
+#: lib/includes/translation.php:450
+msgid "Leave blank for default"
+msgstr ""
+
+#: lib/includes/translation.php:451
+msgid "Leave blank to disable"
+msgstr ""
+
+#: lib/includes/translation.php:452
+msgid "Leave this blank for no Highlighted Column"
+msgstr ""
+
+#: lib/includes/translation.php:453
+msgid "Leave blank to show all"
+msgstr ""
+
+#: lib/includes/translation.php:455
+msgid "Left Border"
+msgstr ""
+
+#: lib/includes/translation.php:458
+msgid "Left Fixed"
+msgstr ""
+
+#: lib/includes/translation.php:459
+msgid "Left Full"
+msgstr ""
+
+#: lib/includes/translation.php:460
+msgid "Left Minimal"
+msgstr ""
+
+#: lib/includes/translation.php:461
+msgid "Left Sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:463
+msgid "Letter Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:466
+msgid "Line Height"
+msgstr ""
+
+#: lib/includes/translation.php:467
+msgid "Line Thickness (px)"
+msgstr ""
+
+#: lib/includes/translation.php:469
+msgid "Link Editor"
+msgstr ""
+
+#: lib/includes/translation.php:471
+msgid "Link in same tab"
+msgstr ""
+
+#: lib/includes/translation.php:472
+msgid "Link taxonomy"
+msgstr ""
+
+#: lib/includes/translation.php:473
+msgid "Input name of taxonomy to query from instagram image tags"
+msgstr ""
+
+#: lib/includes/translation.php:474
+msgid "Link post type"
+msgstr ""
+
+#: lib/includes/translation.php:475
+msgid "Input name of post type to query and display in content popup"
+msgstr ""
+
+#: lib/includes/translation.php:476
+msgid "List Thumbnail Size"
+msgstr ""
+
+#: lib/includes/translation.php:477
+msgid "Load More"
+msgstr ""
+
+#: lib/includes/translation.php:479
+msgid "Loop"
+msgstr ""
+
+#: lib/includes/translation.php:480
+msgid "Lower Alphabet"
+msgstr ""
+
+#: lib/includes/translation.php:481
+msgid "Lower Roman"
+msgstr ""
+
+#: lib/includes/translation.php:483
+msgid "Main"
+msgstr ""
+
+#: lib/includes/translation.php:484
+msgid "Main Color"
+msgstr ""
+
+#: lib/includes/translation.php:485
+msgid "Make Button display Full Width"
+msgstr ""
+
+#: lib/includes/translation.php:486
+msgid "Make buttons display on the same line"
+msgstr ""
+
+#: lib/includes/translation.php:487
+msgid "Make \"name\" input field to one column"
+msgstr ""
+
+#: lib/includes/translation.php:488
+msgid "Map"
+msgstr ""
+
+#: lib/includes/translation.php:489
+msgid "March"
+msgstr ""
+
+#: lib/includes/translation.php:490
+msgid "Margin"
+msgstr ""
+
+#: lib/includes/translation.php:491
+msgid "Max Width"
+msgstr ""
+
+#: lib/includes/translation.php:492
+msgid "Max Width (px)"
+msgstr ""
+
+#: lib/includes/translation.php:493
+msgid "May"
+msgstr ""
+
+#: lib/includes/translation.php:495
+msgid "Media Library"
+msgstr ""
+
+#: lib/includes/translation.php:496
+msgid "Media Type"
+msgstr ""
+
+#: lib/includes/translation.php:499
+msgid "Menu Hover Style"
+msgstr ""
+
+#: lib/includes/translation.php:500
+msgid "Menu Line"
+msgstr ""
+
+#: lib/includes/translation.php:501
+msgid "Menu Line Color"
+msgstr ""
+
+#: lib/includes/translation.php:503
+msgid "Menu Position"
+msgstr ""
+
+#: lib/includes/translation.php:504
+msgid "Message"
+msgstr ""
+
+#: lib/includes/translation.php:505
+msgid "Meta"
+msgstr ""
+
+#: lib/includes/translation.php:506
+msgid "Middle"
+msgstr ""
+
+#: lib/includes/translation.php:507
+msgid "Milestone"
+msgstr ""
+
+#: lib/includes/translation.php:508
+msgid "Min Height"
+msgstr ""
+
+#: lib/includes/translation.php:509
+msgid "mins"
+msgstr ""
+
+#: lib/includes/translation.php:510
+msgid "minutes"
+msgstr ""
+
+#: lib/includes/translation.php:511
+msgid "Minute (60 mins)"
+msgstr ""
+
+#: lib/includes/translation.php:512
+msgid "Mobile"
+msgstr ""
+
+#: lib/includes/translation.php:513
+msgid "Mobile Navbar Menu"
+msgstr ""
+
+#: lib/includes/translation.php:514
+msgid "Modal"
+msgstr ""
+
+#: lib/includes/translation.php:515
+msgid "Trigger link is \"#modal-name\""
+msgstr ""
+
+#: lib/includes/translation.php:516
+msgid "Month"
+msgstr ""
+
+#: lib/includes/translation.php:517
+msgid "Move Down"
+msgstr ""
+
+#: lib/includes/translation.php:518
+msgid "Move Up"
+msgstr ""
+
+#: lib/includes/translation.php:519
+msgid "Multiple Toggle"
+msgstr ""
+
+#: lib/includes/translation.php:522
+msgid "Name of new sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:524
+msgid "Please name your template"
+msgstr ""
+
+#: lib/includes/translation.php:525
+msgid "name cannot contain any special charators"
+msgstr ""
+
+#: lib/includes/translation.php:526
+msgid "Navbar Transparent"
+msgstr ""
+
+#: lib/includes/translation.php:527
+msgid "Navigation"
+msgstr ""
+
+#: lib/includes/translation.php:528
+msgid "Navigation Bar Widgets"
+msgstr ""
+
+#: lib/includes/translation.php:529
+msgid "Navigation Full Width"
+msgstr ""
+
+#: lib/includes/translation.php:530
+msgid "Navigation Menu"
+msgstr ""
+
+#: lib/includes/translation.php:531
+msgid "Link next/prev post which has same category with the current post"
+msgstr ""
+
+#: lib/includes/translation.php:533
+msgid "Newspaper"
+msgstr ""
+
+#: lib/includes/translation.php:534
+msgid "Next"
+msgstr ""
+
+#: lib/includes/translation.php:535
+msgid "Next Post Title"
+msgstr ""
+
+#: lib/includes/translation.php:536
+msgid "NEXT"
+msgstr ""
+
+#: lib/includes/translation.php:537
+msgid "no effect on inline position"
+msgstr ""
+
+#: lib/includes/translation.php:539
+msgid "None To Show"
+msgstr ""
+
+#: lib/includes/translation.php:542
+msgid "No. of Posts"
+msgstr ""
+
+#: lib/includes/translation.php:543
+msgid "No. of Rows"
+msgstr ""
+
+#: lib/includes/translation.php:544
+msgid "No. of Sections"
+msgstr ""
+
+#: lib/includes/translation.php:545
+msgid "No. of Slides to Scroll"
+msgstr ""
+
+#: lib/includes/translation.php:546
+msgid "Must be equal or less than No. of Columns"
+msgstr ""
+
+#: lib/includes/translation.php:547
+msgid "No. of items/page"
+msgstr ""
+
+#: lib/includes/translation.php:548
+msgid "Number of items to show per page"
+msgstr ""
+
+#: lib/includes/translation.php:549
+msgid "There is no product category."
+msgstr ""
+
+#: lib/includes/translation.php:550
+msgid "Normal"
+msgstr ""
+
+#: lib/includes/translation.php:551
+msgid "No Sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:552
+msgid "force side padding to 0 on "
+msgstr ""
+
+#: lib/includes/translation.php:553
+msgid "no space"
+msgstr ""
+
+#: lib/includes/translation.php:554
+msgid "Note"
+msgstr ""
+
+#: lib/includes/translation.php:555
+msgid "No Template"
+msgstr ""
+
+#: lib/includes/translation.php:556
+msgid "for not to open link in new tab."
+msgstr ""
+
+#: lib/includes/translation.php:557
+msgid ""
+"Number of recent posts to query. Send your site to get approve from "
+"instagram first, in order to query more than 20 posts. Leave blank for "
+"default."
+msgstr ""
+
+#: lib/includes/translation.php:559
+msgid "November"
+msgstr ""
+
+#: lib/includes/translation.php:561
+msgid "Number Animation"
+msgstr ""
+
+#: lib/includes/translation.php:562
+msgid "Number behind \"Header Widget\" is number of column"
+msgstr ""
+
+#: lib/includes/translation.php:563
+msgid "Number behind \"Topbar\" is number of column"
+msgstr ""
+
+#: lib/includes/translation.php:564
+msgid "Number Color"
+msgstr ""
+
+#: lib/includes/translation.php:565
+msgid "Number Font"
+msgstr ""
+
+#: lib/includes/translation.php:567
+msgid "October"
+msgstr ""
+
+#: lib/includes/translation.php:568
+msgid "Ok"
+msgstr ""
+
+#: lib/includes/translation.php:569
+msgid "On Image Click"
+msgstr ""
+
+#: lib/includes/translation.php:570
+msgid "Only apply with \"Border\" style"
+msgstr ""
+
+#: lib/includes/translation.php:571
+msgid "Only apply with \"Vertical Bar\" style"
+msgstr ""
+
+#: lib/includes/translation.php:572
+msgid "Only Image"
+msgstr ""
+
+#: lib/includes/translation.php:573
+msgid "On Sale"
+msgstr ""
+
+#: lib/includes/translation.php:574
+msgid "Opacity"
+msgstr ""
+
+#: lib/includes/translation.php:575
+msgid "Open Link"
+msgstr ""
+
+#: lib/includes/translation.php:576
+msgid "turn on to link menu with the input URL"
+msgstr ""
+
+#: lib/includes/translation.php:578
+msgid "Open in new tab"
+msgstr ""
+
+#: lib/includes/translation.php:579
+msgid "Opentable"
+msgstr ""
+
+#: lib/includes/translation.php:580
+msgid "Please open the ticket in our support forum."
+msgstr ""
+
+#: lib/includes/translation.php:584
+msgid "Overflow"
+msgstr ""
+
+#: lib/includes/translation.php:585
+msgid "Overlay"
+msgstr ""
+
+#: lib/includes/translation.php:586
+msgid "Overlay Background"
+msgstr ""
+
+#: lib/includes/translation.php:587
+msgid "Overlay Effect"
+msgstr ""
+
+#: lib/includes/translation.php:588
+msgid "Overlay Opacity"
+msgstr ""
+
+#: lib/includes/translation.php:590
+msgid "Padding"
+msgstr ""
+
+#: lib/includes/translation.php:591
+msgid "Page"
+msgstr ""
+
+#: lib/includes/translation.php:592
+msgid "Page Background"
+msgstr ""
+
+#: lib/includes/translation.php:593
+msgid "Set unique background color of page and sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:594
+msgid "Page Preload"
+msgstr ""
+
+#: lib/includes/translation.php:596
+msgid "Paginate"
+msgstr ""
+
+#: lib/includes/translation.php:597
+msgid "Paginate Style"
+msgstr ""
+
+#: lib/includes/translation.php:599
+msgid "Parallax Content"
+msgstr ""
+
+#: lib/includes/translation.php:600
+msgid "Parallax Footer"
+msgstr ""
+
+#: lib/includes/translation.php:601
+msgid "Parallax Offset"
+msgstr ""
+
+#: lib/includes/translation.php:602
+msgid "Define offset (px) to start parallax content, leave blank for default"
+msgstr ""
+
+#: lib/includes/translation.php:603
+msgid "Parallax Speed"
+msgstr ""
+
+#: lib/includes/translation.php:604
+msgid "Paste Item"
+msgstr ""
+
+#: lib/includes/translation.php:605
+msgid "Percent"
+msgstr ""
+
+#: lib/includes/translation.php:606
+msgid "Pinn top offset"
+msgstr ""
+
+#: lib/includes/translation.php:607
+msgid "Offset on top of pinned element (px), leave blank for default"
+msgstr ""
+
+#: lib/includes/translation.php:608
+msgid "Pinn with Item ID"
+msgstr ""
+
+#: lib/includes/translation.php:609
+msgid "ID of reference item which box will pinn with"
+msgstr ""
+
+#: lib/includes/translation.php:611
+msgid "Play Video Sound"
+msgstr ""
+
+#: lib/includes/translation.php:612
+msgid "Plugin Slider"
+msgstr ""
+
+#: lib/includes/translation.php:613
+msgid "Plus"
+msgstr ""
+
+#: lib/includes/translation.php:614
+msgid "Popup"
+msgstr ""
+
+#: lib/includes/translation.php:615
+msgid "Position"
+msgstr ""
+
+#: lib/includes/translation.php:616
+msgid "Post Customizer"
+msgstr ""
+
+#: lib/includes/translation.php:617
+msgid "Poster"
+msgstr ""
+
+#: lib/includes/translation.php:618
+msgid ""
+"Poster will be used as background image on mobile device. To display "
+"background from featured image, please input \"featured-image\" string."
+msgstr ""
+
+#: lib/includes/translation.php:619
+msgid "Poster Ratio"
+msgstr ""
+
+#: lib/includes/translation.php:620
+msgid "Poster Size"
+msgstr ""
+
+#: lib/includes/translation.php:622
+msgid "Post Tag"
+msgstr ""
+
+#: lib/includes/translation.php:623
+msgid "Post Taxonomy Name"
+msgstr ""
+
+#: lib/includes/translation.php:624
+msgid "Post Type Name"
+msgstr ""
+
+#: lib/includes/translation.php:626
+msgid "Prep"
+msgstr ""
+
+#: lib/includes/translation.php:627
+msgid "Preset"
+msgstr ""
+
+#: lib/includes/translation.php:628
+msgid "PREV"
+msgstr ""
+
+#: lib/includes/translation.php:629
+msgid "Previous"
+msgstr ""
+
+#: lib/includes/translation.php:630
+msgid "Previous Post Title"
+msgstr ""
+
+#: lib/includes/translation.php:631
+msgid "Preview"
+msgstr ""
+
+#: lib/includes/translation.php:633
+msgid "Pricing"
+msgstr ""
+
+#: lib/includes/translation.php:634
+msgid "Price Font Size (px)"
+msgstr ""
+
+#: lib/includes/translation.php:637
+msgid "Primary Font"
+msgstr ""
+
+#: lib/includes/translation.php:640
+msgid "Product Cat"
+msgstr ""
+
+#: lib/includes/translation.php:641
+msgid "Product Content Bg"
+msgstr ""
+
+#: lib/includes/translation.php:644
+msgid "Quote"
+msgstr ""
+
+#: lib/includes/translation.php:645
+msgid "Quote Color"
+msgstr ""
+
+#: lib/includes/translation.php:646
+msgid "Quote Font"
+msgstr ""
+
+#: lib/includes/translation.php:647
+msgid "Quote Line Height"
+msgstr ""
+
+#: lib/includes/translation.php:648
+msgid "Quote Letter Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:651
+msgid "Random Order"
+msgstr ""
+
+#: lib/includes/translation.php:652
+msgid "Read More"
+msgstr ""
+
+#: lib/includes/translation.php:657
+msgid "Related Post"
+msgstr ""
+
+#: lib/includes/translation.php:658
+msgid "Reload Google Fonts"
+msgstr ""
+
+#: lib/includes/translation.php:661
+msgid "Repeat X"
+msgstr ""
+
+#: lib/includes/translation.php:662
+msgid "Repeat Y"
+msgstr ""
+
+#: lib/includes/translation.php:663
+msgid "Reservation"
+msgstr ""
+
+#: lib/includes/translation.php:664
+msgid "Are you sure to reset customizer data? This action connot be undone"
+msgstr ""
+
+#: lib/includes/translation.php:666
+msgid "Retry"
+msgstr ""
+
+#: lib/includes/translation.php:668
+msgid "Right Border"
+msgstr ""
+
+#: lib/includes/translation.php:671
+msgid "Right Fixed"
+msgstr ""
+
+#: lib/includes/translation.php:672
+msgid "Right Full"
+msgstr ""
+
+#: lib/includes/translation.php:673
+msgid "Right Minimal"
+msgstr ""
+
+#: lib/includes/translation.php:674
+msgid "Right Sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:679
+msgid "Row"
+msgstr ""
+
+#: lib/includes/translation.php:681
+msgid "Same category"
+msgstr ""
+
+#: lib/includes/translation.php:682
+msgid "save"
+msgstr ""
+
+#: lib/includes/translation.php:683
+msgid "saved"
+msgstr ""
+
+#: lib/includes/translation.php:684
+msgid "Save Template"
+msgstr ""
+
+#: lib/includes/translation.php:685
+msgid "saving"
+msgstr ""
+
+#: lib/includes/translation.php:686
+msgid "Scroll"
+msgstr ""
+
+#: lib/includes/translation.php:688
+msgid "Search Element"
+msgstr ""
+
+#: lib/includes/translation.php:691
+msgid "Secondary Font"
+msgstr ""
+
+#: lib/includes/translation.php:693
+msgid "seconds"
+msgstr ""
+
+#: lib/includes/translation.php:694
+msgid "Section"
+msgstr ""
+
+#: lib/includes/translation.php:695
+msgid "Section Type"
+msgstr ""
+
+#: lib/includes/translation.php:696
+msgid "Select Blueprint Block"
+msgstr ""
+
+#: lib/includes/translation.php:697
+msgid "Select Font Weight"
+msgstr ""
+
+#: lib/includes/translation.php:698
+msgid "Select Media"
+msgstr ""
+
+#: lib/includes/translation.php:699
+msgid "Select Menu"
+msgstr ""
+
+#: lib/includes/translation.php:700
+msgid "Select a sidebar"
+msgstr ""
+
+#: lib/includes/translation.php:701
+msgid "Self Hosted"
+msgstr ""
+
+#: lib/includes/translation.php:703
+msgid "September"
+msgstr ""
+
+#: lib/includes/translation.php:704
+msgid "Serves"
+msgstr ""
+
+#: lib/includes/translation.php:705
+msgid "Share"
+msgstr ""
+
+#: lib/includes/translation.php:706 lib/includes/translation.php:709
+msgid "Shop Catalog"
+msgstr ""
+
+#: lib/includes/translation.php:707
+msgid "Shop Single"
+msgstr ""
+
+#: lib/includes/translation.php:708
+msgid "Shop Thumbnail"
+msgstr ""
+
+#: lib/includes/translation.php:710
+msgid "Show Less Label"
+msgstr ""
+
+#: lib/includes/translation.php:711
+msgid "Show More"
+msgstr ""
+
+#: lib/includes/translation.php:712
+msgid "Show More Label"
+msgstr ""
+
+#: lib/includes/translation.php:713
+msgid "Show To None"
+msgstr ""
+
+#: lib/includes/translation.php:714
+msgid "Show To Show"
+msgstr ""
+
+#: lib/includes/translation.php:715
+msgid "Skill"
+msgstr ""
+
+#: lib/includes/translation.php:716
+msgid "Skill Color"
+msgstr ""
+
+#: lib/includes/translation.php:718
+msgid "Sidebar Background"
+msgstr ""
+
+#: lib/includes/translation.php:719
+msgid "Sidebar Scheme"
+msgstr ""
+
+#: lib/includes/translation.php:721
+msgid "Side Padding"
+msgstr ""
+
+#: lib/includes/translation.php:723
+msgid "Size"
+msgstr ""
+
+#: lib/includes/translation.php:724
+msgid "Size (px)"
+msgstr ""
+
+#: lib/includes/translation.php:725
+msgid "Slide"
+msgstr ""
+
+#: lib/includes/translation.php:726
+msgid "Slide Direction"
+msgstr ""
+
+#: lib/includes/translation.php:727
+msgid "Slide Down"
+msgstr ""
+
+#: lib/includes/translation.php:728
+msgid "Slide In"
+msgstr ""
+
+#: lib/includes/translation.php:729
+msgid "Slide Left"
+msgstr ""
+
+#: lib/includes/translation.php:730
+msgid "Slide Out"
+msgstr ""
+
+#: lib/includes/translation.php:731
+msgid "Slider"
+msgstr ""
+
+#: lib/includes/translation.php:732
+msgid "Slide Right"
+msgstr ""
+
+#: lib/includes/translation.php:733
+msgid "Slider Indicator"
+msgstr ""
+
+#: lib/includes/translation.php:734
+msgid ""
+"You can use link to trigger slider by using link \"#slider-{{name}}-"
+"{{index}}\""
+msgstr ""
+
+#: lib/includes/translation.php:735
+msgid "Slider Navigation"
+msgstr ""
+
+#: lib/includes/translation.php:736
+msgid "Slide Up"
+msgstr ""
+
+#: lib/includes/translation.php:738
+msgid "Slug"
+msgstr ""
+
+#: lib/includes/translation.php:742
+msgid "Auto color will use each social brand color"
+msgstr ""
+
+#: lib/includes/translation.php:743
+msgid "SoundCloud Embed Code"
+msgstr ""
+
+#: lib/includes/translation.php:745
+msgid "Space"
+msgstr ""
+
+#: lib/includes/translation.php:746
+msgid "Spacing (px)"
+msgstr ""
+
+#: lib/includes/translation.php:747
+msgid "Special Filter"
+msgstr ""
+
+#: lib/includes/translation.php:748
+msgid "Splash Screen"
+msgstr ""
+
+#: lib/includes/translation.php:749
+msgid "Delay time after finish loading page, to display"
+msgstr ""
+
+#: lib/includes/translation.php:750
+msgid "Display pop up when first visit the site"
+msgstr ""
+
+#: lib/includes/translation.php:751
+msgid "time of splash screen to be renewed"
+msgstr ""
+
+#: lib/includes/translation.php:754
+msgid "Stagger"
+msgstr ""
+
+#: lib/includes/translation.php:756
+msgid "Start Importing Demo"
+msgstr ""
+
+#: lib/includes/translation.php:758
+msgid "Subtitle"
+msgstr ""
+
+#: lib/includes/translation.php:759
+msgid "Subtitle Font"
+msgstr ""
+
+#: lib/includes/translation.php:760
+msgid "Subtitle Font Size (px)"
+msgstr ""
+
+#: lib/includes/translation.php:761
+msgid "Subtitle Letter Space"
+msgstr ""
+
+#: lib/includes/translation.php:762
+msgid "Subtitle Line Height"
+msgstr ""
+
+#: lib/includes/translation.php:763
+msgid "Subtitle Uppercase"
+msgstr ""
+
+#: lib/includes/translation.php:764
+msgid "Suggested unit in \"%\" for \"Vertical Bar\" style"
+msgstr ""
+
+#: lib/includes/translation.php:765
+msgid "Sync Name"
+msgstr ""
+
+#: lib/includes/translation.php:767
+msgid "Tab"
+msgstr ""
+
+#: lib/includes/translation.php:768
+msgid "Tab Background"
+msgstr ""
+
+#: lib/includes/translation.php:769
+msgid "Table"
+msgstr ""
+
+#: lib/includes/translation.php:770
+msgid "Tablet"
+msgstr ""
+
+#: lib/includes/translation.php:771
+msgid ""
+"You can use link to trigger tab by using link \"#tab-{{name}}-{{index}}\""
+msgstr ""
+
+#: lib/includes/translation.php:772
+msgid "Tab Position"
+msgstr ""
+
+#: lib/includes/translation.php:774
+msgid "Team"
+msgstr ""
+
+#: lib/includes/translation.php:775
+msgid "Template"
+msgstr ""
+
+#: lib/includes/translation.php:776
+msgid "Testimonial"
+msgstr ""
+
+#: lib/includes/translation.php:778
+msgid "Text Alignment"
+msgstr ""
+
+#: lib/includes/translation.php:779
+msgid "Text Background"
+msgstr ""
+
+#: lib/includes/translation.php:780
+msgid "press \"enter\" for new line, to create new bullet"
+msgstr ""
+
+#: lib/includes/translation.php:782
+msgid "Text Indent"
+msgstr ""
+
+#: lib/includes/translation.php:783
+msgid "Text Size (px)"
+msgstr ""
+
+#: lib/includes/translation.php:786
+msgid "Thumbnail Columns"
+msgstr ""
+
+#: lib/includes/translation.php:787
+msgid "Timezone (+XXXX)"
+msgstr ""
+
+#: lib/includes/translation.php:789
+msgid "Title Font"
+msgstr ""
+
+#: lib/includes/translation.php:790
+msgid "Title Color"
+msgstr ""
+
+#: lib/includes/translation.php:791
+msgid "Title Font Size (px)"
+msgstr ""
+
+#: lib/includes/translation.php:792
+msgid "Title Letter Spacing"
+msgstr ""
+
+#: lib/includes/translation.php:794
+msgid "Title Max Width (px or %)"
+msgstr ""
+
+#: lib/includes/translation.php:795
+msgid "Title Position"
+msgstr ""
+
+#: lib/includes/translation.php:799
+msgid "Top Border"
+msgstr ""
+
+#: lib/includes/translation.php:800
+msgid "Top Inline Inner"
+msgstr ""
+
+#: lib/includes/translation.php:801
+msgid "Top Inline Outer"
+msgstr ""
+
+#: lib/includes/translation.php:802
+msgid "Top Minimal Full"
+msgstr ""
+
+#: lib/includes/translation.php:803
+msgid "Top Minimal Right"
+msgstr ""
+
+#: lib/includes/translation.php:804
+msgid "Top Stacked"
+msgstr ""
+
+#: lib/includes/translation.php:805
+msgid "Top Standard"
+msgstr ""
+
+#: lib/includes/translation.php:806
+msgid "Top Subtitle"
+msgstr ""
+
+#: lib/includes/translation.php:807
+msgid "Top Title"
+msgstr ""
+
+#: lib/includes/translation.php:808
+msgid "Transition"
+msgstr ""
+
+#: lib/includes/translation.php:809
+msgid "This will turn No. of Slides to Scroll to \"1\""
+msgstr ""
+
+#: lib/includes/translation.php:812
+msgid "Type"
+msgstr ""
+
+#: lib/includes/translation.php:813
+msgid "Typekit"
+msgstr ""
+
+#: lib/includes/translation.php:814
+msgid "Typed"
+msgstr ""
+
+#: lib/includes/translation.php:816
+msgid "Unit"
+msgstr ""
+
+#: lib/includes/translation.php:817
+msgid "Up"
+msgstr ""
+
+#: lib/includes/translation.php:819
+msgid "Upper Alphabet"
+msgstr ""
+
+#: lib/includes/translation.php:820
+msgid "Upper Roman"
+msgstr ""
+
+#: lib/includes/translation.php:824
+msgid "Use latest menus"
+msgstr ""
+
+#: lib/includes/translation.php:825
+msgid "this option will pick only feautured menu to display"
+msgstr ""
+
+#: lib/includes/translation.php:826
+msgid "Use Latest Post"
+msgstr ""
+
+#: lib/includes/translation.php:827
+msgid "filter will only work when enable this option"
+msgstr ""
+
+#: lib/includes/translation.php:828
+msgid "this content will use the content of single menu"
+msgstr ""
+
+#: lib/includes/translation.php:829
+msgid "Use Social Brand Color"
+msgstr ""
+
+#: lib/includes/translation.php:830
+msgid "Use Template"
+msgstr ""
+
+#: lib/includes/translation.php:832
+msgid "Value"
+msgstr ""
+
+#: lib/includes/translation.php:833
+msgid "Variable Width"
+msgstr ""
+
+#: lib/includes/translation.php:834
+msgid "Set all images to same height but varible width"
+msgstr ""
+
+#: lib/includes/translation.php:836
+msgid "Vertical Align"
+msgstr ""
+
+#: lib/includes/translation.php:837
+msgid "Vertical Move"
+msgstr ""
+
+#: lib/includes/translation.php:838
+msgid "Vertical Position"
+msgstr ""
+
+#: lib/includes/translation.php:839
+msgid "Vertical Scroll"
+msgstr ""
+
+#: lib/includes/translation.php:840
+msgid "Video"
+msgstr ""
+
+#: lib/includes/translation.php:841
+msgid ""
+"Choose self-hosted video or paste video url from external source. To display "
+"background from featured video, please input \"featured-video\" string."
+msgstr ""
+
+#: lib/includes/translation.php:842
+msgid "Video Ratio"
+msgstr ""
+
+#: lib/includes/translation.php:843
+msgid "eg: 16:9, 4:3 Leave blank for default \"16:9\""
+msgstr ""
+
+#: lib/includes/translation.php:844
+msgid "Video Type"
+msgstr ""
+
+#: lib/includes/translation.php:845
+msgid "Cannot leave this field blank, default is \"1280\""
+msgstr ""
+
+#: lib/includes/translation.php:846
+msgid "Visible"
+msgstr ""
+
+#: lib/includes/translation.php:847
+msgid "Visual"
+msgstr ""
+
+#: lib/includes/translation.php:849
+msgid "Warning: Missing some images"
+msgstr ""
+
+#: lib/includes/translation.php:851
+msgid "weeks"
+msgstr ""
+
+#: lib/includes/translation.php:852
+msgid "when you’d like to change the background"
+msgstr ""
+
+#: lib/includes/translation.php:853
+msgid "Widget on each navigation bar style"
+msgstr ""
+
+#: lib/includes/translation.php:855
+msgid "Width"
+msgstr ""
+
+#: lib/includes/translation.php:856
+msgid "Width (px)"
+msgstr ""
+
+#: lib/includes/translation.php:857
+msgid "Width (px or %)"
+msgstr ""
+
+#: lib/includes/translation.php:858
+msgid "With Thumbnail"
+msgstr ""
+
+#: lib/includes/translation.php:859
+msgid "Works only with gradient style"
+msgstr ""
+
+#: lib/includes/translation.php:860
+msgid "Height of carousel works only with varible width"
+msgstr ""
+
+#: lib/includes/translation.php:861
+msgid "WP Content"
+msgstr ""
+
+#: lib/includes/translation.php:863
+msgid "X Large"
+msgstr ""
+
+#: lib/includes/translation.php:865
+msgid "Year"
+msgstr ""
+
+#: lib/includes/translation.php:866
+msgid "Year (YYYY)"
+msgstr ""
+
+#: lib/includes/translation.php:869
+msgid "Zoom In"
+msgstr ""
+
+#: lib/includes/translation.php:870
+msgid "Zoom In Up"
+msgstr ""
+
+#: lib/includes/translation.php:871
+msgid "Zoom Out"
+msgstr ""
+
+#: lib/includes/translation.php:873
+msgid "1st Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:874
+msgid "2nd Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:875
+msgid "3D Unfold"
+msgstr ""
+
+#: lib/includes/translation.php:876
+msgid "3rd Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:877
+msgid "4th Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:878
+msgid "5th Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:879
+msgid "6th Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:880
+msgid "7th Post ID"
+msgstr ""
+
+#: lib/includes/translation.php:881
+msgid "8th Post ID"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:8
+msgid ""
+"Customizer setting can be exported to a JSON file. You may use it for the "
+"backup purpose as well as sending out to anyone."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:15
+msgid "Warning"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:17
+msgid "Please make sure you have permission to generate .css file"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:28
+msgid ""
+"The following settings are included in the exported JSON file. You may use "
+"it for the cross-site import or for the backup. Please be aware that the "
+"current settings will be overwritten when you import the JSON file."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:32
+msgid "Customizer setting"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:35
+msgid "Post setting"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:39
+msgid ""
+"Please note that all data on the site are not exported with this function. "
+"However, you may use Wordpress Export instead."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:47
+msgid "export"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:58
+msgid "import"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:71
+msgid "Reset to Default"
+msgstr ""
+
+#: lib/templates/admin-customizer.php:73
+msgid ""
+"You can revert all settings back to default by clicking on Reset button."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:74
+msgid "Make sure you backup your settings before clicking Reset button."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:75
+msgid "This action cannot be undone, please use it carefully."
+msgstr ""
+
+#: lib/templates/admin-customizer.php:78
+msgid "Reset"
+msgstr ""
+
+#: lib/templates/admin-demos.php:9
+msgid "Import Demo"
+msgstr ""
+
+#: lib/templates/admin-demos.php:11
+msgid ""
+"Choose a demo to import to your site. This process may take a few minutes, "
+"please do not close this window."
+msgstr ""
+
+#: lib/templates/admin-demos.php:16
+msgid "Important Notes"
+msgstr ""
+
+#: lib/templates/admin-demos.php:18
+msgid ""
+"Please make sure that the requirements of the server on System Status is "
+"fullfilled."
+msgstr ""
+
+#: lib/templates/admin-demos.php:19
+msgid "Customize Settings will be overwritten by demo settings."
+msgstr ""
+
+#: lib/templates/admin-demos.php:20
+msgid ""
+"Plugin data i.e. Slider Revolution, and WP Google Map will not be imported"
+msgstr ""
+
+#: lib/templates/admin-demos.php:21
+msgid ""
+"No existing posts, pages, images, custom post types will be deleted, and/or "
+"modified."
+msgstr ""
+
+#: lib/templates/admin-demos.php:28
+msgid "Importer Status"
+msgstr ""
+
+#: lib/templates/admin-demos.php:32
+msgid "Importer might not work properly. Please checkout"
+msgstr ""
+
+#: lib/templates/admin-demos.php:35
+msgid "Everything looks good."
+msgstr ""
+
+#: lib/templates/admin-home.php:10
+msgid "Getting Started"
+msgstr ""
+
+#: lib/templates/admin-home.php:11
+msgid ""
+"Welcome to Fabrique Theme. The theme is now ready to use, however you are "
+"recommended to start by importing a demo."
+msgstr ""
+
+#: lib/templates/admin-home.php:18
+msgid ""
+"Please make sure that the following plugins are installed and activated."
+msgstr ""
+
+#: lib/templates/admin-home.php:23
+msgid " – do not deactivate this plugin."
+msgstr ""
+
+#: lib/templates/admin-home.php:26
+msgid "Envato Market"
+msgstr ""
+
+#: lib/templates/admin-home.php:27
+msgid " – for theme update"
+msgstr ""
+
+#: lib/templates/admin-home.php:30
+msgid "WooCommerce – for Ecommerce website"
+msgstr ""
+
+#: lib/templates/admin-home.php:33
+msgid "Contact Form 7"
+msgstr ""
+
+#: lib/templates/admin-home.php:36
+msgid "WP Google Maps"
+msgstr ""
+
+#: lib/templates/admin-home.php:40
+msgid ""
+"If you have any trouble using the theme, our support team could help you. "
+"Please open a ticket on the support forum, we will walk you through the "
+"issue as soon as possible."
+msgstr ""
+
+#: lib/templates/admin-home.php:47
+msgid "open ticket"
+msgstr ""
+
+#: lib/templates/admin-home.php:53
+msgid "document"
+msgstr ""
+
+#: lib/templates/admin-home.php:62
+msgid "Maintenance Mode"
+msgstr ""
+
+#: lib/templates/admin-home.php:69
+msgid ""
+"After turn this on, visitor will be redirected to selected Maintenance page."
+msgstr ""
+
+#: lib/templates/admin-home.php:72
+msgid "Maintenance Page"
+msgstr ""
+
+#: lib/templates/admin-home.php:87
+msgid "Choose your Maintenance page."
+msgstr ""
+
+#: lib/templates/admin-home.php:90
+msgid "Custom 404 Page"
+msgstr ""
+
+#: lib/templates/admin-home.php:105
+msgid "Choose your custom 404 page or leave this to use default."
+msgstr ""
+
+#: lib/templates/admin-system.php:4
+msgid "WordPress Environment"
+msgstr ""
+
+#: lib/templates/admin-system.php:8
+msgid "Home URL"
+msgstr ""
+
+#: lib/templates/admin-system.php:9
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: lib/templates/admin-system.php:13
+msgid "Site URL"
+msgstr ""
+
+#: lib/templates/admin-system.php:14
+msgid "The root URL of your site."
+msgstr ""
+
+#: lib/templates/admin-system.php:19
+msgid "Custom Stylesheet"
+msgstr ""
+
+#: lib/templates/admin-system.php:34
+msgid "WP Version"
+msgstr ""
+
+#: lib/templates/admin-system.php:35
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: lib/templates/admin-system.php:39
+msgid "WP Multisite"
+msgstr ""
+
+#: lib/templates/admin-system.php:40
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: lib/templates/admin-system.php:44
+msgid "WP Memory Limit"
+msgstr ""
+
+#: lib/templates/admin-system.php:45
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: lib/templates/admin-system.php:50
+msgid "We recommend setting memory to at least 64MB. See: "
+msgstr ""
+
+#: lib/templates/admin-system.php:50
+msgid "Increasing memory allocated to PHP"
+msgstr ""
+
+#: lib/templates/admin-system.php:57
+msgid "WP Debug Mode"
+msgstr ""
+
+#: lib/templates/admin-system.php:58
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: lib/templates/admin-system.php:62
+msgid "Language"
+msgstr ""
+
+#: lib/templates/admin-system.php:63
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: lib/templates/admin-system.php:68
+msgid "Server Environment"
+msgstr ""
+
+#: lib/templates/admin-system.php:72
+msgid "Server Info"
+msgstr ""
+
+#: lib/templates/admin-system.php:73
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: lib/templates/admin-system.php:77
+msgid "PHP Version"
+msgstr ""
+
+#: lib/templates/admin-system.php:78
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: lib/templates/admin-system.php:85
+msgid "Couldn't determine PHP version because phpversion() doesn't exist."
+msgstr ""
+
+#: lib/templates/admin-system.php:91
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: lib/templates/admin-system.php:92
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: lib/templates/admin-system.php:97
+msgid "Reccomended value is at least 32. "
+msgstr ""
+
+#: lib/templates/admin-system.php:97 lib/templates/admin-system.php:110
+#: lib/templates/admin-system.php:120 lib/templates/admin-system.php:149
+msgid "Please increase it."
+msgstr ""
+
+#: lib/templates/admin-system.php:104
+msgid "PHP Time Limit"
+msgstr ""
+
+#: lib/templates/admin-system.php:105
+msgid ""
+"The amount of time (in seconds) that your site will spend on a single "
+"operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: lib/templates/admin-system.php:110
+msgid "Reccomended value is at least 120. "
+msgstr ""
+
+#: lib/templates/admin-system.php:120
+msgid "Reccomended value is at least 3000. "
+msgstr ""
+
+#: lib/templates/admin-system.php:123
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: lib/templates/admin-system.php:124
+msgid ""
+"The maximum number of variables your server can use for a single function to "
+"avoid overloads."
+msgstr ""
+
+#: lib/templates/admin-system.php:128
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: lib/templates/admin-system.php:129
+msgid ""
+"Suhosin is an advanced protection system for PHP installations. It was "
+"designed to protect your servers on the one hand against a number of well "
+"known problems in PHP applications and on the other hand against potential "
+"unknown vulnerabilities within these applications or the PHP core itself. If "
+"enabled on your server, Suhosin may need to be configured to increase its "
+"data submission limits."
+msgstr ""
+
+#: lib/templates/admin-system.php:134
+msgid "MySQL Version"
+msgstr ""
+
+#: lib/templates/admin-system.php:135
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: lib/templates/admin-system.php:143
+msgid "Max Upload Size"
+msgstr ""
+
+#: lib/templates/admin-system.php:144
+msgid ""
+"The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: lib/templates/admin-system.php:149
+msgid "Reccomended value is at least 10. "
+msgstr ""
+
+#: lib/templates/admin-system.php:156
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: lib/templates/admin-system.php:157
+msgid "The default timezone for your server."
+msgstr ""
+
+#: lib/templates/admin-system.php:161
+#, php-format
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: lib/templates/admin-system.php:169
+msgid "Theme"
+msgstr ""
+
+#: lib/templates/admin-system.php:177
+msgid "The name of the current active theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:181
+msgid "Version"
+msgstr ""
+
+#: lib/templates/admin-system.php:182
+msgid "The installed version of the current active theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:187
+msgid "is available"
+msgstr ""
+
+#: lib/templates/admin-system.php:192
+msgid "Author URL"
+msgstr ""
+
+#: lib/templates/admin-system.php:193
+msgid "The theme developers URL."
+msgstr ""
+
+#: lib/templates/admin-system.php:197
+msgid "Child Theme"
+msgstr ""
+
+#: lib/templates/admin-system.php:198
+msgid "Displays whether or not the current theme is a child theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:200
+#, php-format
+msgid ""
+"If you're modifying theme source code, we recommend using child theme. See: "
+"<a href=\"%s\" target=\"_blank\">How to create a child theme</a>"
+msgstr ""
+
+#: lib/templates/admin-system.php:206
+msgid "Parent Theme Name"
+msgstr ""
+
+#: lib/templates/admin-system.php:207
+msgid "The name of the parent theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:211
+msgid "Parent Theme Version"
+msgstr ""
+
+#: lib/templates/admin-system.php:212
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:216
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: lib/templates/admin-system.php:217
+msgid "The parent theme developers URL."
+msgstr ""
+
+#: lib/templates/admin-system.php:221
+msgid "Overridden files"
+msgstr ""
+
+#: lib/templates/admin-system.php:222
+msgid "Templates which are overridden by child theme."
+msgstr ""
+
+#: lib/templates/admin-system.php:240
+#, php-format
+msgid ""
+"<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of "
+"date. Current version is <strong style=\"color:#01a2dd\">%s</strong>"
+msgstr ""
+
+#: lib/templates/admin-system.php:247
+#, php-format
+msgid ""
+"<code>%s</code> <strong style=\"color:red\">version is not defined</strong>"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.twisttheme.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "FabriqueCore"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Twisttheme"
+msgstr ""

@@ -1,0 +1,735 @@
+/*-----------------------wishlist-----------------------*/
+.ajax-loading {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	z-index:99;
+}
+.ajax-loading:before  {
+    background: url("../images/ajax-loader.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 32px;
+    left: 50%;
+    margin: -5.5px 0 0 -8px;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+}
+body > .ajax-loading {
+    position: fixed;
+}
+#pop {
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -100px;
+    position: fixed;
+    top: 50%;
+    width: 500px;
+	z-index:99;
+}
+.pop {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 15px 20px;
+}
+
+/*----------------------------------------------*/
+.admin-bar .stricky-fixed {
+	margin-top:32px;
+}
+.kc_row .kc_col-sm-12{
+  padding-left:0px !important;
+  padding-right:0px !important; 
+}
+.breadcrumb-area {
+	background-image: url(../images/background/3.jpg);
+}
+.reply-option a {
+	color:#faaa1d;
+	display:inline-block;
+}
+.comment-box .single-comment-box > .single-comment-box {
+	margin-top:15px;
+}
+.services-menu-footer {
+	margin-left: 38%;
+}
+
+.widget {
+    margin-top: -6px;
+}
+.widget li {
+	border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 12px;
+    padding-bottom: 11px;
+	position:relative;
+}
+.widget li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.widget li a {
+	color: #848484;
+    transition: all 500ms ease;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 25px;
+    position: relative;
+}
+.widget li:before {
+	position: absolute;
+    top: 14px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    content: "";
+    border-radius: 50%;
+    margin-top: -5px;
+    transition: all 500ms ease;
+}
+.widget li a:hover{
+    color: #faaa1d;;    
+}
+.widget li a:hover:before {
+	border-color: #faaa1d;
+}
+.nav_side_content .search_option.open .search .fa-search::before {
+    content: "\f00d";
+}
+.two-column p{
+	padding:0 15px;
+}
+.blog-single-area .comment-box .tb-comment-item .tb-comment-item{
+	margin-left:60px;
+}
+.blog-single-area .comment-box .default-form{
+	margin-bottom:50px;
+}
+.blog-single-area .default-form h2 a,
+.blog-single-area .default-form p a{
+	color:#222222;
+	margin-bottom:10px;
+}
+.blog-single-area .default-form h2 a:hover,
+.blog-single-area .default-form p a:hover{
+	color:#faaa1d;
+}
+.woocommerce.side-bar ul.product_list_widget{
+	margin-bottom:60px;
+}
+.woocommerce.side-bar ul.product_list_widget li{
+	line-height:24px;
+	padding:20px 0;
+	
+}
+.woocommerce.side-bar ul.product_list_widget li a{
+	display:block;
+	line-height:16px;
+	padding:0px;
+}
+.woocommerce.side-bar ul.product_list_widget li a:before{
+	display:none;
+}
+.woocommerce.side-bar ul.product_list_widget li img {
+    box-shadow: none;
+    float: left;
+    height: auto;
+    margin-left: 0;
+    margin-right: 20px;
+    width: 28%;
+}
+.woocommerce.side-bar ul.product_list_widget li .product-title {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 700;
+}
+.woocommerce.side-bar ul.product_list_widget li .star-rating{
+	font-size:10px !important;
+	margin:8px 0;
+}
+.woocommerce.side-bar ul.product_list_widget li .amount {
+    color: #fa9928;
+    display: block;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*--------------------------theme check----------------------------------*/
+	#wp-calendar {
+		width: 100%;
+	}
+	#wp-calendar caption {
+		text-align: right; 
+		color: #333; 
+		font-size: 12px; 
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	#wp-calendar thead { 
+		font-size: 10px;
+	}
+	#wp-calendar thead th { 
+		padding-bottom: 10px;
+	}
+	#wp-calendar tbody { 
+		color: #aaa; 
+	}
+	#wp-calendar tbody td { 
+		background: #f5f5f5; 
+		border: 1px solid #fff; 
+		text-align: center; 
+		padding:8px;
+	}
+	#wp-calendar tbody td:hover { 
+		background: #fff; 
+	}
+	#wp-calendar tbody .pad { 
+		background: none; 
+	}
+	#wp-calendar tfoot #next { 
+		font-size: 10px; 
+		text-transform: uppercase; 
+		text-align: right;
+	}
+	#wp-calendar tfoot #prev { 
+		font-size: 10px; 
+		text-transform: uppercase; 
+		padding-top: 10px; 
+	}
+	
+	.sticky .inner-box {background: #efefef; padding:10px; }
+	.sticky .inner-box .thm-unit-test {border: 3px solid #fff; padding:20px !important; }
+	.sticky .post .post-content{ background-color:transparent; }
+	.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	}
+	.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+	}
+	.gallery-caption {
+		font-family: 'Lato', sans-serif;
+	    color:#222222;
+	    font-size: 16px;
+	}
+	.bypostauthor{
+		font-family: 'Lato', sans-serif;
+	    color:#222222;
+	    font-size: 16px;
+	}
+	.alignright{ 
+		text-align:right;
+	}
+	.alignleft{ 
+		text-align:left;
+	}
+	.aligncenter{ 
+		text-align:center;
+	}	
+	.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+/*************************************Theme Unit Testing***********************/
+.thm-unit-test .sticky .single-blog-post{
+	background:#fafafa;
+}
+.thm-unit-test h1,.thm-unit-test h2,.thm-unit-test h3,.thm-unit-test h4,.thm-unit-test h5,.thm-unit-test h6{
+	font-family: "Oswald",sans-serif;
+	margin-bottom:15px;
+	font-weight:400;
+	color: #222222;
+	line-height: 30px;
+}
+.thm-unit-test h2{
+	margin:25px 0;
+}
+.thm-unit-test h2+h1+h2{
+	margin:0 0 15px 0;
+}
+.thm-unit-test h1{
+	font-size:36px;
+}
+.thm-unit-test h2{
+	font-size:32px;
+}
+.thm-unit-test h3{
+	font-size:28px !important;
+}
+.thm-unit-test h4,.thm-unit-test .text h4{
+	font-size:26px;
+}
+.thm-unit-test h5{
+	font-size:24px;
+}
+.thm-unit-test h6{
+	font-size:20px;
+}
+.thm-unit-test table{
+	margin-bottom:20px;
+}
+.thm-unit-test table thead tr th{
+	border: 1px solid #ddd;
+    vertical-align: bottom;
+	padding:8px;
+}
+.thm-unit-test table tbody tr th{
+	border: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.thm-unit-test table tbody tr td{
+	border: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.thm-unit-test .text > ul,.thm-unit-test ol,.thm-unit-test .text > ul li ul,.thm-unit-test .text > ul li ul li ul,
+.thm-unit-test > ul,.thm-unit-test > ul li ul,.thm-unit-test > ul li ul li ul{
+	padding-left:40px;
+}
+.thm-unit-test .text > ul li,
+.thm-unit-test > ul li{
+	list-style-type:disc;
+	display:list-item;
+}
+.thm-unit-test .text > ul li ul li,
+.thm-unit-test > ul li ul li{
+	list-style-type:circle;
+}
+.thm-unit-test .text > ul li ul li ul li,
+.thm-unit-test > ul li ul li ul li{
+	list-style-type:square;
+}
+.thm-unit-test ol li{
+	list-style-type:decimal;
+	display:list-item;
+}
+.thm-unit-test ol li ol li{
+	list-style-type:lower-alpha;
+}
+.thm-unit-test ol li ol li ol li{
+	list-style-type:upper-roman;
+}
+.thm-unit-test p img,.thm-unit-test figure img,.thm-unit-test img{
+	max-width:100%;
+	display:block;
+	height:auto;
+}
+figure{
+	max-width:100%;
+	display:block;
+}
+.paginate-links {
+	margin-top: 15px;
+}
+.paginate-links a,
+.paginate-links > span {
+    margin: 0 5px 7px 0;
+    position: relative;
+	border: 1px solid #faaa1d;
+    color: #faaa1d;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    min-width: 46px;
+	min-height:46px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+	line-height:44px;
+}
+.paginate-links a:hover,
+.paginate-links > span{
+	background: #faaa1d none repeat scroll 0 0;
+    border-color: #faaa1d;
+    color: #ffffff;
+}
+/****************Custom Widget*********************/
+.widget_recent_comments ul li{
+	padding-left:25px;
+}
+.widget select{
+	width:100%;
+	display:block;
+	border:1px solid #ededed;
+	padding:6px 6px;
+	margin-top:15px;
+}
+.textwidget img {
+    height: auto;
+    max-width: 100%;
+}
+.widget ul{
+	padding-bottom:0px;
+}
+.widget ul li ul{
+	padding:0px;
+	margin:0px;
+}
+.widget ul li ul li{
+	border-bottom:none;
+	border-top: 1px solid #f4f4f4;
+    margin-top: 12px;
+    padding-top: 11px;
+	margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.thm-unit-test .share-box ul{
+	padding-left:0px !important;
+}
+.thm-unit-test .share-box ul li{
+	list-style-type:none !important;
+	display:inline-block !important;
+}
+.thm-unit-test .share-box ul li img{
+	display:inline-block !important;
+}
+.post-password-form p{
+	margin:0px 0 15px;
+}
+.post-password-form input[type="password"]{
+	border:1px solid #faaa1d;
+	padding:5px 10px;
+	display:inline-block;
+}
+.post-password-form input[type="submit"]{
+	background:#faaa1d;
+	color:#fff;
+	padding:6px 15px; 
+	display:inline-block;
+	border:none;
+	
+}
+.thm-unit-test .review-box .fr-coment-item .name h4{
+	font-size:18px;
+}
+.thm-unit-test .default-form .section-title h3{
+	font-size:24px !important;
+}
+.thm-unit-test .post-comments.comment-area{
+	margin-top:40px;
+}
+.thm-unit-test a{
+	color:#222222;
+}
+.blog-section .thm-unit-test > p{
+	margin-bottom:15px;
+}
+/*********************Custom Footer widget Styling************************/
+.footer-widget h3{
+	margin-bottom:30px;
+}
+.footer-widget.widget_recent_comments ul li{
+	padding: 0;
+}
+.footer-widget ul li a{
+	padding:0px 0 10px;
+}
+.footer-widget ul li a,.footer-widget ul li,.footer-widget .textwidget p{
+	color:#ffffff;
+}
+.footer-widget a{
+	color:#fafafa;
+}
+.footer-widget select{
+	width:100%;
+	padding:6px;
+	color:#222;
+}
+.footer-widget #wp-calendar caption{
+	padding:0px;
+	margin:0px 0 15px;
+	font-size:14px;
+	color:#ffffff;
+}
+.footer-widget #wp-calendar thead th{
+	border:1px solid #fafafa;
+	border-bottom:none;
+	text-align:center;
+	padding:0px;
+	line-height:30px;
+	color:#ffffff;
+}
+.footer-widget #wp-calendar tbody .pad{
+	background:#fafafa;
+}
+.footer-widget .tagcloud a{
+	color:#ffffff;
+}
+/******************************/
+.mainmenu-area .mainmenu-bg{
+	min-height:67px;
+}
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tb-comment-item .single-comment-box.pingback{
+	padding-left:0px;
+}
+.tb-comment-item .single-comment-box.pingback .img-holder{
+	display:none;
+}
+.tb-comment-item .single-comment-box.pingback .text-holder{
+	margin-left:0px;
+}
+.no-comments{
+	border:1px solid #FFA600;
+	display:inline-block;
+	padding:8px;
+	color:#191919;
+}
+.woocommerce-cart .cart_item .product-thumbnail img {
+    width: 100px;
+    height: 100px;
+}
