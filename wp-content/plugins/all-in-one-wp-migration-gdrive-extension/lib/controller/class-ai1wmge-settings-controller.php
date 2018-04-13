@@ -39,11 +39,12 @@ class Ai1wmge_Settings_Controller {
 			array(
 				'backups'                 => get_option( 'ai1wmge_gdrive_backups', false ),
 				'gdrive_backup_schedules' => $gdrive_backup_schedules,
-				'email'                   => get_option( 'ai1wmge_gdrive_notify_email', get_option( 'admin_email', '' ) ),
-				'notify'                  => get_option( 'ai1wmge_gdrive_notify_toggle', false ),
-				'folder'                  => get_option( 'ai1wmge_gdrive_folder', sprintf( '/%s', ai1wm_archive_folder() ) ),
+				'notify_ok_toggle'        => get_option( 'ai1wmge_gdrive_notify_toggle', false ),
+				'notify_error_toggle'     => get_option( 'ai1wmge_gdrive_notify_error_toggle', false ),
+				'notify_email'            => get_option( 'ai1wmge_gdrive_notify_email', get_option( 'admin_email', false ) ),
 				'last_backup_date'        => $last_backup_date,
 				'next_backup_date'        => $next_backup_date,
+				'folder'                  => get_option( 'ai1wmge_gdrive_folder', sprintf( '/%s', ai1wm_archive_folder() ) ),
 				'ssl'                     => get_option( 'ai1wmge_gdrive_ssl', true ),
 				'timestamp'               => get_option( 'ai1wmge_gdrive_timestamp', false ),
 				'token'                   => get_option( 'ai1wmge_gdrive_token', false ),
@@ -88,11 +89,14 @@ class Ai1wmge_Settings_Controller {
 				$model->set_total( 0 );
 			}
 
-			// Set notification toggle
-			$model->set_toggle( isset( $params['ai1wmge_notification_toggle'] ) );
+			// Set notify ok toggle
+			$model->set_notify_ok_toggle( isset( $params['ai1wmge_gdrive_notify_toggle'] ) );
 
-			// Set notification email
-			$model->set_email( $params['ai1wmge_notification_email'] );
+			// Set notify error toggle
+			$model->set_notify_error_toggle( isset( $params['ai1wmge_gdrive_notify_error_toggle'] ) );
+
+			// Set notify email
+			$model->set_notify_email( trim( $params['ai1wmge_gdrive_notify_email'] ) );
 		}
 
 		// Redirect to settings page
@@ -126,6 +130,27 @@ class Ai1wmge_Settings_Controller {
 			status_header( $e->getCode() );
 			echo json_encode( array( 'message' => $e->getMessage() ) );
 			exit;
+		}
+	}
+
+	public static function notify_ok_toggle() {
+		$model = new Ai1wmge_Settings;
+		if ( ( $notify_ok_toggle = $model->get_notify_ok_toggle() ) ) {
+			return $notify_ok_toggle;
+		}
+	}
+
+	public static function notify_error_toggle() {
+		$model = new Ai1wmge_Settings;
+		if ( ( $notify_error_toggle = $model->get_notify_error_toggle() ) ) {
+			return $notify_error_toggle;
+		}
+	}
+
+	public static function notify_email() {
+		$model = new Ai1wmge_Settings;
+		if ( ( $notify_email = $model->get_notify_email() ) ) {
+			return $notify_email;
 		}
 	}
 }

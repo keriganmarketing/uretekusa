@@ -110,14 +110,6 @@ class Ai1wmge_Export_Upload {
 			// Set last backup date
 			update_option( 'ai1wmge_gdrive_timestamp', time() );
 
-			// Set progress
-			Ai1wm_Status::done(
-				__( 'Your WordPress archive has been uploaded to Google Drive.', AI1WMGE_PLUGIN_NAME ),
-				__( 'Google Drive', AI1WMGE_PLUGIN_NAME )
-			);
-
-			self::notify_admin_of_new_backup( $params );
-
 			// Unset upload URL
 			unset( $params['uploadUrl'] );
 
@@ -138,30 +130,5 @@ class Ai1wmge_Export_Upload {
 		fclose( $archive );
 
 		return $params;
-	}
-
-	public static function is_notification_enabled( $recipient ) {
-		return (
-			get_option( 'ai1wmge_gdrive_notify_toggle', false ) &&
-			! empty( $recipient ) &&
-			function_exists( 'wp_mail' )
-		);
-	}
-
-	public static function notify_admin_of_new_backup( $params ) {
-		$recipient = get_option( 'ai1wmge_gdrive_notify_email', get_option( 'admin_email', '' ) );
-
-		if ( self::is_notification_enabled( $recipient ) ) {
-			$subject  = sprintf(
-				__( '%s backup to Google Drive completed', AI1WMGE_PLUGIN_NAME ),
-				parse_url( site_url(), PHP_URL_HOST ) . parse_url( site_url(), PHP_URL_PATH )
-			);
-			$message  = sprintf( __( "Your site %s was successfully exported to GDrive.\n", AI1WMGE_PLUGIN_NAME ), site_url() );
-			$message .= "\n\n";
-			$message .= sprintf( __( "Date: %s\n", AI1WMGE_PLUGIN_NAME ), date( 'r' ) );
-			$message .= sprintf( __( "Backup file: %s\n", AI1WMGE_PLUGIN_NAME ), ai1wm_archive_name( $params ) );
-			$message .= sprintf( __( "Size: %s\n", AI1WMGE_PLUGIN_NAME ), ai1wm_archive_size( $params ) );
-			wp_mail( $recipient, $subject, $message );
-		}
 	}
 }

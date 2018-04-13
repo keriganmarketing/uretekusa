@@ -1,10 +1,9 @@
 === WP Google Maps ===
-Contributors: WPGMaps, NickDuncan, CodeCabin_, DylanAuty
+Contributors: WPGMaps, NickDuncan, CodeCabin_, DylanAuty, perryrylance
 Donate link: http://www.wpgmaps.com
 Tags: google maps, maps, map, map markers, google map, google maps plugin, wp google maps, wp google map, map plugin, directions, google map plugin, map widget
 Requires at least: 3.5
-Tested up to: 4.9
-Requires PHP: 5.3
+Tested up to: 4.9.1
 Stable tag: trunk
 License: GPLv2
 
@@ -41,7 +40,6 @@ The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-ve
 * Add Polylines / Routes to your map
 * Create a map in less than a 30 seconds!
 * Right click to add a marker to your Google map
-* Enable or disable Points of Interest (POI)
 * No advertising or links
 * Google Maps Autocomplete
 * Google Maps Transport Layer
@@ -49,7 +47,7 @@ The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-ve
 * Serve your map marker data via your database or an XML file
 * Compatible with caching plugins
 * Compatible with Cloudfare
-* Latest Google Maps API (V3.30, V3.31 & V3.exp)
+* Latest Google Maps API (V3.23, V3.24 & V3.exp)
 
 = Professional Edition =
 * Create multiple Google maps!
@@ -196,9 +194,6 @@ Try [Nifty Maps](http://www.niftymaps.co) - Comprehensive Map Builder for all we
 
 == Upgrade Notice ==
 
-= 6.4.10 =
-Please update your WP Google Maps version to 6.4.10 to ensure you are using the latest security enhancements.
-
 = 6.3.15 =
 Please update your WP Google Maps version to 6.3.15 to ensure you are using the latest security enhancements.
 
@@ -208,27 +203,34 @@ Please update your WP Google Maps version to 6.3.14 to ensure you are using the 
 = 6.2.1 =
 Please update your WP Google Maps version to 6.2.1 to ensure you are using the latest security enhancements.
 
+= 6.1.10 =
+Please update WP Google Maps to version 6.1.10 to enable our latest security enhancements.
+
+= 6.1.5 =
+We no longer support timthumb and we have opted to remove it from WP Google Maps. Please update to 6.1.5 to ensure the removal of the timthumb script.
+
+= 6.0.27 =
+Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
+
 == Changelog ==
 
-= 6.4.11 - 2018-03-19 - Low priority =
-* Added a missing marker PNG file
+= 7.0.01 - 2018-04-11 - Medium priority =
+Switched to WebFont / CSS FontAwesome 5 for compatibility reasons
+Fixed JS error in for ... in loop when adding methods to Array prototype
+Fixed FontAwesome CSS being enqueued as script
+Added functionality to fit map to bounds when editing shapes
 
-= 6.4.10 - 2018-03-12 - High priority =
-* XSS vulnerability fixed. Ouch! (thank you Luigi Gubello)
-* Backend UI enhancements such as "select all markers" and  "delete all markers"
-* Frontend UX improvements (Esc to close infofindow, better jQuery checks, etc.)
-* Neatened up and modified the front end JS
-* New feature: Enable/disable InfoWindows
-* New feature: Show/hide points of interest
-* Paving the way for WP Google Maps version 7!
-* Updated Polish translations (Thank you Wojciech Dorosz)
-* Fixed Norwegian translations (Thank you Kristoffer Gressli)
-* Added support for themes that use FastClick
-* Fixed a bug with "Editor" access roles
-* Updated the default marker to the new Google Maps retina-ready marker
-
-= 6.4.09 - 2018-01-15 - Medium priority =
-* Removed the plugin deactivation survey as there are PHP compatibility issues. Will have to retest and add this back at a later stage.
+= 7.0.00 - 2018-04-04 - New Release =
+Added arbitrary radii control to Maps -> Settings -> Store Locator
+Added modern store locator look and feel
+Added modern store locator radius
+Added custom JS field in Maps -> Settings -> Advanced
+Added spatial types to marker table
+Added Google API Error handler and alert
+Added code to display custom fields in infowindow when Pro is installed
+Fresh install "My First Map" defaults to modern store locator and radius
+Relaxed theme data parsing
+Disabled Street View, zoom controls, pan controls and map type controls on fresh installs
 
 = 6.4.08 - 2018-01-14 - Medium priority =
 * Update Google Maps API versions to include 3.30 and 3.31

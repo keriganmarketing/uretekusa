@@ -32,16 +32,12 @@ class Ai1wmge_Import_Download {
 
 		// File ID
 		if ( ! isset( $params['fileId'] ) ) {
-			throw new Ai1wm_Import_Exception(
-				__( 'Google Drive File ID is not specified.', AI1WMGE_PLUGIN_NAME )
-			);
+			throw new Ai1wm_Import_Exception( __( 'Google Drive File ID is not specified.', AI1WMGE_PLUGIN_NAME ) );
 		}
 
 		// Total bytes
 		if ( ! isset( $params['totalBytes'] ) ) {
-			throw new Ai1wm_Import_Exception(
-				__( 'Unable to determine file size of Google Drive File.', AI1WMGE_PLUGIN_NAME )
-			);
+			throw new Ai1wm_Import_Exception( __( 'Unable to determine size of Google Drive file.', AI1WMGE_PLUGIN_NAME ) );
 		}
 
 		// Set startBytes

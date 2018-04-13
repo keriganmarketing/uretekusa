@@ -60,16 +60,7 @@ class Ai1wmge_Import_Controller {
 		) );
 
 		// Set folder structure
-		$response = array(
-			'id'             => null,
-			'items'          => array(),
-			'numHiddenFiles' => 0,
-		);
-
-		// Set folder ID
-		if ( isset( $folder['id'] ) ) {
-			$response['id'] = $folder['id'];
-		}
+		$response = array( 'items' => array(), 'numHiddenFiles' => 0 );
 
 		// Set folder items
 		if ( isset( $folder['items'] ) && ( $items = $folder['items'] ) ) {

@@ -317,7 +317,7 @@ class ServMaskGdriveClient {
 		$api->setAccessToken($this->getAccessToken());
 		$api->setSSL($this->ssl);
 		$api->setBaseURL(self::API_URL);
-		$api->setPath('/files?' . http_build_query($query));
+		$api->setPath('/files?' . http_build_query($query, '', '&'));
 
 		return $api->makeRequest();
 	}
@@ -365,7 +365,7 @@ class ServMaskGdriveClient {
 		$api->setBaseURL(self::API_ACCOUNT_URL);
 		$api->setPath('/revoke?' . http_build_query(array(
 			'token' => $this->refreshToken,
-		)));
+		), '', '&'));
 
 		return $api->makeRequest();
 	}

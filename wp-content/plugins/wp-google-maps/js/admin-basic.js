@@ -1,6 +1,28 @@
-jQuery(document).ready(function(){
-
-
+jQuery(document).ready(function($){
+	
+	$("button[data-fit-bounds-to-shape]").each(function(index, el) {
+		
+		$(el).on("click", function(event) {
+			
+			var name = $(el).attr("data-fit-bounds-to-shape");
+			var shape = window[name];
+			var bounds;
+			
+			if(shape instanceof google.maps.Polygon || shape instanceof google.maps.Polyline)
+			{
+				bounds = new google.maps.LatLngBounds();
+				shape.getPath().forEach(function(element, index) {
+					bounds.extend(element);
+				});
+			}
+			else
+				bounds = shape.getBounds();
+		
+			MYMAP.map.fitBounds(bounds);
+		});
+		
+	});
+	
     jQuery("body").on("click",".wpgmza_copy_shortcode", function() {
         var $temp = jQuery('<input>');
         var $tmp2 = jQuery('<span id="wpgmza_tmp" style="display:none; width:100%; text-align:center;">');
@@ -63,5 +85,23 @@ jQuery(document).ready(function(){
 		if(!value.match(regex))
 			jQuery("#wpgmaps_tabs").tabs({active: 3});
 	});
+	
+	(function($) {
+		
+		$("#wpgmza_store_locator_distance").on("change", function(event) {
+			
+			var units = $(this).prop("checked") ? "mi" : "km";
+			
+			$(".wpgmza-store-locator-default-radius option").each(function(index, el) {
+				
+				$(el).html(
+					$(el).html().match(/\d+/) + units
+				);
+				
+			});
+			
+		});
+		
+	})(jQuery);
 	
 });

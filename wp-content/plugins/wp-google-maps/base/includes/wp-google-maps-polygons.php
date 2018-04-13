@@ -3,7 +3,11 @@
 Polygon functionality for WP Google Maps
 */
 
-
+add_action('wp_enqueue_scripts', function() {
+	
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+	
+});
 
 /**
  * Render polygon editor HTML
@@ -63,6 +67,7 @@ function wpgmza_b_pro_add_poly($mid) {
                     <tr>
                         <td>".__("On Hover Opacity","wp-google-maps")."</td><td><input disabled type=\"text\"value=\"".__("Pro version only","wp-google-maps")."\" /></td>   
                     </tr>
+					
                         
                     </table>
 
@@ -148,7 +153,18 @@ function wpgmza_b_pro_edit_poly($mid) {
                     <tr>
                         <td>".__("On Hover Opacity","wp-google-maps")."</td><td><input disabled type=\"text\"value=\"".__("Pro version only","wp-google-maps")."\" /></td>   
                     </tr>
-                        
+                    <tr>
+                        <td>".__("Show Polygon","wp-google-maps")."</td>
+						<td>
+							<button id='fit-bounds-to-shape' 
+								class='button button-secondary' 
+								type='button' 
+								title='" . __('Fit map bounds to shape', 'wp-google-maps') . "'
+								data-fit-bounds-to-shape='poly'>
+								<i class='fas fa-eye'></i>
+							</button>
+						</td>
+                    </tr>    
                     </table>
                     
                     <div class='wpgmza_map_seventy'>        
@@ -362,8 +378,6 @@ function wpgmaps_b_admin_add_poly_javascript($mapid) {
 
                 });
                 <?php } ?>
-
-
 
             }
             function addPoint(event) {
@@ -642,6 +656,10 @@ function wpgmaps_b_admin_edit_poly_javascript($mapid,$polyid) {
                 poly.setMap(MYMAP.map);
                 poly.setPaths(poly_path);
                 google.maps.event.addListener(MYMAP.map, 'click', addPoint);
+				
+				setTimeout(function() {
+					jQuery("#fit-bounds-to-shape").click();
+				}, 500);
             }
             function addExistingPoint(temp_gps) {
                 poly_path.insertAt(poly_path.length, temp_gps);

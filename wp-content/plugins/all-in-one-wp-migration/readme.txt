@@ -3,7 +3,7 @@ Contributors: yani.iliev, bangelov, pimjitsawang
 Tags: move, transfer, copy, migrate, backup, clone, restore, db migration, wordpress migration, website migration, database export, database import, apoyo, sauvegarde, di riserva, バックアップ
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 6.64
+Stable tag: 6.67
 License: GPLv2 or later
 
 Move, transfer, copy, migrate, and backup a site with 1-click. Quick, easy, and reliable.
@@ -53,10 +53,12 @@ Mobile device compatible: All in One WP Plugin is the first plugin to offer true
 * [OneDrive](https://servmask.com/products/onedrive-extension)
 * [Box](https://servmask.com/products/box-extension)
 * [Mega](https://servmask.com/products/mega-extension)
+* [DigitalOcean Spaces](https://servmask.com/products/digitalocean-spaces-extension)
 
 = Supported hosting providers =
 **The plugin does not have any dependancies, making it compatible with all PHP hosting providers. We support a vast range of hosting providers. Some of the most popular include:**
 
+* DigitalOcean
 * Bluehost
 * InMotion
 * Web Hosting Hub
@@ -94,6 +96,30 @@ Alternatively you can download the plugin using the download button on this page
 3. Plugin Menu
 
 == Changelog ==
+= 6.67 =
+**Changed**
+
+* Rename DigitalOcean to DigitalOcean Spaces Extension
+
+= 6.66 =
+**Added**
+
+* Notification class for sending emails on error (export/import)
+* Support for DigitalOcean Extension
+
+**Fixed**
+
+* Database regex pattern for parsing SQL queries
+
+= 6.65 =
+**Added**
+
+* New plugin icons on WP Admin Updates page
+
+**Fixed**
+
+* Table prefix replacement of subsite options table on export
+
 = 6.64 =
 **Added**
 

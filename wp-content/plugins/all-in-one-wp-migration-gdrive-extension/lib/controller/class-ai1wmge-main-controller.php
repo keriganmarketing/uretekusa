@@ -213,6 +213,9 @@ class Ai1wmge_Main_Controller {
 		// Export and import commands
 		add_action( 'plugins_loaded', array( $this, 'ai1wm_commands' ), 20 );
 
+		// Enable notifications
+		add_action( 'plugins_loaded', array( $this, 'ai1wm_notification' ), 20 );
+
 		// Add export scripts and styles
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_export_scripts_and_styles' ), 20 );
 
@@ -238,6 +241,23 @@ class Ai1wmge_Main_Controller {
 	}
 
 	/**
+	 * Enable notifications
+	 *
+	 * @return void
+	 */
+	public function ai1wm_notification() {
+		if ( isset( $_REQUEST['gdrive'] ) ) {
+			// Add ok notifications
+			add_filter( 'ai1wm_notification_ok_toggle', 'Ai1wmge_Settings_Controller::notify_ok_toggle' );
+			add_filter( 'ai1wm_notification_ok_email', 'Ai1wmge_Settings_Controller::notify_email' );
+
+			// Add error notifications
+			add_filter( 'ai1wm_notification_error_toggle', 'Ai1wmge_Settings_Controller::notify_error_toggle' );
+			add_filter( 'ai1wm_notification_error_email', 'Ai1wmge_Settings_Controller::notify_email' );
+		}
+	}
+
+	/**
 	 * Export and import commands
 	 *
 	 * @return void
@@ -247,7 +267,8 @@ class Ai1wmge_Main_Controller {
 			// Add export commands
 			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Gdrive::execute', 250 );
 			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Upload::execute', 260 );
-			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Clean::execute', 270 );
+			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Retention::execute', 270 );
+			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Done::execute', 280 );
 
 			// Add import commands
 			add_filter( 'ai1wm_import', 'Ai1wmge_Import_Gdrive::execute', 20 );
@@ -336,7 +357,7 @@ class Ai1wmge_Main_Controller {
 	 */
 	public function plugin_row_meta( $links, $file ) {
 		if ( $file == AI1WMGE_PLUGIN_BASENAME ) {
-			$links[] = Ai1wm_Template::get_content( 'main/user-guide', array(), AI1WMGE_TEMPLATES_PATH );
+			$links[] = __( '<a href="https://help.servmask.com/knowledgebase/google-drive-extension-user-guide/" target="_blank">User Guide</a>', AI1WMGE_PLUGIN_NAME );
 		}
 
 		return $links;

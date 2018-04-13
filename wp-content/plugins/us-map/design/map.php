@@ -1,4 +1,4 @@
-<div id="mapwrapper"><!-- v2.2.2 -->
+<div id="mapwrapper"><!-- v2.2.3 -->
 	<div id="mapbase">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" xml:space="preserve">
 			<g id="lakes">

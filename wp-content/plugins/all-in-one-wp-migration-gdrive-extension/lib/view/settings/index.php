@@ -125,17 +125,24 @@
 						<article class="ai1wmge-article">
 							<h3><?php _e( 'Notification settings', AI1WMGE_PLUGIN_NAME ); ?></h3>
 							<p>
-								<label for="ai1wmge-notification-toggle">
-									<input type="checkbox" id="ai1wmge-notification-toggle" name="ai1wmge_notification_toggle" <?php echo $notify ? 'checked' : null; ?> />
-									<?php _e( 'Send an email when a backup is complete.', AI1WMGE_PLUGIN_NAME ); ?>
+								<label for="ai1wmge-gdrive-notify-toggle">
+									<input type="checkbox" id="ai1wmge-gdrive-notify-toggle" name="ai1wmge_gdrive_notify_toggle" <?php echo empty( $notify_ok_toggle ) ? null : 'checked'; ?> />
+									<?php _e( 'Send an email when a backup is complete', AI1WMGE_PLUGIN_NAME ); ?>
 								</label>
 							</p>
 
 							<p>
-								<label for="ai1wmge-notification-email">
+								<label for="ai1wmge-gdrive-notify-error-toggle">
+									<input type="checkbox" id="ai1wmge-gdrive-notify-error-toggle" name="ai1wmge_gdrive_notify_error_toggle" <?php echo empty( $notify_error_toggle ) ? null : 'checked'; ?> />
+									<?php _e( 'Send an email if a backup fails', AI1WMGE_PLUGIN_NAME ); ?>
+								</label>
+							</p>
+
+							<p>
+								<label for="ai1wmge-gdrive-notify-email">
 									<?php _e( 'Email address', AI1WMGE_PLUGIN_NAME ); ?>
 									<br />
-									<input class="ai1wmge-email" style="width: 15rem;" type="email" id="ai1wmge-notification-email" name="ai1wmge_notification_email" value="<?php echo $email; ?>" />
+									<input class="ai1wmge-email" style="width: 15rem;" type="email" id="ai1wmge-gdrive-notify-email" name="ai1wmge_gdrive_notify_email" value="<?php echo esc_attr( $notify_email ); ?>" />
 								</label>
 							</p>
 						</article>
@@ -148,7 +155,7 @@
 										<?php _e( 'Keep the most recent', AI1WMGE_PLUGIN_NAME ); ?>
 										<input style="width: 3em" type="number" min="0" name="ai1wmge_gdrive_backups" id="ai1wmge-gdrive-backups" value="<?php echo intval( $backups ); ?>" />
 									</label>
-									<?php _e( 'backups. <small>Default: <strong>0</strong> unlimited.</small>', AI1WMGE_PLUGIN_NAME ); ?>
+									<?php _e( 'backups. <small>Default: <strong>0</strong> unlimited</small>', AI1WMGE_PLUGIN_NAME ); ?>
 								</div>
 
 								<div class="ai1wm-field">
@@ -160,7 +167,7 @@
 										<option value="MB" <?php echo strpos( $total, 'MB' ) !== false ? 'selected="selected"' : null; ?>><?php _e( 'MB', AI1WMGE_PLUGIN_NAME ); ?></option>
 										<option value="GB" <?php echo strpos( $total, 'GB' ) !== false ? 'selected="selected"' : null; ?>><?php _e( 'GB', AI1WMGE_PLUGIN_NAME ); ?></option>
 									</select>
-									<?php _e( '<small>Default: <strong>0</strong> unlimited.</small>', AI1WMGE_PLUGIN_NAME ); ?>
+									<?php _e( '<small>Default: <strong>0</strong> unlimited</small>', AI1WMGE_PLUGIN_NAME ); ?>
 								</div>
 							</p>
 						</article>

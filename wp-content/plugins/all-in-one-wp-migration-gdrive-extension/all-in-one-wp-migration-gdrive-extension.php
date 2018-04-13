@@ -5,7 +5,7 @@
  * Description: Extension for All in One WP Migration that enables using Google Drive for imports and exports
  * Author: ServMask
  * Author URI: https://servmask.com/
- * Version: 2.29
+ * Version: 2.30
  * Text Domain: all-in-one-wp-migration-gdrive-extension
  * Domain Path: /languages
  * Network: True

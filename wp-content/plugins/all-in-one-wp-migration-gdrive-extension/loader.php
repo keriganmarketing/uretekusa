@@ -50,7 +50,11 @@ require_once AI1WMGE_EXPORT_PATH .
 
 require_once AI1WMGE_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .
-			'class-ai1wmge-export-clean.php';
+			'class-ai1wmge-export-retention.php';
+
+require_once AI1WMGE_EXPORT_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wmge-export-done.php';
 
 require_once AI1WMGE_IMPORT_PATH .
 			DIRECTORY_SEPARATOR .

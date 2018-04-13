@@ -3,7 +3,7 @@
 Plugin Name: US MAP
 Plugin URI: http://www.wpmapplugins.com/
 Description: Customize each state (colors, link, etc) through the admin panel and use the shortcode in your page.
-Version: 2.2.2
+Version: 2.2.3
 Author: WP Map Plugins
 Author URI: http://www.wpmapplugins.com/
 */

@@ -22,6 +22,7 @@
 #tipus {
     font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
     display: none;
+    max-width: 40%;
     padding: 5px;
     border: 1px solid #404040;
     color: #404040;
@@ -41,16 +42,11 @@
 #tipus img {
 	float: left;
 	padding: 3px;
+	max-width: 100%;
 }
 @media screen and (max-width: 320px){
 	#mapbase svg {
 		height:140px;
-	}
-	#tipus {
-		max-width: 40%;
-	}
-	#tipus img {
-		max-width: 95%;
 	}
 }
 @media screen and (max-width: 400px) and (min-width: 321px) {

@@ -131,9 +131,6 @@ class Ai1wmge_Settings {
 		Ai1wm_Cron::clear( 'ai1wmge_gdrive_weekly_export' );
 		Ai1wm_Cron::clear( 'ai1wmge_gdrive_monthly_export' );
 
-		// Update cron options
-		update_option( 'ai1wmge_gdrive_cron', $schedules );
-
 		// Update cron schedules
 		foreach ( $schedules as $schedule ) {
 			Ai1wm_Cron::add( "ai1wmge_gdrive_{$schedule}_export", $schedule, array(
@@ -141,25 +138,60 @@ class Ai1wmge_Settings {
 				'gdrive'     => 1,
 			) );
 		}
+
+		// Update cron options
+		return update_option( 'ai1wmge_gdrive_cron', $schedules );
+	}
+
+	public function get_cron() {
+		return get_option( 'ai1wmge_gdrive_cron', array() );
 	}
 
 	public function set_ssl( $mode ) {
-		update_option( 'ai1wmge_gdrive_ssl', $mode );
+		return update_option( 'ai1wmge_gdrive_ssl', $mode );
+	}
+
+	public function get_ssl() {
+		return get_option( 'ai1wmge_gdrive_ssl', false );
 	}
 
 	public function set_backups( $number ) {
-		update_option( 'ai1wmge_gdrive_backups', $number );
+		return update_option( 'ai1wmge_gdrive_backups', $number );
+	}
+
+	public function get_backups() {
+		return get_option( 'ai1wmge_gdrive_backups', false );
 	}
 
 	public function set_total( $size ) {
-		update_option( 'ai1wmge_gdrive_total', $size );
+		return update_option( 'ai1wmge_gdrive_total', $size );
 	}
 
-	public function set_toggle( $toggle ) {
-		update_option( 'ai1wmge_gdrive_notify_toggle', $toggle );
+	public function get_total() {
+		return get_option( 'ai1wmge_gdrive_total', false );
 	}
 
-	public function set_email( $email ) {
-		update_option( 'ai1wmge_gdrive_notify_email', $email );
+	public function set_notify_ok_toggle( $toggle ) {
+		return update_option( 'ai1wmge_gdrive_notify_toggle', $toggle );
+	}
+
+	public function get_notify_ok_toggle() {
+		return get_option( 'ai1wmge_gdrive_notify_toggle', false );
+	}
+
+	public function set_notify_error_toggle( $toggle ) {
+		return update_option( 'ai1wmge_gdrive_notify_error_toggle', $toggle );
+	}
+
+	public function get_notify_error_toggle() {
+		return get_option( 'ai1wmge_gdrive_notify_error_toggle', false );
+	}
+
+	public function set_notify_email( $email ) {
+		return update_option( 'ai1wmge_gdrive_notify_email', $email );
+	}
+
+	public function get_notify_email() {
+		return get_option( 'ai1wmge_gdrive_notify_email', false );
 	}
 }
