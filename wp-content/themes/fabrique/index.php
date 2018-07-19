@@ -7,7 +7,10 @@
  */
 ?>
 
-<?php $custom_archive = fabrique_mod( 'blog_custom_archive' ); ?>
+<?php
+	$custom_archive = fabrique_mod( 'blog_custom_archive' );
+	$custom_archive = apply_filters( 'wpml_object_id', $custom_archive, 'page', TRUE );
+?>
 <?php if ( is_home() && $custom_archive && $page = get_post( $custom_archive ) ) : ?>
 	<?php fabrique_set_global_post( $page ); ?>
 	<?php get_header(); ?>

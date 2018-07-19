@@ -10,10 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     3.3.0
+ * @see https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -51,12 +50,21 @@ $container_class = ( fabrique_mod( 'shop_full_width' ) ) ? 'fbq-container--fullw
 					// Remove action of description and replace in function 'archive_title_options'
 					get_template_part( 'templates/archive-title' );
 				?>
+				<?php
+					/**
+					 * Hook: woocommerce_archive_description.
+					 *
+					 * @hooked woocommerce_taxonomy_archive_description - 10
+					 * @hooked woocommerce_product_archive_description - 10
+					 */
+					// do_action( 'woocommerce_archive_description' );
+				?>
 			<?php endif; ?>
 
 			<div class="<?php echo esc_attr( $container_class ); ?>">
 				<main id="main" class="<?php echo esc_attr( fabrique_main_page_class( $sidebar, $sidebar_position ) ); ?> blueprint-inactive">
 					<div class="fbq-shop">
-					<?php if ( have_posts() ) : ?>
+					<?php if ( woocommerce_product_loop() ) : ?>
 
 						<div class="fbq-products-nav">
 							<?php
@@ -139,6 +147,13 @@ $container_class = ( fabrique_mod( 'shop_full_width' ) ) ? 'fbq-container--fullw
 		 *
 		 * Remove loop end */
 		// do_action( 'woocommerce_after_main_content' );
+
+		/**
+		 * Hook: woocommerce_sidebar.
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+		// do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php get_footer( 'shop' ); ?>

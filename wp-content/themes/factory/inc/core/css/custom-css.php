@@ -10,10 +10,7 @@ function factorycommercegurus_custom_css() {
 
 		<?php
 		$factorycommercegurus_logo_height							 = '';
-		$factorycommercegurus_sticky_logo_height					 = '';
 		$factorycommercegurus_padding_above_logo					 = '';
-		$factorycommercegurus_padding_below_sticky_logo			 	 = '';
-		$factorycommercegurus_padding_above_sticky_logo			 	 = '';
 		$factorycommercegurus_padding_below_logo					 = '';
 		$factorycommercegurus_dynamic_logo_width					 = '';
 		$factorycommercegurus_mobile_header_height					 = '';
@@ -32,8 +29,6 @@ function factorycommercegurus_custom_css() {
 		$factorycommercegurus_custom_css							 = '';
 		$factorycommercegurus_announcements_bg					 	 = '';
 		$factorycommercegurus_announcements_text					 = '';
-		$factorycommercegurus_topbar_bgcolor						 = '';
-		$factorycommercegurus_topbar_txtcolor						 = '';
 		$factorycommercegurus_page_header_bg						 = '';
 		$factorycommercegurus_level2_font_color 					 = '';
 		
@@ -68,9 +63,6 @@ function factorycommercegurus_custom_css() {
 		$factorycommercegurus_logo_height = factorycommercegurus_getoption( 'factorycommercegurus_logo_height' );
 		$factorycommercegurus_padding_above_logo = factorycommercegurus_getoption( 'factorycommercegurus_padding_above_logo' );
 		$factorycommercegurus_padding_below_logo = factorycommercegurus_getoption( 'factorycommercegurus_padding_below_logo' );
-		$factorycommercegurus_sticky_logo_height = factorycommercegurus_getoption( 'factorycommercegurus_sticky_logo_height' );
-		$factorycommercegurus_padding_above_sticky_logo = factorycommercegurus_getoption( 'factorycommercegurus_padding_above_sticky_logo' );
-		$factorycommercegurus_padding_below_sticky_logo = factorycommercegurus_getoption( 'factorycommercegurus_padding_below_sticky_logo' );
 		$factorycommercegurus_padding_below_logo = factorycommercegurus_getoption( 'factorycommercegurus_padding_below_logo' );
 		$factorycommercegurus_dynamic_logo_width = factorycommercegurus_getoption( 'factorycommercegurus_dynamic_logo_width' );
 		$factorycommercegurus_mobile_header_height = factorycommercegurus_getoption( 'factorycommercegurus_mobile_header_height' );
@@ -128,10 +120,7 @@ function factorycommercegurus_custom_css() {
 		}
 
 		$header_top_padding_height			 = ( ( $factorycommercegurus_logo_height ) + ( $factorycommercegurus_padding_above_logo ) );
-		$sticky_header_top_padding_height	 = ( ( $factorycommercegurus_sticky_logo_height ) + ( $factorycommercegurus_padding_above_sticky_logo ) );
 		$header_total_height				 = ( ( $factorycommercegurus_logo_height ) + ( $factorycommercegurus_padding_above_logo ) + ( $factorycommercegurus_padding_below_logo ) );
-		$sticky_header_total_height			 = ( ( $factorycommercegurus_sticky_logo_height ) + ( $factorycommercegurus_padding_above_sticky_logo ) + ( $factorycommercegurus_padding_below_sticky_logo ) );
-
 
 		if ( $factorycommercegurus_announcements_bg ) {
 			?>
@@ -153,31 +142,6 @@ function factorycommercegurus_custom_css() {
 
 			{
 				color: <?php echo esc_attr( $factorycommercegurus_announcements_text ); ?>;
-			}
-
-			<?php
-		}
-
-		if ( $factorycommercegurus_topbar_bgcolor ) {
-			?>
-
-			.cg-shopping-toolbar 
-			{
-				background-color: <?php echo esc_attr( $factorycommercegurus_topbar_bgcolor ); ?>;
-			}
-
-			<?php
-		}
-
-		if ( $factorycommercegurus_topbar_txtcolor ) {
-			?>
-
-			.cg-shopping-toolbar .wpml .widget_text,
-			.cg-shopping-toolbar a.divider,
-			.cg-shopping-toolbar a,
-			.cg-shopping-toolbar
-			{            
-				color: <?php echo esc_attr( $factorycommercegurus_topbar_txtcolor ); ?>;
 			}
 
 			<?php
@@ -651,47 +615,6 @@ function factorycommercegurus_custom_css() {
 
 		<?php } ?>
 
-		/* Sticky Logo */
-		<?php if ( $factorycommercegurus_sticky_logo_height ) { ?>
-
-			@media only screen and (min-width: 1100px) {
-				.cg-transparent-header.scroller,
-				.cg-header-fixed,
-				.cg-header-fixed-wrapper.cg-is-fixed .logo {
-				/*	height: <?php echo esc_attr( $sticky_header_total_height ); ?>px; */
-				}
-
-				.cg-header-fixed .helper {
-					height: <?php echo esc_attr( $sticky_header_total_height ); ?>px;
-					line-height: <?php echo esc_attr( $sticky_header_total_height ); ?>px;
-				}
-
-				.scroller .leftnav .cg-sticky-logo img,
-				.cg-header-fixed .leftnav img {
-					height: <?php echo esc_attr( $factorycommercegurus_sticky_logo_height ); ?>px;
-					width: auto;
-				}
-
-				.scroller .cg-extras {
-					line-height: <?php echo esc_attr( $factorycommercegurus_sticky_logo_height ); ?>px;
-				}
-
-				.scroller.cg-transparent-header .midnav li,
-				.scroller.rightnav {
-					line-height: <?php echo esc_attr( $factorycommercegurus_sticky_logo_height ); ?>px;
-				}
-
-				.cg-header-fixed-wrapper .cg-primary-menu .menu > li > a {
-					line-height: <?php echo esc_attr( $sticky_header_total_height ); ?>px;
-				}
-
-				
-
-			}
-
-		<?php } ?>
-
-
 		/* Standard Top Padding */
 		<?php if ( $factorycommercegurus_padding_above_logo ) { ?>
 
@@ -701,18 +624,6 @@ function factorycommercegurus_custom_css() {
 					padding-top: <?php echo esc_attr( $factorycommercegurus_padding_above_logo ); ?>px;
 				}
 
-			}
-
-		<?php } ?>
-
-		/* Sticky Top Padding */
-		<?php if ( $factorycommercegurus_padding_above_sticky_logo ) { ?>
-
-			@media only screen and (min-width: 1100px) {
-				.cg-transparent-header.scroller {
-					height: <?php echo esc_attr( $sticky_header_top_padding_height ); ?>px;
-					padding-top: <?php echo esc_attr( $factorycommercegurus_padding_above_sticky_logo ); ?>px;
-				}
 			}
 
 		<?php } ?>
@@ -728,21 +639,6 @@ function factorycommercegurus_custom_css() {
 
 				.cg-transparent-header .cg-primary-menu .menu > li > a {
 					padding-bottom: <?php echo esc_attr( $factorycommercegurus_padding_below_logo ); ?>px;
-				}
-			}
-
-		<?php } ?>
-
-		/* Sticky Bottom Padding */
-		<?php if ( $factorycommercegurus_padding_below_sticky_logo ) { ?>
-
-			@media only screen and (min-width: 1100px) {
-				.cg-transparent-header.scroller {
-					height: <?php echo esc_attr( $sticky_header_total_height ); ?>px;
-				}
-
-				.cg-transparent-header.scroller .cg-primary-menu .menu > li > a {
-					padding-bottom: <?php echo esc_attr( $factorycommercegurus_padding_below_sticky_logo ); ?>px;
 				}
 			}
 

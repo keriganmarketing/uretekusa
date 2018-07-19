@@ -5,7 +5,7 @@
  * Description: Extension for All in One WP Migration that enables using Google Drive for imports and exports
  * Author: ServMask
  * Author URI: https://servmask.com/
- * Version: 2.30
+ * Version: 2.34
  * Text Domain: all-in-one-wp-migration-gdrive-extension
  * Domain Path: /languages
  * Network: True
@@ -33,10 +33,6 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-@ignore_user_abort( true );
-@set_time_limit( 0 );
-@ini_set( 'max_input_time', '-1' );
-
 // Check SSL Mode
 if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && ( $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) ) {
 	$_SERVER['HTTPS'] = 'on';
@@ -60,7 +56,7 @@ require_once dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'exceptions.php';
 // Include loader
 require_once dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'loader.php';
 
-// ============================================================================
-// = All app initialization is done in Ai1wmge_Main_Controller __constructor. =
-// ============================================================================
+// ===========================================================================
+// = All app initialization is done in Ai1wmge_Main_Controller __constructor =
+// ===========================================================================
 $main_controller = new Ai1wmge_Main_Controller();

@@ -7,7 +7,7 @@ require_once $dir . '/includes/fabrique.php';
 
 function fabrique_version()
 {
-	return '1.0.12';
+	return '1.0.19';
 }
 
 function fabrique_after_setup_theme()
@@ -128,7 +128,7 @@ function fabrique_tgmpa_register()
 		array(
 			'name' => esc_html__( 'Fabrique Core', 'fabrique' ),
 			'slug' => 'fabrique-core',
-			'version' => '1.0.12',
+			'version' => '1.0.19',
 			'source' => $template_directory . '/lib/plugins/fabrique-core.zip',
 			'required' => true
 		),

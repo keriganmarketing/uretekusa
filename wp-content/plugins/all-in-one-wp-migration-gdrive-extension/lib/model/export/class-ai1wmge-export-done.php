@@ -35,7 +35,7 @@ class Ai1wmge_Export_Done {
 
 		// Send notification
 		Ai1wm_Notification::ok(
-			sprintf( __( '%s backup to Google Drive completed', AI1WMGE_PLUGIN_NAME ), parse_url( site_url(), PHP_URL_HOST ) . parse_url( site_url(), PHP_URL_PATH ) ),
+			sprintf( __( '✅ Backup to Google Drive has completed (%s)', AI1WMGE_PLUGIN_NAME ), parse_url( site_url(), PHP_URL_HOST ) . parse_url( site_url(), PHP_URL_PATH ) ),
 			sprintf( __( '<p>Your site %s was successfully exported to Google Drive.</p>', AI1WMGE_PLUGIN_NAME ), site_url() ) .
 			sprintf( __( '<p>Date: %s</p>', AI1WMGE_PLUGIN_NAME ), date( 'r' ) ) .
 			sprintf( __( '<p>Backup file: %s</p>', AI1WMGE_PLUGIN_NAME ), ai1wm_archive_name( $params ) ) .

@@ -17,7 +17,7 @@
 ?>
 
 <?php if ( $category ) : ?>
-	<article <?php wc_product_cat_class( $opts['entry_class'], $category ); ?> <?php echo fabrique_s( $opts['entry_style'] ) . ' data-filter="' . esc_attr( strtolower( $category->name ) ) . '"'; ?>>
+	<article <?php wc_product_cat_class( $opts['entry_class'], $category ); ?> <?php echo fabrique_s( $opts['entry_style'] ) . ' data-filter="' . esc_attr( strtolower( $category->slug ) ) . '"'; ?>>
 		<a href="<?php echo esc_url( get_term_link( $category->slug, $opts['taxonomy'] ) ); ?>" class="<?php echo esc_attr( implode( ' ', $opts['entry_inner_class'] ) ); ?>">
 			<div class="fbq-entry-header">
 				<?php echo fabrique_template_media( $thumbnail_args ); ?>

@@ -10,16 +10,12 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     3.0.0
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
-
+defined( 'ABSPATH' ) || exit;
 ?>
 
 <?php
@@ -52,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	}
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
 	<div class="fbq-single-product-content thumbnail-<?php echo esc_attr( $thumbnail_position ); ?> detail-<?php echo esc_attr( $detail_position ); ?>">
 		<?php echo fabrique_escape_content( $product_background ); ?>
 		<div class="fbq-single-product-content-wrapper">

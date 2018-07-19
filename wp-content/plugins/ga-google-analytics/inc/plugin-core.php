@@ -74,7 +74,7 @@ function ga_google_analytics_universal() {
 	
 	$ga_display = "ga('require', 'displayfeatures');";
 	$ga_link    = "ga('require', 'linkid', 'linkid.js');";
-	$ga_anon    = "ga('set', 'anonymizeIP', true);";
+	$ga_anon    = "ga('set', 'anonymizeIp', true);";
 	$ga_ssl     = "ga('set', 'forceSSL', true);";
 	
 	?>

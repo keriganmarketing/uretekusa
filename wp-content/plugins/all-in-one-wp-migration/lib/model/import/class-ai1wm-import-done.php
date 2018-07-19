@@ -47,15 +47,18 @@ class Ai1wm_Import_Done {
 			// Deactivate WordPress SSL plugins
 			if ( ! is_ssl() ) {
 				ai1wm_deactivate_plugins( array(
-					'really-simple-ssl/rlrsssl-really-simple-ssl.php',
-					'wordpress-https/wordpress-https.php',
-					'wp-force-ssl/wp-force-ssl.php',
+					ai1wm_discover_plugin_basename( 'really-simple-ssl/rlrsssl-really-simple-ssl.php' ),
+					ai1wm_discover_plugin_basename( 'wordpress-https/wordpress-https.php' ),
+					ai1wm_discover_plugin_basename( 'wp-force-ssl/wp-force-ssl.php' ),
 				) );
 			}
 
 			// Deactivate WordPress plugins
 			ai1wm_deactivate_plugins( array(
-				'invisible-recaptcha/invisible-recaptcha.php',
+				ai1wm_discover_plugin_basename( 'invisible-recaptcha/invisible-recaptcha.php' ),
+				ai1wm_discover_plugin_basename( 'wps-hide-login/wps-hide-login.php' ),
+				ai1wm_discover_plugin_basename( 'hide-my-wp/index.php' ),
+				ai1wm_discover_plugin_basename( 'mycustomwidget/my_custom_widget.php' ),
 			) );
 
 			// Deactivate Jetpack modules
@@ -97,15 +100,18 @@ class Ai1wm_Import_Done {
 				// Deactivate WordPress SSL plugins
 				if ( ! is_ssl() ) {
 					ai1wm_deactivate_plugins( array(
-						'really-simple-ssl/rlrsssl-really-simple-ssl.php',
-						'wordpress-https/wordpress-https.php',
-						'wp-force-ssl/wp-force-ssl.php',
+						ai1wm_discover_plugin_basename( 'really-simple-ssl/rlrsssl-really-simple-ssl.php' ),
+						ai1wm_discover_plugin_basename( 'wordpress-https/wordpress-https.php' ),
+						ai1wm_discover_plugin_basename( 'wp-force-ssl/wp-force-ssl.php' ),
 					) );
 				}
 
 				// Deactivate WordPress plugins
 				ai1wm_deactivate_plugins( array(
-					'invisible-recaptcha/invisible-recaptcha.php',
+					ai1wm_discover_plugin_basename( 'invisible-recaptcha/invisible-recaptcha.php' ),
+					ai1wm_discover_plugin_basename( 'wps-hide-login/wps-hide-login.php' ),
+					ai1wm_discover_plugin_basename( 'hide-my-wp/index.php' ),
+					ai1wm_discover_plugin_basename( 'mycustomwidget/my_custom_widget.php' ),
 				) );
 
 				// Deactivate Jetpack modules
@@ -149,15 +155,18 @@ class Ai1wm_Import_Done {
 				// Deactivate WordPress SSL plugins
 				if ( ! is_ssl() ) {
 					ai1wm_deactivate_plugins( array(
-						'really-simple-ssl/rlrsssl-really-simple-ssl.php',
-						'wordpress-https/wordpress-https.php',
-						'wp-force-ssl/wp-force-ssl.php',
+						ai1wm_discover_plugin_basename( 'really-simple-ssl/rlrsssl-really-simple-ssl.php' ),
+						ai1wm_discover_plugin_basename( 'wordpress-https/wordpress-https.php' ),
+						ai1wm_discover_plugin_basename( 'wp-force-ssl/wp-force-ssl.php' ),
 					) );
 				}
 
 				// Deactivate WordPress plugins
 				ai1wm_deactivate_plugins( array(
-					'invisible-recaptcha/invisible-recaptcha.php',
+					ai1wm_discover_plugin_basename( 'invisible-recaptcha/invisible-recaptcha.php' ),
+					ai1wm_discover_plugin_basename( 'wps-hide-login/wps-hide-login.php' ),
+					ai1wm_discover_plugin_basename( 'hide-my-wp/index.php' ),
+					ai1wm_discover_plugin_basename( 'mycustomwidget/my_custom_widget.php' ),
 				) );
 
 				// Deactivate Jetpack modules

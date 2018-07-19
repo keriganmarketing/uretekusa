@@ -163,5 +163,7 @@ window.wpfc.dictionary = {
 	"Cache Statistics" : "Статистика кэша",
 	"Exclude Cookies"	: "Исключить куки",
 	"Database Cleanup" : "Очистка базы данных",
+	"Disable Emojis" : "Отключить эмодзи",
+	"You can remove the emoji inline css and wp-emoji-release.min.js" : "Убирает CSS и JavaScript, необходимые для поддержки эмодзи",
 	"" : "",
 };

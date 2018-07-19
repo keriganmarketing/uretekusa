@@ -23,7 +23,7 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-// include all the files that you want to load in here
+// Include all the files that you want to load in here
 require_once AI1WMGE_CONTROLLER_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wmge-main-controller.php';
@@ -78,10 +78,12 @@ require_once AI1WMGE_MODEL_PATH .
 
 require_once AI1WMGE_VENDOR_PATH .
 			DIRECTORY_SEPARATOR .
-			'gdrive-factory' .
+			'gdrive-client' .
 			DIRECTORY_SEPARATOR .
-			'gdrive-factory' .
+			'class-ai1wmge-gdrive-client.php';
+
+require_once AI1WMGE_VENDOR_PATH .
 			DIRECTORY_SEPARATOR .
-			'lib' .
+			'gdrive-client' .
 			DIRECTORY_SEPARATOR .
-			'ServMaskGdriveClient.php';
+			'class-ai1wmge-gdrive-curl.php';

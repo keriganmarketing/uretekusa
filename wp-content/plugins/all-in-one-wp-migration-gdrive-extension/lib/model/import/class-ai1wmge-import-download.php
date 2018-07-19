@@ -25,89 +25,103 @@
 
 class Ai1wmge_Import_Download {
 
-	public static function execute( $params ) {
+	public static function execute( $params, Ai1wmge_GDrive_Client $gdrive = null ) {
 
-		// Set completed flag
 		$params['completed'] = false;
 
-		// File ID
-		if ( ! isset( $params['fileId'] ) ) {
-			throw new Ai1wm_Import_Exception( __( 'Google Drive File ID is not specified.', AI1WMGE_PLUGIN_NAME ) );
+		// Set file size
+		if ( ! isset( $params['file_size'] ) ) {
+			throw new Ai1wm_Import_Exception( __( 'Google Drive File Size is not specified.', AI1WMGE_PLUGIN_NAME ) );
 		}
 
-		// Total bytes
-		if ( ! isset( $params['totalBytes'] ) ) {
-			throw new Ai1wm_Import_Exception( __( 'Unable to determine size of Google Drive file.', AI1WMGE_PLUGIN_NAME ) );
+		// Set download URL
+		if ( ! isset( $params['download_url'] ) ) {
+			throw new Ai1wm_Import_Exception( __( 'Google Drive Download URL is not specified.', AI1WMGE_PLUGIN_NAME ) );
 		}
 
-		// Set startBytes
-		if ( ! isset( $params['startBytes'] ) ) {
-			$params['startBytes'] = 0;
+		// Set file range start
+		if ( ! isset( $params['file_range_start'] ) ) {
+			$params['file_range_start'] = 0;
 		}
 
-		// Set endBytes
-		if ( ! isset( $params['endBytes'] ) ) {
-			$params['endBytes'] = ServMaskGdriveClient::CHUNK_SIZE;
+		// Set file range end
+		if ( ! isset( $params['file_range_end'] ) ) {
+			$params['file_range_end'] = AI1WMGE_FILE_CHUNK_SIZE - 1;
 		}
 
-		// Set retry
-		if ( ! isset( $params['retry'] ) ) {
-			$params['retry'] = 0;
+		// Set download retries
+		if ( ! isset( $params['download_retries'] ) ) {
+			$params['download_retries'] = 0;
 		}
 
 		// Set Google Drive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
-			get_option( 'ai1wmge_gdrive_ssl', true )
-		);
+		if ( is_null( $gdrive ) ) {
+			$gdrive = new Ai1wmge_GDrive_Client(
+				get_option( 'ai1wmge_gdrive_token', false ),
+				get_option( 'ai1wmge_gdrive_ssl', true )
+			);
+		}
 
-		// Get archive file
+		$gdrive->load_download_url( $params['download_url'] );
+
+		// Open the archive file for writing
 		$archive = fopen( ai1wm_archive_path( $params ), 'ab' );
 
 		try {
 
-			// Increase number of retries
-			$params['retry'] += 1;
+			$params['download_retries'] += 1;
 
-			// Download file chunk
-			$gdrive->getFile( $params['fileId'], $archive, $params );
+			// Download file chunk data
+			$gdrive->get_file( $archive, $params['file_range_start'], $params['file_range_end'] );
+
+			// Unset download retries
+			unset( $params['download_retries'] );
 
 		} catch ( Ai1wmge_Connect_Exception $e ) {
-			// Retry 3 times
-			if ( $params['retry'] <= 3 ) {
+			if ( $params['download_retries'] <= 3 ) {
 				return $params;
 			}
 
 			throw $e;
 		}
 
-		// Unset retry counter
-		unset( $params['retry'] );
+		// Set file range start
+		if ( $params['file_size'] <= ( $params['file_range_start'] + AI1WMGE_FILE_CHUNK_SIZE ) ) {
+			$params['file_range_start'] = $params['file_size'] - 1;
+		} else {
+			$params['file_range_start'] = $params['file_range_start'] + AI1WMGE_FILE_CHUNK_SIZE;
+		}
 
-		// Calculate percent
-		$percent = (int) ( ( $params['startBytes'] / $params['totalBytes'] ) * 100 );
+		// Set file range end
+		if ( $params['file_size'] <= ( $params['file_range_end'] + AI1WMGE_FILE_CHUNK_SIZE ) ) {
+			$params['file_range_end'] = $params['file_size'] - 1;
+		} else {
+			$params['file_range_end'] = $params['file_range_end'] + AI1WMGE_FILE_CHUNK_SIZE;
+		}
+
+		// Get progress
+		$progress = (int) ( ( $params['file_range_start'] / $params['file_size'] ) * 100 );
 
 		// Set progress
-		Ai1wm_Status::progress( $percent );
+		Ai1wm_Status::progress( $progress );
 
 		// Completed?
-		if ( $params['totalBytes'] == $params['startBytes'] ) {
+		if ( $params['file_range_start'] === ( $params['file_size'] - 1 ) ) {
 
-			// Unset file ID
-			unset( $params['fileId'] );
+			// Unset file size
+			unset( $params['file_size'] );
 
-			// Unset total bytes
-			unset( $params['totalBytes'] );
+			// Unset download URL
+			unset( $params['download_url'] );
 
-			// Unset start bytes
-			unset( $params['startBytes'] );
+			// Unset file range start
+			unset( $params['file_range_start'] );
 
-			// Unset end bytes
-			unset( $params['endBytes'] );
+			// Unset file range end
+			unset( $params['file_range_end'] );
 
-			// Unset completed flag
+			// Unset completed
 			unset( $params['completed'] );
-
 		}
 
 		// Close the archive file

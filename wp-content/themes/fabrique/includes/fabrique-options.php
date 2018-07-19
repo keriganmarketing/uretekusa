@@ -431,6 +431,7 @@ function fabrique_theme_options( $key = '' )
 		'product_image_action' => 'lightbox',
 		'product_variation_mode' => 'radio',
 		'product_thumbnail_position' => 'bottom',
+		'product_thumbnail_ratio' => 100,
 		'product_thumbnail_item' => 4,
 		'product_detail_position' => 'right',
 		'product_detail_width' => 40,
@@ -2111,8 +2112,8 @@ function fabrique_archive_title_options( $opts = array() )
 		$opts['title_content'] = $archive_title . $term->name;
 
 		if ( !empty( $term->description ) ) {
-				$opts['subtitle_on'] = true;
-				$opts['subtitle'] = $term->description;
+			$opts['subtitle_on'] = true;
+			$opts['subtitle'] = $term->description;
 		}
 	} elseif ( is_category() ) {
 		$category_title = fabrique_mod( 'page_title_category_label' );

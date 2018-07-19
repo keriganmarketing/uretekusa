@@ -974,7 +974,7 @@ endif;
 if ( !function_exists( 'fabrique_escape_url' ) ) :
 function fabrique_escape_url( $url = '' )
 {
-	if ( '#' === substr( $url, 0, 1 ) ) {
+	if ( '#' === substr( $url, 0, 1 ) || 'sms:' === substr( $url, 0, 4 ) ) {
 		return $url;
 	} else {
 		return esc_url( $url );

@@ -1,4 +1,4 @@
-<div id="mapwrapper"><!-- v2.2.3 -->
+<div id="mapwrapper"><!-- v2.2.4 -->
 	<div id="mapbase">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" xml:space="preserve">
 			<g id="lakes">
@@ -57,7 +57,6 @@
 				<path id="us_50" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M198.546,171.736c18.165,1.587,42.414,3.391,60.364,4.489c0.208-4.454,0.796-16.357,1.52-31.176c0.479-9.799,1.017-20.874,1.542-31.914c-10.848-0.386-66.665-5.277-79.229-7.656l-1.029,7.954l-5.122,39.569l-2.099,16.211C177.931,169.808,187.008,170.729,198.546,171.736z"/>
 				<path id="us_51" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M654,249.493c0,2.766-2.065,5.007-4.612,5.007h-17.775c-2.547,0-4.612-2.241-4.612-5.007v-9.986c0-2.766,2.065-5.007,4.612-5.007h17.775c2.547,0,4.612,2.241,4.612,5.007V249.493z"/>
 			</g>
-
 			<g id="visnames">
 				<text id="us_vn1" transform="matrix(1 0 0 1 474 310)" font-size="14">AL</text>
 				<text id="us_vn2" transform="matrix(1 0 0 1 77 355)" font-size="14">AK</text>

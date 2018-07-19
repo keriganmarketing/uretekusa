@@ -1,9 +1,9 @@
-=== UpdraftPlus WordPress Backup Plugin ===
+﻿=== UpdraftPlus WordPress Backup Plugin ===
 Contributors: Backup with UpdraftPlus, DavidAnderson, DNutbourne, aporter, snightingale, bcrodua
 Tags: backup, restore, database backup, wordpress backup, cloud backup, s3, dropbox, google drive, onedrive, ftp, backups
 Requires at least: 3.2
 Tested up to: 4.9
-Stable tag: 1.14.5
+Stable tag: 1.14.11
 Author URI: https://updraftplus.com
 Donate link: https://david.dw-perspective.org.uk/donate
 License: GPLv3 or later
@@ -149,7 +149,62 @@ Unfortunately not; since this is free software, there’s no warranty and no gua
 
 The <a href="https://updraftplus.com/news/">UpdraftPlus backup blog</a> is the best place to learn in more detail about any important changes.
 
-N.B. Paid versions of UpdraftPlus Backup / Restore have a version number which is 1 higher in the first digit, and has an extra component on the end, but the changelog below still applies. i.e. changes listed for 1.14.4 of the free version correspond to changes made in 2.14.4.x of the paid version.
+N.B. Paid versions of UpdraftPlus Backup / Restore have a version number which is 1 higher in the first digit, and has an extra component on the end, but the changelog below still applies. i.e. changes listed for 1.14.9 of the free version correspond to changes made in 2.14.9.x of the paid version.
+
+= 1.14.11 - 25/May/2018 =
+
+* FIX: Revert a change in 1.14.9 that could cause backups to not be sent to remote storage (fix in 1.14.10 was not 100% complete (but worked for almost everyone))
+
+= 1.14.9 - 24/May/2018 =
+
+* FEATURE: Make it more seamless to sign up to UpdraftCentral Cloud
+* FEATURE: Microsoft Azure storage (Premium) compatibility with Azure Germany
+* FEATURE: Added the ability to create migration keys from WP-CLI (Premium)
+* FIX: A backup icon/storage shows for a storage type even if all instances were disabled
+* FIX: WP CLI updraftplus command was not running on few enviroments like the Windows command line
+* FIX: A PHP fatal error was occurring when a user try to restore an encrypted DB when defining the "UPDRAFTPLUS_DECRYPTION_ENGINE" constant
+* TWEAK: Added the ability to schedule incremental backups (Note you can not yet take incremental backups)
+* REFACTOR: Completed factoring for tabs of the settings page.
+* TWEAK: Some re-factoring and tidying of the restoration code for easier maintenance
+* TWEAK: Add a longer timeout on SFTP logins to cope with a 'long delay, but then worked' situation seen in the wild
+* TWEAK: An "Incremental backups" extension was displayed in the Premium / Extensions tab, causing confusion since it is not yet finished/launched
+* TWEAK: Displays a Byte Order Mark (BOM) warning by giving the file names along with the path in the "Existing Backups" tab, if a BOM is detected at the start of common files that people tend to edit
+* TWEAK: A WP CLI Existing backup command didn't display a date time in the "job_identifier" column
+* TWEAK: Add links to the relevant app privacy policies within the settings sections for storage methods using OAuth authorization apps
+* TWEAK: Log user and group IDs of process and file/folder, when permissions for an operation is denied
+* TWEAK: Prevent a potential PHP debugging notice when showing the 'Upload' button
+* TWEAK: Update an out-of-date "wrong password" link
+* TWEAK: Added the "Web-server disk space in use by UpdraftPlus" information to "Site information" section in the "Advanced Tools" tab; it won't show in the 'Existing Backups' tab if you are using less than 100MB.
+* TWEAK: When a Google Cloud token was invalid, a PHP Fatal could result instead of catching the error and informing/logging nicely
+* TWEAK: If php-xml (SimpleXMLElement) is not installed, then show an appropriate warning in the Azure configuration section
+* TWEAK: If the user tries to install another version of UpdraftPlus, then tweak the default error message that they are shown by WP, which is too obscure/cryptic for many users
+
+= 1.14.8 - 12/May/2018 =
+
+* FIX: Resuming of a partially uploaded backup archive in the new 'OneDrive for Business' module was not working
+* TWEAK: When testing SFTP settings, if debug is activated, activate debug logging and pass the results back in the event of test failure (previous attempt was incomplete)
+* TWEAK: OneDrive SDK cleaned up to remove the obsolete Live 5.0 API
+
+= 1.14.7 - 25/Apr/2018 =
+
+* FIX: Fix incompatibility with loading the dashboard on WP 4.6 and older. If you have this problem, then you cannot visit /wp-admin/ - you will need to update via another tool (e.g. if you have a multiple site management tool), or via FTP (download the https://downloads.wordpress.org/plugin/updraftplus.1.14.7.zip , unzip it on your PC, log in to your site via FTP into the folder wp-content/plugins, remove the existing folder 'updraftplus' and then upload the unzipped 'updraftplus' folder). Many apologies!
+
+= 1.14.6 - 25/Apr/2018 =
+
+* FEATURE: Added the option to upload locally-available backups to remote storage
+* FEATURE: Add post management module for UpdraftCentral (client-side; UC-side still pending)
+* FEATURE: Added WP-CLI "rescan-storage" subcommand to the WP-CLI add-on rescan either remote storage or local storage
+* FEATURE: Compatibility of the (paid) OneDrive module with 'OneDrive for Business'
+* FIX: Multisite restoration did not display single site restoration option when URLs were different but clearly the same site (http/https difference)
+* FIX: WebDAV uploads could fail if the user defined the constant UPDRAFTPLUS_WEBDAV_NEVER_CHUNK
+* FIX: If UpdraftVault remote had failed, UpdraftVault couldn't recover without settings wipe
+* TWEAK: Handle a DreamObjects server that was not sending an application/xml content-type header
+* TWEAK: Handle a case where the root cause of an error from DreamObjects was not being clearly shown
+* TWEAK: Alert the user of their mistake if they try to enter a URL instead of a folder path in the OneDrive settings folder field
+* TWEAK: Adjust the PclZip log message to clarify the implications of using PclZip (i.e.: it's significantly slower)
+* TWEAK: Add support for the upcoming objects-us-east-1.dream.io DreamObjects endpoint
+* TWEAK: Prevent potential PHP notice in WP-CLI subcommand for existing backups
+* TWEAK: Add UpdraftPlus news in admin dashboard "WordPress Events & News" widget
 
 = 1.14.5 - 3/Apr/2018 =
 
@@ -157,7 +212,7 @@ N.B. Paid versions of UpdraftPlus Backup / Restore have a version number which i
 * FEATURE: An UpdraftPlus add-on (paid) to run the backup process through WP CLI
 * FIX: Restoration did not display the decryption passphrase input (but always used the saved one)
 * FIX: Browse content download file was not working in Windows hosting
-* FIX: The wrong default for the 'Delete local backup' setting was applied if you had never saved your settings  
+* FIX: The wrong default for the 'Delete local backup' setting was applied if you had never saved your settings
 * TWEAK: Prevent a PHP notice showing when testing S3 storage
 * TWEAK: Prevent a PHP notice when downloading from Dropbox
 * TWEAK: Improved the migrate UI
@@ -483,4 +538,4 @@ Furthermore, reliance upon any non-English translation is at your own risk. Updr
 We recognise and thank the following for code and/or libraries used and/or modified under the terms of their open source licences; see: https://updraftplus.com/acknowledgements/
 
 == Upgrade Notice ==
-* 1.14.5: New 'database only' feature for sending backups via email; new WP-CLI add-on (Premium); various small fixes and tweaks and internal improvements - recommended update for all
+* 1.14.11 : UpdraftCloud easy sign-up wizard. App privacy policy links for GDPR compliance. Azure Germany support (Azure add-on). Many tweaks for convenience and small fixes. A recommended update for all. Also fixes a change in the short-lived 1.14.9 that could cause backups to not be sent to remote storage

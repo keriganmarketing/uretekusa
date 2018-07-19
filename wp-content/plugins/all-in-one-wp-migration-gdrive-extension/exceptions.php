@@ -23,4 +23,6 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-class Ai1wmge_Connect_Exception extends Exception {}
+class Ai1wmge_Error_Exception extends Exception {}
+class Ai1wmge_Connect_Exception extends Ai1wmge_Error_Exception {}
+class Ai1wmge_Invalid_Grant_Exception extends Ai1wmge_Error_Exception {}

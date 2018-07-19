@@ -78,9 +78,9 @@ function factorycommercegurus_register_required_plugins() {
 		array(
             'name'               => 'Layer Slider', // The plugin name
             'slug'               => 'LayerSlider', // The plugin slug (typically the folder name)
-            'source'             => 'http://files.commercegurus.com/layersliderwp-6.6.7.installable.zip', // The plugin source
+            'source'             => 'http://files.commercegurus.com/layersliderwp-6.7.5.installable.zip', // The plugin source
             'required'           => false, // If false, the plugin is only 'recommended' instead of required
-            'version'            => '6.6.7', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'            => '6.7.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation'	 => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url'		 => '', // If set, overrides default API URL and points to an external URL
@@ -88,9 +88,9 @@ function factorycommercegurus_register_required_plugins() {
 		array(
             'name'               => 'WPBakery Visual Composer', // The plugin name
             'slug'               => 'js_composer', // The plugin slug (typically the folder name)
-            'source'             => 'http://files.commercegurus.com/js_composer_5.4.5/js_composer.zip', // The plugin source
+            'source'             => 'http://files.commercegurus.com/js_composer_5.4.7/js_composer.zip', // The plugin source
             'required'           => false, // If false, the plugin is only 'recommended' instead of required
-            'version'            => '5.4.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'            => '5.4.7', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation'	 => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url'		 => '', // If set, overrides default API URL and points to an external URL
@@ -178,8 +178,8 @@ function cg_import_files() {
 	array(
 	  'import_file_name'           => 'Factory Demo Data',
 	  'categories'                 => array( 'Main Demo Data' ),
-	  'import_file_url'		 	   => 'https://themedemo.commercegurus.com/factory/wp-content/uploads/sites/47/2017/12/factorydemodata.xml',
-	  'import_widget_file_url' 	   => 'https://themedemo.commercegurus.com/factory/wp-content/uploads/sites/47/2017/12/factory-widgets.wie',
+	  'import_file_url'		 	   => 'http://files.commercegurus.com/factory-demodata/factory-content.xml',
+	  'import_widget_file_url' 	   => 'http://files.commercegurus.com/factory-demodata/factory-widgets.wie',
 	  'import_preview_image_url'   => 'https://themedemo.commercegurus.com/factory/wp-content/uploads/sites/47/2017/12/factory_main_sshot.jpg',
 	  'import_notice'              => __( 'After you import this demo, you will have to setup the slider separately.', 'factory' ),
 	  'preview_url'                => 'https://themedemo.commercegurus.com/factory/',

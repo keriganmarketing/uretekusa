@@ -35,11 +35,13 @@ if ( defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	global $wpdb, $wp_filesystem;
 
 	// Delete any options or other data stored in the database here
-	delete_option( 'ai1wmge_gdrive_token' );
 	delete_option( 'ai1wmge_gdrive_cron' );
+	delete_option( 'ai1wmge_gdrive_token' );
 	delete_option( 'ai1wmge_gdrive_ssl' );
 	delete_option( 'ai1wmge_gdrive_backups' );
 	delete_option( 'ai1wmge_gdrive_total' );
 	delete_option( 'ai1wmge_gdrive_notify_toggle' );
+	delete_option( 'ai1wmge_gdrive_notify_error_toggle' );
+	delete_option( 'ai1wmge_gdrive_notify_error_subject' );
 	delete_option( 'ai1wmge_gdrive_notify_email' );
 }

@@ -40,13 +40,14 @@ $thumbnail_ids = $product->get_gallery_image_ids();
 $thumbnail_ids = !empty( $thumbnail_ids ) ? $thumbnail_ids : array( get_post_thumbnail_id() );
 $image_number = count( $thumbnail_ids );
 $content_class = ( $image_number > 1 ) ? 'fbq-gallery-content with-thumbnail' : 'fbq-gallery-content';
+$thumbnail_set_ratio = fabrique_mod( 'product_thumbnail_ratio' );
 ?>
 
 <div class="images fbq-product-gallery fbq-product-gallery--<?php echo esc_attr( $action ); ?> fbq-product-gallery--<?php echo esc_attr( $tn_position ); ?> fbq-gallery--carousel" data-style="carousel" data-action="<?php echo esc_attr( $image_action ); ?>">
 	<div class="<?php echo esc_attr( $content_class ); ?>" data-adaptive_height="true">
 		<?php if ( $image_number > 0 ): ?>
 			<?php foreach ( $thumbnail_ids as $index => $thumbnail_id ) : ?>
-				<div class="fbq-gallery-item">
+				<div class="fbq-gallery-item" data-id="<?php echo esc_attr( $thumbnail_id ); ?>">
 					<div class="fbq-gallery-body">
 						<?php if ( 'zoom' === $image_action ) : ?>
 							<div class="fbq-gallery-media">
@@ -83,7 +84,25 @@ $content_class = ( $image_number > 1 ) ? 'fbq-gallery-content with-thumbnail' : 
 		<div class="thumbnails columns-<?php echo esc_attr( $column ); ?> fbq-gallery-thumbnail fbq-gallery-thumbnail--<?php echo esc_attr( $tn_position ); ?>" data-thumbnail="<?php echo esc_attr( $column ); ?>">
 			<?php foreach ( $thumbnail_ids as $thumbnail_id ) : ?>
 				<div class="fbq-gallery-thumbnail-item<?php echo esc_attr( $column_class ); ?>">
-					<?php echo wp_get_attachment_image( $thumbnail_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ) ); ?>
+					<?php
+						$thumbnail_image = wp_get_attachment_image_src( $thumbnail_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_single' ) );
+						$thumbnail_style_attr = '';
+						if ( 'auto' !== $thumbnail_set_ratio ) {
+							$thumbnail_image_ratio = ($thumbnail_image[2]/$thumbnail_image[1])*100;
+							if ( $thumbnail_image_ratio < (int)$thumbnail_set_ratio ) {
+								$thumbnail_style_attr .= 'height:100%;';
+								$thumbnail_style_attr .= 'width:auto;';
+							} else {
+								$thumbnail_style_attr .= 'width:100%;';
+								$thumbnail_style_attr .= 'height:auto;';
+							}
+							?><div class="fbq-gallery-thumbnail-item-inner" style="padding-bottom:<?php echo esc_attr( $thumbnail_set_ratio ); ?>%;">
+								<?php echo wp_get_attachment_image( $thumbnail_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_single' ), false, array( 'style' => $thumbnail_style_attr ) ); ?>
+							</div><?php
+						} else {
+							echo wp_get_attachment_image( $thumbnail_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_single' ) );
+						}
+					?>
 				</div>
 			<?php endforeach;?>
 		</div>

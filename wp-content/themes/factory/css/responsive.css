@@ -146,6 +146,11 @@
     width: 135px;
   }
 
+  .cg-primary-menu .menu > li > a {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {

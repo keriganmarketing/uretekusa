@@ -26,7 +26,7 @@
 // ==================
 // = Plugin Version =
 // ==================
-define( 'AI1WMGE_VERSION', '2.30' );
+define( 'AI1WMGE_VERSION', '2.34' );
 
 // ===============
 // = Plugin Name =
@@ -69,9 +69,19 @@ define( 'AI1WMGE_TEMPLATES_PATH', AI1WMGE_LIB_PATH . DIRECTORY_SEPARATOR . 'view
 define( 'AI1WMGE_VENDOR_PATH', AI1WMGE_LIB_PATH . DIRECTORY_SEPARATOR . 'vendor' );
 
 // =======================
-// = ServMask Gdrive URL =
+// = ServMask GDrive URL =
 // =======================
 define( 'AI1WMGE_GDRIVE_URL', 'https://servmask.com/redirect/gdrive/create' );
+
+// ======================
+// = ServMask Token URL =
+// ======================
+define( 'AI1WMGE_TOKEN_URL', 'https://servmask.com/redirect/gdrive' );
+
+// ===================
+// = File Chunk Size =
+// ===================
+define( 'AI1WMGE_FILE_CHUNK_SIZE', 5 * 1024 * 1024 );
 
 // =================
 // = Max File Size =

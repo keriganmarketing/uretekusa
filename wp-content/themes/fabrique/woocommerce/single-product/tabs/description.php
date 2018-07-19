@@ -29,7 +29,7 @@ $bp_data = get_post_meta( $post_id, 'bp_data', true );
 $blueprint_active = false;
 
 if ( is_array( $bp_data ) && isset( $bp_data['builder'] ) && is_array( $bp_data['builder'] ) ) {
-	$blueprint_active = $bp_data['builder']['active'];
+	$blueprint_active = $bp_data['builder']['active'] && 'false' !== $bp_data['builder']['active'] ? true : false;
 }
 ?>
 

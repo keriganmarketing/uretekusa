@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, performance, wp-cache, total cache, super cache
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 0.8.7.8
+Stable tag: 0.8.8.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,8 +40,9 @@ Wpfc does not support Wordpress Multisite yet.
 9. Enable/Disable cache option for logged-in users
 10. SSL support
 11. CDN support
-12. Preload Cache - Create the cache of all the site automatically
-13. Exclude pages and user-agents
+12. Cloudflare support
+13. Preload Cache - Create the cache of all the site automatically
+14. Exclude pages and user-agents
 
 <h4>Performance Optimization</h4>
 
@@ -101,6 +102,36 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.8.2 =
+* to fix removing the escaped slashes of Cloudflare Integration [<a target="_blank" href="https://wordpress.org/support/topic/wpfc-cf-is-stripping-important-code/">Details</a>]
+* <strong>[FEATURE]</strong> Compatible with Fast Velocity Minify
+* <strong>[FEATURE]</strong> Microsoft IIS support
+* to serve the sources of Rev Slider if the cdn integration is enabled
+* to exclude woocommerce_items_in_cart cookie automatically 
+* to check wptouch-pro-view cookie 
+
+= 0.8.8.1 =
+* to update russian translation
+* to set browser caching for Cloudflare
+* not to load the css and js sources of clear cache button when toolar is not visible
+* to fix SyntaxError: Unexpected token M in JSON at position 0 error
+
+= 0.8.8.0 =
+* to rename the text on admin bar
+* to move cdn functions to speed up wp fastest cache
+* check if settings are indexed by multilang locales for WeePie Cookie Allow
+* <strong>[FEATURE]</strong> to add Cloudflare integration
+
+= 0.8.7.9 =
+* refactoring of delete_cache_of_term()
+* <strong>[FEATURE]</strong> exclude archives
+* to delete cache of pagination after new post
+* to add do_action() for deleteCache()
+* to shorten the url of the minified and combined sources
+* to fix excluding googleanalytics problem
+* to create cache for mobile user-agents when mobile option is disabled
+* <strong>[FEATURE]</strong> Compatible with WeePie Cookie Allow
 
 = 0.8.7.8 =
 * to check <title> for 404 if the header return 200
@@ -721,9 +752,6 @@ Wpfc does not create .htaccess automatically so you need to create empty one.
 
 = How is "tmpWpfc" removed? =
 When the cached files are deleted, they are moved to "tmpWpfc" instead of being deleted and a cron-job is set. Delete all files are so difficult for server so cron-job is set not to use a lot of CPU resources. Cron-job is set and it deletes 100 files every 5 minutes. When all files in "tmpWpfc" are deleted, cron-job is unset.
-
-= How can stop caching for some pages? =
-If you add &lt;!-- [wpfcNOT] --&gt; into source coude, creating cache stops. You can find it on visual and text editor after opening Add New Post panel.
 
 = Does Wpfc work with WPMU (Wordpress Multisite) properly? =
 No. Wpfc does not support Wordpress Multisite yet.

@@ -1034,7 +1034,7 @@ function fabrique_template_video( $item )
 				$id[2] = empty( $id[2] )? '': $id[2];
 				$allow_fullscreen = 'allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"';
 				if ( !empty( $id[1] ) ) {
-					$frame_src = '//www.youtube.com/embed/'. esc_attr( $id[1] ) .'?wmode=transparent&rel=0&showinfo=0&autoplay=' . esc_attr( $autoplay );
+					$frame_src = '//www.youtube-nocookie.com/embed/'. esc_attr( $id[1] ) .'?wmode=transparent&rel=0&showinfo=0&autoplay=' . esc_attr( $autoplay );
 					if ( $item['loop'] && 'false' !== $item['loop'] ) {
 						$frame_src .= '&loop=1&playlist=' . esc_attr( $id[1] );
 					}
@@ -1045,7 +1045,7 @@ function fabrique_template_video( $item )
 				$allow_fullscreen = 'allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"';
 				preg_match( '#youtu.be\/([^?&]+)#', $video, $id );
 				if ( !empty( $id[1] ) ) {
-					$frame_src = '//www.youtube.com/embed/'. esc_attr( $id[1] ) .'?wmode=transparent&rel=0&showinfo=0&autoplay=' . esc_attr( $autoplay );
+					$frame_src = '//www.youtube-nocookie.com/embed/'. esc_attr( $id[1] ) .'?wmode=transparent&rel=0&showinfo=0&autoplay=' . esc_attr( $autoplay );
 					if ( $item['loop'] && 'false' !== $item['loop'] ) {
 						$frame_src .= '&loop=1&playlist=' . esc_attr( $id[1] );
 					}
@@ -1235,10 +1235,10 @@ function fabrique_template_background( $data, $scheme_bg_class = '', $echo = tru
 					if ( false != strpos( $data['background_video_url'], 'youtube' ) ) {
 						preg_match( '#[?&]v=([^&]+)(&.+)?#', $data['background_video_url'], $matches );
 						if ( empty( $matches[2] ) ) $matches[2] = '';
-						$video_id = $matches[1];
-						if ( !empty( $video_id ) ) {
+						if ( !empty( $matches[1] ) ) {
+							$video_id = $matches[1];
 							$video_inner_class .= ' fbq-video-background-inner--external fbq-video-background-inner--youtube';
-							$if_src = '//www.youtube.com/embed/' . esc_attr( $video_id ) . '?loop=1&autoplay=1&controls=0&showinfo=0&playlist='. esc_attr( $video_id ) .'&enablejsapi=1' . $matches[2];
+							$if_src = '//www.youtube-nocookie.com/embed/' . esc_attr( $video_id ) . '?loop=1&autoplay=1&controls=0&showinfo=0&playlist='. esc_attr( $video_id ) .'&enablejsapi=1' . $matches[2];
 							$output .= '<iframe class="'. esc_attr( $video_inner_class ) . '" src="' . esc_url( $if_src ) .'" data-sound="' . esc_attr( $sound ) . '"></iframe>';
 						}
 					} else if ( false !== strpos( $data['background_video_url'], 'vimeo' ) ) {

@@ -21,8 +21,8 @@
 			<thead class="<?php echo esc_attr( implode( ' ', $opts['header_class'] ) ); ?>" <?php echo fabrique_s( $opts['header_style'] ); ?>>
 				<tr>
 
-					<?php foreach ( $opts['data_header'] as $data ) : ?>
-						<th <?php echo fabrique_s( $opts['th_style'] ); ?>><?php echo do_shortcode( $data ); ?></th>
+					<?php foreach ( $opts['data_header'] as $i => $data ) : ?>
+						<th <?php echo fabrique_s( $opts['column_style'][$i] ); ?>><?php echo do_shortcode( $data ); ?></th>
 					<?php endforeach; ?>
 
 				</tr>
@@ -35,7 +35,7 @@
 				<tr class="fbq-table-body-row <?php echo esc_attr( $opts['tr_class'][$index] ); ?>" <?php echo fabrique_s( $opts['tr_style'][$index] ); ?>>
 
 					<?php foreach ( $row as $i => $data ): ?>
-						<td <?php echo fabrique_s( $opts['td_style'][$i] ); ?>><?php echo do_shortcode( $data ); ?></td>
+						<td <?php echo fabrique_s( $opts['column_style'][$i] ); ?>><?php echo do_shortcode( $data ); ?></td>
 					<?php endforeach; ?>
 
 				</tr>

@@ -95,6 +95,9 @@
 															<option value="tag">Tags</option>
 															<option value="post">Posts</option>
 															<option value="page">Pages</option>
+
+															<option value="archive">Archives</option>
+
 															<option value="attachment">Attachments</option>
 										    				<option value="startwith">Starts With</option>
 										    				<option value="contain">Contains</option>
@@ -180,7 +183,7 @@
 				var clone_modal_id = "wpfc-modal-exclude-" + new Date().getTime();
 
 				clone_modal.find("select").change(function(e){
-					if(jQuery(this).val().match(/^(homepage|category|tag|post|page|attachment|googleanalytics)$/)){
+					if(jQuery(this).val().match(/^(homepage|category|tag|archive|post|page|attachment|googleanalytics)$/)){
 						clone_modal.find("input[name='wpfc-exclude-rule-content']").hide();
 						clone_modal.find("input[name='wpfc-exclude-rule-content']").val(jQuery(this).val());
 					}else{
@@ -189,7 +192,7 @@
 					}
 				});
 
-				if(e.prefix.match(/^(homepage|category|tag|post|page|attachment|googleanalytics)$/)){
+				if(e.prefix.match(/^(homepage|category|tag|archive|post|page|attachment|googleanalytics)$/)){
 					clone_modal.find("input[name='wpfc-exclude-rule-content']").hide();
 				}
 
@@ -275,6 +278,8 @@
 				title = "Home Page";
 			}else if(prefix == "tag"){
 				title = "Tags";
+			}else if(prefix == "archive"){
+				title = "Archives";
 			}else if(prefix == "category"){
 				title = "Categories";
 			}else if(prefix == "post"){
@@ -305,7 +310,7 @@
 				}
 
 				if(type == "page" || type == "css" || type == "js"){
-					if(prefix.match(/^(homepage|category|tag|post|page|attachment|googleanalytics)$/)){
+					if(prefix.match(/^(homepage|category|tag|archive|post|page|attachment|googleanalytics)$/)){
 						if(prefix == "homepage"){
 							return "The " + b_start + "homepage" + b_end + " has been excluded";
 						}else{
@@ -369,7 +374,7 @@
 
 
 				clone_modal.find("select").change(function(){
-					if(jQuery(this).val().match(/^(homepage|category|tag|post|page|attachment|googleanalytics)$/)){
+					if(jQuery(this).val().match(/^(homepage|category|tag|archive|post|page|attachment|googleanalytics)$/)){
 						clone_modal.find("input[name='wpfc-exclude-rule-content']").hide();
 						clone_modal.find("input[name='wpfc-exclude-rule-content']").val(jQuery(this).val());
 					}else{

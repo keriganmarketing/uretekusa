@@ -34,13 +34,19 @@
 	<?php elseif ( is_single() || ( is_archive() && ( is_tax() || is_category() || is_tag() ) ) ) : ?>
 		<?php
 			if ( is_single() ) {
-				$term = fabrique_get_taxonomy()[0];
+				$term = fabrique_get_taxonomy();
+				$term = $term[0];
 				$tax_name = $term->taxonomy;
 				$post_type = get_post_type();
 			} else {
 				$term = get_queried_object();
 				$tax_name = $term->taxonomy;
-				$post_type = ( is_category() || is_tag() ) ? 'post' : fabrique_get_post_types_by_taxonomy( $tax_name )[0];
+				if ( is_category() || is_tag() ) {
+					$post_type = 'post';
+				} else {
+					$post_type = fabrique_get_post_types_by_taxonomy( $tax_name );
+					$post_type = $post_type[0];
+				}
 			}
 
 			$label = ( 'post' === $post_type ) ? esc_html__( 'Blog', 'fabrique' ) : get_post_type_object( $post_type )->label;

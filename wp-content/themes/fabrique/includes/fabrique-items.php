@@ -2850,11 +2850,11 @@ function fabrique_item_table_options( $opts )
 	$opts['formatted'] = fabrique_get_row_items( $opts['data'], $opts['no_of_columns'] );
 	$opts['header_class'] = array();
 	$opts['header_style'] = array();
-	$opts['th_style'] = array();
+	$opts['column_style'] = array();
 	$opts['tr_class'] = array();
 	$opts['tr_style'] = array();
-	$opts['td_style'] = array();
 	$opts['body_style'] = array();
+	$column_style = array();
 
 	$main_color = fabrique_c( $opts['main_color'] );
 	$border_color = fabrique_c( $opts['column_border'] );
@@ -2868,12 +2868,12 @@ function fabrique_item_table_options( $opts )
 	}
 
 	if ( 'transparent' !== $opts['column_border'] && 'default' !== $opts['column_border'] ) {
-		$opts['th_style']['border-left-width'] = '1px';
-		$opts['th_style']['border-left-style'] = 'solid';
-		$opts['th_style']['border-left-color'] = $border_color;
-		$opts['th_style']['border-right-width'] = '1px';
-		$opts['th_style']['border-right-style'] = 'solid';
-		$opts['th_style']['border-right-color'] = $border_color;
+		$column_style['border-left-width'] = '1px';
+		$column_style['border-left-style'] = 'solid';
+		$column_style['border-left-color'] = $border_color;
+		$column_style['border-right-width'] = '1px';
+		$column_style['border-right-style'] = 'solid';
+		$column_style['border-right-color'] = $border_color;
 	}
 
 	if ( ('transparent' === $opts['body_background_color'] || 'default' === $opts['body_background_color'] ) && 'transparent' === $opts['alternate_row'] ) {
@@ -2899,10 +2899,8 @@ function fabrique_item_table_options( $opts )
 	}
 
 	for ( $index = 0; $index < $opts['no_of_columns']; $index++ ) {
-		$td_style = $opts['th_style'];
-		$td_style['width'] = $opts['column_widths'][$index] .'%';
-
-		$opts['td_style'][] = $td_style;
+		$column_style['width'] = $opts['column_widths'][$index] .'%';
+		$opts['column_style'][] = $column_style;
 	}
 
 	return $opts;

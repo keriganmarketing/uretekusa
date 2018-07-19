@@ -26,15 +26,6 @@
 class Ai1wmge_Settings {
 
 	public function revoke() {
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
-			get_option( 'ai1wmge_gdrive_ssl', true )
-		);
-
-		// Revoke token
-		$gdrive->revoke();
-
 		// Remove token option
 		delete_option( 'ai1wmge_gdrive_token' );
 
@@ -82,14 +73,14 @@ class Ai1wmge_Settings {
 	}
 
 	public function get_account() {
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
+		// Set GDrive client
+		$gdrive = new Ai1wmge_GDrive_Client(
+			get_option( 'ai1wmge_gdrive_token', false ),
 			get_option( 'ai1wmge_gdrive_ssl', true )
 		);
 
 		// Get account info
-		$account = $gdrive->getAccountInfo();
+		$account = $gdrive->get_account_info();
 
 		// Set account name
 		$name = null;
@@ -124,6 +115,12 @@ class Ai1wmge_Settings {
 		);
 	}
 
+	/**
+	 * Set cron schedules
+	 *
+	 * @param  array   $schedules List of schedules
+	 * @return boolean
+	 */
 	public function set_cron( $schedules ) {
 		// Reset cron schedules
 		Ai1wm_Cron::clear( 'ai1wmge_gdrive_hourly_export' );
@@ -139,12 +136,19 @@ class Ai1wmge_Settings {
 			) );
 		}
 
-		// Update cron options
 		return update_option( 'ai1wmge_gdrive_cron', $schedules );
 	}
 
 	public function get_cron() {
 		return get_option( 'ai1wmge_gdrive_cron', array() );
+	}
+
+	public function set_token( $token ) {
+		return update_option( 'ai1wmge_gdrive_token', $token );
+	}
+
+	public function get_token() {
+		return get_option( 'ai1wmge_gdrive_token', false );
 	}
 
 	public function set_ssl( $mode ) {
@@ -171,6 +175,14 @@ class Ai1wmge_Settings {
 		return get_option( 'ai1wmge_gdrive_total', false );
 	}
 
+	public function set_folder_id( $folder_id ) {
+		return update_option( 'ai1wmge_gdrive_folder_id', $folder_id );
+	}
+
+	public function get_folder_id() {
+		return get_option( 'ai1wmge_gdrive_folder_id', false );
+	}
+
 	public function set_notify_ok_toggle( $toggle ) {
 		return update_option( 'ai1wmge_gdrive_notify_toggle', $toggle );
 	}
@@ -185,6 +197,14 @@ class Ai1wmge_Settings {
 
 	public function get_notify_error_toggle() {
 		return get_option( 'ai1wmge_gdrive_notify_error_toggle', false );
+	}
+
+	public function set_notify_error_subject( $subject ) {
+		return update_option( 'ai1wmge_gdrive_notify_error_subject', $subject );
+	}
+
+	public function get_notify_error_subject() {
+		return get_option( 'ai1wmge_gdrive_notify_error_subject', sprintf( __( '❌ Backup to Google Drive has failed (%s)', AI1WMGE_PLUGIN_NAME ), parse_url( site_url(), PHP_URL_HOST ) . parse_url( site_url(), PHP_URL_PATH ) ) );
 	}
 
 	public function set_notify_email( $email ) {

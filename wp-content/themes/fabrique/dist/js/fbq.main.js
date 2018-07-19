@@ -409,7 +409,7 @@ webpackJsonp([3],{
 	    hashArgsLength = hashArgs.length;
 	    if (hashArgsLength > 1) {
 	      hashType = hashArgs[0];
-	      if (hashArgsLength > 2 && (hashType === 'tab' || hashType === 'accordion' || hashType === 'entries' || hashType === 'slider')) {
+	      if (hashArgsLength > 2 && (hashType === 'tab' || hashType === 'accordion' || hashType === 'entries' || hashType === 'slider' || hashType === 'select')) {
 	        originalTarget = hashTarget;
 	        hashTarget = "#" + hashArgs[0] + "-" + hashArgs[1];
 	        hashIndex = originalTarget.replace(hashTarget + "-", '');
@@ -513,7 +513,7 @@ webpackJsonp([3],{
 	      if (multiple) {
 	        currentPanel.toggleClass('active');
 	        currentBody.stop(true, true).slideToggle(300);
-	        currentBody.find('.fbq-item').trigger('hiddenClose.fbq');
+	        return currentBody.find('.fbq-item').trigger('hiddenClose.fbq');
 	      }
 	    } else {
 	      if (multiple) {
@@ -528,11 +528,8 @@ webpackJsonp([3],{
 	          body.filter("[data-index=" + previousIndex + "]").find('.fbq-item').trigger('hiddenClose.fbq');
 	        }
 	      }
-	      currentBody.find('.fbq-item').trigger('hiddenOpen.fbq');
+	      return currentBody.find('.fbq-item').trigger('hiddenOpen.fbq');
 	    }
-	    return setTimeout(function() {
-	      return $(window).resize();
-	    }, 400);
 	  }
 	});
 
@@ -1375,7 +1372,7 @@ webpackJsonp([3],{
 	    if (isFullSlide || isHalfSlide) {
 	      this.element.on('beforeChange', function(event, slick, prevSlideIndex, nextSlideIndex) {
 	        var nextSlide, nextSlideBg, prevSlide, prevSlideBg, slidePosition;
-	        if (el.is(slick.$slider)) {
+	        if (el.is(slick.$slider) && prevSlideIndex !== nextSlideIndex) {
 	          nextSlide = $(slick.$slides.get(nextSlideIndex));
 	          prevSlide = $(slick.$slides.get(prevSlideIndex));
 	          nextSlideBg = nextSlide.children('.fbq-background');
@@ -1896,7 +1893,7 @@ webpackJsonp([3],{
 	          targetLength = targetArgs.length;
 	          if (targetLength > 1) {
 	            targetType = targetArgs[0];
-	            if (targetLength > 2 && (targetType === 'tab' || targetType === 'accordion' || targetType === 'entries' || targetType === 'slider')) {
+	            if (targetLength > 2 && (targetType === 'tab' || targetType === 'accordion' || targetType === 'entries' || targetType === 'slider' || targetType === 'select')) {
 	              targetEl = "#" + targetArgs[0] + "-" + targetArgs[1];
 	              targetIndex = target.replace(targetEl + "-", '');
 	              targetEl = $(targetEl);
@@ -1934,30 +1931,58 @@ webpackJsonp([3],{
 	    return targetEl.trigger('modalOpen.fbq');
 	  },
 	  initializeDeepLink: function(targetEl, targetType, targetIndex) {
-	    var targetParentAccordion;
-	    if (!this.scrolling) {
-	      this.scrollTo(targetEl, this.options.duration);
-	    }
-	    if (targetType === 'interactive') {
-	      return targetEl.toggleClass('interactive-active');
-	    } else if (targetType === 'tab') {
-	      return targetEl.trigger('tabOpen.fbq', targetIndex);
-	    } else if (targetType === 'accordion') {
-	      return targetEl.trigger('accordionOpen.fbq', targetIndex);
-	    } else if (targetType === 'entries') {
-	      return targetEl.trigger('filterClicked.fbq', targetIndex);
-	    } else if (targetType === 'slider') {
-	      return targetEl.slick('slickGoTo', targetIndex - 1);
-	    } else if (targetEl.closest('.fbq-modal').length) {
-	      return targetEl.closest('.fbq-modal').trigger('modalOpen.fbq');
-	    } else if (targetEl.closest('.fbq-interactive').length) {
-	      return targetEl.closest('.fbq-interactive').toggleClass('interactive-active');
-	    } else if (targetEl.closest('.fbq-tab').length) {
-	      return targetEl.closest('.fbq-tab').trigger('tabOpen.fbq', targetEl.closest('.fbq-tab-content').data('index'));
-	    } else if (targetEl.closest('.fbq-accordion').length) {
-	      targetParentAccordion = targetEl.closest('.fbq-accordion');
-	      this.scrollTo(targetParentAccordion, this.options.duration);
-	      return targetParentAccordion.trigger('accordionOpen.fbq', targetEl.closest('.fbq-accordion-body').data('index'));
+	    if (targetEl.length) {
+	      if (targetType === 'interactive') {
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	        targetEl.toggleClass('interactive-active');
+	      } else if (targetType === 'tab') {
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	        targetEl.trigger('tabOpen.fbq', targetIndex);
+	      } else if (targetType === 'accordion') {
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	        targetEl.trigger('accordionOpen.fbq', targetIndex);
+	      } else if (targetType === 'entries') {
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	        targetEl.trigger('filterClicked.fbq', targetIndex);
+	      } else if (targetType === 'slider') {
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	        targetEl.slick('slickGoTo', targetIndex - 1);
+	      } else if (targetType === 'select') {
+	        targetEl.val(targetIndex);
+	        if (!this.scrolling) {
+	          this.scrollTo(targetEl, this.options.duration);
+	        }
+	      } else if (!this.scrolling) {
+	        this.scrollTo(targetEl, this.options.duration);
+	      }
+	      if (targetEl.closest('.fbq-modal').length) {
+	        return targetEl.closest('.fbq-modal').trigger('modalOpen.fbq');
+	      } else if (targetEl.closest('.fbq-interactive').length) {
+	        targetEl.closest('.fbq-interactive').toggleClass('interactive-active');
+	        if (!this.scrolling) {
+	          return this.scrollTo(targetEl, this.options.duration);
+	        }
+	      } else if (targetEl.closest('.fbq-tab').length) {
+	        targetEl.closest('.fbq-tab').trigger('tabOpen.fbq', targetEl.closest('.fbq-tab-content').data('index'));
+	        if (!this.scrolling) {
+	          return this.scrollTo(targetEl, this.options.duration);
+	        }
+	      } else if (targetEl.closest('.fbq-accordion').length) {
+	        targetEl.closest('.fbq-accordion').trigger('accordionOpen.fbq', targetEl.closest('.fbq-accordion-body').data('index'));
+	        if (!this.scrolling) {
+	          return this.scrollTo(targetEl, this.options.duration);
+	        }
+	      }
 	    }
 	  },
 	  scrollTo: function(targetEl, duration) {
@@ -2316,6 +2341,13 @@ webpackJsonp([3],{
 	          return self.content.isotope();
 	        }
 	      });
+	      this.element.on('hiddenOpen.fbq', function() {
+	        if (self.style === 'masonry') {
+	          return self._masonryIsotopeUpdate();
+	        } else {
+	          return self.content.isotope();
+	        }
+	      });
 	      if (this.pagination.length) {
 	        this.pagination.fbqPaginate({
 	          action: "fabrique_entries"
@@ -2486,10 +2518,11 @@ webpackJsonp([3],{
 	    this.currentFilter = filter;
 	    el.addClass('active');
 	    if (this.style === 'masonry') {
-	      return this._masonryIsotopeUpdate();
+	      this._masonryIsotopeUpdate();
 	    } else {
-	      return this.content.isotope();
+	      this.content.isotope();
 	    }
+	    return $(window).resize();
 	  },
 	  _isotopeFilter: function(index, element) {
 	    var filter;
@@ -2626,6 +2659,13 @@ webpackJsonp([3],{
 	      }
 	      this._runIsotope();
 	      $(window).on('resize', function() {
+	        if (self.style === 'masonry') {
+	          return self._masonryIsotopeUpdate();
+	        } else {
+	          return self.content.isotope();
+	        }
+	      });
+	      this.element.on('hiddenOpen.fbq', function() {
 	        if (self.style === 'masonry') {
 	          return self._masonryIsotopeUpdate();
 	        } else {
@@ -2889,18 +2929,27 @@ webpackJsonp([3],{
 	    offset: 0.8
 	  },
 	  _create: function() {
-	    var self;
+	    var parentItem, self;
 	    self = this;
 	    this.loaded = false;
 	    if ((FabriqueApp.isHorizontalScroll || FabriqueApp.isVerticalScroll || FabriqueApp.isHalfPageScroll) && FabriqueApp.isResponsive && ($(window).width() > FabriqueApp.tabletScreenWidth)) {
-	      if (this.element.closest('.slick-active').length > 0) {
-	        this.addSource();
+	      if (this.element.is(':visible')) {
+	        if (this.element.closest('.slick-active').length > 0) {
+	          this.addSource();
+	        } else {
+	          return $(window).on('slidePageChanged.fbq', function(e, obj) {
+	            if (obj.nextSlide.has(self.element).length > 0) {
+	              self.addSource();
+	            }
+	          });
+	        }
 	      } else {
-	        return $(window).on('slidePageChanged.fbq', function(e, obj) {
-	          if (obj.nextSlide.has(self.element).length > 0) {
+	        parentItem = this.element.closest('.fbq-item');
+	        if (parentItem.length) {
+	          return parentItem.on('hiddenOpen.fbq', function() {
 	            self.addSource();
-	          }
-	        });
+	          });
+	        }
 	      }
 	    } else if (this.element.is(':visible') && ($(window).scrollTop() + $(window).height() * this.options.offset > this.element.offset().top)) {
 	      this.addSource();
@@ -3907,6 +3956,9 @@ webpackJsonp([3],{
 	    this.postToFind = this.paginateOptions.query_args.posts_per_page || 10;
 	    this.windowLoaded = false;
 	    this.scrollReached = false;
+	    this.loading = false;
+	    this.windowLoadedOff = false;
+	    this.allLoaded = false;
 	    self = this;
 	    if (this.style === 'click') {
 	      self._on(self.element, {
@@ -3928,7 +3980,7 @@ webpackJsonp([3],{
 	  },
 	  _buttonClicked: function(e) {
 	    e.preventDefault();
-	    if (this.windowLoaded) {
+	    if (this.windowLoaded && !this.loading) {
 	      return this._loadMore();
 	    }
 	  },
@@ -3936,7 +3988,9 @@ webpackJsonp([3],{
 	    var self;
 	    self = this;
 	    if (this.windowLoaded) {
-	      return this._loadMore();
+	      if (!this.loading) {
+	        return this._loadMore();
+	      }
 	    } else {
 	      return this.element.on('windowLoaded.fbq', function() {
 	        return self._loadMore();
@@ -3954,6 +4008,7 @@ webpackJsonp([3],{
 	    style = this.style;
 	    el = this.element;
 	    btnText = this.buttonText;
+	    this.loading = true;
 	    this.element.off('windowLoaded.fbq');
 	    el.toggleClass('loading');
 	    btnText.text(this.loadingMessage);
@@ -3966,12 +4021,23 @@ webpackJsonp([3],{
 	      el.trigger('load.fbqpagination', response.data);
 	      setTimeout(function() {
 	        el.toggleClass('loading');
-	        return btnText.text(self.loadMoreMessage);
+	        btnText.text(self.loadMoreMessage);
+	        self.loading = false;
+	        if (style === 'scroll' && ($(window).scrollTop() + $(window).height() >= el.offset().top) && !self.allLoaded) {
+	          self._loadMore();
+	        }
+	        if (!self.windowLoadedOff) {
+	          el.off('windowLoaded.fbq');
+	          return self.windowLoadedOff = true;
+	        }
 	      }, 500);
 	      if (self.postToFind * self.index >= self.allPosts) {
 	        el.remove();
+	        self.allLoaded = true;
 	        if (style === 'scroll') {
 	          return scene.destroy();
+	        } else if (style === 'click') {
+	          return el.off('click');
 	        }
 	      }
 	    }).fail(function(response) {
@@ -4206,9 +4272,11 @@ webpackJsonp([3],{
 	      });
 	    }
 	  },
-	  updateImageSrc: function(index, imageSrc) {
+	  updateImageSrc: function(index, imageSrc, imageW, imageH) {
 	    this.items[index].src = imageSrc;
-	    return this.items[index].msrc = imageSrc;
+	    this.items[index].msrc = imageSrc;
+	    this.items[index].w = imageW ? imageW : 0;
+	    return this.items[index].h = imageH ? imageH : 0;
 	  },
 	  getEmbedSrc: function(embedSrc) {
 	    var patterns;
@@ -4218,7 +4286,7 @@ webpackJsonp([3],{
 	        youtube: {
 	          index: 'youtube.com',
 	          id: 'v=',
-	          src: '//www.youtube.com/embed/%id%?autoplay=1'
+	          src: '//www.youtube-nocookie.com/embed/%id%?autoplay=1'
 	        },
 	        vimeo: {
 	          index: 'vimeo.com/',
@@ -5433,8 +5501,7 @@ webpackJsonp([3],{
 	      previousElement.find('.fbq-item').trigger('hiddenClose.fbq');
 	      currentElement.addClass('active');
 	      setTimeout(function() {
-	        currentElement.find('.fbq-item').trigger('hiddenOpen.fbq');
-	        return $(window).resize();
+	        return currentElement.find('.fbq-item').trigger('hiddenOpen.fbq');
 	      }, 500);
 	      list = this.element.find('.fbq-tab-nav-list');
 	      return list.removeClass('active').filter("[data-index=" + index + "]").addClass('active');
@@ -5493,14 +5560,20 @@ webpackJsonp([3],{
 	      }
 	    });
 	    return element.find('.single_variation_wrap').on('show_variation', function(e, variation) {
-	      var newFullSrc, newSrc, newSrcset, newThumbnailSrc, newThumbnailSrcset;
-	      if (variation.image && variation.image.url) {
-	        productGallery.children().slick('slickGoTo', 0);
-	        newFullSrc = variation.image.url;
-	        newSrc = variation.image.src;
-	        newSrcset = variation.image.srcset;
-	        newThumbnailSrc = variation.image.thumb_src;
-	        newThumbnailSrcset = newSrcset;
+	      var existingImage, newFullSrc, newSrc, newSrcset, newThumbnailSrc, newThumbnailSrcset;
+	      if (variation.image_id) {
+	        existingImage = productGallery.find(".fbq-gallery-item[data-id=" + variation.image_id + "]");
+	        if (existingImage.length) {
+	          productGallery.children().slick('slickGoTo', existingImage.data('slick-index'));
+	          return;
+	        } else if (variation.image && variation.image.url) {
+	          productGallery.children().slick('slickGoTo', 0);
+	          newFullSrc = variation.image.url;
+	          newSrc = variation.image.src;
+	          newSrcset = variation.image.srcset;
+	          newThumbnailSrc = variation.image.thumb_src;
+	          newThumbnailSrcset = newSrcset;
+	        }
 	      } else {
 	        newFullSrc = originalSrc;
 	        newSrc = originalSrc;
@@ -5542,14 +5615,46 @@ webpackJsonp([3],{
 
 	$.widget('fabrique.variationRadio', {
 	  _create: function() {
-	    var element;
+	    var element, variationForm, variationName, variations;
 	    element = this.element;
-	    return this.element.find('.variations-radio-input').on('click', function(e) {
-	      var el, value;
-	      el = $(e.currentTarget);
-	      value = el.attr('value');
-	      return element.siblings('select').find('option[value=' + value + ']').attr('selected', true).parent().trigger('change');
+	    variations = element.find('.variations-radio-input');
+	    variations.on('click', function(e) {
+	      var currentButton, select, value;
+	      currentButton = $(e.currentTarget);
+	      if (!currentButton.attr('disabled')) {
+	        value = currentButton.attr('value');
+	        select = element.siblings('select');
+	        value = select.find('option[value="' + value + '"]').length ? value : '';
+	        select.val(value);
+	        return select.change();
+	      }
 	    });
+	    variationForm = element.closest('form.variations_form');
+	    if (variationForm.length) {
+	      variationName = element.attr('name');
+	      return variationForm.on('woocommerce_update_variation_values', function(e) {
+	        var availableOptions, options;
+	        options = variationForm.find("select#" + variationName + " option");
+	        availableOptions = [];
+	        options.each((function(_this) {
+	          return function(index, option) {
+	            return availableOptions.push($(option).val());
+	          };
+	        })(this));
+	        return variations.each((function(_this) {
+	          return function(index, variation) {
+	            var variationInput, variationValue;
+	            variationInput = $(variation);
+	            variationValue = variationInput.val();
+	            if (availableOptions.indexOf(variationValue) < 0) {
+	              return variationInput.attr('disabled', true);
+	            } else {
+	              return variationInput.attr('disabled', false);
+	            }
+	          };
+	        })(this));
+	      });
+	    }
 	  }
 	});
 

@@ -10,8 +10,8 @@ Donate link: https://m0n.co/donate
 Contributors: specialk
 Requires at least: 4.1
 Tested up to: 5.0
-Stable tag: 20180303
-Version: 20180303
+Stable tag: 20180506
+Version: 20180506
 Requires PHP: 5.2
 Text Domain: ga-google-analytics
 Domain Path: /languages
@@ -24,6 +24,7 @@ Adds your Google Analytics Tracking Code to your WordPress site.
 == Description ==
 
 > Supports Global Site Tag / gtag.js !
+> Works perfectly with or without Gutenberg
 
 This plugin enables Google Analytics for your entire WordPress site. Lightweight and fast with plenty of great features.
 
@@ -32,6 +33,7 @@ This plugin enables Google Analytics for your entire WordPress site. Lightweight
 * Blazing fast performance
 * Does one thing and does it well
 * Drop-dead simple and easy to use
+* Regularly updated and "future proof"
 * Stays current with the latest tracking code
 * Includes tracking code in header or footer
 * Includes tracking code on all WordPress web pages
@@ -57,6 +59,8 @@ This is a lightweight plugin that inserts the required GA tracking code. To view
 * Supports [Force SSL](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#forceSSL)
 * Supports [Tracker Objects](https://developers.google.com/analytics/devguides/collection/analyticsjs/creating-trackers)
 * Supports [Google Optimize](https://support.google.com/360suite/optimize/)
+
+GDPR Notice: This plugin is 100% compliant with GDPR because it does not collect any user data. Even so, the tracking code added by this plugin is used by Google to collect all sorts of user data. So to ensure that your site is compliant with GDPR, please consult with Google and/or configure your Google account settings and/or tracking code as required by GDPR.
 
 Learn more about [Google Analytics](http://www.google.com/analytics/)!
 
@@ -199,6 +203,11 @@ Links, tweets and likes also appreciated. Thanks! :)
 == Changelog ==
 
 *Thank you to everyone who shares feedback for GA Google Analytics!*
+
+**20180506**
+
+* Bugfix: changes `anonymizeIP` to `anonymizeIp` for analytics.js
+* Tests on WordPress 5.0 (alpha)
 
 **20180303**
 

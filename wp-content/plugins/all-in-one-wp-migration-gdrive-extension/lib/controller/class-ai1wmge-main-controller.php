@@ -65,99 +65,139 @@ class Ai1wmge_Main_Controller {
 	 * @return void
 	 */
 	public function admin_menu() {
-		// sublevel Settings menu
+		// Sub-level Settings menu
 		add_submenu_page(
-			'site-migration-export',
+			'ai1wm_export',
 			__( 'Google Drive Settings', AI1WMGE_PLUGIN_NAME ),
 			__( 'Google Drive Settings', AI1WMGE_PLUGIN_NAME ),
 			'export',
-			'site-migration-gdrive-settings',
+			'ai1wmge_settings',
 			'Ai1wmge_Settings_Controller::index'
 		);
 	}
 
 	/**
-	 * Register scripts and styles for Export Controller
+	 * Enqueue scripts and styles for Export Controller
 	 *
+	 * @param  string $hook Hook suffix
 	 * @return void
 	 */
-	public function register_export_scripts_and_styles( $hook ) {
-		if ( stripos( 'toplevel_page_site-migration-export', $hook ) === false ) {
+	public function enqueue_export_scripts_and_styles( $hook ) {
+		if ( stripos( 'toplevel_page_ai1wm_export', $hook ) === false ) {
 			return;
 		}
 
+		if ( is_rtl() ) {
+			wp_enqueue_style(
+				'ai1wmge_export',
+				Ai1wm_Template::asset_link( 'css/export.min.rtl.css', 'AI1WMGE' ),
+				array( 'ai1wm_export' )
+			);
+		} else {
+			wp_enqueue_style(
+				'ai1wmge_export',
+				Ai1wm_Template::asset_link( 'css/export.min.css', 'AI1WMGE' ),
+				array( 'ai1wm_export' )
+			);
+		}
+
 		wp_enqueue_script(
-			'ai1wmge-js-export',
+			'ai1wmge_export',
 			Ai1wm_Template::asset_link( 'javascript/export.min.js', 'AI1WMGE' ),
-			array( 'jquery' )
-		);
-		wp_enqueue_style(
-			'ai1wmge-css-export',
-			Ai1wm_Template::asset_link( 'css/export.min.css', 'AI1WMGE' )
+			array( 'ai1wm_export' )
 		);
 	}
 
 	/**
-	 * Register scripts and styles for Import Controller
+	 * Enqueue scripts and styles for Import Controller
 	 *
+	 * @param  string $hook Hook suffix
 	 * @return void
 	 */
-	public function register_import_scripts_and_styles( $hook ) {
-		if ( stripos( 'all-in-one-wp-migration_page_site-migration-import', $hook ) === false ) {
+	public function enqueue_import_scripts_and_styles( $hook ) {
+		if ( stripos( 'all-in-one-wp-migration_page_ai1wm_import', $hook ) === false ) {
 			return;
 		}
 
+		if ( is_rtl() ) {
+			wp_enqueue_style(
+				'ai1wmge_import',
+				Ai1wm_Template::asset_link( 'css/import.min.rtl.css', 'AI1WMGE' ),
+				array( 'ai1wm_import' )
+			);
+		} else {
+			wp_enqueue_style(
+				'ai1wmge_import',
+				Ai1wm_Template::asset_link( 'css/import.min.css', 'AI1WMGE' ),
+				array( 'ai1wm_import' )
+			);
+		}
+
 		wp_enqueue_script(
-			'ai1wmge-js-import',
+			'ai1wmge_import',
 			Ai1wm_Template::asset_link( 'javascript/import.min.js', 'AI1WMGE' ),
-			array( 'jquery' )
+			array( 'ai1wm_import' )
 		);
-		wp_localize_script( 'ai1wmge-js-import', 'ai1wmge_import', array(
-			'token' => get_option( 'ai1wmge_gdrive_token' ),
-			'ajax'  => array(
-				'folder_url' => admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_folder' ),
+
+		wp_localize_script( 'ai1wmge_import', 'ai1wmge_import', array(
+			'ajax' => array(
+				'browser_url' => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_browser' ) ),
 			),
 		) );
-		wp_enqueue_style(
-			'ai1wmge-css-import',
-			Ai1wm_Template::asset_link( 'css/import.min.css', 'AI1WMGE' )
-		);
 	}
 
 	/**
-	 * Register scripts and styles for Settings Controller
+	 * Enqueue scripts and styles for Settings Controller
 	 *
+	 * @param  string $hook Hook suffix
 	 * @return void
 	 */
-	public function register_settings_scripts_and_styles( $hook ) {
-		if ( stripos( 'all-in-one-wp-migration_page_site-migration-gdrive-settings', $hook ) === false ) {
+	public function enqueue_settings_scripts_and_styles( $hook ) {
+		if ( stripos( 'all-in-one-wp-migration_page_ai1wmge_settings', $hook ) === false ) {
 			return;
 		}
 
+		if ( is_rtl() ) {
+			wp_enqueue_style(
+				'ai1wmge_settings',
+				Ai1wm_Template::asset_link( 'css/settings.min.rtl.css', 'AI1WMGE' ),
+				array( 'ai1wm_servmask' )
+			);
+		} else {
+			wp_enqueue_style(
+				'ai1wmge_settings',
+				Ai1wm_Template::asset_link( 'css/settings.min.css', 'AI1WMGE' ),
+				array( 'ai1wm_servmask' )
+			);
+		}
+
 		wp_enqueue_script(
-			'ai1wmge-js-settings',
+			'ai1wmge_settings',
 			Ai1wm_Template::asset_link( 'javascript/settings.min.js', 'AI1WMGE' ),
-			array( 'jquery' )
+			array( 'ai1wm_feedback', 'ai1wm_report' )
 		);
-		wp_enqueue_style(
-			'ai1wm-css-export',
-			Ai1wm_Template::asset_link( 'css/export.min.css' )
-		);
-		wp_enqueue_style(
-			'ai1wmge-css-settings',
-			Ai1wm_Template::asset_link( 'css/settings.min.css', 'AI1WMGE' )
-		);
-		wp_localize_script( 'ai1wmge-js-settings', 'ai1wmge_settings', array(
-			'token' => get_option( 'ai1wmge_gdrive_token' ),
-			'ajax'  => array(
-				'account_url' => admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_account' ),
-			),
-		) );
-		wp_localize_script( 'ai1wmge-js-settings', 'ai1wm_feedback', array(
+
+		wp_localize_script( 'ai1wmge_settings', 'ai1wm_feedback', array(
 			'ajax'       => array(
-				'url' => admin_url( 'admin-ajax.php?action=ai1wm_feedback' ),
+				'url' => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wm_feedback' ) ),
 			),
 			'secret_key' => get_option( AI1WM_SECRET_KEY ),
+		) );
+
+		wp_localize_script( 'ai1wmge_settings', 'ai1wm_report', array(
+			'ajax'       => array(
+				'url' => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wm_report' ) ),
+			),
+			'secret_key' => get_option( AI1WM_SECRET_KEY ),
+		) );
+
+		wp_localize_script( 'ai1wmge_settings', 'ai1wmge_settings', array(
+			'ajax'  => array(
+				'folder_url'   => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_folder' ) ),
+				'account_url'  => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_account' ) ),
+				'selector_url' => wp_make_link_relative( admin_url( 'admin-ajax.php?action=ai1wmge_gdrive_selector' ) ),
+			),
+			'token' => get_option( 'ai1wmge_gdrive_token' ),
 		) );
 	}
 
@@ -189,7 +229,7 @@ class Ai1wmge_Main_Controller {
 				color: #fff;
 			}
 		</style>
-	<?php
+		<?php
 	}
 
 	/**
@@ -216,14 +256,14 @@ class Ai1wmge_Main_Controller {
 		// Enable notifications
 		add_action( 'plugins_loaded', array( $this, 'ai1wm_notification' ), 20 );
 
-		// Add export scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_export_scripts_and_styles' ), 20 );
+		// Enqueue export scripts and styles
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_export_scripts_and_styles' ), 20 );
 
-		// Add import scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_import_scripts_and_styles' ), 20 );
+		// Enqueue import scripts and styles
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_import_scripts_and_styles' ), 20 );
 
-		// Add settings scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_settings_scripts_and_styles' ), 20 );
+		// Enqueue settings scripts and styles
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_settings_scripts_and_styles' ), 20 );
 
 		return $this;
 	}
@@ -246,13 +286,14 @@ class Ai1wmge_Main_Controller {
 	 * @return void
 	 */
 	public function ai1wm_notification() {
-		if ( isset( $_REQUEST['gdrive'] ) ) {
+		if ( isset( $_GET['gdrive'] ) || isset( $_POST['gdrive'] ) ) {
 			// Add ok notifications
 			add_filter( 'ai1wm_notification_ok_toggle', 'Ai1wmge_Settings_Controller::notify_ok_toggle' );
 			add_filter( 'ai1wm_notification_ok_email', 'Ai1wmge_Settings_Controller::notify_email' );
 
 			// Add error notifications
 			add_filter( 'ai1wm_notification_error_toggle', 'Ai1wmge_Settings_Controller::notify_error_toggle' );
+			add_filter( 'ai1wm_notification_error_subject', 'Ai1wmge_Settings_Controller::notify_error_subject' );
 			add_filter( 'ai1wm_notification_error_email', 'Ai1wmge_Settings_Controller::notify_email' );
 		}
 	}
@@ -263,15 +304,15 @@ class Ai1wmge_Main_Controller {
 	 * @return void
 	 */
 	public function ai1wm_commands() {
-		if ( isset( $_REQUEST['gdrive'] ) ) {
+		if ( isset( $_GET['gdrive'] ) || isset( $_POST['gdrive'] ) ) {
 			// Add export commands
-			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Gdrive::execute', 250 );
+			add_filter( 'ai1wm_export', 'Ai1wmge_Export_GDrive::execute', 250 );
 			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Upload::execute', 260 );
 			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Retention::execute', 270 );
 			add_filter( 'ai1wm_export', 'Ai1wmge_Export_Done::execute', 280 );
 
 			// Add import commands
-			add_filter( 'ai1wm_import', 'Ai1wmge_Import_Gdrive::execute', 20 );
+			add_filter( 'ai1wm_import', 'Ai1wmge_Import_GDrive::execute', 20 );
 			add_filter( 'ai1wm_import', 'Ai1wmge_Import_Download::execute', 30 );
 			add_filter( 'ai1wm_import', 'Ai1wmge_Import_Settings::execute', 290 );
 			add_filter( 'ai1wm_import', 'Ai1wmge_Import_Database::execute', 310 );
@@ -315,7 +356,10 @@ class Ai1wmge_Main_Controller {
 			add_action( 'ai1wmge_gdrive_weekly_export', 'Ai1wm_Export_Controller::export' );
 			add_action( 'ai1wmge_gdrive_monthly_export', 'Ai1wm_Export_Controller::export' );
 
-			// Picker
+			// Folder picker
+			add_action( 'ai1wmge_settings_left_end', 'Ai1wmge_Settings_Controller::picker' );
+
+			// File picker
 			add_action( 'ai1wm_import_left_end', 'Ai1wmge_Import_Controller::picker' );
 
 			// Add export button
@@ -380,10 +424,10 @@ class Ai1wmge_Main_Controller {
 	public function init() {
 		// Set Google Drive Token
 		if ( isset( $_GET['ai1wmge-token'] ) ) {
-			update_option( 'ai1wmge_gdrive_token', $_GET['ai1wmge-token'] );
+			update_option( 'ai1wmge_gdrive_token', trim( $_GET['ai1wmge-token'] ) );
 
 			// Redirect
-			wp_redirect( network_admin_url( 'admin.php?page=site-migration-gdrive-settings' ) );
+			wp_redirect( network_admin_url( 'admin.php?page=ai1wmge_settings' ) );
 			exit;
 		}
 
@@ -401,12 +445,14 @@ class Ai1wmge_Main_Controller {
 	public function router() {
 		// Export
 		if ( current_user_can( 'export' ) ) {
+			add_action( 'wp_ajax_ai1wmge_gdrive_folder', 'Ai1wmge_Settings_Controller::folder' );
 			add_action( 'wp_ajax_ai1wmge_gdrive_account', 'Ai1wmge_Settings_Controller::account' );
+			add_action( 'wp_ajax_ai1wmge_gdrive_selector', 'Ai1wmge_Settings_Controller::selector' );
 		}
 
 		// Import
 		if ( current_user_can( 'import' ) ) {
-			add_action( 'wp_ajax_ai1wmge_gdrive_folder', 'Ai1wmge_Import_Controller::folder' );
+			add_action( 'wp_ajax_ai1wmge_gdrive_browser', 'Ai1wmge_Import_Controller::browser' );
 		}
 	}
 }

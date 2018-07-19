@@ -1,0 +1,1391 @@
+0000.000 (0) Opened log file at time: Mon, 09 Jul 2018 23:33:32 +0000 on https://uretekusa.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.7 PHP: 7.1.16-1+ubuntu16.04.1+deb.sury.org+1 (fpm-fcgi, Linux URETEKUSA 4.15.12-x86_64-linode105 #1 SMP Thu Mar 22 02:13:40 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: nginx/1.13.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 11.4M | 6M) multisite: N openssl: OpenSSL 1.1.0h  27 Mar 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.001 (0) Free space on disk containing Updraft's temporary directory: 12359.5 MB
+0000.003 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.005 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.006 (0) Semaphore (fd, wpusa_options) was stuck, set lock time to 2018-07-09 23:33:32
+0000.007 (0) Semaphore (fd, wpusa_options) reset to 1
+0000.007 (0) Set semaphore last lock (fd) time to 2018-07-09 23:33:32
+0000.008 (0) Semaphore lock (fd) complete
+0000.010 (0) Backup run: resumption=0, nonce=c86345d6a796, begun at=1531179212 (0s ago), job type=backup
+0000.011 (0) Scheduling a resumption (1) after 300 seconds (1531179512) in case this run gets aborted
+0000.012 (0) Checking if we have a zip executable available
+0000.013 (0) Creation of backups of directories: beginning
+0000.015 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.151 (0) Total entities for the zip file: 1185 directories, 9309 files (0 skipped as non-modified), 134.4 MB
+0000.156 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.160 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.163 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.166 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.170 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.170 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (16.7 MB, 9309 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0001.196 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 600 files added (on-disk size: 6117.1 KB)
+0001.200 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 700 files added (on-disk size: 6117.1 KB)
+0001.203 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 800 files added (on-disk size: 6117.1 KB)
+0001.206 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 900 files added (on-disk size: 6117.1 KB)
+0001.209 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1000 files added (on-disk size: 6117.1 KB)
+0001.210 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3 MB, 9309 files batched, 501 (1002) added so far); re-opening (prior size: 6117.1 KB)
+0001.454 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1100 files added (on-disk size: 7079.2 KB)
+0001.457 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1200 files added (on-disk size: 7079.2 KB)
+0001.460 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1300 files added (on-disk size: 7079.2 KB)
+0001.463 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1400 files added (on-disk size: 7079.2 KB)
+0001.467 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1500 files added (on-disk size: 7079.2 KB)
+0001.467 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.2 MB, 9309 files batched, 501 (1503) added so far); re-opening (prior size: 7079.2 KB)
+0001.701 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1600 files added (on-disk size: 8164 KB)
+0001.705 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1700 files added (on-disk size: 8164 KB)
+0001.708 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1800 files added (on-disk size: 8164 KB)
+0001.711 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 1900 files added (on-disk size: 8164 KB)
+0001.714 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2000 files added (on-disk size: 8164 KB)
+0001.714 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11.5 MB, 9309 files batched, 501 (2004) added so far); re-opening (prior size: 8164 KB)
+0002.751 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2100 files added (on-disk size: 11743.6 KB)
+0002.755 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2200 files added (on-disk size: 11743.6 KB)
+0002.758 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2300 files added (on-disk size: 11743.6 KB)
+0002.762 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2400 files added (on-disk size: 11743.6 KB)
+0002.765 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2500 files added (on-disk size: 11743.6 KB)
+0002.765 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.6 MB, 9309 files batched, 501 (2505) added so far); re-opening (prior size: 11743.6 KB)
+0004.217 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2600 files added (on-disk size: 17045 KB)
+0004.221 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2700 files added (on-disk size: 17045 KB)
+0004.224 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2800 files added (on-disk size: 17045 KB)
+0004.227 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 2900 files added (on-disk size: 17045 KB)
+0004.231 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3000 files added (on-disk size: 17045 KB)
+0004.231 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.1 MB, 9309 files batched, 501 (3006) added so far); re-opening (prior size: 17045 KB)
+0004.848 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3100 files added (on-disk size: 18576.7 KB)
+0004.852 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3200 files added (on-disk size: 18576.7 KB)
+0004.855 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3300 files added (on-disk size: 18576.7 KB)
+0004.859 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3400 files added (on-disk size: 18576.7 KB)
+0004.862 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3500 files added (on-disk size: 18576.7 KB)
+0004.863 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.7 MB, 9309 files batched, 501 (3507) added so far); re-opening (prior size: 18576.7 KB)
+0006.117 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3600 files added (on-disk size: 21317.7 KB)
+0006.120 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3700 files added (on-disk size: 21317.7 KB)
+0006.124 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3800 files added (on-disk size: 21317.7 KB)
+0006.127 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 3900 files added (on-disk size: 21317.7 KB)
+0006.130 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4000 files added (on-disk size: 21317.7 KB)
+0006.131 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.6 MB, 9309 files batched, 501 (4008) added so far); re-opening (prior size: 21317.7 KB)
+0006.570 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4100 files added (on-disk size: 23717.4 KB)
+0006.574 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4200 files added (on-disk size: 23717.4 KB)
+0006.577 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4300 files added (on-disk size: 23717.4 KB)
+0006.580 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4400 files added (on-disk size: 23717.4 KB)
+0006.583 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4500 files added (on-disk size: 23717.4 KB)
+0006.584 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.1 MB, 9309 files batched, 501 (4509) added so far); re-opening (prior size: 23717.4 KB)
+0007.470 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4600 files added (on-disk size: 25925.9 KB)
+0007.473 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4700 files added (on-disk size: 25925.9 KB)
+0007.477 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4800 files added (on-disk size: 25925.9 KB)
+0007.480 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 4900 files added (on-disk size: 25925.9 KB)
+0007.484 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5000 files added (on-disk size: 25925.9 KB)
+0007.485 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.8 MB, 9309 files batched, 501 (5010) added so far); re-opening (prior size: 25925.9 KB)
+0007.945 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5100 files added (on-disk size: 27268 KB)
+0007.948 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5200 files added (on-disk size: 27268 KB)
+0007.951 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5300 files added (on-disk size: 27268 KB)
+0007.954 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5400 files added (on-disk size: 27268 KB)
+0007.958 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5500 files added (on-disk size: 27268 KB)
+0007.959 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.5 MB, 9309 files batched, 501 (5511) added so far); re-opening (prior size: 27268 KB)
+0008.452 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5600 files added (on-disk size: 31692.5 KB)
+0008.456 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5700 files added (on-disk size: 31692.5 KB)
+0008.459 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5800 files added (on-disk size: 31692.5 KB)
+0008.462 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 5900 files added (on-disk size: 31692.5 KB)
+0008.466 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6000 files added (on-disk size: 31692.5 KB)
+0008.467 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.9 MB, 9309 files batched, 501 (6012) added so far); re-opening (prior size: 31692.5 KB)
+0008.936 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6100 files added (on-disk size: 32719.3 KB)
+0008.940 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6200 files added (on-disk size: 32719.3 KB)
+0008.943 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6300 files added (on-disk size: 32719.3 KB)
+0008.947 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6400 files added (on-disk size: 32719.3 KB)
+0008.950 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6500 files added (on-disk size: 32719.3 KB)
+0008.951 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (0.8 MB, 9309 files batched, 501 (6513) added so far); re-opening (prior size: 32719.3 KB)
+0009.443 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6600 files added (on-disk size: 33231.3 KB)
+0009.453 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6700 files added (on-disk size: 33231.3 KB)
+0009.467 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6800 files added (on-disk size: 33231.3 KB)
+0009.481 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 6900 files added (on-disk size: 33231.3 KB)
+0009.486 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7000 files added (on-disk size: 33231.3 KB)
+0009.488 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.4 MB, 9309 files batched, 501 (7014) added so far); re-opening (prior size: 33231.3 KB)
+0010.379 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7100 files added (on-disk size: 35644.4 KB)
+0010.383 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7200 files added (on-disk size: 35644.4 KB)
+0010.386 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7300 files added (on-disk size: 35644.4 KB)
+0010.389 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7400 files added (on-disk size: 35644.4 KB)
+0010.392 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7500 files added (on-disk size: 35644.4 KB)
+0010.393 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.5 MB, 9309 files batched, 501 (7515) added so far); re-opening (prior size: 35644.4 KB)
+0011.138 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7600 files added (on-disk size: 37978.4 KB)
+0011.142 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7700 files added (on-disk size: 37978.4 KB)
+0011.145 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7800 files added (on-disk size: 37978.4 KB)
+0011.149 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 7900 files added (on-disk size: 37978.4 KB)
+0011.152 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8000 files added (on-disk size: 37978.4 KB)
+0011.153 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.8 MB, 9309 files batched, 501 (8016) added so far); re-opening (prior size: 37978.4 KB)
+0011.542 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8100 files added (on-disk size: 38693 KB)
+0011.545 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8200 files added (on-disk size: 38693 KB)
+0011.549 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8300 files added (on-disk size: 38693 KB)
+0011.552 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8400 files added (on-disk size: 38693 KB)
+0011.556 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8500 files added (on-disk size: 38693 KB)
+0011.557 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.4 MB, 9309 files batched, 501 (8517) added so far); re-opening (prior size: 38693 KB)
+0012.311 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8600 files added (on-disk size: 40003.9 KB)
+0012.314 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8700 files added (on-disk size: 40003.9 KB)
+0012.318 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8800 files added (on-disk size: 40003.9 KB)
+0012.321 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 8900 files added (on-disk size: 40003.9 KB)
+0012.325 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 9000 files added (on-disk size: 40003.9 KB)
+0012.326 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.6 MB, 9309 files batched, 501 (9018) added so far); re-opening (prior size: 40003.9 KB)
+0014.057 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 9100 files added (on-disk size: 45685 KB)
+0014.061 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 9200 files added (on-disk size: 45685 KB)
+0014.065 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip.tmp: 9300 files added (on-disk size: 45685 KB)
+0015.108 (0) Created plugins zip (0) - 46688.9 KB in 15.1 s (3093.6 KB/s) (sha1: 22b78cd8b6ef747dd8a9d692e1194ffcd9a508e4, sha256: 0513e5411124dac4204b939d4469ab503b504392379cbc5e7dd480afc3f641eb)
+0015.109 (0) Beginning creation of dump of themes (split every: 400 MB)
+0015.162 (0) Total entities for the zip file: 410 directories, 2045 files (0 skipped as non-modified), 76.6 MB
+0015.166 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0015.169 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0015.172 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0015.175 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0015.178 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 2045 files batched, 492 (492) added so far); re-opening (prior size: 0 KB)
+0017.578 (0) A useful amount of data was added after this amount of zip processing: 2.8 s (normalised: 2.8 s, rate: 9290 KB/s)
+0017.579 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.7561058998108, normalised_time=2.7556535691335, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=57077711)
+0017.584 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 500 files added (on-disk size: 6968.3 KB)
+0017.587 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 600 files added (on-disk size: 6968.3 KB)
+0017.590 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 700 files added (on-disk size: 6968.3 KB)
+0017.593 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 800 files added (on-disk size: 6968.3 KB)
+0017.596 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 900 files added (on-disk size: 6968.3 KB)
+0017.599 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (23.2 MB, 2045 files batched, 501 (993) added so far); re-opening (prior size: 6968.3 KB)
+0018.214 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1000 files added (on-disk size: 26496.7 KB)
+0018.217 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1100 files added (on-disk size: 26496.7 KB)
+0018.220 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1200 files added (on-disk size: 26496.7 KB)
+0018.223 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1300 files added (on-disk size: 26496.7 KB)
+0018.227 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1400 files added (on-disk size: 26496.7 KB)
+0018.229 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.4 MB, 2045 files batched, 501 (1494) added so far); re-opening (prior size: 26496.7 KB)
+0018.919 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1500 files added (on-disk size: 42169.4 KB)
+0018.924 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1600 files added (on-disk size: 42169.4 KB)
+0018.927 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1700 files added (on-disk size: 42169.4 KB)
+0018.930 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1800 files added (on-disk size: 42169.4 KB)
+0018.933 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 1900 files added (on-disk size: 42169.4 KB)
+0018.936 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8 MB, 2045 files batched, 501 (1995) added so far); re-opening (prior size: 42169.4 KB)
+0019.645 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip.tmp: 2000 files added (on-disk size: 46281.9 KB)
+0020.332 (0) Created themes zip (0) - 47009 KB in 5.2 s (9002.7 KB/s) (sha1: faf31694fbd51d0445f26b9e51d1b5e59b4ccdb6, sha256: 324e689ab1d81ec8ccb0cedece5098993cea0708f22b77313a10c5d6fd4802fa)
+0020.333 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0020.334 (0) Looking for candidates to back up in: /home/forge/uretekusa.com/wp-content/uploads
+0020.334 (0) finding files: GeoIPv6.dat: adding to list (1)
+0020.335 (0) finding files: group-avatars: adding to list (2)
+0020.335 (0) finding files: style-custom.css: adding to list (3)
+0020.336 (0) finding files: buddypress: adding to list (4)
+0020.336 (0) finding files: bb-plugin: adding to list (5)
+0020.336 (0) finding files: js_composer: adding to list (6)
+0020.337 (0) finding files: revslider: adding to list (7)
+0020.337 (0) finding files: 2018: adding to list (8)
+0020.337 (0) finding files: redux: adding to list (9)
+0020.338 (0) finding files: wc-logs: adding to list (10)
+0020.338 (0) finding files: woocommerce_uploads: adding to list (11)
+0020.339 (0) finding files: 2016: adding to list (12)
+0020.339 (0) finding files: 2017: adding to list (13)
+0020.339 (0) finding files: GeoIP.dat: adding to list (14)
+0020.340 (0) finding files: download-manager-files: adding to list (15)
+0020.340 (0) finding files: 2015: adding to list (16)
+0020.341 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0020.449 (0) Total entities for the zip file: 188 directories, 3481 files (0 skipped as non-modified), 579.8 MB
+0020.452 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0020.455 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0020.458 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0020.461 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0020.464 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 54.4 MB added on this batch (55.1 MB, 3481 files batched, 465 (465) added so far); re-opening (prior size: 0 KB)
+0022.046 (0) A useful amount of data was added after this amount of zip processing: 2.2 s (normalised: 2.2 s, rate: 25348.8 KB/s)
+0022.048 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.2245409488678, normalised_time=2.198917714531, max_time=-1, data points known=0, old_max_bytes=57077711, new_max_bytes=155743102)
+0022.051 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 500 files added (on-disk size: 55479.6 KB)
+0022.054 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 600 files added (on-disk size: 55479.6 KB)
+0022.057 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 700 files added (on-disk size: 55479.6 KB)
+0022.061 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 800 files added (on-disk size: 55479.6 KB)
+0022.065 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 900 files added (on-disk size: 55479.6 KB)
+0022.070 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (148.4 MB, 3481 files batched, 501 (966) added so far); re-opening (prior size: 55479.6 KB)
+0023.099 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1000 files added (on-disk size: 207470.1 KB)
+0023.125 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1100 files added (on-disk size: 207470.1 KB)
+0023.129 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1200 files added (on-disk size: 207470.1 KB)
+0023.133 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1300 files added (on-disk size: 207470.1 KB)
+0023.136 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1400 files added (on-disk size: 207470.1 KB)
+0023.139 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (73.2 MB, 3481 files batched, 501 (1467) added so far); re-opening (prior size: 207470.1 KB)
+0024.411 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1500 files added (on-disk size: 282475.6 KB)
+0024.416 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1600 files added (on-disk size: 282475.6 KB)
+0024.420 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1700 files added (on-disk size: 282475.6 KB)
+0024.423 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1800 files added (on-disk size: 282475.6 KB)
+0024.433 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 1900 files added (on-disk size: 282475.6 KB)
+0024.438 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (62.6 MB, 3481 files batched, 501 (1968) added so far); re-opening (prior size: 282475.6 KB)
+0027.007 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 2000 files added (on-disk size: 346428.4 KB)
+0027.014 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 2100 files added (on-disk size: 346428.4 KB)
+0027.022 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 2200 files added (on-disk size: 346428.4 KB)
+0027.029 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 2300 files added (on-disk size: 346428.4 KB)
+0027.041 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip.tmp: 2400 files added (on-disk size: 346428.4 KB)
+0027.044 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): possibly approaching split limit (56.4 MB, 492 (2460) files added so far); last ratio: 0.9972; re-opening (prior size: 346428.4 KB)
+0029.387 (0) Zip size is at/near split limit (394.5 MB / 400 MB) - bumping index (from: 0)
+0034.543 (0) Created uploads zip (0) - 403959.6 KB in 9.1 s (44617.8 KB/s) (checksums: sha1: a138d48aa5d6a9fd82edf54374b4000a8990b2b7, sha256: 4742b15bdcb19a7ea3bf2808c88b4e4970571e3b1dcce6133582e74f6c3feb70)
+0034.545 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.1 MB, 1 (2461) files added so far); re-opening (prior size: 0 KB)
+0034.549 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 2500 files added (on-disk size: 152.1 KB)
+0034.556 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 2600 files added (on-disk size: 152.1 KB)
+0034.561 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 2700 files added (on-disk size: 152.1 KB)
+0034.565 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 2800 files added (on-disk size: 152.1 KB)
+0034.569 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 2900 files added (on-disk size: 152.1 KB)
+0034.572 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (51.8 MB, 3481 files batched, 501 (2962) added so far); re-opening (prior size: 152.1 KB)
+0035.138 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 3000 files added (on-disk size: 53159.3 KB)
+0035.144 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 3100 files added (on-disk size: 53159.3 KB)
+0035.149 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 3200 files added (on-disk size: 53159.3 KB)
+0035.153 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 3300 files added (on-disk size: 53159.3 KB)
+0035.157 (0) Zip: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip.tmp: 3400 files added (on-disk size: 53159.3 KB)
+0035.161 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (115.5 MB, 3481 files batched, 501 (3463) added so far); re-opening (prior size: 53159.3 KB)
+0041.468 (0) Created uploads zip (1) - 184017 KB in 6.9 s (26577.6 KB/s) (sha1: 737d7996d8bd37e1cada4994c4755137b360d110, sha256: 91d5aec7631dfe6f3555d123cb38d3ee53b9853394faa8111b03bbff62497f65)
+0041.472 (0) Beginning backup of other directories found in the content directory (index: 0)
+0041.473 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0041.473 (0) Looking for candidates to back up in: /home/forge/uretekusa.com/wp-content
+0041.474 (0) finding files: advanced-cache.php: adding to list (1)
+0041.474 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0041.474 (0) finding files: cache: skipping: excluded by options
+0041.475 (0) finding files: backups-dup-pro: skipping: excluded by options (glob)
+0041.475 (0) finding files: backup: skipping: excluded by options (glob)
+0041.476 (0) finding files: upgrade: skipping: excluded by options
+0041.476 (0) finding files: uploads: skipping: this is the uploads directory
+0041.476 (0) finding files: plugins: skipping: this is the plugins directory
+0041.477 (0) finding files: index.php: adding to list (2)
+0041.477 (0) finding files: object-cache.php.redis: adding to list (3)
+0041.477 (0) finding files: themes: skipping: this is the themes directory
+0041.478 (0) finding files: w3tc-config: adding to list (4)
+0041.478 (0) finding files: updraft: skipping: this is the updraft directory
+0041.481 (0) Total entities for the zip file: 1 directories, 5 files (0 skipped as non-modified), 0.1 MB
+0041.488 (0) Created others zip (0) - 15 KB in 0 s (1815.1 KB/s) (sha1: bf39748b3c2c44c2d1fb8ff0bb962deaa191db37, sha256: 002ec6980f4a16a1a49e971c5e4c94d5c8a9c13e21ed6d907232089ed39f82ca)
+0041.491 (0) Saving backup status to database (elements: 9)
+0041.493 (0) Beginning creation of database dump (WordPress DB)
+0041.496 (0) Testing: /usr/bin/mysqldump
+0041.587 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wpusa_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1221 bytes total)
+0041.595 (0) Binary mysqldump: error (code: 5)
+0041.632 (0) Table wpusa_options: Total expected rows (approximate): 809
+0041.687 (0) Table wpusa_options: Total rows added: 805 in 0.05 seconds
+0041.688 (0) Table wpusa_options: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_options.table.gz - 193.4 KB)
+0041.690 (0) Table wpusa_users: Total expected rows (approximate): 42
+0041.692 (0) Table wpusa_users: Total rows added: 42 in 0.00 seconds
+0041.693 (0) Table wpusa_users: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_users.table.gz - 4.1 KB)
+0041.695 (0) Table wpusa_usermeta: Total expected rows (approximate): 734
+0041.701 (0) Table wpusa_usermeta: Total rows added: 734 in 0.00 seconds
+0041.702 (0) Table wpusa_usermeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_usermeta.table.gz - 9.5 KB)
+0041.704 (0) Table wpusa_commentmeta: Total expected rows (approximate): 0
+0041.706 (0) Table wpusa_commentmeta: Total rows added: 0 in 0.00 seconds
+0041.706 (0) Table wpusa_commentmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_commentmeta.table.gz - 0.4 KB)
+0041.708 (0) Table wpusa_comments: Total expected rows (approximate): 0
+0041.710 (0) Table wpusa_comments: Total rows added: 0 in 0.00 seconds
+0041.711 (0) Table wpusa_comments: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_comments.table.gz - 0.5 KB)
+0041.713 (0) Table wpusa_links: Total expected rows (approximate): 0
+0041.715 (0) Table wpusa_links: Total rows added: 0 in 0.00 seconds
+0041.715 (0) Table wpusa_links: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_links.table.gz - 0.4 KB)
+0041.717 (0) Table wpusa_postmeta: Total expected rows (approximate): 2180
+0041.768 (0) Table wpusa_postmeta: Total rows added: 2180 in 0.05 seconds
+0041.769 (0) Table wpusa_postmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_postmeta.table.gz - 150.7 KB)
+0041.772 (0) Table wpusa_posts: Total expected rows (approximate): 458
+0041.792 (0) Table wpusa_posts: Total rows added: 458 in 0.02 seconds
+0041.793 (0) Table wpusa_posts: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_posts.table.gz - 67.3 KB)
+0041.796 (0) Table wpusa_signups: Total expected rows (approximate): 0
+0041.797 (0) Table wpusa_signups: Total rows added: 0 in 0.00 seconds
+0041.798 (0) Table wpusa_signups: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_signups.table.gz - 0.5 KB)
+0041.800 (0) Table wpusa_term_relationships: Total expected rows (approximate): 150
+0041.802 (0) Table wpusa_term_relationships: Total rows added: 150 in 0.00 seconds
+0041.803 (0) Table wpusa_term_relationships: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_term_relationships.table.gz - 0.8 KB)
+0041.805 (0) Table wpusa_term_taxonomy: Total expected rows (approximate): 92
+0041.807 (0) Table wpusa_term_taxonomy: Total rows added: 92 in 0.00 seconds
+0041.807 (0) Table wpusa_term_taxonomy: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_term_taxonomy.table.gz - 1.2 KB)
+0041.810 (0) Table wpusa_termmeta: Total expected rows (approximate): 38
+0041.812 (0) Table wpusa_termmeta: Total rows added: 38 in 0.00 seconds
+0041.812 (0) Table wpusa_termmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_termmeta.table.gz - 0.6 KB)
+0041.814 (0) Table wpusa_terms: Total expected rows (approximate): 92
+0041.816 (0) Table wpusa_terms: Total rows added: 92 in 0.00 seconds
+0041.817 (0) Table wpusa_terms: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_terms.table.gz - 1.6 KB)
+0041.819 (0) Table wpusa_yoast_seo_links: Total expected rows (approximate): 41
+0041.821 (0) Table wpusa_yoast_seo_links: Total rows added: 41 in 0.00 seconds
+0041.821 (0) Table wpusa_yoast_seo_links: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_yoast_seo_links.table.gz - 1 KB)
+0041.824 (0) Table wpusa_yoast_seo_meta: Total expected rows (approximate): 286
+0041.827 (0) Table wpusa_yoast_seo_meta: Total rows added: 286 in 0.00 seconds
+0041.828 (0) Table wpusa_yoast_seo_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_yoast_seo_meta.table.gz - 1 KB)
+0041.831 (0) Table wpusa_ahm_download_stats: Total expected rows (approximate): 18
+0041.833 (0) Table wpusa_ahm_download_stats: Total rows added: 18 in 0.00 seconds
+0041.833 (0) Table wpusa_ahm_download_stats: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_download_stats.table.gz - 0.7 KB)
+0041.836 (0) Table wpusa_ahm_emails: Total expected rows (approximate): 0
+0041.837 (0) Table wpusa_ahm_emails: Total rows added: 0 in 0.00 seconds
+0041.837 (0) Table wpusa_ahm_emails: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_emails.table.gz - 0.3 KB)
+0041.840 (0) Table wpusa_ahm_social_conns: Total expected rows (approximate): 0
+0041.841 (0) Table wpusa_ahm_social_conns: Total rows added: 0 in 0.00 seconds
+0041.842 (0) Table wpusa_ahm_social_conns: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_social_conns.table.gz - 0.4 KB)
+0041.845 (0) Table wpusa_bp_activity: Total expected rows (approximate): 4
+0041.847 (0) Table wpusa_bp_activity: Total rows added: 4 in 0.00 seconds
+0041.847 (0) Table wpusa_bp_activity: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_activity.table.gz - 0.8 KB)
+0041.850 (0) Table wpusa_bp_activity_meta: Total expected rows (approximate): 0
+0041.851 (0) Table wpusa_bp_activity_meta: Total rows added: 0 in 0.00 seconds
+0041.851 (0) Table wpusa_bp_activity_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_activity_meta.table.gz - 0.4 KB)
+0041.854 (0) Table wpusa_bp_groups: Total expected rows (approximate): 2
+0041.856 (0) Table wpusa_bp_groups: Total rows added: 2 in 0.00 seconds
+0041.857 (0) Table wpusa_bp_groups: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups.table.gz - 0.6 KB)
+0041.859 (0) Table wpusa_bp_groups_groupmeta: Total expected rows (approximate): 6
+0041.861 (0) Table wpusa_bp_groups_groupmeta: Total rows added: 6 in 0.00 seconds
+0041.862 (0) Table wpusa_bp_groups_groupmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups_groupmeta.table.gz - 0.5 KB)
+0041.865 (0) Table wpusa_bp_groups_members: Total expected rows (approximate): 2
+0041.867 (0) Table wpusa_bp_groups_members: Total rows added: 2 in 0.00 seconds
+0041.867 (0) Table wpusa_bp_groups_members: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups_members.table.gz - 0.5 KB)
+0041.870 (0) Table wpusa_bp_messages_messages: Total expected rows (approximate): 0
+0041.871 (0) Table wpusa_bp_messages_messages: Total rows added: 0 in 0.00 seconds
+0041.871 (0) Table wpusa_bp_messages_messages: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_messages.table.gz - 0.4 KB)
+0041.874 (0) Table wpusa_bp_messages_meta: Total expected rows (approximate): 0
+0041.875 (0) Table wpusa_bp_messages_meta: Total rows added: 0 in 0.00 seconds
+0041.876 (0) Table wpusa_bp_messages_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_meta.table.gz - 0.3 KB)
+0041.878 (0) Table wpusa_bp_messages_notices: Total expected rows (approximate): 0
+0041.880 (0) Table wpusa_bp_messages_notices: Total rows added: 0 in 0.00 seconds
+0041.880 (0) Table wpusa_bp_messages_notices: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_notices.table.gz - 0.4 KB)
+0041.883 (0) Table wpusa_bp_messages_recipients: Total expected rows (approximate): 0
+0041.884 (0) Table wpusa_bp_messages_recipients: Total rows added: 0 in 0.00 seconds
+0041.884 (0) Table wpusa_bp_messages_recipients: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_recipients.table.gz - 0.4 KB)
+0041.887 (0) Table wpusa_bp_notifications: Total expected rows (approximate): 0
+0041.888 (0) Table wpusa_bp_notifications: Total rows added: 0 in 0.00 seconds
+0041.888 (0) Table wpusa_bp_notifications: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_notifications.table.gz - 0.4 KB)
+0041.891 (0) Table wpusa_bp_notifications_meta: Total expected rows (approximate): 0
+0041.892 (0) Table wpusa_bp_notifications_meta: Total rows added: 0 in 0.00 seconds
+0041.893 (0) Table wpusa_bp_notifications_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_notifications_meta.table.gz - 0.4 KB)
+0041.896 (0) Table wpusa_bp_xprofile_data: Total expected rows (approximate): 2
+0041.897 (0) Table wpusa_bp_xprofile_data: Total rows added: 2 in 0.00 seconds
+0041.898 (0) Table wpusa_bp_xprofile_data: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_data.table.gz - 0.5 KB)
+0041.901 (0) Table wpusa_bp_xprofile_fields: Total expected rows (approximate): 20
+0041.903 (0) Table wpusa_bp_xprofile_fields: Total rows added: 20 in 0.00 seconds
+0041.903 (0) Table wpusa_bp_xprofile_fields: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_fields.table.gz - 0.8 KB)
+0041.906 (0) Table wpusa_bp_xprofile_groups: Total expected rows (approximate): 1
+0041.908 (0) Table wpusa_bp_xprofile_groups: Total rows added: 1 in 0.00 seconds
+0041.908 (0) Table wpusa_bp_xprofile_groups: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_groups.table.gz - 0.4 KB)
+0041.911 (0) Table wpusa_bp_xprofile_meta: Total expected rows (approximate): 15
+0041.913 (0) Table wpusa_bp_xprofile_meta: Total rows added: 15 in 0.00 seconds
+0041.913 (0) Table wpusa_bp_xprofile_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_meta.table.gz - 0.5 KB)
+0041.916 (0) Table wpusa_duplicator_pro_entities: Total expected rows (approximate): 6
+0041.917 (0) Table wpusa_duplicator_pro_entities: Total rows added: 6 in 0.00 seconds
+0041.918 (0) Table wpusa_duplicator_pro_entities: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_duplicator_pro_entities.table.gz - 3 KB)
+0041.921 (0) Table wpusa_duplicator_pro_packages: Total expected rows (approximate): 1
+0041.923 (0) Table wpusa_duplicator_pro_packages: Total rows added: 1 in 0.00 seconds
+0041.924 (0) Table wpusa_duplicator_pro_packages: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_duplicator_pro_packages.table.gz - 2.5 KB)
+0041.926 (0) Table wpusa_layerslider: Total expected rows (approximate): 1
+0041.934 (0) Table wpusa_layerslider: Total rows added: 1 in 0.01 seconds
+0041.934 (0) Table wpusa_layerslider: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_layerslider.table.gz - 0.5 KB)
+0041.937 (0) Table wpusa_layerslider_revisions: Total expected rows (approximate): 0
+0041.938 (0) Table wpusa_layerslider_revisions: Total rows added: 0 in 0.00 seconds
+0041.939 (0) Table wpusa_layerslider_revisions: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_layerslider_revisions.table.gz - 0.3 KB)
+0041.947 (0) Table wpusa_nf3_action_meta: Total expected rows (approximate): 126
+0041.950 (0) Table wpusa_nf3_action_meta: Total rows added: 126 in 0.00 seconds
+0041.950 (0) Table wpusa_nf3_action_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_action_meta.table.gz - 1.3 KB)
+0041.953 (0) Table wpusa_nf3_actions: Total expected rows (approximate): 6
+0041.954 (0) Table wpusa_nf3_actions: Total rows added: 6 in 0.00 seconds
+0041.955 (0) Table wpusa_nf3_actions: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_actions.table.gz - 0.5 KB)
+0041.958 (0) Table wpusa_nf3_field_meta: Total expected rows (approximate): 133
+0041.960 (0) Table wpusa_nf3_field_meta: Total rows added: 133 in 0.00 seconds
+0041.961 (0) Table wpusa_nf3_field_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_field_meta.table.gz - 1.3 KB)
+0041.964 (0) Table wpusa_nf3_fields: Total expected rows (approximate): 10
+0041.966 (0) Table wpusa_nf3_fields: Total rows added: 10 in 0.00 seconds
+0041.967 (0) Table wpusa_nf3_fields: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_fields.table.gz - 0.6 KB)
+0041.972 (0) Table wpusa_nf3_form_meta: Total expected rows (approximate): 36
+0041.974 (0) Table wpusa_nf3_form_meta: Total rows added: 36 in 0.00 seconds
+0041.975 (0) Table wpusa_nf3_form_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_form_meta.table.gz - 1.4 KB)
+0041.980 (0) Table wpusa_nf3_forms: Total expected rows (approximate): 2
+0041.981 (0) Table wpusa_nf3_forms: Total rows added: 2 in 0.00 seconds
+0041.982 (0) Table wpusa_nf3_forms: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_forms.table.gz - 0.4 KB)
+0041.986 (0) Table wpusa_nf3_object_meta: Total expected rows (approximate): 0
+0041.989 (0) Table wpusa_nf3_object_meta: Total rows added: 0 in 0.00 seconds
+0041.990 (0) Table wpusa_nf3_object_meta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_object_meta.table.gz - 0.3 KB)
+0041.992 (0) Table wpusa_nf3_objects: Total expected rows (approximate): 0
+0041.994 (0) Table wpusa_nf3_objects: Total rows added: 0 in 0.00 seconds
+0041.994 (0) Table wpusa_nf3_objects: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_objects.table.gz - 0.4 KB)
+0041.996 (0) Table wpusa_nf3_relationships: Total expected rows (approximate): 0
+0041.997 (0) Table wpusa_nf3_relationships: Total rows added: 0 in 0.00 seconds
+0041.998 (0) Table wpusa_nf3_relationships: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_relationships.table.gz - 0.4 KB)
+0042.001 (0) Table wpusa_revslider_css: Total expected rows (approximate): 109
+0042.004 (0) Table wpusa_revslider_css: Total rows added: 109 in 0.00 seconds
+0042.005 (0) Table wpusa_revslider_css: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_css.table.gz - 4.8 KB)
+0042.008 (0) Table wpusa_revslider_layer_animations: Total expected rows (approximate): 0
+0042.009 (0) Table wpusa_revslider_layer_animations: Total rows added: 0 in 0.00 seconds
+0042.010 (0) Table wpusa_revslider_layer_animations: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_layer_animations.table.gz - 0.3 KB)
+0042.012 (0) Table wpusa_revslider_navigations: Total expected rows (approximate): 0
+0042.013 (0) Table wpusa_revslider_navigations: Total rows added: 0 in 0.00 seconds
+0042.013 (0) Table wpusa_revslider_navigations: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_navigations.table.gz - 0.3 KB)
+0042.016 (0) Table wpusa_revslider_sliders: Total expected rows (approximate): 0
+0042.017 (0) Table wpusa_revslider_sliders: Total rows added: 0 in 0.00 seconds
+0042.018 (0) Table wpusa_revslider_sliders: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_sliders.table.gz - 0.3 KB)
+0042.020 (0) Table wpusa_revslider_slides: Total expected rows (approximate): 0
+0042.021 (0) Table wpusa_revslider_slides: Total rows added: 0 in 0.00 seconds
+0042.022 (0) Table wpusa_revslider_slides: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_slides.table.gz - 0.3 KB)
+0042.024 (0) Table wpusa_revslider_static_slides: Total expected rows (approximate): 0
+0042.025 (0) Table wpusa_revslider_static_slides: Total rows added: 0 in 0.00 seconds
+0042.026 (0) Table wpusa_revslider_static_slides: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_static_slides.table.gz - 0.3 KB)
+0042.028 (0) Table wpusa_wc_download_log: Total expected rows (approximate): 0
+0042.029 (0) Table wpusa_wc_download_log: Total rows added: 0 in 0.00 seconds
+0042.030 (0) Table wpusa_wc_download_log: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wc_download_log.table.gz - 0.4 KB)
+0042.032 (0) Table wpusa_wc_webhooks: Total expected rows (approximate): 0
+0042.034 (0) Table wpusa_wc_webhooks: Total rows added: 0 in 0.00 seconds
+0042.034 (0) Table wpusa_wc_webhooks: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wc_webhooks.table.gz - 0.5 KB)
+0042.041 (0) Table wpusa_woocommerce_api_keys: Total expected rows (approximate): 0
+0042.043 (0) Table wpusa_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0042.044 (0) Table wpusa_woocommerce_api_keys: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_api_keys.table.gz - 0.4 KB)
+0042.046 (0) Table wpusa_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0042.047 (0) Table wpusa_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0042.048 (0) Table wpusa_woocommerce_attribute_taxonomies: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_attribute_taxonomies.table.gz - 0.4 KB)
+0042.051 (0) Table wpusa_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0042.052 (0) Table wpusa_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0042.052 (0) Table wpusa_woocommerce_downloadable_product_permissions: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0042.055 (0) Table wpusa_woocommerce_log: Total expected rows (approximate): 0
+0042.056 (0) Table wpusa_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0042.057 (0) Table wpusa_woocommerce_log: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_log.table.gz - 0.4 KB)
+0042.059 (0) Table wpusa_woocommerce_order_itemmeta: Total expected rows (approximate): 0
+0042.060 (0) Table wpusa_woocommerce_order_itemmeta: Total rows added: 0 in 0.00 seconds
+0042.061 (0) Table wpusa_woocommerce_order_itemmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_order_itemmeta.table.gz - 0.4 KB)
+0042.063 (0) Table wpusa_woocommerce_order_items: Total expected rows (approximate): 0
+0042.064 (0) Table wpusa_woocommerce_order_items: Total rows added: 0 in 0.00 seconds
+0042.065 (0) Table wpusa_woocommerce_order_items: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_order_items.table.gz - 0.4 KB)
+0042.069 (0) Table wpusa_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0042.071 (0) Table wpusa_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0042.072 (0) Table wpusa_woocommerce_payment_tokenmeta: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0042.076 (0) Table wpusa_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0042.079 (0) Table wpusa_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0042.080 (0) Table wpusa_woocommerce_payment_tokens: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0042.085 (0) Table wpusa_woocommerce_sessions: Total expected rows (approximate): 2
+0042.087 (0) Table wpusa_woocommerce_sessions: Total rows added: 2 in 0.00 seconds
+0042.087 (0) Table wpusa_woocommerce_sessions: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_sessions.table.gz - 1 KB)
+0042.090 (0) Table wpusa_woocommerce_shipping_zone_locations: Total expected rows (approximate): 1
+0042.091 (0) Table wpusa_woocommerce_shipping_zone_locations: Total rows added: 1 in 0.00 seconds
+0042.092 (0) Table wpusa_woocommerce_shipping_zone_locations: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0042.095 (0) Table wpusa_woocommerce_shipping_zone_methods: Total expected rows (approximate): 0
+0042.096 (0) Table wpusa_woocommerce_shipping_zone_methods: Total rows added: 0 in 0.00 seconds
+0042.096 (0) Table wpusa_woocommerce_shipping_zone_methods: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0042.099 (0) Table wpusa_woocommerce_shipping_zones: Total expected rows (approximate): 2
+0042.101 (0) Table wpusa_woocommerce_shipping_zones: Total rows added: 2 in 0.00 seconds
+0042.101 (0) Table wpusa_woocommerce_shipping_zones: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zones.table.gz - 0.4 KB)
+0042.104 (0) Table wpusa_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0042.105 (0) Table wpusa_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0042.105 (0) Table wpusa_woocommerce_tax_rate_locations: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0042.108 (0) Table wpusa_woocommerce_tax_rates: Total expected rows (approximate): 0
+0042.109 (0) Table wpusa_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0042.109 (0) Table wpusa_woocommerce_tax_rates: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_tax_rates.table.gz - 0.4 KB)
+0042.112 (0) Table wpusa_wpgmza: Total expected rows (approximate): 0
+0042.113 (0) Table wpusa_wpgmza: Total rows added: 1 in 0.00 seconds
+0042.113 (0) Table wpusa_wpgmza: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza.table.gz - 0.5 KB)
+0042.116 (0) Table wpusa_wpgmza_categories: Total expected rows (approximate): 0
+0042.117 (0) Table wpusa_wpgmza_categories: Total rows added: 0 in 0.00 seconds
+0042.118 (0) Table wpusa_wpgmza_categories: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_categories.table.gz - 0.3 KB)
+0042.121 (0) Table wpusa_wpgmza_category_maps: Total expected rows (approximate): 0
+0042.122 (0) Table wpusa_wpgmza_category_maps: Total rows added: 0 in 0.00 seconds
+0042.132 (0) Table wpusa_wpgmza_category_maps: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_category_maps.table.gz - 0.3 KB)
+0042.135 (0) Table wpusa_wpgmza_circles: Total expected rows (approximate): 0
+0042.136 (0) Table wpusa_wpgmza_circles: Total rows added: 0 in 0.00 seconds
+0042.136 (0) Table wpusa_wpgmza_circles: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_circles.table.gz - 0.3 KB)
+0042.139 (0) Table wpusa_wpgmza_maps: Total expected rows (approximate): 0
+0042.140 (0) Table wpusa_wpgmza_maps: Total rows added: 1 in 0.00 seconds
+0042.141 (0) Table wpusa_wpgmza_maps: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_maps.table.gz - 0.7 KB)
+0042.143 (0) Table wpusa_wpgmza_polygon: Total expected rows (approximate): 0
+0042.144 (0) Table wpusa_wpgmza_polygon: Total rows added: 0 in 0.00 seconds
+0042.145 (0) Table wpusa_wpgmza_polygon: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_polygon.table.gz - 0.4 KB)
+0042.147 (0) Table wpusa_wpgmza_polylines: Total expected rows (approximate): 0
+0042.148 (0) Table wpusa_wpgmza_polylines: Total rows added: 0 in 0.00 seconds
+0042.148 (0) Table wpusa_wpgmza_polylines: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_polylines.table.gz - 0.3 KB)
+0042.150 (0) Table wpusa_wpgmza_rectangles: Total expected rows (approximate): 0
+0042.152 (0) Table wpusa_wpgmza_rectangles: Total rows added: 0 in 0.00 seconds
+0042.152 (0) Table wpusa_wpgmza_rectangles: finishing file (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_rectangles.table.gz - 0.3 KB)
+0042.154 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_options.table.gz (1/76): adding to final database dump
+0042.196 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_users.table.gz (2/76): adding to final database dump
+0042.197 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_usermeta.table.gz (3/76): adding to final database dump
+0042.200 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_commentmeta.table.gz (4/76): adding to final database dump
+0042.200 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_comments.table.gz (5/76): adding to final database dump
+0042.201 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_links.table.gz (6/76): adding to final database dump
+0042.202 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_postmeta.table.gz (7/76): adding to final database dump
+0042.238 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_posts.table.gz (8/76): adding to final database dump
+0042.252 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_signups.table.gz (9/76): adding to final database dump
+0042.253 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_term_relationships.table.gz (10/76): adding to final database dump
+0042.254 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_term_taxonomy.table.gz (11/76): adding to final database dump
+0042.255 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_termmeta.table.gz (12/76): adding to final database dump
+0042.255 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_terms.table.gz (13/76): adding to final database dump
+0042.256 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_yoast_seo_links.table.gz (14/76): adding to final database dump
+0042.256 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_yoast_seo_meta.table.gz (15/76): adding to final database dump
+0042.257 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_download_stats.table.gz (16/76): adding to final database dump
+0042.258 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_emails.table.gz (17/76): adding to final database dump
+0042.258 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_ahm_social_conns.table.gz (18/76): adding to final database dump
+0042.259 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_activity.table.gz (19/76): adding to final database dump
+0042.259 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_activity_meta.table.gz (20/76): adding to final database dump
+0042.260 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups.table.gz (21/76): adding to final database dump
+0042.260 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups_groupmeta.table.gz (22/76): adding to final database dump
+0042.261 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_groups_members.table.gz (23/76): adding to final database dump
+0042.261 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_messages.table.gz (24/76): adding to final database dump
+0042.262 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_meta.table.gz (25/76): adding to final database dump
+0042.262 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_notices.table.gz (26/76): adding to final database dump
+0042.263 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_messages_recipients.table.gz (27/76): adding to final database dump
+0042.263 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_notifications.table.gz (28/76): adding to final database dump
+0042.263 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_notifications_meta.table.gz (29/76): adding to final database dump
+0042.264 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_data.table.gz (30/76): adding to final database dump
+0042.265 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_fields.table.gz (31/76): adding to final database dump
+0042.265 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_groups.table.gz (32/76): adding to final database dump
+0042.266 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_bp_xprofile_meta.table.gz (33/76): adding to final database dump
+0042.266 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_duplicator_pro_entities.table.gz (34/76): adding to final database dump
+0042.267 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_duplicator_pro_packages.table.gz (35/76): adding to final database dump
+0042.268 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_layerslider.table.gz (36/76): adding to final database dump
+0042.268 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_layerslider_revisions.table.gz (37/76): adding to final database dump
+0042.268 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_action_meta.table.gz (38/76): adding to final database dump
+0042.269 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_actions.table.gz (39/76): adding to final database dump
+0042.270 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_field_meta.table.gz (40/76): adding to final database dump
+0042.270 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_fields.table.gz (41/76): adding to final database dump
+0042.271 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_form_meta.table.gz (42/76): adding to final database dump
+0042.272 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_forms.table.gz (43/76): adding to final database dump
+0042.272 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_object_meta.table.gz (44/76): adding to final database dump
+0042.273 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_objects.table.gz (45/76): adding to final database dump
+0042.273 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_nf3_relationships.table.gz (46/76): adding to final database dump
+0042.273 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_css.table.gz (47/76): adding to final database dump
+0042.276 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_layer_animations.table.gz (48/76): adding to final database dump
+0042.276 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_navigations.table.gz (49/76): adding to final database dump
+0042.277 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_sliders.table.gz (50/76): adding to final database dump
+0042.277 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_slides.table.gz (51/76): adding to final database dump
+0042.278 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_revslider_static_slides.table.gz (52/76): adding to final database dump
+0042.279 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wc_download_log.table.gz (53/76): adding to final database dump
+0042.279 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wc_webhooks.table.gz (54/76): adding to final database dump
+0042.280 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_api_keys.table.gz (55/76): adding to final database dump
+0042.280 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_attribute_taxonomies.table.gz (56/76): adding to final database dump
+0042.280 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_downloadable_product_permissions.table.gz (57/76): adding to final database dump
+0042.281 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_log.table.gz (58/76): adding to final database dump
+0042.281 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_order_itemmeta.table.gz (59/76): adding to final database dump
+0042.282 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_order_items.table.gz (60/76): adding to final database dump
+0042.282 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_payment_tokenmeta.table.gz (61/76): adding to final database dump
+0042.283 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_payment_tokens.table.gz (62/76): adding to final database dump
+0042.283 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_sessions.table.gz (63/76): adding to final database dump
+0042.284 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zone_locations.table.gz (64/76): adding to final database dump
+0042.284 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zone_methods.table.gz (65/76): adding to final database dump
+0042.285 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_shipping_zones.table.gz (66/76): adding to final database dump
+0042.285 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_tax_rate_locations.table.gz (67/76): adding to final database dump
+0042.286 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_woocommerce_tax_rates.table.gz (68/76): adding to final database dump
+0042.286 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza.table.gz (69/76): adding to final database dump
+0042.286 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_categories.table.gz (70/76): adding to final database dump
+0042.287 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_category_maps.table.gz (71/76): adding to final database dump
+0042.287 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_circles.table.gz (72/76): adding to final database dump
+0042.288 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_maps.table.gz (73/76): adding to final database dump
+0042.288 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_polygon.table.gz (74/76): adding to final database dump
+0042.289 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_polylines.table.gz (75/76): adding to final database dump
+0042.289 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db-table-wpusa_wpgmza_rectangles.table.gz (76/76): adding to final database dump
+0042.290 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: finished writing out complete database file (440 KB)
+0042.299 (0) Total database tables backed up: 76 (backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz, size: 461604, sha256)
+0042.303 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0042.304 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0042.304 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0042.305 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0042.305 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: others: This file has not yet been successfully uploaded: will queue
+0042.305 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: db: This file has not yet been successfully uploaded: will queue
+0042.306 (0) Saving backup history. Total backup size: 666.2 MB
+0042.308 (0) Requesting upload of the files that have not yet been successfully uploaded (6)
+0042.310 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0042.310 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-e5ade2a6c21da6d8a4362f986972afbf)
+0045.139 (0) Google Drive quota usage: used=3738.6 MB, total=15360 MB, available=11621.4 MB
+0045.141 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0045.639 (0) Googledrive chunked upload: 2.2 % uploaded (1048576)
+0045.886 (0) Googledrive chunked upload: 4.4 % uploaded (2097152)
+0046.132 (0) Googledrive chunked upload: 6.6 % uploaded (3145728)
+0046.422 (0) Googledrive chunked upload: 8.8 % uploaded (4194304)
+0046.723 (0) Googledrive chunked upload: 11 % uploaded (5242880)
+0046.991 (0) Googledrive chunked upload: 13.2 % uploaded (6291456)
+0047.313 (0) Googledrive chunked upload: 15.4 % uploaded (7340032)
+0047.567 (0) Googledrive chunked upload: 17.5 % uploaded (8388608)
+0047.813 (0) Googledrive chunked upload: 19.7 % uploaded (9437184)
+0048.054 (0) Googledrive chunked upload: 21.9 % uploaded (10485760)
+0048.579 (0) Googledrive chunked upload: 24.1 % uploaded (11534336)
+0048.817 (0) Googledrive chunked upload: 26.3 % uploaded (12582912)
+0049.057 (0) Googledrive chunked upload: 28.5 % uploaded (13631488)
+0049.335 (0) Googledrive chunked upload: 30.7 % uploaded (14680064)
+0049.581 (0) Googledrive chunked upload: 32.9 % uploaded (15728640)
+0049.832 (0) Googledrive chunked upload: 35.1 % uploaded (16777216)
+0050.071 (0) Googledrive chunked upload: 37.3 % uploaded (17825792)
+0050.312 (0) Googledrive chunked upload: 39.5 % uploaded (18874368)
+0051.014 (0) Googledrive chunked upload: 41.7 % uploaded (19922944)
+0051.262 (0) Googledrive chunked upload: 43.9 % uploaded (20971520)
+0051.500 (0) Googledrive chunked upload: 46.1 % uploaded (22020096)
+0051.756 (0) Googledrive chunked upload: 48.3 % uploaded (23068672)
+0052.001 (0) Googledrive chunked upload: 50.4 % uploaded (24117248)
+0052.239 (0) Googledrive chunked upload: 52.6 % uploaded (25165824)
+0052.550 (0) Googledrive chunked upload: 54.8 % uploaded (26214400)
+0052.842 (0) Googledrive chunked upload: 57 % uploaded (27262976)
+0053.080 (0) Googledrive chunked upload: 59.2 % uploaded (28311552)
+0053.329 (0) Googledrive chunked upload: 61.4 % uploaded (29360128)
+0053.585 (0) Googledrive chunked upload: 63.6 % uploaded (30408704)
+0053.836 (0) Googledrive chunked upload: 65.8 % uploaded (31457280)
+0054.068 (0) Googledrive chunked upload: 68 % uploaded (32505856)
+0054.310 (0) Googledrive chunked upload: 70.2 % uploaded (33554432)
+0054.564 (0) Googledrive chunked upload: 72.4 % uploaded (34603008)
+0054.822 (0) Googledrive chunked upload: 74.6 % uploaded (35651584)
+0055.063 (0) Googledrive chunked upload: 76.8 % uploaded (36700160)
+0055.302 (0) Googledrive chunked upload: 79 % uploaded (37748736)
+0055.581 (0) Googledrive chunked upload: 81.1 % uploaded (38797312)
+0055.824 (0) Googledrive chunked upload: 83.3 % uploaded (39845888)
+0056.713 (0) Googledrive chunked upload: 85.5 % uploaded (40894464)
+0056.953 (0) Googledrive chunked upload: 87.7 % uploaded (41943040)
+0057.204 (0) Googledrive chunked upload: 89.9 % uploaded (42991616)
+0057.470 (0) Googledrive chunked upload: 92.1 % uploaded (44040192)
+0057.749 (0) Googledrive chunked upload: 94.3 % uploaded (45088768)
+0057.989 (0) Googledrive chunked upload: 96.5 % uploaded (46137344)
+0058.237 (0) Googledrive chunked upload: 98.7 % uploaded (47185920)
+0059.212 (0) Googledrive chunked upload: 100 % uploaded (47185920)
+0059.214 (0) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip uploaded to Google Drive in 14.07 seconds
+0059.215 (0) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip (bf940794ca6af7e4eae21129bea76617)
+0059.222 (0) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: OK
+0059.462 (0) Google Drive quota usage: used=3784.1 MB, total=15360 MB, available=11575.9 MB
+0059.463 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0059.973 (0) Googledrive chunked upload: 2.2 % uploaded (1048576)
+0060.225 (0) Googledrive chunked upload: 4.4 % uploaded (2097152)
+0060.467 (0) Googledrive chunked upload: 6.5 % uploaded (3145728)
+0060.779 (0) Googledrive chunked upload: 8.7 % uploaded (4194304)
+0061.013 (0) Googledrive chunked upload: 10.9 % uploaded (5242880)
+0061.259 (0) Googledrive chunked upload: 13.1 % uploaded (6291456)
+0061.529 (0) Googledrive chunked upload: 15.2 % uploaded (7340032)
+0061.787 (0) Googledrive chunked upload: 17.4 % uploaded (8388608)
+0062.037 (0) Googledrive chunked upload: 19.6 % uploaded (9437184)
+0062.280 (0) Googledrive chunked upload: 21.8 % uploaded (10485760)
+0062.557 (0) Googledrive chunked upload: 24 % uploaded (11534336)
+0062.800 (0) Googledrive chunked upload: 26.1 % uploaded (12582912)
+0063.070 (0) Googledrive chunked upload: 28.3 % uploaded (13631488)
+0063.312 (0) Googledrive chunked upload: 30.5 % uploaded (14680064)
+0063.552 (0) Googledrive chunked upload: 32.7 % uploaded (15728640)
+0063.824 (0) Googledrive chunked upload: 34.9 % uploaded (16777216)
+0064.076 (0) Googledrive chunked upload: 37 % uploaded (17825792)
+0064.333 (0) Googledrive chunked upload: 39.2 % uploaded (18874368)
+0064.625 (0) Googledrive chunked upload: 41.4 % uploaded (19922944)
+0064.928 (0) Googledrive chunked upload: 43.6 % uploaded (20971520)
+0065.830 (0) Googledrive chunked upload: 45.7 % uploaded (22020096)
+0066.105 (0) Googledrive chunked upload: 47.9 % uploaded (23068672)
+0066.343 (0) Googledrive chunked upload: 50.1 % uploaded (24117248)
+0066.614 (0) Googledrive chunked upload: 52.3 % uploaded (25165824)
+0066.859 (0) Googledrive chunked upload: 54.5 % uploaded (26214400)
+0067.153 (0) Googledrive chunked upload: 56.6 % uploaded (27262976)
+0067.394 (0) Googledrive chunked upload: 58.8 % uploaded (28311552)
+0067.630 (0) Googledrive chunked upload: 61 % uploaded (29360128)
+0067.891 (0) Googledrive chunked upload: 63.2 % uploaded (30408704)
+0068.188 (0) Googledrive chunked upload: 65.3 % uploaded (31457280)
+0068.432 (0) Googledrive chunked upload: 67.5 % uploaded (32505856)
+0068.672 (0) Googledrive chunked upload: 69.7 % uploaded (33554432)
+0068.990 (0) Googledrive chunked upload: 71.9 % uploaded (34603008)
+0069.251 (0) Googledrive chunked upload: 74.1 % uploaded (35651584)
+0069.611 (0) Googledrive chunked upload: 76.2 % uploaded (36700160)
+0069.895 (0) Googledrive chunked upload: 78.4 % uploaded (37748736)
+0070.154 (0) Googledrive chunked upload: 80.6 % uploaded (38797312)
+0070.466 (0) Googledrive chunked upload: 82.8 % uploaded (39845888)
+0070.743 (0) Googledrive chunked upload: 85 % uploaded (40894464)
+0071.017 (0) Googledrive chunked upload: 87.1 % uploaded (41943040)
+0071.261 (0) Googledrive chunked upload: 89.3 % uploaded (42991616)
+0072.223 (0) Googledrive chunked upload: 91.5 % uploaded (44040192)
+0072.466 (0) Googledrive chunked upload: 93.7 % uploaded (45088768)
+0072.754 (0) Googledrive chunked upload: 95.8 % uploaded (46137344)
+0073.022 (0) Googledrive chunked upload: 98 % uploaded (47185920)
+0073.849 (0) Googledrive chunked upload: 100 % uploaded (47185920)
+0073.851 (0) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip uploaded to Google Drive in 14.39 seconds
+0073.852 (0) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip (a1951b7150caa79eaeff747f2047c738)
+0073.858 (0) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: OK
+0074.050 (0) Google Drive quota usage: used=3830.1 MB, total=15360 MB, available=11529.9 MB
+0074.051 (0) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0074.570 (0) Googledrive chunked upload: 0.3 % uploaded (1048576)
+0074.892 (0) Googledrive chunked upload: 0.5 % uploaded (2097152)
+0075.127 (0) Googledrive chunked upload: 0.8 % uploaded (3145728)
+0075.406 (0) Googledrive chunked upload: 1 % uploaded (4194304)
+0075.675 (0) Googledrive chunked upload: 1.3 % uploaded (5242880)
+0075.927 (0) Googledrive chunked upload: 1.5 % uploaded (6291456)
+0076.180 (0) Googledrive chunked upload: 1.8 % uploaded (7340032)
+0076.437 (0) Googledrive chunked upload: 2 % uploaded (8388608)
+0076.691 (0) Googledrive chunked upload: 2.3 % uploaded (9437184)
+0076.971 (0) Googledrive chunked upload: 2.5 % uploaded (10485760)
+0077.218 (0) Googledrive chunked upload: 2.8 % uploaded (11534336)
+0077.453 (0) Googledrive chunked upload: 3 % uploaded (12582912)
+0077.701 (0) Googledrive chunked upload: 3.3 % uploaded (13631488)
+0319.138 (1) Opened log file at time: Mon, 09 Jul 2018 23:38:51 +0000 on https://uretekusa.com
+0319.140 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.7 PHP: 7.1.16-1+ubuntu16.04.1+deb.sury.org+1 (fpm-fcgi, Linux URETEKUSA 4.15.12-x86_64-linode105 #1 SMP Thu Mar 22 02:13:40 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: nginx/1.13.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.1M | 2M) multisite: N openssl: OpenSSL 1.1.0h  27 Mar 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0319.140 (1) Free space on disk containing Updraft's temporary directory: 11784.8 MB
+0319.141 (1) Backup run: resumption=1, nonce=c86345d6a796, begun at=1531179212 (319s ago), job type=backup, previous check-in=77.7s
+0319.142 (1) Scheduling a resumption (2) after 300 seconds (1531179831) in case this run gets aborted
+0319.144 (1) Checking if we have a zip executable available
+0319.144 (1) Creation of backups of directories: already finished
+0319.144 (1) Saving backup status to database (elements: 9)
+0319.146 (1) Database dump (WordPress DB): Creation was completed already
+0319.150 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: plugins: This file has already been successfully uploaded
+0319.150 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: themes: This file has already been successfully uploaded
+0319.151 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0319.151 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0319.151 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: others: This file has not yet been successfully uploaded: will queue
+0319.152 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: db: This file has not yet been successfully uploaded: will queue
+0319.152 (1) Saving backup history. Total backup size: 666.2 MB
+0319.154 (1) Requesting upload of the files that have not yet been successfully uploaded (4)
+0319.154 (1) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0319.155 (1) Beginning dispatch of backup to remote (googledrive) (instance identifier s-e5ade2a6c21da6d8a4362f986972afbf)
+0319.929 (1) Google Drive quota usage: used=3830.1 MB, total=15360 MB, available=11529.9 MB
+0319.930 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0320.032 (1) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: upload already began; attempting to resume from byte 14680063
+0320.288 (1) Googledrive chunked upload: 3.8 % uploaded (15728640)
+0320.529 (1) Googledrive chunked upload: 4.1 % uploaded (16777216)
+0321.081 (1) Googledrive chunked upload: 4.3 % uploaded (17825792)
+0321.315 (1) Googledrive chunked upload: 4.6 % uploaded (18874368)
+0321.583 (1) Googledrive chunked upload: 4.8 % uploaded (19922944)
+0321.838 (1) Googledrive chunked upload: 5.1 % uploaded (20971520)
+0322.080 (1) Googledrive chunked upload: 5.3 % uploaded (22020096)
+0322.353 (1) Googledrive chunked upload: 5.6 % uploaded (23068672)
+0322.626 (1) Googledrive chunked upload: 5.8 % uploaded (24117248)
+0322.895 (1) Googledrive chunked upload: 6.1 % uploaded (25165824)
+0323.138 (1) Googledrive chunked upload: 6.3 % uploaded (26214400)
+0323.451 (1) Googledrive chunked upload: 6.6 % uploaded (27262976)
+0323.799 (1) Googledrive chunked upload: 6.8 % uploaded (28311552)
+0324.045 (1) Googledrive chunked upload: 7.1 % uploaded (29360128)
+0324.302 (1) Googledrive chunked upload: 7.4 % uploaded (30408704)
+0324.541 (1) Googledrive chunked upload: 7.6 % uploaded (31457280)
+0324.782 (1) Googledrive chunked upload: 7.9 % uploaded (32505856)
+0325.024 (1) Googledrive chunked upload: 8.1 % uploaded (33554432)
+0325.262 (1) Googledrive chunked upload: 8.4 % uploaded (34603008)
+0325.507 (1) Googledrive chunked upload: 8.6 % uploaded (35651584)
+0325.767 (1) Googledrive chunked upload: 8.9 % uploaded (36700160)
+0326.005 (1) Googledrive chunked upload: 9.1 % uploaded (37748736)
+0326.251 (1) Googledrive chunked upload: 9.4 % uploaded (38797312)
+0326.499 (1) Googledrive chunked upload: 9.6 % uploaded (39845888)
+0326.757 (1) Googledrive chunked upload: 9.9 % uploaded (40894464)
+0327.000 (1) Googledrive chunked upload: 10.1 % uploaded (41943040)
+0327.265 (1) Googledrive chunked upload: 10.4 % uploaded (42991616)
+0327.507 (1) Googledrive chunked upload: 10.6 % uploaded (44040192)
+0327.755 (1) Googledrive chunked upload: 10.9 % uploaded (45088768)
+0327.993 (1) Googledrive chunked upload: 11.2 % uploaded (46137344)
+0328.263 (1) Googledrive chunked upload: 11.4 % uploaded (47185920)
+0328.509 (1) Googledrive chunked upload: 11.7 % uploaded (48234496)
+0328.745 (1) Googledrive chunked upload: 11.9 % uploaded (49283072)
+0328.979 (1) Googledrive chunked upload: 12.2 % uploaded (50331648)
+0329.220 (1) Googledrive chunked upload: 12.4 % uploaded (51380224)
+0329.460 (1) Googledrive chunked upload: 12.7 % uploaded (52428800)
+0329.711 (1) Googledrive chunked upload: 12.9 % uploaded (53477376)
+0329.949 (1) Googledrive chunked upload: 13.2 % uploaded (54525952)
+0330.187 (1) Googledrive chunked upload: 13.4 % uploaded (55574528)
+0330.422 (1) Googledrive chunked upload: 13.7 % uploaded (56623104)
+0330.661 (1) Googledrive chunked upload: 13.9 % uploaded (57671680)
+0330.937 (1) Googledrive chunked upload: 14.2 % uploaded (58720256)
+0331.223 (1) Googledrive chunked upload: 14.4 % uploaded (59768832)
+0331.495 (1) Googledrive chunked upload: 14.7 % uploaded (60817408)
+0331.735 (1) Googledrive chunked upload: 15 % uploaded (61865984)
+0331.983 (1) Googledrive chunked upload: 15.2 % uploaded (62914560)
+0332.218 (1) Googledrive chunked upload: 15.5 % uploaded (63963136)
+0332.456 (1) Googledrive chunked upload: 15.7 % uploaded (65011712)
+0332.748 (1) Googledrive chunked upload: 16 % uploaded (66060288)
+0332.989 (1) Googledrive chunked upload: 16.2 % uploaded (67108864)
+0333.243 (1) Googledrive chunked upload: 16.5 % uploaded (68157440)
+0333.493 (1) Googledrive chunked upload: 16.7 % uploaded (69206016)
+0333.720 (1) Googledrive chunked upload: 17 % uploaded (70254592)
+0333.965 (1) Googledrive chunked upload: 17.2 % uploaded (71303168)
+0334.233 (1) Googledrive chunked upload: 17.5 % uploaded (72351744)
+0334.522 (1) Googledrive chunked upload: 17.7 % uploaded (73400320)
+0334.767 (1) Googledrive chunked upload: 18 % uploaded (74448896)
+0335.062 (1) Googledrive chunked upload: 18.3 % uploaded (75497472)
+0335.310 (1) Googledrive chunked upload: 18.5 % uploaded (76546048)
+0335.563 (1) Googledrive chunked upload: 18.8 % uploaded (77594624)
+0335.840 (1) Googledrive chunked upload: 19 % uploaded (78643200)
+0336.083 (1) Googledrive chunked upload: 19.3 % uploaded (79691776)
+0336.360 (1) Googledrive chunked upload: 19.5 % uploaded (80740352)
+0336.596 (1) Googledrive chunked upload: 19.8 % uploaded (81788928)
+0336.882 (1) Googledrive chunked upload: 20 % uploaded (82837504)
+0337.146 (1) Googledrive chunked upload: 20.3 % uploaded (83886080)
+0337.412 (1) Googledrive chunked upload: 20.5 % uploaded (84934656)
+0337.651 (1) Googledrive chunked upload: 20.8 % uploaded (85983232)
+0337.914 (1) Googledrive chunked upload: 21 % uploaded (87031808)
+0338.701 (1) Googledrive chunked upload: 21.3 % uploaded (88080384)
+0338.939 (1) Googledrive chunked upload: 21.5 % uploaded (89128960)
+0339.193 (1) Googledrive chunked upload: 21.8 % uploaded (90177536)
+0339.443 (1) Googledrive chunked upload: 22.1 % uploaded (91226112)
+0339.689 (1) Googledrive chunked upload: 22.3 % uploaded (92274688)
+0339.935 (1) Googledrive chunked upload: 22.6 % uploaded (93323264)
+0340.183 (1) Googledrive chunked upload: 22.8 % uploaded (94371840)
+0340.416 (1) Googledrive chunked upload: 23.1 % uploaded (95420416)
+0340.658 (1) Googledrive chunked upload: 23.3 % uploaded (96468992)
+0340.899 (1) Googledrive chunked upload: 23.6 % uploaded (97517568)
+0341.162 (1) Googledrive chunked upload: 23.8 % uploaded (98566144)
+0341.452 (1) Googledrive chunked upload: 24.1 % uploaded (99614720)
+0341.697 (1) Googledrive chunked upload: 24.3 % uploaded (100663296)
+0341.941 (1) Googledrive chunked upload: 24.6 % uploaded (101711872)
+0342.175 (1) Googledrive chunked upload: 24.8 % uploaded (102760448)
+0342.432 (1) Googledrive chunked upload: 25.1 % uploaded (103809024)
+0342.695 (1) Googledrive chunked upload: 25.3 % uploaded (104857600)
+0342.951 (1) Googledrive chunked upload: 25.6 % uploaded (105906176)
+0343.213 (1) Googledrive chunked upload: 25.9 % uploaded (106954752)
+0343.450 (1) Googledrive chunked upload: 26.1 % uploaded (108003328)
+0343.688 (1) Googledrive chunked upload: 26.4 % uploaded (109051904)
+0343.930 (1) Googledrive chunked upload: 26.6 % uploaded (110100480)
+0344.207 (1) Googledrive chunked upload: 26.9 % uploaded (111149056)
+0344.454 (1) Googledrive chunked upload: 27.1 % uploaded (112197632)
+0344.693 (1) Googledrive chunked upload: 27.4 % uploaded (113246208)
+0345.146 (1) Googledrive chunked upload: 27.6 % uploaded (114294784)
+0345.521 (1) Googledrive chunked upload: 27.9 % uploaded (115343360)
+0345.889 (1) Googledrive chunked upload: 28.1 % uploaded (116391936)
+0346.272 (1) Googledrive chunked upload: 28.4 % uploaded (117440512)
+0346.665 (1) Googledrive chunked upload: 28.6 % uploaded (118489088)
+0347.034 (1) Googledrive chunked upload: 28.9 % uploaded (119537664)
+0347.443 (1) Googledrive chunked upload: 29.2 % uploaded (120586240)
+0347.810 (1) Googledrive chunked upload: 29.4 % uploaded (121634816)
+0348.199 (1) Googledrive chunked upload: 29.7 % uploaded (122683392)
+0348.561 (1) Googledrive chunked upload: 29.9 % uploaded (123731968)
+0348.925 (1) Googledrive chunked upload: 30.2 % uploaded (124780544)
+0349.312 (1) Googledrive chunked upload: 30.4 % uploaded (125829120)
+0349.687 (1) Googledrive chunked upload: 30.7 % uploaded (126877696)
+0350.054 (1) Googledrive chunked upload: 30.9 % uploaded (127926272)
+0350.423 (1) Googledrive chunked upload: 31.2 % uploaded (128974848)
+0350.795 (1) Googledrive chunked upload: 31.4 % uploaded (130023424)
+0351.175 (1) Googledrive chunked upload: 31.7 % uploaded (131072000)
+0351.535 (1) Googledrive chunked upload: 31.9 % uploaded (132120576)
+0352.036 (1) Googledrive chunked upload: 32.2 % uploaded (133169152)
+0352.562 (1) Googledrive chunked upload: 32.4 % uploaded (134217728)
+0352.900 (1) Googledrive chunked upload: 32.7 % uploaded (135266304)
+0353.221 (1) Googledrive chunked upload: 33 % uploaded (136314880)
+0353.541 (1) Googledrive chunked upload: 33.2 % uploaded (137363456)
+0354.284 (1) Googledrive chunked upload: 33.5 % uploaded (138412032)
+0354.595 (1) Googledrive chunked upload: 33.7 % uploaded (139460608)
+0354.914 (1) Googledrive chunked upload: 34 % uploaded (140509184)
+0355.234 (1) Googledrive chunked upload: 34.2 % uploaded (141557760)
+0355.573 (1) Googledrive chunked upload: 34.5 % uploaded (142606336)
+0355.891 (1) Googledrive chunked upload: 34.7 % uploaded (143654912)
+0356.225 (1) Googledrive chunked upload: 35 % uploaded (144703488)
+0356.564 (1) Googledrive chunked upload: 35.2 % uploaded (145752064)
+0356.902 (1) Googledrive chunked upload: 35.5 % uploaded (146800640)
+0357.217 (1) Googledrive chunked upload: 35.7 % uploaded (147849216)
+0357.545 (1) Googledrive chunked upload: 36 % uploaded (148897792)
+0357.860 (1) Googledrive chunked upload: 36.2 % uploaded (149946368)
+0358.184 (1) Googledrive chunked upload: 36.5 % uploaded (150994944)
+0358.510 (1) Googledrive chunked upload: 36.8 % uploaded (152043520)
+0358.876 (1) Googledrive chunked upload: 37 % uploaded (153092096)
+0359.230 (1) Googledrive chunked upload: 37.3 % uploaded (154140672)
+0359.560 (1) Googledrive chunked upload: 37.5 % uploaded (155189248)
+0359.934 (1) Googledrive chunked upload: 37.8 % uploaded (156237824)
+0360.256 (1) Googledrive chunked upload: 38 % uploaded (157286400)
+0360.602 (1) Googledrive chunked upload: 38.3 % uploaded (158334976)
+0360.927 (1) Googledrive chunked upload: 38.5 % uploaded (159383552)
+0361.247 (1) Googledrive chunked upload: 38.8 % uploaded (160432128)
+0362.613 (1) Googledrive chunked upload: 39 % uploaded (161480704)
+0363.001 (1) Googledrive chunked upload: 39.3 % uploaded (162529280)
+0363.449 (1) Googledrive chunked upload: 39.5 % uploaded (163577856)
+0363.795 (1) Googledrive chunked upload: 39.8 % uploaded (164626432)
+0364.121 (1) Googledrive chunked upload: 40.1 % uploaded (165675008)
+0364.435 (1) Googledrive chunked upload: 40.3 % uploaded (166723584)
+0364.745 (1) Googledrive chunked upload: 40.6 % uploaded (167772160)
+0365.050 (1) Googledrive chunked upload: 40.8 % uploaded (168820736)
+0365.377 (1) Googledrive chunked upload: 41.1 % uploaded (169869312)
+0365.695 (1) Googledrive chunked upload: 41.3 % uploaded (170917888)
+0366.009 (1) Googledrive chunked upload: 41.6 % uploaded (171966464)
+0366.307 (1) Googledrive chunked upload: 41.8 % uploaded (173015040)
+0366.665 (1) Googledrive chunked upload: 42.1 % uploaded (174063616)
+0367.038 (1) Googledrive chunked upload: 42.3 % uploaded (175112192)
+0367.339 (1) Googledrive chunked upload: 42.6 % uploaded (176160768)
+0367.694 (1) Googledrive chunked upload: 42.8 % uploaded (177209344)
+0368.031 (1) Googledrive chunked upload: 43.1 % uploaded (178257920)
+0368.329 (1) Googledrive chunked upload: 43.3 % uploaded (179306496)
+0368.656 (1) Googledrive chunked upload: 43.6 % uploaded (180355072)
+0369.006 (1) Googledrive chunked upload: 43.9 % uploaded (181403648)
+0369.364 (1) Googledrive chunked upload: 44.1 % uploaded (182452224)
+0369.776 (1) Googledrive chunked upload: 44.4 % uploaded (183500800)
+0370.136 (1) Googledrive chunked upload: 44.6 % uploaded (184549376)
+0370.481 (1) Googledrive chunked upload: 44.9 % uploaded (185597952)
+0370.848 (1) Googledrive chunked upload: 45.1 % uploaded (186646528)
+0371.163 (1) Googledrive chunked upload: 45.4 % uploaded (187695104)
+0371.492 (1) Googledrive chunked upload: 45.6 % uploaded (188743680)
+0371.808 (1) Googledrive chunked upload: 45.9 % uploaded (189792256)
+0372.186 (1) Googledrive chunked upload: 46.1 % uploaded (190840832)
+0372.528 (1) Googledrive chunked upload: 46.4 % uploaded (191889408)
+0372.818 (1) Googledrive chunked upload: 46.6 % uploaded (192937984)
+0373.112 (1) Googledrive chunked upload: 46.9 % uploaded (193986560)
+0373.467 (1) Googledrive chunked upload: 47.1 % uploaded (195035136)
+0374.384 (1) Googledrive chunked upload: 47.4 % uploaded (196083712)
+0374.681 (1) Googledrive chunked upload: 47.7 % uploaded (197132288)
+0374.988 (1) Googledrive chunked upload: 47.9 % uploaded (198180864)
+0375.335 (1) Googledrive chunked upload: 48.2 % uploaded (199229440)
+0375.668 (1) Googledrive chunked upload: 48.4 % uploaded (200278016)
+0376.018 (1) Googledrive chunked upload: 48.7 % uploaded (201326592)
+0376.440 (1) Googledrive chunked upload: 48.9 % uploaded (202375168)
+0376.741 (1) Googledrive chunked upload: 49.2 % uploaded (203423744)
+0377.094 (1) Googledrive chunked upload: 49.4 % uploaded (204472320)
+0377.609 (1) Googledrive chunked upload: 49.7 % uploaded (205520896)
+0377.969 (1) Googledrive chunked upload: 49.9 % uploaded (206569472)
+0378.304 (1) Googledrive chunked upload: 50.2 % uploaded (207618048)
+0378.640 (1) Googledrive chunked upload: 50.4 % uploaded (208666624)
+0378.987 (1) Googledrive chunked upload: 50.7 % uploaded (209715200)
+0379.313 (1) Googledrive chunked upload: 51 % uploaded (210763776)
+0380.063 (1) Googledrive chunked upload: 51.2 % uploaded (211812352)
+0380.618 (1) Googledrive chunked upload: 51.5 % uploaded (212860928)
+0380.942 (1) Googledrive chunked upload: 51.7 % uploaded (213909504)
+0381.247 (1) Googledrive chunked upload: 52 % uploaded (214958080)
+0381.543 (1) Googledrive chunked upload: 52.2 % uploaded (216006656)
+0381.895 (1) Googledrive chunked upload: 52.5 % uploaded (217055232)
+0382.179 (1) Googledrive chunked upload: 52.7 % uploaded (218103808)
+0382.470 (1) Googledrive chunked upload: 53 % uploaded (219152384)
+0382.808 (1) Googledrive chunked upload: 53.2 % uploaded (220200960)
+0383.108 (1) Googledrive chunked upload: 53.5 % uploaded (221249536)
+0383.440 (1) Googledrive chunked upload: 53.7 % uploaded (222298112)
+0383.725 (1) Googledrive chunked upload: 54 % uploaded (223346688)
+0384.020 (1) Googledrive chunked upload: 54.2 % uploaded (224395264)
+0384.307 (1) Googledrive chunked upload: 54.5 % uploaded (225443840)
+0384.592 (1) Googledrive chunked upload: 54.8 % uploaded (226492416)
+0384.889 (1) Googledrive chunked upload: 55 % uploaded (227540992)
+0385.183 (1) Googledrive chunked upload: 55.3 % uploaded (228589568)
+0385.499 (1) Googledrive chunked upload: 55.5 % uploaded (229638144)
+0385.795 (1) Googledrive chunked upload: 55.8 % uploaded (230686720)
+0386.107 (1) Googledrive chunked upload: 56 % uploaded (231735296)
+0386.563 (1) Googledrive chunked upload: 56.3 % uploaded (232783872)
+0386.859 (1) Googledrive chunked upload: 56.5 % uploaded (233832448)
+0387.182 (1) Googledrive chunked upload: 56.8 % uploaded (234881024)
+0388.185 (1) Googledrive chunked upload: 57 % uploaded (235929600)
+0388.491 (1) Googledrive chunked upload: 57.3 % uploaded (236978176)
+0388.776 (1) Googledrive chunked upload: 57.5 % uploaded (238026752)
+0389.063 (1) Googledrive chunked upload: 57.8 % uploaded (239075328)
+0389.366 (1) Googledrive chunked upload: 58 % uploaded (240123904)
+0389.976 (1) Googledrive chunked upload: 58.3 % uploaded (241172480)
+0390.544 (1) Googledrive chunked upload: 58.6 % uploaded (242221056)
+0390.857 (1) Googledrive chunked upload: 58.8 % uploaded (243269632)
+0391.143 (1) Googledrive chunked upload: 59.1 % uploaded (244318208)
+0391.457 (1) Googledrive chunked upload: 59.3 % uploaded (245366784)
+0391.739 (1) Googledrive chunked upload: 59.6 % uploaded (246415360)
+0392.025 (1) Googledrive chunked upload: 59.8 % uploaded (247463936)
+0620.684 (2) Opened log file at time: Mon, 09 Jul 2018 23:43:52 +0000 on https://uretekusa.com
+0620.685 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.7 PHP: 7.1.16-1+ubuntu16.04.1+deb.sury.org+1 (fpm-fcgi, Linux URETEKUSA 4.15.12-x86_64-linode105 #1 SMP Thu Mar 22 02:13:40 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: nginx/1.13.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.1M | 2M) multisite: N openssl: OpenSSL 1.1.0h  27 Mar 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0620.685 (2) Free space on disk containing Updraft's temporary directory: 11785.1 MB
+0620.687 (2) Backup run: resumption=2, nonce=c86345d6a796, begun at=1531179212 (620s ago), job type=backup, previous check-in=72.9s
+0620.688 (2) Scheduling a resumption (3) after 300 seconds (1531180132) in case this run gets aborted
+0620.690 (2) Checking if we have a zip executable available
+0620.691 (2) Creation of backups of directories: already finished
+0620.691 (2) Saving backup status to database (elements: 9)
+0620.693 (2) Database dump (WordPress DB): Creation was completed already
+0620.697 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: plugins: This file has already been successfully uploaded
+0620.698 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: themes: This file has already been successfully uploaded
+0620.699 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0620.699 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0620.700 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: others: This file has not yet been successfully uploaded: will queue
+0620.701 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: db: This file has not yet been successfully uploaded: will queue
+0620.701 (2) Saving backup history. Total backup size: 666.2 MB
+0620.703 (2) Requesting upload of the files that have not yet been successfully uploaded (4)
+0620.704 (2) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0620.705 (2) Beginning dispatch of backup to remote (googledrive) (instance identifier s-e5ade2a6c21da6d8a4362f986972afbf)
+0621.481 (2) Google Drive quota usage: used=3830.1 MB, total=15360 MB, available=11529.9 MB
+0621.482 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0621.588 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: upload already began; attempting to resume from byte 248512511
+0621.828 (2) Googledrive chunked upload: 60.3 % uploaded (249561088)
+0622.233 (2) Googledrive chunked upload: 60.6 % uploaded (250609664)
+0622.485 (2) Googledrive chunked upload: 60.8 % uploaded (251658240)
+0622.781 (2) Googledrive chunked upload: 61.1 % uploaded (252706816)
+0623.018 (2) Googledrive chunked upload: 61.3 % uploaded (253755392)
+0623.257 (2) Googledrive chunked upload: 61.6 % uploaded (254803968)
+0623.520 (2) Googledrive chunked upload: 61.9 % uploaded (255852544)
+0623.759 (2) Googledrive chunked upload: 62.1 % uploaded (256901120)
+0624.042 (2) Googledrive chunked upload: 62.4 % uploaded (257949696)
+0624.278 (2) Googledrive chunked upload: 62.6 % uploaded (258998272)
+0624.522 (2) Googledrive chunked upload: 62.9 % uploaded (260046848)
+0624.760 (2) Googledrive chunked upload: 63.1 % uploaded (261095424)
+0625.022 (2) Googledrive chunked upload: 63.4 % uploaded (262144000)
+0625.290 (2) Googledrive chunked upload: 63.6 % uploaded (263192576)
+0625.561 (2) Googledrive chunked upload: 63.9 % uploaded (264241152)
+0625.861 (2) Googledrive chunked upload: 64.1 % uploaded (265289728)
+0626.157 (2) Googledrive chunked upload: 64.4 % uploaded (266338304)
+0626.399 (2) Googledrive chunked upload: 64.6 % uploaded (267386880)
+0626.643 (2) Googledrive chunked upload: 64.9 % uploaded (268435456)
+0626.927 (2) Googledrive chunked upload: 65.1 % uploaded (269484032)
+0627.186 (2) Googledrive chunked upload: 65.4 % uploaded (270532608)
+0627.428 (2) Googledrive chunked upload: 65.7 % uploaded (271581184)
+0627.676 (2) Googledrive chunked upload: 65.9 % uploaded (272629760)
+0627.923 (2) Googledrive chunked upload: 66.2 % uploaded (273678336)
+0628.175 (2) Googledrive chunked upload: 66.4 % uploaded (274726912)
+0628.425 (2) Googledrive chunked upload: 66.7 % uploaded (275775488)
+0628.671 (2) Googledrive chunked upload: 66.9 % uploaded (276824064)
+0628.954 (2) Googledrive chunked upload: 67.2 % uploaded (277872640)
+0629.206 (2) Googledrive chunked upload: 67.4 % uploaded (278921216)
+0629.463 (2) Googledrive chunked upload: 67.7 % uploaded (279969792)
+0629.735 (2) Googledrive chunked upload: 67.9 % uploaded (281018368)
+0629.991 (2) Googledrive chunked upload: 68.2 % uploaded (282066944)
+0630.252 (2) Googledrive chunked upload: 68.4 % uploaded (283115520)
+0630.539 (2) Googledrive chunked upload: 68.7 % uploaded (284164096)
+0630.792 (2) Googledrive chunked upload: 68.9 % uploaded (285212672)
+0631.031 (2) Googledrive chunked upload: 69.2 % uploaded (286261248)
+0631.295 (2) Googledrive chunked upload: 69.5 % uploaded (287309824)
+0631.552 (2) Googledrive chunked upload: 69.7 % uploaded (288358400)
+0631.799 (2) Googledrive chunked upload: 70 % uploaded (289406976)
+0632.087 (2) Googledrive chunked upload: 70.2 % uploaded (290455552)
+0632.327 (2) Googledrive chunked upload: 70.5 % uploaded (291504128)
+0632.585 (2) Googledrive chunked upload: 70.7 % uploaded (292552704)
+0632.832 (2) Googledrive chunked upload: 71 % uploaded (293601280)
+0633.133 (2) Googledrive chunked upload: 71.2 % uploaded (294649856)
+0633.406 (2) Googledrive chunked upload: 71.5 % uploaded (295698432)
+0633.653 (2) Googledrive chunked upload: 71.7 % uploaded (296747008)
+0633.914 (2) Googledrive chunked upload: 72 % uploaded (297795584)
+0634.219 (2) Googledrive chunked upload: 72.2 % uploaded (298844160)
+0634.490 (2) Googledrive chunked upload: 72.5 % uploaded (299892736)
+0634.728 (2) Googledrive chunked upload: 72.8 % uploaded (300941312)
+0635.007 (2) Googledrive chunked upload: 73 % uploaded (301989888)
+0635.258 (2) Googledrive chunked upload: 73.3 % uploaded (303038464)
+0635.546 (2) Googledrive chunked upload: 73.5 % uploaded (304087040)
+0635.804 (2) Googledrive chunked upload: 73.8 % uploaded (305135616)
+0636.040 (2) Googledrive chunked upload: 74 % uploaded (306184192)
+0636.319 (2) Googledrive chunked upload: 74.3 % uploaded (307232768)
+0636.620 (2) Googledrive chunked upload: 74.5 % uploaded (308281344)
+0636.915 (2) Googledrive chunked upload: 74.8 % uploaded (309329920)
+0637.163 (2) Googledrive chunked upload: 75 % uploaded (310378496)
+0637.410 (2) Googledrive chunked upload: 75.3 % uploaded (311427072)
+0637.662 (2) Googledrive chunked upload: 75.5 % uploaded (312475648)
+0637.914 (2) Googledrive chunked upload: 75.8 % uploaded (313524224)
+0638.154 (2) Googledrive chunked upload: 76 % uploaded (314572800)
+0638.402 (2) Googledrive chunked upload: 76.3 % uploaded (315621376)
+0638.655 (2) Googledrive chunked upload: 76.6 % uploaded (316669952)
+0638.956 (2) Googledrive chunked upload: 76.8 % uploaded (317718528)
+0639.190 (2) Googledrive chunked upload: 77.1 % uploaded (318767104)
+0639.471 (2) Googledrive chunked upload: 77.3 % uploaded (319815680)
+0639.744 (2) Googledrive chunked upload: 77.6 % uploaded (320864256)
+0640.031 (2) Googledrive chunked upload: 77.8 % uploaded (321912832)
+0640.272 (2) Googledrive chunked upload: 78.1 % uploaded (322961408)
+0640.518 (2) Googledrive chunked upload: 78.3 % uploaded (324009984)
+0640.779 (2) Googledrive chunked upload: 78.6 % uploaded (325058560)
+0641.022 (2) Googledrive chunked upload: 78.8 % uploaded (326107136)
+0641.278 (2) Googledrive chunked upload: 79.1 % uploaded (327155712)
+0641.543 (2) Googledrive chunked upload: 79.3 % uploaded (328204288)
+0641.801 (2) Googledrive chunked upload: 79.6 % uploaded (329252864)
+0642.081 (2) Googledrive chunked upload: 79.8 % uploaded (330301440)
+0642.339 (2) Googledrive chunked upload: 80.1 % uploaded (331350016)
+0642.594 (2) Googledrive chunked upload: 80.4 % uploaded (332398592)
+0642.841 (2) Googledrive chunked upload: 80.6 % uploaded (333447168)
+0643.096 (2) Googledrive chunked upload: 80.9 % uploaded (334495744)
+0643.351 (2) Googledrive chunked upload: 81.1 % uploaded (335544320)
+0643.593 (2) Googledrive chunked upload: 81.4 % uploaded (336592896)
+0643.923 (2) Googledrive chunked upload: 81.6 % uploaded (337641472)
+0644.171 (2) Googledrive chunked upload: 81.9 % uploaded (338690048)
+0644.423 (2) Googledrive chunked upload: 82.1 % uploaded (339738624)
+0644.698 (2) Googledrive chunked upload: 82.4 % uploaded (340787200)
+0644.945 (2) Googledrive chunked upload: 82.6 % uploaded (341835776)
+0645.181 (2) Googledrive chunked upload: 82.9 % uploaded (342884352)
+0645.458 (2) Googledrive chunked upload: 83.1 % uploaded (343932928)
+0645.710 (2) Googledrive chunked upload: 83.4 % uploaded (344981504)
+0645.979 (2) Googledrive chunked upload: 83.7 % uploaded (346030080)
+0646.227 (2) Googledrive chunked upload: 83.9 % uploaded (347078656)
+0646.474 (2) Googledrive chunked upload: 84.2 % uploaded (348127232)
+0646.755 (2) Googledrive chunked upload: 84.4 % uploaded (349175808)
+0647.015 (2) Googledrive chunked upload: 84.7 % uploaded (350224384)
+0647.286 (2) Googledrive chunked upload: 84.9 % uploaded (351272960)
+0647.533 (2) Googledrive chunked upload: 85.2 % uploaded (352321536)
+0647.786 (2) Googledrive chunked upload: 85.4 % uploaded (353370112)
+0648.069 (2) Googledrive chunked upload: 85.7 % uploaded (354418688)
+0648.346 (2) Googledrive chunked upload: 85.9 % uploaded (355467264)
+0648.624 (2) Googledrive chunked upload: 86.2 % uploaded (356515840)
+0648.877 (2) Googledrive chunked upload: 86.4 % uploaded (357564416)
+0649.137 (2) Googledrive chunked upload: 86.7 % uploaded (358612992)
+0649.382 (2) Googledrive chunked upload: 86.9 % uploaded (359661568)
+0649.638 (2) Googledrive chunked upload: 87.2 % uploaded (360710144)
+0649.954 (2) Googledrive chunked upload: 87.5 % uploaded (361758720)
+0650.235 (2) Googledrive chunked upload: 87.7 % uploaded (362807296)
+0650.476 (2) Googledrive chunked upload: 88 % uploaded (363855872)
+0650.767 (2) Googledrive chunked upload: 88.2 % uploaded (364904448)
+0651.041 (2) Googledrive chunked upload: 88.5 % uploaded (365953024)
+0651.280 (2) Googledrive chunked upload: 88.7 % uploaded (367001600)
+0651.566 (2) Googledrive chunked upload: 89 % uploaded (368050176)
+0651.848 (2) Googledrive chunked upload: 89.2 % uploaded (369098752)
+0652.120 (2) Googledrive chunked upload: 89.5 % uploaded (370147328)
+0652.410 (2) Googledrive chunked upload: 89.7 % uploaded (371195904)
+0652.657 (2) Googledrive chunked upload: 90 % uploaded (372244480)
+0652.897 (2) Googledrive chunked upload: 90.2 % uploaded (373293056)
+0653.158 (2) Googledrive chunked upload: 90.5 % uploaded (374341632)
+0653.420 (2) Googledrive chunked upload: 90.7 % uploaded (375390208)
+0653.756 (2) Googledrive chunked upload: 91 % uploaded (376438784)
+0653.997 (2) Googledrive chunked upload: 91.3 % uploaded (377487360)
+0654.252 (2) Googledrive chunked upload: 91.5 % uploaded (378535936)
+0654.494 (2) Googledrive chunked upload: 91.8 % uploaded (379584512)
+0654.765 (2) Googledrive chunked upload: 92 % uploaded (380633088)
+0655.003 (2) Googledrive chunked upload: 92.3 % uploaded (381681664)
+0655.267 (2) Googledrive chunked upload: 92.5 % uploaded (382730240)
+0655.524 (2) Googledrive chunked upload: 92.8 % uploaded (383778816)
+0655.772 (2) Googledrive chunked upload: 93 % uploaded (384827392)
+0656.013 (2) Googledrive chunked upload: 93.3 % uploaded (385875968)
+0656.266 (2) Googledrive chunked upload: 93.5 % uploaded (386924544)
+0656.539 (2) Googledrive chunked upload: 93.8 % uploaded (387973120)
+0656.822 (2) Googledrive chunked upload: 94 % uploaded (389021696)
+0657.067 (2) Googledrive chunked upload: 94.3 % uploaded (390070272)
+0657.337 (2) Googledrive chunked upload: 94.6 % uploaded (391118848)
+0657.619 (2) Googledrive chunked upload: 94.8 % uploaded (392167424)
+0657.876 (2) Googledrive chunked upload: 95.1 % uploaded (393216000)
+0658.133 (2) Googledrive chunked upload: 95.3 % uploaded (394264576)
+0658.371 (2) Googledrive chunked upload: 95.6 % uploaded (395313152)
+0658.618 (2) Googledrive chunked upload: 95.8 % uploaded (396361728)
+0658.868 (2) Googledrive chunked upload: 96.1 % uploaded (397410304)
+0659.125 (2) Googledrive chunked upload: 96.3 % uploaded (398458880)
+0659.392 (2) Googledrive chunked upload: 96.6 % uploaded (399507456)
+0659.646 (2) Googledrive chunked upload: 96.8 % uploaded (400556032)
+0659.888 (2) Googledrive chunked upload: 97.1 % uploaded (401604608)
+0660.158 (2) Googledrive chunked upload: 97.3 % uploaded (402653184)
+0660.413 (2) Googledrive chunked upload: 97.6 % uploaded (403701760)
+0660.660 (2) Googledrive chunked upload: 97.8 % uploaded (404750336)
+0660.907 (2) Googledrive chunked upload: 98.1 % uploaded (405798912)
+0661.155 (2) Googledrive chunked upload: 98.4 % uploaded (406847488)
+0661.399 (2) Googledrive chunked upload: 98.6 % uploaded (407896064)
+0661.669 (2) Googledrive chunked upload: 98.9 % uploaded (408944640)
+0661.951 (2) Googledrive chunked upload: 99.1 % uploaded (409993216)
+0662.193 (2) Googledrive chunked upload: 99.4 % uploaded (411041792)
+0662.517 (2) Googledrive chunked upload: 99.6 % uploaded (412090368)
+0662.753 (2) Googledrive chunked upload: 99.9 % uploaded (413138944)
+0663.598 (2) Googledrive chunked upload: 100 % uploaded (413138944)
+0663.600 (2) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip uploaded to Google Drive in 42.12 seconds
+0663.601 (2) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip (b6c47ad92a7c8e9c2870b24df19c3d3a)
+0663.625 (2) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: OK
+0663.826 (2) Google Drive quota usage: used=4224.5 MB, total=15360 MB, available=11135.5 MB
+0663.827 (2) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+0664.448 (2) Googledrive chunked upload: 0.6 % uploaded (1048576)
+0664.679 (2) Googledrive chunked upload: 1.1 % uploaded (2097152)
+0664.920 (2) Googledrive chunked upload: 1.7 % uploaded (3145728)
+0665.190 (2) Googledrive chunked upload: 2.2 % uploaded (4194304)
+0665.551 (2) Googledrive chunked upload: 2.8 % uploaded (5242880)
+0665.805 (2) Googledrive chunked upload: 3.3 % uploaded (6291456)
+0666.110 (2) Googledrive chunked upload: 3.9 % uploaded (7340032)
+0666.361 (2) Googledrive chunked upload: 4.5 % uploaded (8388608)
+0666.622 (2) Googledrive chunked upload: 5 % uploaded (9437184)
+0666.863 (2) Googledrive chunked upload: 5.6 % uploaded (10485760)
+0667.119 (2) Googledrive chunked upload: 6.1 % uploaded (11534336)
+0667.370 (2) Googledrive chunked upload: 6.7 % uploaded (12582912)
+0667.653 (2) Googledrive chunked upload: 7.2 % uploaded (13631488)
+0667.880 (2) Googledrive chunked upload: 7.8 % uploaded (14680064)
+0668.143 (2) Googledrive chunked upload: 8.3 % uploaded (15728640)
+0668.385 (2) Googledrive chunked upload: 8.9 % uploaded (16777216)
+0668.627 (2) Googledrive chunked upload: 9.5 % uploaded (17825792)
+0668.876 (2) Googledrive chunked upload: 10 % uploaded (18874368)
+0669.278 (2) Googledrive chunked upload: 10.6 % uploaded (19922944)
+0669.834 (2) Googledrive chunked upload: 11.1 % uploaded (20971520)
+0670.257 (2) Googledrive chunked upload: 11.7 % uploaded (22020096)
+0670.660 (2) Googledrive chunked upload: 12.2 % uploaded (23068672)
+0671.071 (2) Googledrive chunked upload: 12.8 % uploaded (24117248)
+0671.482 (2) Googledrive chunked upload: 13.4 % uploaded (25165824)
+0671.919 (2) Googledrive chunked upload: 13.9 % uploaded (26214400)
+0672.293 (2) Googledrive chunked upload: 14.5 % uploaded (27262976)
+0672.682 (2) Googledrive chunked upload: 15 % uploaded (28311552)
+0673.053 (2) Googledrive chunked upload: 15.6 % uploaded (29360128)
+0673.444 (2) Googledrive chunked upload: 16.1 % uploaded (30408704)
+0673.814 (2) Googledrive chunked upload: 16.7 % uploaded (31457280)
+0674.207 (2) Googledrive chunked upload: 17.3 % uploaded (32505856)
+0674.602 (2) Googledrive chunked upload: 17.8 % uploaded (33554432)
+0674.994 (2) Googledrive chunked upload: 18.4 % uploaded (34603008)
+0675.364 (2) Googledrive chunked upload: 18.9 % uploaded (35651584)
+0675.745 (2) Googledrive chunked upload: 19.5 % uploaded (36700160)
+0676.133 (2) Googledrive chunked upload: 20 % uploaded (37748736)
+0676.481 (2) Googledrive chunked upload: 20.6 % uploaded (38797312)
+0676.825 (2) Googledrive chunked upload: 21.1 % uploaded (39845888)
+0677.176 (2) Googledrive chunked upload: 21.7 % uploaded (40894464)
+0677.517 (2) Googledrive chunked upload: 22.3 % uploaded (41943040)
+0677.868 (2) Googledrive chunked upload: 22.8 % uploaded (42991616)
+0678.210 (2) Googledrive chunked upload: 23.4 % uploaded (44040192)
+0678.580 (2) Googledrive chunked upload: 23.9 % uploaded (45088768)
+0678.968 (2) Googledrive chunked upload: 24.5 % uploaded (46137344)
+0679.335 (2) Googledrive chunked upload: 25 % uploaded (47185920)
+0679.691 (2) Googledrive chunked upload: 25.6 % uploaded (48234496)
+0680.047 (2) Googledrive chunked upload: 26.2 % uploaded (49283072)
+0680.426 (2) Googledrive chunked upload: 26.7 % uploaded (50331648)
+0680.792 (2) Googledrive chunked upload: 27.3 % uploaded (51380224)
+0681.160 (2) Googledrive chunked upload: 27.8 % uploaded (52428800)
+0681.520 (2) Googledrive chunked upload: 28.4 % uploaded (53477376)
+0681.887 (2) Googledrive chunked upload: 28.9 % uploaded (54525952)
+0682.250 (2) Googledrive chunked upload: 29.5 % uploaded (55574528)
+0682.620 (2) Googledrive chunked upload: 30 % uploaded (56623104)
+0683.120 (2) Googledrive chunked upload: 30.6 % uploaded (57671680)
+0683.512 (2) Googledrive chunked upload: 31.2 % uploaded (58720256)
+0683.898 (2) Googledrive chunked upload: 31.7 % uploaded (59768832)
+0684.344 (2) Googledrive chunked upload: 32.3 % uploaded (60817408)
+0684.739 (2) Googledrive chunked upload: 32.8 % uploaded (61865984)
+0685.155 (2) Googledrive chunked upload: 33.4 % uploaded (62914560)
+0685.552 (2) Googledrive chunked upload: 33.9 % uploaded (63963136)
+0685.986 (2) Googledrive chunked upload: 34.5 % uploaded (65011712)
+0686.374 (2) Googledrive chunked upload: 35.1 % uploaded (66060288)
+0686.763 (2) Googledrive chunked upload: 35.6 % uploaded (67108864)
+0687.137 (2) Googledrive chunked upload: 36.2 % uploaded (68157440)
+0687.534 (2) Googledrive chunked upload: 36.7 % uploaded (69206016)
+0687.931 (2) Googledrive chunked upload: 37.3 % uploaded (70254592)
+0688.328 (2) Googledrive chunked upload: 37.8 % uploaded (71303168)
+0688.710 (2) Googledrive chunked upload: 38.4 % uploaded (72351744)
+0689.105 (2) Googledrive chunked upload: 39 % uploaded (73400320)
+0689.519 (2) Googledrive chunked upload: 39.5 % uploaded (74448896)
+0689.924 (2) Googledrive chunked upload: 40.1 % uploaded (75497472)
+0690.316 (2) Googledrive chunked upload: 40.6 % uploaded (76546048)
+0690.711 (2) Googledrive chunked upload: 41.2 % uploaded (77594624)
+0691.098 (2) Googledrive chunked upload: 41.7 % uploaded (78643200)
+0691.500 (2) Googledrive chunked upload: 42.3 % uploaded (79691776)
+0691.880 (2) Googledrive chunked upload: 42.8 % uploaded (80740352)
+0692.291 (2) Googledrive chunked upload: 43.4 % uploaded (81788928)
+0692.685 (2) Googledrive chunked upload: 44 % uploaded (82837504)
+0693.079 (2) Googledrive chunked upload: 44.5 % uploaded (83886080)
+0693.484 (2) Googledrive chunked upload: 45.1 % uploaded (84934656)
+0693.874 (2) Googledrive chunked upload: 45.6 % uploaded (85983232)
+0694.295 (2) Googledrive chunked upload: 46.2 % uploaded (87031808)
+0694.679 (2) Googledrive chunked upload: 46.7 % uploaded (88080384)
+0695.490 (2) Googledrive chunked upload: 47.3 % uploaded (89128960)
+0695.867 (2) Googledrive chunked upload: 47.9 % uploaded (90177536)
+0696.241 (2) Googledrive chunked upload: 48.4 % uploaded (91226112)
+0696.594 (2) Googledrive chunked upload: 49 % uploaded (92274688)
+0696.954 (2) Googledrive chunked upload: 49.5 % uploaded (93323264)
+0697.298 (2) Googledrive chunked upload: 50.1 % uploaded (94371840)
+0697.655 (2) Googledrive chunked upload: 50.6 % uploaded (95420416)
+0698.010 (2) Googledrive chunked upload: 51.2 % uploaded (96468992)
+1004.132 (3) Opened log file at time: Mon, 09 Jul 2018 23:50:16 +0000 on https://uretekusa.com
+1004.133 (3) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.7 PHP: 7.1.16-1+ubuntu16.04.1+deb.sury.org+1 (fpm-fcgi, Linux URETEKUSA 4.15.12-x86_64-linode105 #1 SMP Thu Mar 22 02:13:40 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: nginx/1.13.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.1M | 2M) multisite: N openssl: OpenSSL 1.1.0h  27 Mar 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+1004.134 (3) Free space on disk containing Updraft's temporary directory: 12179.6 MB
+1004.135 (3) Backup run: resumption=3, nonce=c86345d6a796, begun at=1531179212 (1004s ago), job type=backup, previous check-in=77.3s
+1004.136 (3) Scheduling a resumption (4) after 300 seconds (1531180516) in case this run gets aborted
+1004.137 (3) Checking if we have a zip executable available
+1004.137 (3) Creation of backups of directories: already finished
+1004.138 (3) Saving backup status to database (elements: 9)
+1004.140 (3) Database dump (WordPress DB): Creation was completed already
+1004.143 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-plugins.zip: plugins: This file has already been successfully uploaded
+1004.143 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-themes.zip: themes: This file has already been successfully uploaded
+1004.144 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads.zip: uploads: This file has already been successfully uploaded
+1004.144 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+1004.145 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: others: This file has not yet been successfully uploaded: will queue
+1004.145 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: db: This file has not yet been successfully uploaded: will queue
+1004.145 (3) Saving backup history. Total backup size: 666.2 MB
+1004.147 (3) Requesting upload of the files that have not yet been successfully uploaded (3)
+1004.148 (3) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+1004.148 (3) Beginning dispatch of backup to remote (googledrive) (instance identifier s-e5ade2a6c21da6d8a4362f986972afbf)
+1004.880 (3) Google Drive quota usage: used=4224.5 MB, total=15360 MB, available=11135.5 MB
+1004.881 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+1004.974 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: upload already began; attempting to resume from byte 96468991
+1005.276 (3) Googledrive chunked upload: 51.8 % uploaded (97517568)
+1005.580 (3) Googledrive chunked upload: 52.3 % uploaded (98566144)
+1005.873 (3) Googledrive chunked upload: 52.9 % uploaded (99614720)
+1006.173 (3) Googledrive chunked upload: 53.4 % uploaded (100663296)
+1006.507 (3) Googledrive chunked upload: 54 % uploaded (101711872)
+1006.795 (3) Googledrive chunked upload: 54.5 % uploaded (102760448)
+1007.104 (3) Googledrive chunked upload: 55.1 % uploaded (103809024)
+1007.398 (3) Googledrive chunked upload: 55.6 % uploaded (104857600)
+1007.683 (3) Googledrive chunked upload: 56.2 % uploaded (105906176)
+1007.989 (3) Googledrive chunked upload: 56.8 % uploaded (106954752)
+1008.286 (3) Googledrive chunked upload: 57.3 % uploaded (108003328)
+1008.582 (3) Googledrive chunked upload: 57.9 % uploaded (109051904)
+1008.863 (3) Googledrive chunked upload: 58.4 % uploaded (110100480)
+1009.163 (3) Googledrive chunked upload: 59 % uploaded (111149056)
+1009.469 (3) Googledrive chunked upload: 59.5 % uploaded (112197632)
+1009.763 (3) Googledrive chunked upload: 60.1 % uploaded (113246208)
+1010.087 (3) Googledrive chunked upload: 60.7 % uploaded (114294784)
+1010.409 (3) Googledrive chunked upload: 61.2 % uploaded (115343360)
+1010.752 (3) Googledrive chunked upload: 61.8 % uploaded (116391936)
+1011.056 (3) Googledrive chunked upload: 62.3 % uploaded (117440512)
+1011.370 (3) Googledrive chunked upload: 62.9 % uploaded (118489088)
+1011.677 (3) Googledrive chunked upload: 63.4 % uploaded (119537664)
+1011.981 (3) Googledrive chunked upload: 64 % uploaded (120586240)
+1012.274 (3) Googledrive chunked upload: 64.6 % uploaded (121634816)
+1012.589 (3) Googledrive chunked upload: 65.1 % uploaded (122683392)
+1012.875 (3) Googledrive chunked upload: 65.7 % uploaded (123731968)
+1013.175 (3) Googledrive chunked upload: 66.2 % uploaded (124780544)
+1013.507 (3) Googledrive chunked upload: 66.8 % uploaded (125829120)
+1013.836 (3) Googledrive chunked upload: 67.3 % uploaded (126877696)
+1014.140 (3) Googledrive chunked upload: 67.9 % uploaded (127926272)
+1014.430 (3) Googledrive chunked upload: 68.4 % uploaded (128974848)
+1014.724 (3) Googledrive chunked upload: 69 % uploaded (130023424)
+1015.056 (3) Googledrive chunked upload: 69.6 % uploaded (131072000)
+1015.423 (3) Googledrive chunked upload: 70.1 % uploaded (132120576)
+1015.732 (3) Googledrive chunked upload: 70.7 % uploaded (133169152)
+1016.051 (3) Googledrive chunked upload: 71.2 % uploaded (134217728)
+1016.405 (3) Googledrive chunked upload: 71.8 % uploaded (135266304)
+1016.726 (3) Googledrive chunked upload: 72.3 % uploaded (136314880)
+1017.025 (3) Googledrive chunked upload: 72.9 % uploaded (137363456)
+1017.331 (3) Googledrive chunked upload: 73.5 % uploaded (138412032)
+1017.642 (3) Googledrive chunked upload: 74 % uploaded (139460608)
+1017.997 (3) Googledrive chunked upload: 74.6 % uploaded (140509184)
+1018.307 (3) Googledrive chunked upload: 75.1 % uploaded (141557760)
+1018.626 (3) Googledrive chunked upload: 75.7 % uploaded (142606336)
+1018.929 (3) Googledrive chunked upload: 76.2 % uploaded (143654912)
+1019.263 (3) Googledrive chunked upload: 76.8 % uploaded (144703488)
+1019.586 (3) Googledrive chunked upload: 77.3 % uploaded (145752064)
+1019.899 (3) Googledrive chunked upload: 77.9 % uploaded (146800640)
+1020.228 (3) Googledrive chunked upload: 78.5 % uploaded (147849216)
+1020.528 (3) Googledrive chunked upload: 79 % uploaded (148897792)
+1020.834 (3) Googledrive chunked upload: 79.6 % uploaded (149946368)
+1021.569 (3) Googledrive chunked upload: 80.1 % uploaded (150994944)
+1021.874 (3) Googledrive chunked upload: 80.7 % uploaded (152043520)
+1022.185 (3) Googledrive chunked upload: 81.2 % uploaded (153092096)
+1022.506 (3) Googledrive chunked upload: 81.8 % uploaded (154140672)
+1022.807 (3) Googledrive chunked upload: 82.4 % uploaded (155189248)
+1023.120 (3) Googledrive chunked upload: 82.9 % uploaded (156237824)
+1023.413 (3) Googledrive chunked upload: 83.5 % uploaded (157286400)
+1023.720 (3) Googledrive chunked upload: 84 % uploaded (158334976)
+1024.032 (3) Googledrive chunked upload: 84.6 % uploaded (159383552)
+1024.353 (3) Googledrive chunked upload: 85.1 % uploaded (160432128)
+1024.674 (3) Googledrive chunked upload: 85.7 % uploaded (161480704)
+1025.000 (3) Googledrive chunked upload: 86.3 % uploaded (162529280)
+1025.301 (3) Googledrive chunked upload: 86.8 % uploaded (163577856)
+1025.601 (3) Googledrive chunked upload: 87.4 % uploaded (164626432)
+1025.902 (3) Googledrive chunked upload: 87.9 % uploaded (165675008)
+1026.209 (3) Googledrive chunked upload: 88.5 % uploaded (166723584)
+1026.522 (3) Googledrive chunked upload: 89 % uploaded (167772160)
+1026.823 (3) Googledrive chunked upload: 89.6 % uploaded (168820736)
+1027.133 (3) Googledrive chunked upload: 90.1 % uploaded (169869312)
+1027.449 (3) Googledrive chunked upload: 90.7 % uploaded (170917888)
+1027.775 (3) Googledrive chunked upload: 91.3 % uploaded (171966464)
+1028.080 (3) Googledrive chunked upload: 91.8 % uploaded (173015040)
+1028.461 (3) Googledrive chunked upload: 92.4 % uploaded (174063616)
+1028.748 (3) Googledrive chunked upload: 92.9 % uploaded (175112192)
+1029.071 (3) Googledrive chunked upload: 93.5 % uploaded (176160768)
+1029.377 (3) Googledrive chunked upload: 94 % uploaded (177209344)
+1029.674 (3) Googledrive chunked upload: 94.6 % uploaded (178257920)
+1029.979 (3) Googledrive chunked upload: 95.2 % uploaded (179306496)
+1030.298 (3) Googledrive chunked upload: 95.7 % uploaded (180355072)
+1030.601 (3) Googledrive chunked upload: 96.3 % uploaded (181403648)
+1030.887 (3) Googledrive chunked upload: 96.8 % uploaded (182452224)
+1031.191 (3) Googledrive chunked upload: 97.4 % uploaded (183500800)
+1031.479 (3) Googledrive chunked upload: 97.9 % uploaded (184549376)
+1031.777 (3) Googledrive chunked upload: 98.5 % uploaded (185597952)
+1032.062 (3) Googledrive chunked upload: 99.1 % uploaded (186646528)
+1032.363 (3) Googledrive chunked upload: 99.6 % uploaded (187695104)
+1033.152 (3) Googledrive chunked upload: 100 % uploaded (187695104)
+1033.154 (3) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip uploaded to Google Drive in 28.27 seconds
+1033.155 (3) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip (d284333aac610fb0a54619f8bf5e3d68)
+1033.170 (3) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-uploads2.zip: OK
+1033.369 (3) Google Drive quota usage: used=4404.2 MB, total=15360 MB, available=10955.8 MB
+1033.370 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+1034.322 (3) Googledrive chunked upload: 100 % uploaded
+1034.324 (3) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip uploaded to Google Drive in 0.95 seconds
+1034.325 (3) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip (5ba9b742a0a4962fd660937d667b70bb)
+1034.327 (3) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-others.zip: OK
+1034.632 (3) Google Drive quota usage: used=4404.3 MB, total=15360 MB, available=10955.7 MB
+1034.633 (3) backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: Attempting to upload to Google Drive (into folder id: 1emSexPVredS5SrvqEDGHf5JRkZRFD1ll)
+1035.770 (3) Googledrive chunked upload: 100 % uploaded
+1035.772 (3) OK: Archive backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz uploaded to Google Drive in 1.14 seconds
+1035.773 (3) Recording as successfully uploaded: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz (e2b966e70b37dd9c46229f8390cc8827)
+1035.775 (3) Deleting local file: backup_2018-07-09-1833_URETEK_USA_c86345d6a796-db.gz: OK
+1035.776 (3) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+1035.777 (3) Number of backup sets in history: 4; groups (db): 1
+1035.777 (3) Examining (for databases) backup set with group_id=0, nonce=c86345d6a796, datestamp=1531179212 (Jul 09 2018 23:33:32)
+1035.778 (3) This backup set is the backup set just made, so will not be deleted.
+1035.778 (3) Examining (for databases) backup set with group_id=0, nonce=2e27ec961f0d, datestamp=1530556315 (Jul 02 2018 18:31:55)
+1035.778 (3) This backup set remains non-empty (f=1/d=1); will retain in history
+1035.778 (3) Examining (for databases) backup set with group_id=0, nonce=b4c6cdc25274, datestamp=1529614134 (Jun 21 2018 20:48:54)
+1035.778 (3) 1529614134: db: this set includes a database (backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-db.gz); db count is now 2
+1035.778 (3) 1529614134: db: over retain limit (2); will delete this database
+1035.778 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-db.gz, service=googledrive
+1036.932 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-db.gz: Deletion successful
+1036.935 (3) This backup set remains non-empty (f=1/d=0); will retain in history
+1036.935 (3) Examining (for databases) backup set with group_id=0, nonce=b0f27845738c, datestamp=1528826840 (Jun 12 2018 18:07:20)
+1036.935 (3) 1528826840: db: this set includes a database (backup_2018-06-12-1307_URETEK_USA_b0f27845738c-db.gz); db count is now 2
+1036.935 (3) 1528826840: db: over retain limit (2); will delete this database
+1036.935 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-db.gz, service=googledrive
+1037.789 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-db.gz: Deletion successful
+1037.791 (3) This backup set remains non-empty (f=1/d=0); will retain in history
+1037.792 (3) Number of backup sets in history: 4; groups (files): 1
+1037.792 (3) Examining (for files) backup set with nonce=c86345d6a796, datestamp=1531179212 (Jul 09 2018 23:33:32)
+1037.792 (3) This backup set is the backup set just made, so will not be deleted.
+1037.793 (3) This backup set is the backup set just made, so will not be deleted.
+1037.793 (3) This backup set is the backup set just made, so will not be deleted.
+1037.793 (3) This backup set is the backup set just made, so will not be deleted.
+1037.793 (3) This backup set remains non-empty (f=1/d=1); will retain in history
+1037.793 (3) Examining (for files) backup set with nonce=2e27ec961f0d, datestamp=1530556315 (Jul 02 2018 18:31:55)
+1037.793 (3) This backup set remains non-empty (f=1/d=1); will retain in history
+1037.794 (3) Examining (for files) backup set with nonce=b4c6cdc25274, datestamp=1529614134 (Jun 21 2018 20:48:54)
+1037.794 (3) plugins: over retain limit (2); will delete this file entity
+1037.794 (3) themes: over retain limit (2); will delete this file entity
+1037.794 (3) uploads: over retain limit (2); will delete this file entity
+1037.794 (3) others: over retain limit (2); will delete this file entity
+1037.794 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-plugins.zip, service=googledrive
+1037.794 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-themes.zip, service=googledrive
+1037.794 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-uploads.zip, service=googledrive
+1037.795 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-uploads2.zip, service=googledrive
+1037.795 (3) Delete file: backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-others.zip, service=googledrive
+1038.521 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-others.zip: Deletion successful
+1038.923 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-uploads2.zip: Deletion successful
+1039.368 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-uploads.zip: Deletion successful
+1039.916 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-themes.zip: Deletion successful
+1040.267 (3) backup_2018-06-21-1548_URETEK_USA_b4c6cdc25274-plugins.zip: Deletion successful
+1040.269 (3) This backup set is now empty; will remove from history
+1040.270 (3) Deleting log file (log.b4c6cdc25274.txt)
+1040.270 (3) Examining (for files) backup set with nonce=b0f27845738c, datestamp=1528826840 (Jun 12 2018 18:07:20)
+1040.271 (3) plugins: over retain limit (2); will delete this file entity
+1040.271 (3) themes: over retain limit (2); will delete this file entity
+1040.271 (3) uploads: over retain limit (2); will delete this file entity
+1040.271 (3) others: over retain limit (2); will delete this file entity
+1040.271 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-plugins.zip, service=googledrive
+1040.271 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-themes.zip, service=googledrive
+1040.272 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-uploads.zip, service=googledrive
+1040.272 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-uploads2.zip, service=googledrive
+1040.273 (3) Delete file: backup_2018-06-12-1307_URETEK_USA_b0f27845738c-others.zip, service=googledrive
+1041.000 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-others.zip: Deletion successful
+1041.330 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-uploads2.zip: Deletion successful
+1041.675 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-uploads.zip: Deletion successful
+1042.037 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-themes.zip: Deletion successful
+1042.382 (3) backup_2018-06-12-1307_URETEK_USA_b0f27845738c-plugins.zip: Deletion successful
+1042.384 (3) This backup set is now empty; will remove from history
+1042.385 (3) Deleting log file (log.b0f27845738c.txt)
+1042.385 (3) Retain: saving new backup history (sets now: 2) and finishing retain operation
+1042.387 (3) Resume backup (c86345d6a796, 3): finish run
+1042.388 (3) There were no errors in the uploads, so the 'resume' event (4) is being unscheduled
+1042.390 (3) No email will/can be sent - the user has not configured an email address.
+1042.390 (3) The backup apparently succeeded and is now complete

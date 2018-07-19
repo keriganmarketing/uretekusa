@@ -35,6 +35,7 @@
 				<div class="ai1wm-field">
 					<?php if ( $token ) : ?>
 						<p id="ai1wmge-gdrive-details">
+							<span class="spinner" style="visibility: visible;"></span>
 							<?php _e( 'Retrieving Google Drive account details..', AI1WMGE_PLUGIN_NAME ); ?>
 						</p>
 
@@ -54,7 +55,7 @@
 					<?php else : ?>
 
 						<form method="post" action="<?php echo esc_url( AI1WMGE_GDRIVE_URL ); ?>">
-							<input type="hidden" name="ai1wmge_client" id="ai1wmge-client" value="<?php echo network_admin_url( 'admin.php?page=site-migration-gdrive-settings' ); ?>" />
+							<input type="hidden" name="ai1wmge_client" id="ai1wmge-client" value="<?php echo esc_url( network_admin_url( 'admin.php?page=ai1wmge_settings' ) ); ?>" />
 							<button type="submit" class="ai1wm-button-blue" name="ai1wmge_gdrive_link" id="ai1wmge-gdrive-link">
 								<i class="ai1wm-icon-enter"></i>
 								<?php _e( 'Link your Google Drive account', AI1WMGE_PLUGIN_NAME ); ?>
@@ -65,12 +66,18 @@
 			</div>
 
 			<?php if ( $token ) : ?>
-				<div id="ai1wmge-backups" class="ai1wm-holder" style="margin-top:22px;">
-					<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php?action=ai1wmge_gdrive_settings' ) ); ?>">
-						<h1><i class="ai1wm-icon-gear"></i> <?php _e( 'Google Drive Backups', AI1WMGE_PLUGIN_NAME ); ?></h1>
-						<br />
-						<br />
+				<div id="ai1wmge-backups" class="ai1wm-holder">
+					<h1><i class="ai1wm-icon-gear"></i> <?php _e( 'Google Drive Backups', AI1WMGE_PLUGIN_NAME ); ?></h1>
+					<br />
+					<br />
 
+					<?php if ( Ai1wm_Message::has( 'settings' ) ) : ?>
+						<div class="ai1wm-message ai1wm-success-message">
+							<p><?php echo Ai1wm_Message::get( 'settings' ); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php?action=ai1wmge_gdrive_settings' ) ); ?>">
 						<article class="ai1wmge-article">
 							<h3><?php _e( 'Configure your backup plan', AI1WMGE_PLUGIN_NAME ); ?></h3>
 							<ul id="ai1wmge-gdrive-cron">
@@ -123,6 +130,21 @@
 						</article>
 
 						<article class="ai1wmge-article">
+							<h3><?php _e( 'Destination folder', AI1WMGE_PLUGIN_NAME ); ?></h3>
+							<p id="ai1wmge-gdrive-folder-details">
+								<span class="spinner" style="visibility: visible;"></span>
+								<?php _e( 'Retrieving Google Drive folder details..', AI1WMGE_PLUGIN_NAME ); ?>
+							</p>
+							<p>
+								<input type="hidden" name="ai1wmge_gdrive_folder_id" id="ai1wmge-gdrive-folder-id" />
+								<button type="button" class="ai1wm-button-gray" name="ai1wmge_gdrive_change" id="ai1wmge-gdrive-change">
+									<i class="ai1wm-icon-folder"></i>
+									<?php _e( 'Change', AI1WMGE_PLUGIN_NAME ); ?>
+								</button>
+							</p>
+						</article>
+
+						<article class="ai1wmge-article">
 							<h3><?php _e( 'Notification settings', AI1WMGE_PLUGIN_NAME ); ?></h3>
 							<p>
 								<label for="ai1wmge-gdrive-notify-toggle">
@@ -153,7 +175,7 @@
 								<div class="ai1wm-field">
 									<label for="ai1wmge-gdrive-backups">
 										<?php _e( 'Keep the most recent', AI1WMGE_PLUGIN_NAME ); ?>
-										<input style="width: 3em" type="number" min="0" name="ai1wmge_gdrive_backups" id="ai1wmge-gdrive-backups" value="<?php echo intval( $backups ); ?>" />
+										<input style="width: 3em;" type="number" min="0" name="ai1wmge_gdrive_backups" id="ai1wmge-gdrive-backups" value="<?php echo intval( $backups ); ?>" />
 									</label>
 									<?php _e( 'backups. <small>Default: <strong>0</strong> unlimited</small>', AI1WMGE_PLUGIN_NAME ); ?>
 								</div>
@@ -161,9 +183,9 @@
 								<div class="ai1wm-field">
 									<label for="ai1wmge-gdrive-total">
 										<?php _e( 'Limit the total size of backups to', AI1WMGE_PLUGIN_NAME ); ?>
-										<input style="width: 4em" type="number" min="0" name="ai1wmge_gdrive_total" id="ai1wmge-gdrive-total" value="<?php echo intval( $total ); ?>" />
+										<input style="width: 4em;" type="number" min="0" name="ai1wmge_gdrive_total" id="ai1wmge-gdrive-total" value="<?php echo intval( $total ); ?>" />
 									</label>
-									<select style="margin-top: -2px" name="ai1wmge_gdrive_total_unit" id="ai1wmge-gdrive-total-unit">
+									<select style="margin-top: -2px;" name="ai1wmge_gdrive_total_unit" id="ai1wmge-gdrive-total-unit">
 										<option value="MB" <?php echo strpos( $total, 'MB' ) !== false ? 'selected="selected"' : null; ?>><?php _e( 'MB', AI1WMGE_PLUGIN_NAME ); ?></option>
 										<option value="GB" <?php echo strpos( $total, 'GB' ) !== false ? 'selected="selected"' : null; ?>><?php _e( 'GB', AI1WMGE_PLUGIN_NAME ); ?></option>
 									</select>
@@ -181,6 +203,9 @@
 					</form>
 				</div>
 			<?php endif; ?>
+
+			<?php do_action( 'ai1wmge_settings_left_end' ); ?>
+
 		</div>
 		<div class="ai1wm-right">
 			<div class="ai1wm-sidebar">

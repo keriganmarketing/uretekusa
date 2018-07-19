@@ -23,39 +23,45 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-class Ai1wmge_Export_Gdrive {
+class Ai1wmge_Export_GDrive {
 
-	public static function execute( $params ) {
+	public static function execute( $params, Ai1wmge_GDrive_Client $gdrive = null ) {
 
 		// Set progress
 		Ai1wm_Status::info( __( 'Connecting to Google Drive...', AI1WMGE_PLUGIN_NAME ) );
 
-		// Open achive file
+		// Open the archive file for writing
 		$archive = new Ai1wm_Compressor( ai1wm_archive_path( $params ) );
 
 		// Append EOF block
 		$archive->close( true );
 
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
-			get_option( 'ai1wmge_gdrive_ssl', true )
-		);
-
-		// Get or Create folder
-		$folder = $gdrive->listFolder( ai1wm_archive_folder() );
-		if ( isset( $folder['items'] ) && ( $item = array_shift( $folder['items'] ) ) ) {
-			$folder = $item;
-		} else {
-			$folder = $gdrive->createFolder( ai1wm_archive_folder() );
+		// Set GDrive client
+		if ( is_null( $gdrive ) ) {
+			$gdrive = new Ai1wmge_GDrive_Client(
+				get_option( 'ai1wmge_gdrive_token', false ),
+				get_option( 'ai1wmge_gdrive_ssl', true )
+			);
 		}
 
-		// Upload resumable
-		$params['uploadUrl'] = $gdrive->uploadResumable(
-			ai1wm_archive_name( $params ),
-			ai1wm_archive_bytes( $params ),
-			$folder['id']
-		);
+		// Get folder ID
+		$folder_id = get_option( 'ai1wmge_gdrive_folder_id', false );
+
+		// Create folder
+		if ( ! ( $folder_id = $gdrive->get_folder_id_by_id( $folder_id ) ) ) {
+			if ( ! ( $folder_id = $gdrive->get_folder_id_by_name( ai1wm_archive_folder() ) ) ) {
+				$folder_id = $gdrive->create_folder( ai1wm_archive_folder() );
+			}
+		}
+
+		// Set folder ID
+		update_option( 'ai1wmge_gdrive_folder_id', $folder_id );
+
+		// Set upload URL
+		$params['upload_url'] = $gdrive->upload_resumable( ai1wm_archive_name( $params ), ai1wm_archive_bytes( $params ), $folder_id );
+
+		// Set progress
+		Ai1wm_Status::info( __( 'Done connecting to Google Drive.', AI1WMGE_PLUGIN_NAME ) );
 
 		return $params;
 	}

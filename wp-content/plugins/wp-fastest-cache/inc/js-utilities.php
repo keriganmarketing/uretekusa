@@ -53,8 +53,7 @@
 
 								if($minifiedJs){
 									if(!is_dir($minifiedJs["cachFilePath"])){
-										$prefix = time();
-										$this->wpfc->createFolder($minifiedJs["cachFilePath"], $minifiedJs["jsContent"], "js", $prefix, true);
+										$this->wpfc->createFolder($minifiedJs["cachFilePath"], $minifiedJs["jsContent"], "js");
 									}
 
 									if($jsFiles = @scandir($minifiedJs["cachFilePath"], 1)){
@@ -165,8 +164,10 @@
 		public function minify($url){
 			$this->url = $url;
 
-			$cachFilePath = WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".md5($url);
-			$jsLink = WPFC_WP_CONTENT_URL."/cache/wpfc-minified/".md5($url);
+			$md5 = $this->wpfc->create_name($url);
+
+			$cachFilePath = WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".$md5;
+			$jsLink = WPFC_WP_CONTENT_URL."/cache/wpfc-minified/".$md5;
 
 			if(is_dir($cachFilePath)){
 				return array("cachFilePath" => $cachFilePath, "jsContent" => "", "url" => $jsLink);
@@ -220,10 +221,13 @@
 
 		public function mergeJs($js_content, $value, $last = false){
 			$name = md5($js_content);
+
+			$name = base_convert(crc32($name), 20, 36);
+
 			$cachFilePath = WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".$name;
 
 			if(!is_dir($cachFilePath)){
-				$this->wpfc->createFolder($cachFilePath, $js_content, "js", time());
+				$this->wpfc->createFolder($cachFilePath, $js_content, "js");
 			}
 
 			if($jsFiles = @scandir($cachFilePath, 1)){

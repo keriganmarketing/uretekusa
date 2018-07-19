@@ -75,7 +75,7 @@ function titan_register_required_plugins() {
 			'slug'     				=> 'revslider',
 			'source'				  => TITAN_ROOT. '/includes/thirdparty/tgm-plugin-activation/plugins/revslider.zip',
 			'required' 				=> true,
-			'version' 				 => '5.4.7',
+			'version' 				 => '5.4.7.3',
 			'force_activation' 		=> false,
 			'force_deactivation' 	  => false,
 			'external_url' 			=> TITAN_URL . '/includes/thirdparty/tgm-plugin-activation/plugins/revslider.zip',

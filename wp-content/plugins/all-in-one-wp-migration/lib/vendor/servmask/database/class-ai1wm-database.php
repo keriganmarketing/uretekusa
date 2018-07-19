@@ -35,15 +35,13 @@ abstract class Ai1wm_Database {
 	/**
 	 * WordPress database handler
 	 *
-	 * @access protected
-	 * @var mixed
+	 * @var object
 	 */
 	protected $wpdb = null;
 
 	/**
 	 * Old table prefixes
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $old_table_prefixes = array();
@@ -51,7 +49,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * New table prefixes
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $new_table_prefixes = array();
@@ -59,7 +56,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Old replace values
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $old_replace_values = array();
@@ -67,7 +63,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * New replace values
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $new_replace_values = array();
@@ -75,7 +70,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Table where clauses
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $table_where_clauses = array();
@@ -83,7 +77,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Table prefix columns
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $table_prefix_columns = array();
@@ -91,7 +84,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Include table prefixes
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $include_table_prefixes = array();
@@ -99,7 +91,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Exclude table prefixes
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $exclude_table_prefixes = array();
@@ -107,7 +98,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * List all tables that should not be affected by the timeout of the current request
 	 *
-	 * @access protected
 	 * @var array
 	 */
 	protected $atomic_tables = array();
@@ -115,7 +105,6 @@ abstract class Ai1wm_Database {
 	/**
 	 * Visual Composer
 	 *
-	 * @access protected
 	 * @var bool
 	 */
 	protected $visual_composer = false;
@@ -123,8 +112,7 @@ abstract class Ai1wm_Database {
 	/**
 	 * Constructor
 	 *
-	 * @param  object $wpdb WPDB instance
-	 * @return Ai1wm_Database
+	 * @param object $wpdb WPDB instance
 	 */
 	public function __construct( $wpdb ) {
 		$this->wpdb = $wpdb;
@@ -594,8 +582,18 @@ abstract class Ai1wm_Database {
 				// Apply additional table prefix columns
 				$columns = $this->get_table_prefix_columns( $table_name );
 
-				// Get results
+				// Run SQL query
 				$result = $this->query( $query );
+
+				// Repair table data
+				if ( $this->errno() === 1194 ) {
+
+					// Current table is marked as crashed and should be repaired
+					$this->repair_table( $table_name );
+
+					// Run SQL query
+					$result = $this->query( $query );
+				}
 
 				// Generate insert statements
 				if ( $num_rows = $this->num_rows( $result ) ) {
@@ -844,6 +842,16 @@ abstract class Ai1wm_Database {
 		if ( isset( $row['Create Table'] ) ) {
 			return $row['Create Table'];
 		}
+	}
+
+	/**
+	 * Repair MySQL table
+	 *
+	 * @param  string $table_name Table name
+	 * @return void
+	 */
+	protected function repair_table( $table_name ) {
+		$this->query( "REPAIR TABLE `{$table_name}`" );
 	}
 
 	/**

@@ -23,9 +23,9 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-class Ai1wmge_Import_Gdrive {
+class Ai1wmge_Import_GDrive {
 
-	public static function execute( $params ) {
+	public static function execute( $params, Ai1wmge_GDrive_Client $gdrive = null ) {
 
 		// Set progress
 		Ai1wm_Status::info( __( 'Creating an empty archive...', AI1WMGE_PLUGIN_NAME ) );
@@ -33,6 +33,17 @@ class Ai1wmge_Import_Gdrive {
 		// Create empty archive file
 		$archive = new Ai1wm_Compressor( ai1wm_archive_path( $params ) );
 		$archive->close();
+
+		// Set GDrive client
+		if ( is_null( $gdrive ) ) {
+			$gdrive = new Ai1wmge_GDrive_Client(
+				get_option( 'ai1wmge_gdrive_token', false ),
+				get_option( 'ai1wmge_gdrive_ssl', true )
+			);
+		}
+
+		// Get download URL
+		$params['download_url'] = $gdrive->get_file_url( $params['file_id'] );
 
 		// Set progress
 		Ai1wm_Status::info( __( 'Done creating an empty archive.', AI1WMGE_PLUGIN_NAME ) );

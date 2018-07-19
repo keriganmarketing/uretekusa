@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Fabrique\n"
-"POT-Creation-Date: 2018-02-12 14:44+0700\n"
+"POT-Creation-Date: 2018-06-07 16:43+0700\n"
 "PO-Revision-Date: 2017-08-21 16:16+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,19 +57,23 @@ msgstr ""
 msgid "Be the first one who leave the comment."
 msgstr ""
 
-#: comments.php:43
+#: comments.php:44
 msgid "Name"
 msgstr ""
 
-#: comments.php:49 single.php:119
+#: comments.php:50 single.php:119
 msgid "Email"
 msgstr ""
 
-#: comments.php:55
+#: comments.php:56
 msgid "Website"
 msgstr ""
 
-#: comments.php:61
+#: comments.php:62
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: comments.php:67
 msgid "Leave your comment here"
 msgstr ""
 
@@ -229,34 +233,34 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: includes/fabrique-template.php:179 includes/fabrique-template.php:183 templates/partials/navbar-logo.php:20
+#: includes/fabrique-template.php:183 includes/fabrique-template.php:187 templates/partials/navbar-logo.php:20
 #: templates/partials/navbar-logo.php:24 templates/partials/navbar-logo.php:35 templates/side-navbar-fixed.php:26
 #: templates/side-navbar-full.php:30 templates/side-navbar-full.php:33 templates/side-navbar-minimal.php:36
 #: templates/side-navbar-minimal.php:59
 msgid "logo"
 msgstr ""
 
-#: includes/fabrique-template.php:235
+#: includes/fabrique-template.php:239
 msgid "PREV"
 msgstr ""
 
-#: includes/fabrique-template.php:236
+#: includes/fabrique-template.php:240
 msgid "NEXT"
 msgstr ""
 
-#: includes/fabrique-template.php:323
+#: includes/fabrique-template.php:327
 msgid "Site Sharing"
 msgstr ""
 
-#: includes/fabrique-template.php:324 single.php:118
+#: includes/fabrique-template.php:328 single.php:118
 msgid "Check out this site"
 msgstr ""
 
-#: includes/fabrique-template.php:425
+#: includes/fabrique-template.php:429
 msgid "Reply"
 msgstr ""
 
-#: includes/fabrique-template.php:1397 searchform.php:12 templates/partials/navbar-search.php:18
+#: includes/fabrique-template.php:1401 searchform.php:12 templates/partials/navbar-search.php:18
 msgid "Search"
 msgstr ""
 
@@ -664,11 +668,11 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: templates/breadcrumb.php:28 templates/breadcrumb.php:46
+#: templates/breadcrumb.php:28 templates/breadcrumb.php:52
 msgid "Blog"
 msgstr ""
 
-#: templates/breadcrumb.php:118
+#: templates/breadcrumb.php:124
 msgid "Page "
 msgstr ""
 
@@ -972,35 +976,35 @@ msgstr ""
 msgid "Sale!"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:40 woocommerce/myaccount/form-login.php:63
+#: woocommerce/myaccount/form-login.php:39 woocommerce/myaccount/form-login.php:62
 msgid "Login"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:46
+#: woocommerce/myaccount/form-login.php:45
 msgid "Username or email address"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:50 woocommerce/myaccount/form-login.php:105
+#: woocommerce/myaccount/form-login.php:49 woocommerce/myaccount/form-login.php:104
 msgid "Password"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:61
+#: woocommerce/myaccount/form-login.php:60
 msgid "Remember me"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:65
+#: woocommerce/myaccount/form-login.php:64
 msgid "Lost your password?"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:83 woocommerce/myaccount/form-login.php:115
+#: woocommerce/myaccount/form-login.php:82 woocommerce/myaccount/form-login.php:114
 msgid "Register"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:91
+#: woocommerce/myaccount/form-login.php:90
 msgid "Username"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:98
+#: woocommerce/myaccount/form-login.php:97
 msgid "Email address"
 msgstr ""
 
@@ -1010,14 +1014,6 @@ msgstr ""
 
 #: woocommerce/product-searchform.php:27
 msgid "Search for:"
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variable.php:34
-msgid "This product is currently out of stock and unavailable."
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variable.php:91
-msgid "Clear"
 msgstr ""
 
 #: woocommerce/single-product/meta.php:32
@@ -1063,7 +1059,8 @@ msgid "http://www.fabriquetheme.com"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "A perfect match to industrial businesses. It is deliberately designed to help create a trustworthy impression of your organization."
+msgid ""
+"A perfect match to industrial businesses. It is deliberately designed to help create a trustworthy impression of your organization."
 msgstr ""
 
 #. Author of the plugin/theme

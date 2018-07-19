@@ -28,7 +28,7 @@ class Ai1wmge_Import_Controller {
 	public static function button() {
 		return Ai1wm_Template::get_content(
 			'import/button',
-			array( 'token' => get_option( 'ai1wmge_gdrive_token' ) ),
+			array( 'token' => get_option( 'ai1wmge_gdrive_token', false ) ),
 			AI1WMGE_TEMPLATES_PATH
 		);
 	}
@@ -41,43 +41,46 @@ class Ai1wmge_Import_Controller {
 		);
 	}
 
-	public static function folder() {
-		// Set folder ID
-		$folder_id = null;
-		if ( isset( $_GET['folderId'] ) ) {
-			$folder_id = $_GET['folderId'];
+	public static function browser( $params = array() ) {
+		ai1wm_setup_environment();
+
+		// Set params
+		if ( empty( $params ) ) {
+			$params = stripslashes_deep( $_GET );
 		}
 
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
+		// Set folder ID
+		$folder_id = null;
+		if ( isset( $params['folder_id'] ) ) {
+			$folder_id = trim( $params['folder_id'] );
+		}
+
+		// Set GDrive client
+		$gdrive = new Ai1wmge_GDrive_Client(
+			get_option( 'ai1wmge_gdrive_token', false ),
 			get_option( 'ai1wmge_gdrive_ssl', true )
 		);
 
 		// List folder
-		$folder = $gdrive->listFolder( null, $folder_id, array(
-			'orderBy' => 'folder,title',
-		) );
+		$items = $gdrive->list_folder_by_id( $folder_id, array( 'orderBy' => 'folder,title' ) );
 
 		// Set folder structure
-		$response = array( 'items' => array(), 'numHiddenFiles' => 0 );
+		$response = array( 'items' => array(), 'num_hidden_files' => 0 );
 
 		// Set folder items
-		if ( isset( $folder['items'] ) && ( $items = $folder['items'] ) ) {
-			foreach ( $items as $item ) {
-				if ( $item['fileExtension'] === 'wpress' || $item['mimeType'] === 'application/vnd.google-apps.folder' ) {
-					$response['items'][] = array(
-						'id'    => isset( $item['id'] ) ? $item['id'] : null,
-						'name'  => isset( $item['title'] ) ? $item['title'] : null,
-						'date'  => isset( $item['createdDate'] ) ? human_time_diff( strtotime( $item['createdDate'] ) ) : null,
-						'type'  => isset( $item['mimeType'] ) ? $item['mimeType'] : null,
-						'size'  => isset( $item['fileSize'] ) ? size_format( $item['fileSize'] ) : null,
-						'bytes' => isset( $item['fileSize'] ) ? $item['fileSize'] : null,
-						'ext'   => isset( $item['fileExtension'] ) ? $item['fileExtension'] : null,
-					);
-				} else {
-					$response['numHiddenFiles']++;
-				}
+		foreach ( $items as $item ) {
+			if ( $item['type'] === 'application/vnd.google-apps.folder' || pathinfo( $item['name'], PATHINFO_EXTENSION ) === 'wpress' ) {
+				$response['items'][] = array(
+					'id'    => isset( $item['id'] ) ? $item['id'] : null,
+					'name'  => isset( $item['name'] ) ? $item['name'] : null,
+					'date'  => isset( $item['date'] ) ? human_time_diff( $item['date'] ) : null,
+					'size'  => isset( $item['bytes'] ) ? size_format( $item['bytes'] ) : null,
+					'bytes' => isset( $item['bytes'] ) ? $item['bytes'] : null,
+					'ext'   => isset( $item['ext'] ) ? $item['ext'] : null,
+					'type'  => isset( $item['type'] ) ? $item['type'] : null,
+				);
+			} else {
+				$response['num_hidden_files']++;
 			}
 		}
 

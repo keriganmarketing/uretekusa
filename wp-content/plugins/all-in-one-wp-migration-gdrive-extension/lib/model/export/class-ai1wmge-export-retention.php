@@ -25,36 +25,34 @@
 
 class Ai1wmge_Export_Retention {
 
-	public static function execute( $params ) {
+	public static function execute( $params, Ai1wmge_GDrive_Client $gdrive = null ) {
 
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
-			get_option( 'ai1wmge_gdrive_ssl', true )
-		);
+		$folder_id = get_option( 'ai1wmge_gdrive_folder_id', false );
 
-		$folder = $gdrive->listFolder( ai1wm_archive_folder() );
-
-		// No backups, no need to apply backup retention
-		if ( empty( $folder['items'] ) ) {
-			return $params;
+		// Set GDrive client
+		if ( is_null( $gdrive ) ) {
+			$gdrive = new Ai1wmge_GDrive_Client(
+				get_option( 'ai1wmge_gdrive_token', false ),
+				get_option( 'ai1wmge_gdrive_ssl', true )
+			);
 		}
 
-		$files = $gdrive->listFolder( null, $folder['items'][0]['id'], array(
-			'orderBy' => 'createdDate',
-		) );
+		// List folder
+		$items = $gdrive->list_folder_by_id( $folder_id, array( 'orderBy' => 'createdDate' ) );
 
 		$backups = array();
-		foreach ( $files['items'] as $backup ) {
-			if ( $backup['fileExtension'] === 'wpress' && $backup['mimeType'] === 'application/octet-stream' ) {
-				$backups[] = $backup;
+		foreach ( $items as $item ) {
+			if ( $item['type'] === 'application/octet-stream' || pathinfo( $item['name'], PATHINFO_EXTENSION ) === 'wpress' ) {
+				$backups[] = $item;
 			}
 		}
 
-		// Skip calculations if there are no backups to delete
+		// No backups, no need to apply backup retention
 		if ( count( $backups ) === 0 ) {
 			return $params;
 		}
+
+		usort( $backups, 'Ai1wmge_Export_Retention::sort_by_date_asc' );
 
 		// Number of backups
 		if ( ( $backups_limit = get_option( 'ai1wmge_gdrive_backups', 0 ) ) ) {
@@ -69,7 +67,7 @@ class Ai1wmge_Export_Retention {
 		$backups = array_reverse( $backups );
 
 		// Get the size of the latest backup before we remove it
-		$size_of_backups = $backups[0]['fileSize'];
+		$size_of_backups = $backups[0]['bytes'];
 
 		// Remove the latest backup, the user should have at least one backup
 		array_shift( $backups );
@@ -77,7 +75,7 @@ class Ai1wmge_Export_Retention {
 		// Size of backups
 		if ( ( $retention_size = ai1wm_parse_size( get_option( 'ai1wmge_gdrive_total', 0 ) ) ) > 0 ) {
 			foreach ( $backups as $backup ) {
-				$size_of_backups += $backup['fileSize'];
+				$size_of_backups += $backup['bytes'];
 
 				// Remove file if retention size is exceeded
 				if ( $size_of_backups > $retention_size ) {
@@ -87,5 +85,9 @@ class Ai1wmge_Export_Retention {
 		}
 
 		return $params;
+	}
+
+	public static function sort_by_date_asc( $first_backup, $second_backup ) {
+		return intval( $first_backup['date'] ) - intval( $second_backup['date'] );
 	}
 }

@@ -36,6 +36,7 @@ if ( have_comments() ) {
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
 	$aria_req = $req ? " aria-required='true'" : '';
+	$consent  = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
 
 	$author =	'<div class="fbq-row">';
 	$author .=		'<div class="fbq-col-4">';
@@ -46,16 +47,21 @@ if ( have_comments() ) {
 
 	$email =		'<div class="fbq-col-4">';
 	$email .=			'<div class="form-container">';
-	$email .=				'<input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Email', 'fabrique' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .'" ' . $aria_req . '/>';
+	$email .=				'<input id="email" name="email" type="email" placeholder="' . esc_attr__( 'Email', 'fabrique' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .'" ' . $aria_req . '/>';
 	$email .=   		'</div>';
 	$email .= 		'</div>';
 
 	$url =			'<div class="fbq-col-4">';
 	$url .=				'<div class="form-container">';
-	$url .=					'<input id="url" name="url" type="text" placeholder="' . esc_attr__( 'Website', 'fabrique' ) . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '"/>';
+	$url .=					'<input id="url" name="url" type="url" placeholder="' . esc_attr__( 'Website', 'fabrique' ) . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '"/>';
 	$url .=				'</div>';
 	$url .=			'</div>';
-	$url .=		'</div>';
+
+	$cookies = 		'<div class="fbq-col-12">';
+	$cookies .=			'<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />';
+	$cookies .=			'<label for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'fabrique' ) . '</label>';
+	$cookies .= 	'</div>';
+	$cookies .=	'</div>';
 
 	$comment_field =	'<div class="form-container">';
 	$comment_field .=		'<textarea id="comment" placeholder="' . esc_attr__( 'Leave your comment here', 'fabrique' ) . '" name="comment" cols="45" rows="8" aria-required="true"></textarea>';
@@ -68,7 +74,8 @@ if ( have_comments() ) {
 		'fields' => array(
 			'author' => $author,
 			'email' => $email,
-			'url' => $url
+			'url' => $url,
+			'cookies' => $cookies
 		),
 		'comment_field' => $comment_field
 	);

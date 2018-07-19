@@ -25,71 +25,98 @@
 
 class Ai1wmge_Export_Upload {
 
-	public static function execute( $params ) {
+	public static function execute( $params, Ai1wmge_GDrive_Client $gdrive = null ) {
 
-		// Set completed flag
 		$params['completed'] = false;
 
-		// Set offset
-		if ( ! isset( $params['offset'] ) ) {
-			$params['offset'] = 0;
+		// Set upload URL
+		if ( ! isset( $params['upload_url'] ) ) {
+			throw new Ai1wm_Import_Exception( __( 'Google Drive Upload URL is not specified.', AI1WMGE_PLUGIN_NAME ) );
 		}
 
-		// Set retry
-		if ( ! isset( $params['retry'] ) ) {
-			$params['retry'] = 0;
+		// Set archive offset
+		if ( ! isset( $params['archive_offset'] ) ) {
+			$params['archive_offset'] = 0;
 		}
 
-		// Set Gdrive client
-		$gdrive = new ServMaskGdriveClient(
-			get_option( 'ai1wmge_gdrive_token' ),
-			get_option( 'ai1wmge_gdrive_ssl', true )
-		);
+		// Set archive size
+		if ( ! isset( $params['archive_size'] ) ) {
+			$params['archive_size'] = ai1wm_archive_bytes( $params );
+		}
 
-		// Get archive file
+		// Set file range start
+		if ( ! isset( $params['file_range_start'] ) ) {
+			$params['file_range_start'] = 0;
+		}
+
+		// Set file range end
+		if ( ! isset( $params['file_range_end'] ) ) {
+			$params['file_range_end'] = AI1WMGE_FILE_CHUNK_SIZE - 1;
+		}
+
+		// Set upload retries
+		if ( ! isset( $params['upload_retries'] ) ) {
+			$params['upload_retries'] = 0;
+		}
+
+		// Set GDrive client
+		if ( is_null( $gdrive ) ) {
+			$gdrive = new Ai1wmge_GDrive_Client(
+				get_option( 'ai1wmge_gdrive_token', false ),
+				get_option( 'ai1wmge_gdrive_ssl', true )
+			);
+		}
+
+		// Open the archive file for reading
 		$archive = fopen( ai1wm_archive_path( $params ), 'rb' );
 
-		// Read file chunk
-		if ( ( fseek( $archive, $params['offset'] ) !== -1 )
-				&& ( $chunk = fread( $archive, ServMaskGdriveClient::CHUNK_SIZE ) ) ) {
+		// Read file chunk data
+		if ( ( fseek( $archive, $params['archive_offset'] ) !== -1 )
+				&& ( $file_chunk_data = fread( $archive, AI1WMGE_FILE_CHUNK_SIZE ) ) ) {
 
-			// Set chunk size
-			$params['chunkSize'] = ftell( $archive ) - $params['offset'];
-
-			// Set file size
-			$params['fileSize'] = ai1wm_archive_bytes( $params );
+			$gdrive->load_upload_url( $params['upload_url'] );
 
 			try {
 
-				// Increase number of retries
-				$params['retry'] += 1;
+				$params['upload_retries'] += 1;
 
-				// Upload file chunk
-				$gdrive->uploadFileChunk( $chunk, $params );
+				// Upload file chunk data
+				$gdrive->upload_file_chunk( $file_chunk_data, $params['archive_size'], $params['file_range_start'], $params['file_range_end'] );
+
+				// Unset upload retries
+				unset( $params['upload_retries'] );
 
 			} catch ( Ai1wmge_Connect_Exception $e ) {
-				// Retry 3 times
-				if ( $params['retry'] <= 3 ) {
+				if ( $params['upload_retries'] <= 3 ) {
 					return $params;
 				}
 
 				throw $e;
 			}
 
-			// Unset retry counter
-			unset( $params['retry'] );
+			// Set archive offset
+			$params['archive_offset'] = ftell( $archive );
+
+			// Set file range start
+			if ( $params['archive_size'] <= ( $params['file_range_start'] + AI1WMGE_FILE_CHUNK_SIZE ) ) {
+				$params['file_range_start'] = $params['archive_size'] - 1;
+			} else {
+				$params['file_range_start'] = $params['file_range_start'] + AI1WMGE_FILE_CHUNK_SIZE;
+			}
+
+			// Set file range end
+			if ( $params['archive_size'] <= ( $params['file_range_end'] + AI1WMGE_FILE_CHUNK_SIZE ) ) {
+				$params['file_range_end'] = $params['archive_size'] - 1;
+			} else {
+				$params['file_range_end'] = $params['file_range_end'] + AI1WMGE_FILE_CHUNK_SIZE;
+			}
 
 			// Set archive details
-			$name  = ai1wm_archive_name( $params );
-			$bytes = ai1wm_archive_bytes( $params );
-			$size  = ai1wm_archive_size( $params );
+			$name = ai1wm_archive_name( $params );
+			$size = ai1wm_archive_size( $params );
 
 			// Get progress
-			if ( isset( $params['offset'] ) ) {
-				$progress = (int) ( ( $params['offset'] / $bytes ) * 100 );
-			} else {
-				$progress = 100;
-			}
+			$progress = (int) ( ( $params['archive_offset'] / $params['archive_size'] ) * 100 );
 
 			// Set progress
 			Ai1wm_Status::info(
@@ -111,18 +138,21 @@ class Ai1wmge_Export_Upload {
 			update_option( 'ai1wmge_gdrive_timestamp', time() );
 
 			// Unset upload URL
-			unset( $params['uploadUrl'] );
+			unset( $params['upload_url'] );
 
-			// Unset offset
-			unset( $params['offset'] );
+			// Unset archive offset
+			unset( $params['archive_offset'] );
 
-			// Unset chunk size
-			unset( $params['chunkSize'] );
+			// Unset archive size
+			unset( $params['archive_size'] );
 
-			// Unset file size
-			unset( $params['fileSize'] );
+			// Unset file range start
+			unset( $params['file_range_start'] );
 
-			// Unset completed flag
+			// Unset file range end
+			unset( $params['file_range_start'] );
+
+			// Unset completed
 			unset( $params['completed'] );
 		}
 

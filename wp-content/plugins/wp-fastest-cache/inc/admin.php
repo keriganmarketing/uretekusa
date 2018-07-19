@@ -9,8 +9,6 @@
 
 		public function __construct(){
 			$this->options = $this->getOptions();
-
-			$this->set_content_url();
 			
 			//to call like that because on WP Multisite current_user_can() cannot get the user
 			add_action('admin_init', array($this, "optionsPageRequest"));
@@ -291,9 +289,9 @@
 				$path = $this->getABSPATH();
 			}
 
-			if(isset($_SERVER["SERVER_SOFTWARE"]) && $_SERVER["SERVER_SOFTWARE"] && preg_match("/iis/i", $_SERVER["SERVER_SOFTWARE"])){
-				return array("The plugin does not work with Microsoft IIS. Only with Apache", "error");
-			}
+			// if(isset($_SERVER["SERVER_SOFTWARE"]) && $_SERVER["SERVER_SOFTWARE"] && preg_match("/iis/i", $_SERVER["SERVER_SOFTWARE"])){
+			// 	return array("The plugin does not work with Microsoft IIS. Only with Apache", "error");
+			// }
 
 			// if(isset($_SERVER["SERVER_SOFTWARE"]) && $_SERVER["SERVER_SOFTWARE"] && preg_match("/nginx/i", $_SERVER["SERVER_SOFTWARE"])){
 			// 	return array("The plugin does not work with Nginx. Only with Apache", "error");
@@ -338,8 +336,6 @@
 				return $res;
 			}else if($this->isPluginActive('far-future-expiration/far-future-expiration.php')){
 				return array("Far Future Expiration Plugin", "error");
-			}else if($this->isPluginActive('fast-velocity-minify/fvm.php')){
-				return array("Fast Velocity Minify needs to be deactived", "error");
 			}else if($this->isPluginActive('sg-cachepress/sg-cachepress.php')){
 				return array("SG Optimizer needs to be deactived", "error");
 			}else if($this->isPluginActive('adrotate/adrotate.php') || $this->isPluginActive('adrotate-pro/adrotate.php')){
@@ -594,6 +590,7 @@
 			$loggedInUser = "";
 			$ifIsNotSecure = "";
 			$trailing_slash_rule = "";
+			$consent_cookie = "";
 
 			if(isset($_POST["wpFastestCacheMobile"]) && $_POST["wpFastestCacheMobile"] == "on"){
 				$mobile = "RewriteCond %{HTTP_USER_AGENT} !^.*(".$this->getMobileUserAgents().").*$ [NC]"."\n";
@@ -605,6 +602,14 @@
 
 			if(!preg_match("/^https/i", get_option("home"))){
 				$ifIsNotSecure = "RewriteCond %{HTTPS} !=on";
+			}
+
+			// WeePie Cookie Allow: to serve cache if the cookie named wpca_consent is set
+			if($this->isPluginActive('wp-cookie-allow/wp-cookie-allow.php')){
+				$consent_cookie = "RewriteCond %{HTTP:Cookie} wpca_consent=1"."\n";
+				$consent_cookie .= "RewriteCond %{HTTP:Cookie} !wpca_cc [OR]"."\n";
+				$consent_cookie .= "RewriteCond %{HTTP:Cookie} wpca_consent=1"."\n";
+				$consent_cookie .= "RewriteCond %{HTTP:Cookie} wpca_cc=functional,analytical,social-media,advertising,other"."\n";
 			}
 
 			if($this->is_trailing_slash()){
@@ -629,8 +634,9 @@
 					"RewriteCond %{REQUEST_URI} !(\/){2}$"."\n".
 					$trailing_slash_rule.
 					"RewriteCond %{QUERY_STRING} !.+"."\n".$loggedInUser.
+					$consent_cookie.
 					"RewriteCond %{HTTP:Cookie} !comment_author_"."\n".
-					"RewriteCond %{HTTP:Cookie} !wp_woocommerce_session"."\n".
+					"RewriteCond %{HTTP:Cookie} !woocommerce_items_in_cart"."\n".
 					"RewriteCond %{HTTP:Cookie} !safirmobilswitcher=mobil"."\n".
 					'RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]'."\n".$mobile;
 			
@@ -1198,15 +1204,15 @@
 
 							$tester_arr = array(
 											// "de-DE",
-											// "es_CL",
-											// "es_AR",
-											// "es_GT",
-											// "es_PE",
-											// "es_VE",
-											// "es_CO",
-											// "es_MX",
-											// "es_ES",
-											// "es-ES",
+											"es_CL",
+											"es_AR",
+											"es_GT",
+											"es_PE",
+											"es_VE",
+											"es_CO",
+											"es_MX",
+											"es_ES",
+											"es-ES",
 											// "fr-FR",
 											// "fr-BE",
 											// "fr-CA",
@@ -1217,13 +1223,17 @@
 											"pt-PT",
 											"pt-BR",
 											"tr-TR",
+											"rebootyourpc.gr",
 											"nicheadvice.co.uk",
 											"addkenmerken.net",
 											"animefantastica.com",
 											"rynofitness.com.au",
 											"margotickets.com",
 											"berkatan.com",
+											"tiikr.com",
+											"enderwaffle.com",
 											"yenihobiler.com",
+											"weensu.dk",
 											"hobiblogu.com",
 											"pembeportakal.com",
 											"artclinic.org",
@@ -1734,6 +1744,7 @@
 										<option value="homepage">Home Page</option>
 										<option value="category">Categories</option>
 										<option value="tag">Tags</option>
+										<option value="archive">Archives</option>
 										<option value="post">Posts</option>
 										<option value="page">Pages</option>
 										<option value="attachment">Attachments</option>
@@ -1891,11 +1902,21 @@
 				    				<div class="meta"></div>
 				    			</div>
 
-				    			<div wpfc-cdn-name="photon" class="int-item">
+				    			<div wpfc-cdn-name="photon" class="int-item int-item-left">
 				    				<img src="<?php echo plugins_url("wp-fastest-cache/images/photoncdn.png"); ?>" />
 				    				<div class="app">
 				    					<div style="font-weight:bold;font-size:14px;">CDN by Photon</div>
 				    					<p>Wordpress Content Delivery Network Services</p>
+				    				</div>
+				    				<div class="meta"></div>
+				    			</div>
+
+
+				    			<div wpfc-cdn-name="cloudflare" class="int-item">
+				    				<img style="border-radius:50px;" src="<?php echo plugins_url("wp-fastest-cache/images/cloudflare.png"); ?>" />
+				    				<div class="app">
+				    					<div style="font-weight:bold;font-size:14px;">CDN by Cloudflare</div>
+				    					<p>CDN, DNS, DDoS protection and security</p>
 				    				</div>
 				    				<div class="meta"></div>
 				    			</div>

@@ -31,7 +31,7 @@ define( 'AI1WM_DEBUG', false );
 // ==================
 // = Plugin Version =
 // ==================
-define( 'AI1WM_VERSION', '6.67' );
+define( 'AI1WM_VERSION', '6.71' );
 
 // ===============
 // = Plugin Name =
@@ -148,6 +148,16 @@ define( 'AI1WM_MULTISITE_NAME', 'multisite.json' );
 // ======================
 define( 'AI1WM_BLOGS_NAME', 'blogs.json' );
 
+// =========================
+// = Archive Settings Name =
+// =========================
+define( 'AI1WM_SETTINGS_NAME', 'settings.json' );
+
+// ==========================
+// = Archive Multipart Name =
+// ==========================
+define( 'AI1WM_MULTIPART_NAME', 'multipart.list' );
+
 // ========================
 // = Archive FileMap Name =
 // ========================
@@ -157,6 +167,26 @@ define( 'AI1WM_FILEMAP_NAME', 'filemap.list' );
 // = Archive Must-Use Plugins Name =
 // =================================
 define( 'AI1WM_MUPLUGINS_NAME', 'mu-plugins' );
+
+// =============================
+// = Endurance Page Cache Name =
+// =============================
+define( 'AI1WM_ENDURANCE_PAGE_CACHE_NAME', 'endurance-page-cache.php' );
+
+// ===========================
+// = Endurance PHP Edge Name =
+// ===========================
+define( 'AI1WM_ENDURANCE_PHP_EDGE_NAME', 'endurance-php-edge.php' );
+
+// ================================
+// = Endurance Browser Cache Name =
+// ================================
+define( 'AI1WM_ENDURANCE_BROWSER_CACHE_NAME', 'endurance-browser-cache.php' );
+
+// =========================
+// = GD System Plugin Name =
+// =========================
+define( 'AI1WM_GD_SYSTEM_PLUGIN_NAME', 'gd-system-plugin.php' );
 
 // ===================
 // = Export Log Name =
@@ -227,6 +257,11 @@ define( 'AI1WM_ACTIVE_TEMPLATE', 'template' );
 // = Active Stylesheet =
 // =====================
 define( 'AI1WM_ACTIVE_STYLESHEET', 'stylesheet' );
+
+// ============
+// = Cron Key =
+// ============
+define( 'AI1WM_CRON', 'cron' );
 
 // ===============
 // = Updater Key =
@@ -317,6 +352,36 @@ if ( defined( 'AI1WM_PLUGIN_BASENAME' ) ) {
 	define( 'AI1WM_PLUGIN_BASEDIR', dirname( AI1WM_PLUGIN_BASENAME ) );
 } else {
 	define( 'AI1WM_PLUGIN_BASEDIR', 'all-in-one-wp-migration' );
+}
+
+// ===================================
+// = Backblaze B2 Extension Base Dir =
+// ===================================
+if ( defined( 'AI1WMAE_PLUGIN_BASENAME' ) ) {
+	define( 'AI1WMAE_PLUGIN_BASEDIR', dirname( AI1WMAE_PLUGIN_BASENAME ) );
+} else {
+	define( 'AI1WMAE_PLUGIN_BASEDIR', 'all-in-one-wp-migration-b2-extension' );
+}
+
+// ================================
+// = Backblaze B2 Extension About =
+// ================================
+if ( ! defined( 'AI1WMAE_PLUGIN_ABOUT' ) ) {
+	define( 'AI1WMAE_PLUGIN_ABOUT', 'https://servmask.com/products/backblaze-b2-extension/about' );
+}
+
+// ==============================
+// = Backblaze B2 Extension Key =
+// ==============================
+if ( ! defined( 'AI1WMAE_PLUGIN_KEY' ) ) {
+	define( 'AI1WMAE_PLUGIN_KEY', 'ai1wmae_plugin_key' );
+}
+
+// ================================
+// = Backblaze B2 Extension Short =
+// ================================
+if ( ! defined( 'AI1WMAE_PLUGIN_SHORT' ) ) {
+	define( 'AI1WMAE_PLUGIN_SHORT', 'b2' );
 }
 
 // ==========================
@@ -437,6 +502,36 @@ if ( ! defined( 'AI1WMFE_PLUGIN_KEY' ) ) {
 // =======================
 if ( ! defined( 'AI1WMFE_PLUGIN_SHORT' ) ) {
 	define( 'AI1WMFE_PLUGIN_SHORT', 'ftp' );
+}
+
+// ===========================================
+// = Google Cloud Storage Extension Base Dir =
+// ===========================================
+if ( defined( 'AI1WMCE_PLUGIN_BASENAME' ) ) {
+	define( 'AI1WMCE_PLUGIN_BASEDIR', dirname( AI1WMCE_PLUGIN_BASENAME ) );
+} else {
+	define( 'AI1WMCE_PLUGIN_BASEDIR', 'all-in-one-wp-migration-gcloud-storage-extension' );
+}
+
+// ========================================
+// = Google Cloud Storage Extension About =
+// ========================================
+if ( ! defined( 'AI1WMCE_PLUGIN_ABOUT' ) ) {
+	define( 'AI1WMCE_PLUGIN_ABOUT', 'https://servmask.com/products/google-cloud-storage-extension/about' );
+}
+
+// ======================================
+// = Google Cloud Storage Extension Key =
+// ======================================
+if ( ! defined( 'AI1WMCE_PLUGIN_KEY' ) ) {
+	define( 'AI1WMCE_PLUGIN_KEY', 'ai1wmce_plugin_key' );
+}
+
+// ========================================
+// = Google Cloud Storage Extension Short =
+// ========================================
+if ( ! defined( 'AI1WMCE_PLUGIN_SHORT' ) ) {
+	define( 'AI1WMCE_PLUGIN_SHORT', 'gcloud-storage' );
 }
 
 // ===================================

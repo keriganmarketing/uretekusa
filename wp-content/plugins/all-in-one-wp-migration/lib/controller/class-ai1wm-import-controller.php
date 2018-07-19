@@ -32,15 +32,11 @@ class Ai1wm_Import_Controller {
 	public static function import( $params = array() ) {
 		global $wp_filter;
 
-		// Set error handler
-		@set_error_handler( 'Ai1wm_Handler::error' );
-
-		// Set shutdown handler
-		@register_shutdown_function( 'Ai1wm_Handler::shutdown' );
+		ai1wm_setup_environment();
 
 		// Set params
 		if ( empty( $params ) ) {
-			$params = stripslashes_deep( $_REQUEST );
+			$params = stripslashes_deep( array_merge( $_GET, $_POST ) );
 		}
 
 		// Set priority
@@ -126,10 +122,12 @@ class Ai1wm_Import_Controller {
 			apply_filters( 'ai1wm_import_dropbox', Ai1wm_Template::get_content( 'import/button-dropbox' ) ),
 			apply_filters( 'ai1wm_import_gdrive', Ai1wm_Template::get_content( 'import/button-gdrive' ) ),
 			apply_filters( 'ai1wm_import_s3', Ai1wm_Template::get_content( 'import/button-s3' ) ),
+			apply_filters( 'ai1wm_import_b2', Ai1wm_Template::get_content( 'import/button-b2' ) ),
 			apply_filters( 'ai1wm_import_onedrive', Ai1wm_Template::get_content( 'import/button-onedrive' ) ),
 			apply_filters( 'ai1wm_import_box', Ai1wm_Template::get_content( 'import/button-box' ) ),
 			apply_filters( 'ai1wm_import_mega', Ai1wm_Template::get_content( 'import/button-mega' ) ),
 			apply_filters( 'ai1wm_import_digitalocean', Ai1wm_Template::get_content( 'import/button-digitalocean' ) ),
+			apply_filters( 'ai1wm_import_gcloud_storage', Ai1wm_Template::get_content( 'import/button-gcloud-storage' ) ),
 		);
 	}
 

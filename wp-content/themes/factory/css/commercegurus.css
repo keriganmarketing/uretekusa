@@ -1751,7 +1751,6 @@ body.woocommerce-page .header-wrapper {
   font-size: 9px;
   color: #ccc;
   position: relative;
-  top: -2px;
 }
 
 .breadcrumbs-wrapper a:last-child:after {
@@ -3298,7 +3297,7 @@ body.woocommerce #review_form #respond textarea {
 
 .content-area .comment-form p.comment-subscription-form {
   position: relative;
-  padding-left: 30px;
+  padding-left: 26px;
   margin-bottom: -10px;
   overflow: hidden;
 }
@@ -3308,7 +3307,7 @@ body.woocommerce #review_form #respond textarea {
   width: auto;
   position: absolute;
   left: 0px;
-  top: 9px;
+  top: 8px;
 }
 
 .comment-form input.submit {
@@ -3322,12 +3321,12 @@ body.woocommerce #review_form #respond textarea {
 }
 
 .content-area .comment-form p.comment-form-comment {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
 
 .content-area .comment-form p {
-  margin-bottom: 12px;
+  margin-bottom: 3px;
 }
 
 .comment-form-author, .comment-form-email, .comment-form-url {
@@ -3349,7 +3348,8 @@ body.woocommerce #review_form #respond textarea {
 }
 
 .comment-form #submit {
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 body #respond input#submit:hover {
@@ -5222,6 +5222,11 @@ body .woocommerce a.button {
 
 .woocommerce-account .entry-content a {
   border: none;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    font-size: 20px;
+    padding: 20px 30px;
 }
 
 /* -- Confirmation */

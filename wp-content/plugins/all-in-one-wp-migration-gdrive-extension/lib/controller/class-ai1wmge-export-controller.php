@@ -28,7 +28,7 @@ class Ai1wmge_Export_Controller {
 	public static function button() {
 		return Ai1wm_Template::get_content(
 			'export/button',
-			array( 'token' => get_option( 'ai1wmge_gdrive_token' ) ),
+			array( 'token' => get_option( 'ai1wmge_gdrive_token', false ) ),
 			AI1WMGE_TEMPLATES_PATH
 		);
 	}
